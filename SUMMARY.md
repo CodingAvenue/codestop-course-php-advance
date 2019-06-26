@@ -7,7 +7,7 @@
     > Discover how you can use type hinting to identify the expected data type being passed as arguments in a function declaration. 
  
 * [Sessions](content/Sessions/Sessions.q.md) ** - minutes**
-    > Learn how to start a PHP session, get PHP session variable values, modify a php session variable, and destroy a PHP session.
+    > Learn how to start a PHP session, get PHP session variable values, modify a PHP session variable, and destroy a PHP session.
 
 * [Cookies](content/Cookies/Cookies.q.md) ** - minutes**
     > Learn how to create/retrieve cookies, modify cookie values, delete cookies, and check if cookies are enabled.
