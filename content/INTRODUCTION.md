@@ -1,4 +1,4 @@
-**Requirements**: Have knowledge in Basic PHP programming, Intermediate PHP programming, and Object-oriented Programming in PHP.
+**Requirements**: Knowledge in Basic PHP programming, Intermediate PHP programming, and Object-oriented Programming in PHP.
 
 **Duration**:
 
@@ -12,6 +12,8 @@
 
 ## PHP Advance
 
+Extend and expand your PHP coding skills by learning how to apply the more advanced parts of the server-side scripting language.
+
 PHP advance is designed for:
 
 * Learners who have completed `An Introduction to Basic PHP Programming`, `Intermediate PHP Programming`, and `Object-Oriented Programming (OOP) in PHP`.
@@ -20,6 +22,4 @@ PHP advance is designed for:
 
 * Experienced programmers who want to take a refresher.
 
-In this course, you will be stepping into the advance level of PHP. The topics include ternary operator, type hinting, session, cookies, exceptions, and error handling. 
-
-You will learn by answering questions and writing your own code. We skipped the lectures so that you will have more time to practice. Go beyond learning the syntax and experience how PHP advance works.
+In this course, you will gain an understanding of the essential topics for PHP advance such as ternary operator, type hinting, session, cookies, exceptions, and error handling. You will learn by answering questions and writing your own code. We skipped the lectures so that you will have more time to practice. Go beyond learning the syntax and experience how PHP advance works.
