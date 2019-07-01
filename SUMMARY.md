@@ -10,7 +10,7 @@
     > Learn how to create, retrieve, modify, and delete cookies using the `setCookie()` function.
  
 * [Sessions](content/Sessions/Sessions.q.md) ** - minutes**
-    > Learn how to use session functions to start, get, modify, and destroy session data.
+    > Learn how to use session functions to start, get, modify, and destroy a session.
 
 * [Serialization](content/Serialization/Serialization.q.md) ** - minutes**
     > Serialization in PHP is used for storing and passing values while retaining their type and structure. In this lesson, you will learn how to use `serialize()` and `unserialize()` functions in PHP.
