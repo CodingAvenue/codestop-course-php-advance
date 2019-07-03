@@ -1,4 +1,4 @@
-**Requirements**: Knowledge in Basic PHP programming, Intermediate PHP programming, and Object-oriented Programming in PHP.
+**Requirements**: Knowledge in Basic PHP Programming, Intermediate PHP Programming, and Object-Oriented Programming in PHP.
 
 **Duration**:
 
@@ -10,9 +10,9 @@
     - Creating Computational Artifacts
     - Testing and Refining Computational Artifacts
 
-## PHP Advance
+## PHP Advanced
 
-PHP advance introduces the advanced techniques in PHP programming to broaden and heighten further your PHP coding skills. 
+PHP advanced introduces the advanced techniques in PHP programming to broaden and heighten further your PHP coding skills. 
 
 It is designed for:
 
@@ -22,6 +22,6 @@ It is designed for:
 
 * Experienced programmers who want to take a refresher.
 
-In this course, you will gain an understanding of the essential topics for PHP advance such as ternary operator, type hinting, session, cookies, exceptions, and error handling. 
+In this course, you will gain an understanding of the essential topics for PHP advanced such as ternary operator, type hinting, session, cookies, exceptions, and error handling. 
 
-You will learn by answering questions and writing your own code. We skipped the lectures so that you will have more time to practice. Go beyond learning the syntax and experience how PHP advance works. 
+You will learn by answering questions and writing your own code. We skipped the lectures so that you will have more time to practice. Go beyond learning the syntax and experience how PHP advanced works. 
