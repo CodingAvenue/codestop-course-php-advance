@@ -28,10 +28,10 @@
     > A custom exception is a user-defined error handling function that handles errors when called. Discover how you can create custom error handling functions to manage possible errors in the program.
 
 * [Basic File Handling](content/OpeningAndClosingFiles/OpeningAndClosingFiles.q.md) ** - minutes**
-    > In this lesson, you will learn how to open, read, and write files in PHP using basic file handling functions and file operators.
+    > In this lesson, you will learn how to open, read, and write files in PHP using basic file handling functions and modes.
 
 * [Manipulating Files](content/ReadingAndWritingFiles/ReadingAndWritingFiles.q.md) ** - minutes**
-    > Discover how you can manipulate and test a file in PHP using other file handling functions and file operators.
-
+    > Discover how you can retrieve information, obtain the pathname, make a copy and delete a file using other file handling functions in PHP.
+    
 * [Templates](content/Templates/Templates.q.md) ** - minutes**
     > Push the limits of your PHP knowledge and explore how you can build a basic PHP template for file structure. In this lesson, you will learn how to outline a class, define a template, and load entries in the template.
