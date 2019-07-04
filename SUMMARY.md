@@ -31,7 +31,7 @@
     > In this lesson, you will learn how to open, close, read, and write files in PHP using basic file handling functions and modes.
 
 * [Manipulating Files](content/ManipulatingFiles/ManipulatingFiles.q.md) ** - minutes**
-    > Discover how you can retrieve information, obtain the pathname, make a copy, and delete a file using other file handling functions in PHP.
+    > Discover how you can use other file handling functions in PHP such as retrieving information, obtaining the pathname, making a copy, and deleting a file.
     
 * [Templates](content/Templates/Templates.q.md) ** - minutes**
     > Push the limits of your PHP knowledge and explore how you can build a basic PHP template for file structure. In this lesson, you will learn how to outline a class, define a template, and load entries in the template.
