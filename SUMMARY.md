@@ -27,6 +27,9 @@
 * [Custom Exceptions](content/CustomExceptions/CustomExceptions.q.md) ** - minutes**
     > A custom exception is a user-defined error handling function that handles errors when called. Discover how you can create custom error handling functions to manage possible errors in the program.
 
+* [File Inclusion](content/FileInclusion/FileInclusion.q.md) ** - minutes**
+    > Learn how you can add the content of one PHP file to another PHP file using the `include()` and `require()` functions.
+
 * [Basic File Handling](content/BasicFileHandling/BasicFileHandling.q.md) ** - minutes**
     > In this lesson, you will learn how to open, close, read, and write files in PHP using basic file handling functions and modes.
 
