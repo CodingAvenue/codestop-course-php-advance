@@ -15,6 +15,7 @@ setcookie("user", "My Cookie", time() + 60);
 if (isset($_COOKIE['user'])) {
 	echo "The cookie value is: " . $_COOKIE['user'];
 }
+?>
 ```
 /// type=SS, answer=[4]
 
@@ -226,7 +227,7 @@ setcookie($cookieName, $cookieValue, $expiry);
 	</body>  
 </html>
 ```
-/// type=SS, answer=[3]
+/// type=SS, answer=[4]
 
 Execute the program. What is its output?
 
@@ -236,7 +237,7 @@ Execute the program. What is its output?
 
  - No output is displayed.
 
- - It prints `This is my cookie.`.
+ - It prints `Sorry, a cookie is not found`.
 
  - It prints `Cookie Value: This is my cookie.`.
 
@@ -251,7 +252,7 @@ Reload the program. What is its output?
 
  - No output is displayed.
 
- - It prints `This is my cookie.`.
+ - It prints `Sorry, a cookie is not found`.
 
  - It prints `Cookie Value: This is my cookie.`.
 
@@ -344,6 +345,7 @@ setcookie("user", "My Cookie", time() + 60);
 if (isset($_COOKIE['user'])) {
 	echo "The cookie value is: " . $_COOKIE['user'];
 }
+?>
 ```
 /// type=SS, answer=[4]
 
@@ -377,7 +379,7 @@ Reload the program. What is its output?
 
 /// type=SS, answer=[4]
 
-In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, replace `time() + 60` with `time() - 3600`. Execute the program. What is its output?
+In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, replace `time() + 60` with `time() - 3600`. Execute and reload the program. What is its output?
 
  - It prints `user`.
 
@@ -403,6 +405,7 @@ setcookie("user", "My Cookie", time() - 3600);
 if (isset($_COOKIE['user'])) {
 	echo "The cookie value is: " . $_COOKIE['user'];
 }
+?>
 ```
 /// type=MS, answer=[2,5]
 
@@ -536,6 +539,7 @@ setcookie("user", "My Cookie" time() + 60);
 if (isset($_COOKIE['user'])) {
 	echo "The cookie value is: " . $_COOKIE['user'];
 }
+?>
 ```
 /// type=SS, answer=[2]
 
@@ -586,7 +590,7 @@ Which statements correctly describe the error?
 
 /// type=CR, answer=[tests/Cookies/MissingCommaBetweenArgumentTest.php]
 
-Correct the code so that it outputs the string `The cookie value is: My Cookie`.
+Correct the code so that it creates a cookie named `user` and outputs the string `The cookie value is: My Cookie` when reloading the program.
 
 ```php
 <?php
@@ -595,6 +599,7 @@ setcookie("user", "My Cookie" time() + 60);
 if (isset($_COOKIE['user'])) {
 	echo "The cookie value is: " . $_COOKIE['user'];
 }
+?>
 ```
 
 
@@ -609,6 +614,7 @@ setcookie("user", "My Cookie", time() + 60);
 if (isset($_COOKIE['user'])) {
 	echo "The cookie value is: " . $_COOKIE'user'];
 }
+?>
 ```
 /// type=SS, answer=[5]
 
@@ -644,7 +650,7 @@ Which statements correctly describe the error?
 
 /// type=CR, answer=[tests/Cookies/MissingSquareBracketTest.php]
 
-Correct the code so that it outputs the string `The cookie value is: My Cookie`.
+Correct the code so that it creates a cookie named `user` and outputs the string `The cookie value is: My Cookie` when reloading the program.
 
 ```php
 <?php
@@ -653,6 +659,7 @@ setcookie("user", "My Cookie", time() + 60);
 if (isset($_COOKIE['user'])) {
 	echo "The cookie value is: " . $_COOKIE'user'];
 }
+?>
 ```
 
 
@@ -718,7 +725,7 @@ Which statements correctly describe the error?
 
 /// type=CR, answer=[tests/Cookies/MissingPlusSignOnExpiryTest.php]
 
-Correct the code so that it outputs the string `Cookie Value: This is my cookie. `.
+Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
 ```php
 <?php
@@ -808,7 +815,7 @@ Which statements correctly describe the error?
 
 /// type=CR, answer=[tests/Cookies/MissingArgumentOnSuperglobalCookieTest.php]
 
-Correct the code so that it outputs the string `Cookie Value: This is my cookie. `.
+Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
 ```php
 <?php
@@ -898,7 +905,7 @@ Which statements correctly describe the error?
 
 /// type=CR, answer=[tests/Cookies/MissingCookieNameArgumentOnSetCookieTest.php]
 
-Correct the code so that it outputs the string `Cookie Value: This is my cookie. `.
+Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
 ```php
 <?php  
