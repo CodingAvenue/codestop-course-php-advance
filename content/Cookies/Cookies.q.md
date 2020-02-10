@@ -237,7 +237,7 @@ Execute the program. What is its output?
 
  - No output is displayed.
 
- - It prints `Sorry, a cookie is not found`.
+ - It prints `Sorry, a cookie is not found!`.
 
  - It prints `Cookie Value: This is my cookie.`.
 
@@ -252,7 +252,7 @@ Reload the program. What is its output?
 
  - No output is displayed.
 
- - It prints `Sorry, a cookie is not found`.
+ - It prints `Sorry, a cookie is not found!`.
 
  - It prints `Cookie Value: This is my cookie.`.
 
