@@ -583,17 +583,17 @@ In the statement `$unserializedWorker = unserialize($serializedWorker);` on line
  - It is an argument of type object.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, answer=[1,5]
 
 In the statement `$unserializedWorker = unserialize($serializedWorker);` on line 25, what does `unserialize($serializedWorker)` do?
+
+ - It returns the converted value of type object.
 
  - It displays the value of `$serializedWorker`.
 
  - It accesses the value of `$serializedWorker`.
 
  - It removes the value from `$serializedWorker`.
-
- - It returns the converted value of type object.
 
  - It converts the value of `$serializedWorker` back to type object.
 
@@ -995,7 +995,7 @@ Which statements correctly describe the error?
 
  - There is no comma `,` between `Charles Han` and `Accounting` on line 21.
 
- - On line 21, the first argument `W-1002` is not enclosed in double quotes `""`.
+ - On line 21, the first argument `W-1002` is not enclosed in single quotes `''`.
 
  - There is no argument specified in the `serialize()` function call on line 22.
 
