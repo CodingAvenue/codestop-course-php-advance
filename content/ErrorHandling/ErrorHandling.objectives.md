@@ -2,7 +2,7 @@
 
 After completing this lesson, the students should be able to:
 
- - Identify the different types of error that might occur in a program.
+ - Identify the different types of errors that might occur in a program.
 
  - Use the PHP's error handling functions to deal with the error conditions gracefully.
 
