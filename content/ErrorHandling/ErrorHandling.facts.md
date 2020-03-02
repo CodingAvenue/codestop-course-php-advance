@@ -22,7 +22,7 @@ PHP offers different error handling functions to deal with errors gracefully. Th
 
  - `set_error_handler()` is used to define a custom error handler function.
 
-A custom error handling function is a user-defined error handling function that has the parameters `error level`, `error message`, `error_file`, and `error_line`.
+A custom error handling function is a user-defined error handling function that has the parameters `error level`, `error message`, `error file`, and `error line`.
 
 Code:
 
