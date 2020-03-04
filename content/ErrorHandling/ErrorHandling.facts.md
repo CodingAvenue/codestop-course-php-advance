@@ -34,7 +34,7 @@ function Divide($dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 

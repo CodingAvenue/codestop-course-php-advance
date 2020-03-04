@@ -12,7 +12,7 @@
 <?php
 function Divide($dividend, $divisor)
 {
-    return($dividend / $divisor);
+    return ($dividend / $divisor);
 }
 
 echo Divide(10, 0);
@@ -58,7 +58,7 @@ Which statements correctly describe the error?
 
  - There is no semicolon `;` at the end of the statement on line 7.
 
- - On line 4, the return statement `return($dividend / $divisor);` is invalid.
+ - On line 4, the return statement `return ($dividend / $divisor);` is invalid.
 
  - On line 7, the second argument `0` in the function call `Divide(10, 0)` is invalid.
 
@@ -76,7 +76,7 @@ function Divide($dividend, $divisor)
     if ($divisor == 0) {
         die("Divide(): The value '0' as a divisor is not allowed.");
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -188,7 +188,7 @@ function Divide($dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -280,7 +280,7 @@ In the statement `trigger_error("Divide(): The value '0' as a divisor is not all
 <?php
 function Divide($dividend, $divisor)
 {
-    return($dividend / $divisor);
+    return ($dividend / $divisor);
 }
 
 function myErrorHandler($error_no, $error_msg)
@@ -413,7 +413,7 @@ function Divide($dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -650,7 +650,7 @@ function Divide($dividend, $divisor)
     if ($divisor == 0) {
         die(Divide(): The value '0' as a divisor is not allowed.);
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -715,7 +715,7 @@ function Divide($dividend, $divisor)
     if ($divisor == 0) {
         die(Divide(): The value '0' as a divisor is not allowed.);
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -735,7 +735,7 @@ function Divide($dividend, $divisor)
     if ($divisor == 0) {
         die"Divide(): The value '0' as a divisor is not allowed.");
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -785,7 +785,7 @@ function Divide($dividend, $divisor)
     if ($divisor == 0) {
         die"Divide(): The value '0' as a divisor is not allowed.");
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -806,7 +806,7 @@ function Divide($dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed" E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -857,7 +857,7 @@ function Divide($dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed" E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -878,7 +878,7 @@ function Divide($dividend, $divisor)
         trigger_error( , E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -929,7 +929,7 @@ function Divide($dividend, $divisor)
         trigger_error(, E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -946,7 +946,7 @@ echo Divide(10, 0);
 <?php
 function Divide($dividend, $divisor)
 {
-    return($dividend / $divisor);
+    return ($dividend / $divisor);
 }
 
 function myErrorHandler($error_no, $error_msg)
@@ -1000,7 +1000,7 @@ Correct the code so that it outputs the strings `Error: [2] Division by zero` an
 <?php
 function Divide($dividend, $divisor)
 {
-    return($dividend / $divisor);
+    return ($dividend / $divisor);
 }
 
 function myErrorHandler($error_no, $error_msg)
@@ -1024,7 +1024,7 @@ echo Divide(10, 0);
 <?php
 function Divide($dividend, $divisor)
 {
-    return($dividend / $divisor);
+    return ($dividend / $divisor);
 }
 
 function myErrorHandler($error_no, $error_msg)
@@ -1078,7 +1078,7 @@ Correct the code so that it outputs the strings `Error: [2] Division by zero` an
 <?php
 function Divide($dividend, $divisor)
 {
-    return($dividend / $divisor);
+    return ($dividend / $divisor);
 }
 
 function myErrorHandler($error_no, $error_msg)
@@ -1106,7 +1106,7 @@ function Divide($dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -1165,7 +1165,7 @@ function Divide($dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -1209,7 +1209,7 @@ function Divide($dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
@@ -1253,7 +1253,7 @@ function Divide$dividend, $divisor)
         trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
-        return($dividend / $divisor);
+        return ($dividend / $divisor);
     }
 }
 
