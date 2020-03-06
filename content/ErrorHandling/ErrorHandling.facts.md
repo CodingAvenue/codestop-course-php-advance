@@ -28,10 +28,10 @@ Code:
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
@@ -46,22 +46,22 @@ function myErrorHandler($error_no, $error_msg)
 }
 
 set_error_handler("myErrorHandler");
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 
 Output:
 
 ```
-Error: [512] Divide(): The value '0' as a divisor is not allowed
+Error: [512] divide(): The value '0' as a divisor is not allowed
 Please try again.
 ```
 
 In the example above, the code breaks down as follows:
 
- - `function Divide($dividend, $divisor) {...}` defines the `Divide()` function that uses the `trigger_error()` function to generate an error message if an error occur.
+ - `function divide($dividend, $divisor) {...}` defines the `divide()` function that uses the `trigger_error()` function to generate an error message if an error occur.
 
- - `trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` generates the specified error message if an error occur.
+ - `trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` generates the specified error message if an error occur.
 
  - `E_USER_WARNING` specifies a non-fatal user-generated warning.
 

@@ -10,12 +10,12 @@
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     return ($dividend / $divisor);
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[3]
@@ -30,7 +30,7 @@ Execute the program. What is its output?
 
  - No output is displayed.
 
- - It prints `Divide(10, 0)`.
+ - It prints `divide(10, 0)`.
 
 
 /// type=SS, answer=[1]
@@ -43,7 +43,7 @@ What is the error message?
 
  - syntax error, unexpected `':'`, expecting `')'` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'E_USER_WARNING'` (T_STRING), expecting `','` or `')'` on line number 5
 
@@ -60,7 +60,7 @@ Which statements correctly describe the error?
 
  - On line 4, the return statement `return ($dividend / $divisor);` is invalid.
 
- - On line 7, the second argument `0` in the function call `Divide(10, 0)` is invalid.
+ - On line 7, the second argument `0` in the function call `divide(10, 0)` is invalid.
 
 :::
 
@@ -71,16 +71,16 @@ Which statements correctly describe the error?
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        die("Divide(): The value '0' as a divisor is not allowed.");
+        die("divide(): The value '0' as a divisor is not allowed.");
     } else {
         return ($dividend / $divisor);
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[5]
@@ -95,7 +95,7 @@ Execute the program. What is its output?
 
  - No output is displayed.
 
- - It prints `Divide(): The value '0' as a divisor is not allowed.`.
+ - It prints `divide(): The value '0' as a divisor is not allowed.`.
 
 
 /// type=MS, answer=[4,5]
@@ -106,7 +106,7 @@ Which of the following are parameters?
 
  - `10`
 
- - `Divide()`
+ - `divide()`
 
  - `$divisor`
 
@@ -121,7 +121,7 @@ Which of the following are arguments?
 
  - `10`
 
- - `Divide()`
+ - `divide()`
 
  - `$divisor`
 
@@ -130,7 +130,7 @@ Which of the following are arguments?
 
 /// type=SS, answer=[5]
 
-In the statement `die("Divide(): The value '0' as a divisor is not allowed.");` on line 5, what is `die()`?
+In the statement `die("divide(): The value '0' as a divisor is not allowed.");` on line 5, what is `die()`?
 
  - It is a keyword.
 
@@ -153,14 +153,14 @@ On line 5, what does the `die()` function do?
 
  - It calls the error handling function in the program.
 
- - It creates the error message `Divide(): The value '0' as a divisor is not allowed.`.
+ - It creates the error message `divide(): The value '0' as a divisor is not allowed.`.
 
- - It prints the error message `Divide(): The value '0' as a divisor is not allowed.` if an error occurred.
+ - It prints the error message `divide(): The value '0' as a divisor is not allowed.` if an error occurred.
 
 
 /// type=MS, answer=[1,2,5]
 
-Which statements correctly describe the `Divide()` function?
+Which statements correctly describe the `divide()` function?
 
  - It is a user-defined function that returns a value.
 
@@ -182,17 +182,17 @@ Which statements correctly describe the `Divide()` function?
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[5]
@@ -205,14 +205,14 @@ Execute the program. What is its output?
 
  - No output is displayed.
 
- - It prints `Divide(): The value '0' as a divisor is not allowed.`.
+ - It prints `divide(): The value '0' as a divisor is not allowed.`.
 
- - It prints `Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
+ - It prints `Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
 
 
 /// type=SS, answer=[5]
 
-In the statement `trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` on line 5, what is `trigger_error()`?
+In the statement `trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` on line 5, what is `trigger_error()`?
 
  - It is a keyword.
 
@@ -227,7 +227,7 @@ In the statement `trigger_error("Divide(): The value '0' as a divisor is not all
 
 /// type=SS, answer=[4]
 
-In the statement `trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` on line 5, what is `E_USER_WARNING`?
+In the statement `trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` on line 5, what is `E_USER_WARNING`?
 
  - It is a keyword.
 
@@ -242,7 +242,7 @@ In the statement `trigger_error("Divide(): The value '0' as a divisor is not all
 
 /// type=SS, answer=[4]
 
-In the statement `trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` on line 5, what does `E_USER_WARNING` do?
+In the statement `trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` on line 5, what does `E_USER_WARNING` do?
 
  - It specifies the non-fatal runtime error.
 
@@ -257,7 +257,7 @@ In the statement `trigger_error("Divide(): The value '0' as a divisor is not all
 
 /// type=SS, answer=[5]
 
-In the statement `trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` on line 5, what does the `trigger_error()` function do?
+In the statement `trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);` on line 5, what does the `trigger_error()` function do?
 
  - It generates an error report at runtime.
 
@@ -267,7 +267,7 @@ In the statement `trigger_error("Divide(): The value '0' as a divisor is not all
 
  - It calls the error handling function in the program.
 
- - It generates the user-defined error message `Divide(): The value '0' as a divisor is not allowed` to an exception at runtime.
+ - It generates the user-defined error message `divide(): The value '0' as a divisor is not allowed` to an exception at runtime.
 
 :::
 
@@ -278,7 +278,7 @@ In the statement `trigger_error("Divide(): The value '0' as a divisor is not all
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     return ($dividend / $divisor);
 }
@@ -291,7 +291,7 @@ function myErrorHandler($error_no, $error_msg)
 }
 
 set_error_handler("myErrorHandler");
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[5]
@@ -407,10 +407,10 @@ On line 14, what does `set_error_handler("myErrorHandler");` do?
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
@@ -425,7 +425,7 @@ function myErrorHandler($error_no, $error_msg, $error_file, $error_line)
 }
 
 set_error_handler("myErrorHandler");
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=MS, answer=[4,5]
@@ -440,7 +440,7 @@ Execute the program. What are its outputs?
 
  - It prints `Please try again.`.
 
- - It prints `Error: [512] Divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
+ - It prints `Error: [512] divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
 
 
 /// type=MS, answer=[1,4,5]
@@ -449,7 +449,7 @@ Which of the following are error handling functions?
 
  - `die()`
 
- - `Divide()`
+ - `divide()`
 
  - `E_USER_WARNING`
 
@@ -462,7 +462,7 @@ Which of the following are error handling functions?
 
 Which of the following are parameters?
 
- - `Divide()`
+ - `divide()`
 
  - `$error_no`
 
@@ -477,7 +477,7 @@ Which of the following are parameters?
 
 Which of the following is a custom error handling function?
 
- - `Divide()`
+ - `divide()`
 
  - `$error_no`
 
@@ -492,7 +492,7 @@ Which of the following is a custom error handling function?
 
 Which of the following is an error constant?
 
- - `Divide()`
+ - `divide()`
 
  - `$error_no`
 
@@ -545,7 +545,7 @@ Which statements correctly describe the `myErrorHandler()` function?
 
  - It is a user-defined error handling function that has four parameters `$error_no`, `$error_msg`, `$error_file`, and `$error_line`.
 
- - It displays the strings `Error: [512] Divide(): The value '0' as a divisor is not allowed in /index.php on line 5` and `Please try again.` in separate lines.
+ - It displays the strings `Error: [512] divide(): The value '0' as a divisor is not allowed in /index.php on line 5` and `Please try again.` in separate lines.
 
 
 :::
@@ -645,16 +645,16 @@ Which statement best describes the `set_error_handler()` function?
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        die(Divide(): The value '0' as a divisor is not allowed.);
+        die(divide(): The value '0' as a divisor is not allowed.);
     } else {
         return ($dividend / $divisor);
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[3]
@@ -669,7 +669,7 @@ Execute the program. What is its output?
 
  - No output is displayed.
 
- - It prints `Divide(): The value '0' as a divisor is not allowed.`.
+ - It prints `divide(): The value '0' as a divisor is not allowed.`.
 
 
 /// type=SS, answer=[2]
@@ -680,11 +680,11 @@ What is the error message?
 
  - syntax error, unexpected `':'`, expecting `')'` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'E_USER_WARNING'` (T_STRING), expecting `','` or `')'` on line number 5
 
- - syntax error, unexpected `'"Divide(): The value '0' as a '` (T_CONSTANT_ENCAPSED_STRING) on line number 5
+ - syntax error, unexpected `'"divide(): The value '0' as a '` (T_CONSTANT_ENCAPSED_STRING) on line number 5
 
 
 /// type=MS, answer=[4,5]
@@ -697,29 +697,29 @@ Which statements correctly describe the error?
 
  - There is no open curly brace `{` after the `if` construct on line 4.
 
- - On line 5, the function call `die(Divide(): The value '0' as a divisor is not allowed.)` is invalid.
+ - On line 5, the function call `die(divide(): The value '0' as a divisor is not allowed.)` is invalid.
 
- - On line 5, the string `Divide(): The value '0' as a divisor is not allowed.` is not enclosed in double quotes `""`.
+ - On line 5, the string `divide(): The value '0' as a divisor is not allowed.` is not enclosed in double quotes `""`.
 
 :::
 
 
 /// type=CR, answer=[tests/ErrorHandling/MissingDoubleQuotesTest.php]
 
-Correct the code so that it outputs the string `Divide(): The value '0' as a divisor is not allowed.`.
+Correct the code so that it outputs the string `divide(): The value '0' as a divisor is not allowed.`.
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        die(Divide(): The value '0' as a divisor is not allowed.);
+        die(divide(): The value '0' as a divisor is not allowed.);
     } else {
         return ($dividend / $divisor);
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 
@@ -730,16 +730,16 @@ echo Divide(10, 0);
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        die"Divide(): The value '0' as a divisor is not allowed.");
+        die"divide(): The value '0' as a divisor is not allowed.");
     } else {
         return ($dividend / $divisor);
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[5]
@@ -750,11 +750,11 @@ What is the error message?
 
  - syntax error, unexpected `':'`, expecting `')'` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'E_USER_WARNING'` (T_STRING), expecting `','` or `')'` on line number 5
 
- - syntax error, unexpected `'"Divide(): The value '0' as a '` (T_CONSTANT_ENCAPSED_STRING) on line number 5
+ - syntax error, unexpected `'"divide(): The value '0' as a '` (T_CONSTANT_ENCAPSED_STRING) on line number 5
 
 
 /// type=MS, answer=[1,4]
@@ -767,29 +767,29 @@ Which statements correctly describe the error?
 
  - There is no open curly brace `{` after the `if` construct on line 4.
 
- - On line 5, the function call `die"Divide(): The value '0' as a divisor is not allowed.")` is invalid.
+ - On line 5, the function call `die"divide(): The value '0' as a divisor is not allowed.")` is invalid.
 
- - On line 5, the string `Divide(): The value '0' as a divisor is not allowed.` is not enclosed in double quotes `""`.
+ - On line 5, the string `divide(): The value '0' as a divisor is not allowed.` is not enclosed in double quotes `""`.
 
 :::
 
 
 /// type=CR, answer=[tests/ErrorHandling/MissingOpenParenthesisOnDieTest.php]
 
-Correct the code so that it outputs the string `Divide(): The value '0' as a divisor is not allowed.`.
+Correct the code so that it outputs the string `divide(): The value '0' as a divisor is not allowed.`.
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        die"Divide(): The value '0' as a divisor is not allowed.");
+        die"divide(): The value '0' as a divisor is not allowed.");
     } else {
         return ($dividend / $divisor);
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 
@@ -800,17 +800,17 @@ echo Divide(10, 0);
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed" E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed" E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[4]
@@ -821,11 +821,11 @@ Execute the program. What is the error message?
 
  - syntax error, unexpected `':'`, expecting `')'` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'E_USER_WARNING'` (T_STRING), expecting `','` or `')'` on line number 5
 
- - syntax error, unexpected `'"Divide(): The value '0' as a '` (T_CONSTANT_ENCAPSED_STRING) on line number 5
+ - syntax error, unexpected `'"divide(): The value '0' as a '` (T_CONSTANT_ENCAPSED_STRING) on line number 5
 
 
 /// type=MS, answer=[4,5]
@@ -838,30 +838,30 @@ Which statements correctly describe the error?
 
  - There is no open curly brace `{` after the `if` construct on line 4.
 
- - On line 5, the function call `trigger_error("Divide(): The value '0' as a divisor is not allowed" E_USER_WARNING)` is invalid.
+ - On line 5, the function call `trigger_error("divide(): The value '0' as a divisor is not allowed" E_USER_WARNING)` is invalid.
 
- - There is no comma `,` between `Divide(): The value '0' as a divisor is not allowed` and `E_USER_WARNING` on line 5.
+ - There is no comma `,` between `divide(): The value '0' as a divisor is not allowed` and `E_USER_WARNING` on line 5.
 
 :::
 
 
 /// type=CR, answer=[tests/ErrorHandling/MissingCommaBetweenArgumentsTest.php]
 
-Correct the code so that it outputs the string `Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
+Correct the code so that it outputs the string `Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed" E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed" E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 
@@ -872,7 +872,7 @@ echo Divide(10, 0);
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         trigger_error( , E_USER_WARNING);
@@ -882,7 +882,7 @@ function Divide($dividend, $divisor)
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[1]
@@ -893,11 +893,11 @@ Execute the program. What is the error message?
 
  - syntax error, unexpected `':'`, expecting `')'` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'E_USER_WARNING'` (T_STRING), expecting `','` or `')'` on line number 5
 
- - syntax error, unexpected `'"Divide(): The value '0' as a '` (T_CONSTANT_ENCAPSED_STRING) on line number 5
+ - syntax error, unexpected `'"divide(): The value '0' as a '` (T_CONSTANT_ENCAPSED_STRING) on line number 5
 
 
 /// type=MS, answer=[4,5]
@@ -919,11 +919,11 @@ Which statements correctly describe the error?
 
 /// type=CR, answer=[tests/ErrorHandling/MissingCommaBetweenArgumentsTest.php]
 
-Correct the code so that it outputs the string `Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
+Correct the code so that it outputs the string `Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         trigger_error(, E_USER_WARNING);
@@ -933,7 +933,7 @@ function Divide($dividend, $divisor)
     }
 }
 
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 
@@ -944,7 +944,7 @@ echo Divide(10, 0);
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     return ($dividend / $divisor);
 }
@@ -957,7 +957,7 @@ function myErrorHandler($error_no, $error_msg)
 }
 
 set_error_handler(myErrorHandler);
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[4]
@@ -966,7 +966,7 @@ Execute the program. What is the error message?
 
  - syntax error, unexpected `','` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'$error_file'` (T_VARIABLE), expecting `')'` on line number 12
 
@@ -998,7 +998,7 @@ Correct the code so that it outputs the strings `Error: [2] Division by zero` an
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     return ($dividend / $divisor);
 }
@@ -1011,7 +1011,7 @@ function myErrorHandler($error_no, $error_msg)
 }
 
 set_error_handler(myErrorHandler);
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 
@@ -1022,7 +1022,7 @@ echo Divide(10, 0);
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     return ($dividend / $divisor);
 }
@@ -1035,7 +1035,7 @@ function myErrorHandler($error_no, $error_msg)
 }
 
 set_error_handler();
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=MS, answer=[1,3]
@@ -1076,7 +1076,7 @@ Correct the code so that it outputs the strings `Error: [2] Division by zero` an
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     return ($dividend / $divisor);
 }
@@ -1089,7 +1089,7 @@ function myErrorHandler($error_no, $error_msg)
 }
 
 set_error_handler();
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 
@@ -1100,10 +1100,10 @@ echo Divide(10, 0);
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
@@ -1118,7 +1118,7 @@ function myErrorHandler($error_no, $error_msg, $error_file, $error_line)
 }
 
 set_error_handler("myErrorHandler");
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=MS, answer=[4,5]
@@ -1133,7 +1133,7 @@ Execute the program. What are its outputs?
 
  - It prints `Please try again.`.
 
- - It prints `Error: [512] Divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
+ - It prints `Error: [512] divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
 
 
 /// type=MS, answer=[3,5]
@@ -1144,7 +1144,7 @@ Remove the argument `"myErrorHandler"` from the function call `set_error_handler
 
  - syntax error, unexpected `','` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'$error_file'` (T_VARIABLE), expecting `')'` on line number 12
 
@@ -1159,10 +1159,10 @@ Remove the argument `"myErrorHandler"` from the function call `set_error_handler
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
@@ -1177,7 +1177,7 @@ function myErrorHandler($error_no, $error_msg, $error_file, $error_line)
 }
 
 set_error_handler();
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[4]
@@ -1186,7 +1186,7 @@ In the function declaration `function myErrorHandler($error_no, $error_msg, $err
 
  - syntax error, unexpected `','` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'$dividend'` (T_VARIABLE), expecting `'('` on line number 2
 
@@ -1203,10 +1203,10 @@ In the function declaration `function myErrorHandler($error_no, $error_msg, $err
 
 ```php
 <?php
-function Divide($dividend, $divisor)
+function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
@@ -1221,16 +1221,16 @@ function myErrorHandler($error_no, $error_msg $error_file, $error_line)
 }
 
 set_error_handler();
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 /// type=SS, answer=[3]
 
-In the function declaration `function Divide($dividend, $divisor)` on line 2, remove the open parenthesis `(` after `Divide`. Execute the program. What is the error message?
+In the function declaration `function divide($dividend, $divisor)` on line 2, remove the open parenthesis `(` after `divide`. Execute the program. What is the error message?
 
  - syntax error, unexpected `','` on line number 5
 
- - Warning: Divide(): The value '0' as a divisor is not allowed in /index.php on line 5
+ - Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5
 
  - syntax error, unexpected `'$dividend'` (T_VARIABLE), expecting `'('` on line number 2
 
@@ -1243,14 +1243,14 @@ In the function declaration `function Divide($dividend, $divisor)` on line 2, re
 
 /// type=CR, answer=[tests/ErrorHandling/CorrectMultipleErrorsTest.php]
 
-Correct the code so that it outputs the strings `Error: [512] Divide(): The value '0' as a divisor is not allowed in /index.php on line 5` and `Please try again.` in separate lines.
+Correct the code so that it outputs the strings `Error: [512] divide(): The value '0' as a divisor is not allowed in /index.php on line 5` and `Please try again.` in separate lines.
 
 ```php
 <?php
-function Divide$dividend, $divisor)
+function divide$dividend, $divisor)
 {
     if ($divisor == 0) {
-        trigger_error("Divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
+        trigger_error("divide(): The value '0' as a divisor is not allowed", E_USER_WARNING);
         return false;
     } else {
         return ($dividend / $divisor);
@@ -1265,7 +1265,7 @@ function myErrorHandler($error_no, $error_msg $error_file, $error_line)
 }
 
 set_error_handler();
-echo Divide(10, 0);
+echo divide(10, 0);
 ?>
 ```
 
