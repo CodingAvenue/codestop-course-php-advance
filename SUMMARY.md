@@ -18,11 +18,8 @@
 * [Error Handling](content/ErrorHandling/ErrorHandling.q.md) ** - minutes**
     > Learn how you can catch errors using different types of error handling functions in PHP.
     
-* [Catching Exceptions](content/CatchingExceptions/CatchingExceptions.q.md) ** - minutes**
-    > In this lesson, you will learn how to use basic PHP `Exception` classes and `try` and `catch` statements in catching errors.
- 
-* [Throwing Exceptions](content/ThrowingExceptions/ThrowingExceptions.q.md) ** - minutes**
-    > Learn how you can throw an exception using the `throw` statement. 
+* [ExceptionHandling](content/ExceptionHandling/ExceptionHandling.q.md) ** - minutes**
+    > In this lesson, you will learn how to use basic PHP `Exception` classes and `throw`, `try`, and `catch` keywords in dealing with unexpected events that occur in a program.
 
 * [Custom Exceptions](content/CustomExceptions/CustomExceptions.q.md) ** - minutes**
     > Discover how you can create your own exception classes to manage possible errors in the program.
