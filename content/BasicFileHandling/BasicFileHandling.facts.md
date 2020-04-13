@@ -57,7 +57,7 @@ In the example above, the code breaks down as follows:
 
  - `die("Unable to open the file.")` prints the error message `Unable to open the file.` and terminates the program execution if an error occurs.
 
- - `$file = __DIR__ . "/myNewFile.txt";` assign the `myNewFile.txt` file path to `$file`.
+ - `$file = __DIR__ . "/myNewFile.txt";` assigns the `myNewFile.txt` file path to `$file`.
 
  - `$content = "This is my sample file content.\n";` assigns the string `This is my sample file content.\n` to `$content`.
 
