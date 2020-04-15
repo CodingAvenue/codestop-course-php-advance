@@ -10,6 +10,8 @@ PHP offers other file handling functions to read, copy, rename, and delete a fil
 
  - `readlink($file)` reads and returns the symbolic link of the specified `$file`.
 
+ - `file_get_contents($file)` reads the content of the specified `$file` into a string.
+
 Code:
 ```php
 <?php
@@ -23,6 +25,7 @@ function deleteFile($fileToDelete)
 }
 
 $file = __DIR__ . "/newfile.txt";
+echo file_get_contents($file);
 deleteFile($file);
 ?>
 ```
@@ -34,5 +37,7 @@ In the example above, the code breaks down as follows:
  - `unlink($fileToDelete)` deletes the specified `$fileToDelete`. 
 
  - `$file = __DIR__ . "/myNewFile.txt";` assigns the `myNewFile.txt` file path to `$file`.
+
+ - `file_get_contents($file)` reads the content of the specified `$file` into a string.
 
  - `deleteFile($file);` calls the `deleteFile()` user-defined function passing the argument `$file`.

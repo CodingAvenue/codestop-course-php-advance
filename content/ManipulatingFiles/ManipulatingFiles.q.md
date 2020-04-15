@@ -449,6 +449,99 @@ Which statements correctly describe the `deleteFile()` function?
 :::
 
 
+:::
+
+/// type=REPL
+
+```php
+<?php
+function copyFile($file, $copiedFile)
+{
+    copy($file, $copiedFile) or die("Unable to copy the file.");
+}
+
+function readFileContent($fileToRead)
+{
+    readfile($fileToRead) or die("Unable to read the file.");
+}
+
+$myFile = __DIR__ . "/testDocument.txt";
+$myCopiedFile = __DIR__ . "/copiedFromTestDocument.txt";
+copyFile($myFile, $myCopiedFile);
+readFileContent($myCopiedFile);
+?>
+```
+/// type=SS, answer=[4]
+
+Execute the program. What is its output?
+
+ - No output is displayed.
+
+ - It prints `This is a test document content.`.
+
+ - It prints `This is the end of the test document content.`.
+
+ - It prints `This is a test document content.` and `This is the end of the test document content.` in a single line.
+
+ - It prints `This is a test document content.` and `This is the end of the test document content.` in separate lines.
+
+
+/// type=SS, answer=[4]
+
+On line 15, replace the `readFileContent($myCopiedFile);` function call with `echo file_get_contents($myCopiedFile);`. Execute the program. What is its output?
+
+ - No output is displayed.
+
+ - It prints `Unable to read the file.`.
+
+ - It prints `This is the end of the test document content.`.
+
+ - It prints `This is a test document content.` and `This is the end of the test document content.` in a single line.
+
+ - It prints `This is a test document content.` and `This is the end of the test document content.` in separate lines.
+
+:::
+
+
+:::
+
+/// type=REPL
+
+```php
+<?php
+function copyFile($file, $copiedFile)
+{
+    copy($file, $copiedFile) or die("Unable to copy the file.");
+}
+
+function readFileContent($fileToRead)
+{
+    readfile($fileToRead) or die("Unable to read the file.");
+}
+
+$myFile = __DIR__ . "/testDocument.txt";
+$myCopiedFile = __DIR__ . "/copiedFromTestDocument.txt";
+copyFile($myFile, $myCopiedFile);
+echo file_get_contents($myCopiedFile);
+?>
+```
+/// type=SS, answer=[4]
+
+In the `echo` statement on line 15, what does the `file_get_contents($myCopiedFile)` function call do?
+
+ - It deletes the content of the specified `$myCopiedFile`.
+
+ - It displays the content of the specified `$myCopiedFile`.
+
+ - It returns the symbolic link of the specified `$myCopiedFile`.
+
+ - It reads the content of the specified `$myCopiedFile` into a string.
+
+ - It writes the content of the specified `$myCopiedFile` to the output buffer.
+
+:::
+
+
 +++
 
 
@@ -514,6 +607,22 @@ Which statement is true about the `rename()` function?
  - It writes the specified file to the output buffer.
 
  - It returns the symbolic link of the specified file.
+
+
+/// type=SS, answer=[4]
+
+Which statement best describes the `file_get_contents()` function?
+
+ - It deletes the content of the specified file.
+
+ - It displays the content of the specified file.
+
+ - It returns the symbolic link of the specified file.
+
+ - It reads the content of the specified file into a string.
+
+ - It writes the content of the specified file to the output buffer.
+
 
 +++
 
