@@ -139,15 +139,15 @@ Which statement best describes `$output = file_get_contents($file);` on line 5 o
 
 Which statement best describes `str_replace($replace, $val, $output)` on line 8 of `main.php`?
 
- - It adds the string `$replace` to `$val` in `$output`.
+ - It adds the string of `$replace` to `$val` in `$output`.
 
- - It displays the string `$replace` and `$val` in `$output`.
+ - It displays the string of `$replace` and `$val` in `$output`.
 
- - It replaces the string `$replace` with `$val` in `$output`.
+ - It replaces the string of `$replace` with `$val` in `$output`.
 
- - It accesses the string `$replace` and `$val` in `$output`.
+ - It accesses the string of `$replace` and `$val` in `$output`.
 
- - It removes the string `$replace` and `$val` from `$output`.
+ - It removes the string of `$replace` and `$val` from `$output`.
 
 
 /// type=MS, answer=[2,3,5]
@@ -573,7 +573,7 @@ echo $testTemplate;
 ```
 /// type=SS, choiceType=HTML, answer=[5]
 
-In the array element `'color' => "Gray"` on line 20 of `main.php`, replace `color` with `myColor`. Execute the program. What is its output?
+In the array element `'color' => "Gray"` on line 20 of `main.php`, replace `color` with `colors`. Execute the program. What is its output?
 
  - <h3>Favorites</h3><p><em>My favorite fruit is: Apple</em><br/><em>My favorite color is: Gray</em></p>
 
