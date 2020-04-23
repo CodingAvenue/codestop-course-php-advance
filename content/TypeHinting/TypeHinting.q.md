@@ -27,9 +27,9 @@ class Person
   }
 }
 
-$personObject = new Person();
-$personObject->setName("Anna");
-echo "Person name: " . $personObject->getName();
+$person = new Person();
+$person->setName("Anna");
+echo "Person name: " . $person->getName();
 ?>
 ```
 /// type=SS, answer=[5]
@@ -42,7 +42,7 @@ Execute the program. What is its output?
 
  - It prints `Person`.
 
- - It prints `$personObject`.
+ - It prints `$person`.
 
  - It prints `Person name: Anna`.
 
@@ -57,9 +57,9 @@ Which of the following is a class?
 
  - `Person`
 
- - `getName()`
+ - `$person`
 
- - `$personObject`
+ - `getName()`
 
 
 /// type=SS, answer=[2]
@@ -72,12 +72,12 @@ Which of the following is a property?
 
  - `Person`
 
+ - `$person`
+
  - `getName()`
 
- - `$personObject`
 
-
-/// type=MS, answer=[3,4]
+/// type=MS, answer=[4,5]
 
 Which of the following are methods?
 
@@ -85,11 +85,11 @@ Which of the following are methods?
 
  - `Person`
 
+ - `$person`
+
  - `setName()`
 
  - `getName()`
-
- - `$personObject`
 
 
 /// type=SS, answer=[4]
@@ -252,8 +252,8 @@ class Car
   }
 }
 
-$personObject = new Person("John");
-$myCar = new Car($personObject);
+$person = new Person("John");
+$myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
@@ -282,7 +282,7 @@ Which of the following are classes?
 
  - `Person`
 
- - `$personObject`
+ - `$person`
 
  - `__construct()`
 
@@ -297,7 +297,7 @@ Which of the following are objects?
 
  - `Person`
 
- - `$personObject`
+ - `$person`
 
  - `__construct()`
 
@@ -417,14 +417,14 @@ class Car
   }
 }
 
-$personObject = new Person("John");
-$myCar = new Car($personObject);
+$person = new Person("John");
+$myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
 /// type=SS, answer=[2]
 
-In the statement `$personObject = new Person("John");` on line 34, replace the argument `"John"` with `45.786`. Execute the program. What is its output?
+In the statement `$person = new Person("John");` on line 34, replace the argument `"John"` with `45.786`. Execute the program. What is its output?
 
  - It prints `45.786`.
 
@@ -477,14 +477,14 @@ class Car
   }
 }
 
-$personObject = new Person(45.786);
-$myCar = new Car($personObject);
+$person = new Person(45.786);
+$myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
 /// type=MS, answer=[4,5]
 
-Why does the statement `$personObject = new Person(45.786);` on line 34 produce an error?
+Why does the statement `$person = new Person(45.786);` on line 34 produce an error?
 
  - There is no semicolon `;` at the end of the statement on line 34.
 
@@ -494,12 +494,12 @@ Why does the statement `$personObject = new Person(45.786);` on line 34 produce 
 
  - The `__construct()` method of the `Person` class only accepts an argument of type `string`.
 
- - In the statement `$personObject = new Person(45.786);` on line 34, the argument `45.786` is invalid.
+ - In the statement `$person = new Person(45.786);` on line 34, the argument `45.786` is invalid.
 
 
 /// type=SS, answer=[2]
 
-Remove the statement `$personObject = new Person(45.786);` on line 34. Execute the program. What is its output?
+Remove the statement `$person = new Person(45.786);` on line 34. Execute the program. What is its output?
 
  - It prints `45.786`.
 
@@ -553,13 +553,13 @@ class Car
 }
 
 
-$myCar = new Car($personObject);
+$myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
 /// type=SS, answer=[2]
 
-In the satement `$myCar = new Car($personObject);` on line 35, replace `$personObject` with `"John"`. Execute the program. What is its output?
+In the satement `$myCar = new Car($person);` on line 35, replace `$person` with `"John"`. Execute the program. What is its output?
 
  - It prints `John`.
 
@@ -759,22 +759,22 @@ class Person
   }
 }
 
-$personObject = new Person();
-$personObject->setName(45);
-echo "Person name: " . $personObject->getName();
+$person = new Person();
+$person->setName(45);
+echo "Person name: " . $person->getName();
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, answer=[3]
 
 Execute the program. What is its output?
 
  - It prints `Anna`.
 
+ - It prints `$person`.
+
  - It produces an error.
 
  - No output is displayed.
-
- - It prints `$personObject`.
 
  - It prints `Person name: Anna`.
 
@@ -794,17 +794,17 @@ What is the error message?
  - Uncaught TypeError: Argument `1` passed to `Car::__construct()` must be an instance of Person, string given, called on line 35 and defined on line number 28
 
 
-/// type=MS, answer=[3,4,5]
+/// type=MS, answer=[2,4,5]
 
 Which statements correctly describe the error?
 
  - There is no argument specified in `Person()` on line 19.
 
+ - On line 20, the statement `$person->setName(45);` is invalid.
+
  - On line 20, the argument `45` is not enclosed in double quotes `""`.
 
  - On line 20, the argument `45` in the `setName()` method call is invalid.
-
- - On line 20, the statement `$personObject->setName(45);` is invalid.
 
  - The `setName()` method of the `Person` class only accepts an argument of type `string`.
 
@@ -834,9 +834,9 @@ class Person
   }
 }
 
-$personObject = new Person();
-$personObject->setName(45);
-echo "Person name: " . $personObject->getName();
+$person = new Person();
+$person->setName(45);
+echo "Person name: " . $person->getName();
 ?>
 ```
 
@@ -864,9 +864,9 @@ class Person
   }
 }
 
-$personObject = new Person();
-$personObject->setName();
-echo "Person name: " . $personObject->getName();
+$person = new Person();
+$person->setName();
+echo "Person name: " . $person->getName();
 ?>
 ```
 /// type=SS, answer=[3]
@@ -884,15 +884,15 @@ Execute the program. What is the error message?
  - Uncaught TypeError: Argument `1` passed to `Car::__construct()` must be an instance of Person, string given, called on line 35 and defined on line number 28
 
 
-/// type=MS, answer=[3,4,5]
+/// type=MS, answer=[2,4,5]
 
 Which statements correctly describe the error?
 
  - There is no argument specified in `Person()` on line 19.
 
- - There is no semicolon `;` at the end of the statement on line 20.
+ - On line 20, the statement `$person->setName();` is invalid.
 
- - On line 20, the statement `$personObject->setName();` is invalid.
+ - There is no semicolon `;` at the end of the statement on line 20.
 
  - There is no argument specified in the `setName()` method call on line 20.
 
@@ -924,9 +924,9 @@ class Person
   }
 }
 
-$personObject = new Person();
-$personObject->setName();
-echo "Person name: " . $personObject->getName();
+$person = new Person();
+$person->setName();
+echo "Person name: " . $person->getName();
 ?>
 ```
 
@@ -969,8 +969,8 @@ class Car
   }
 }
 
-$personObject = new Person();
-$myCar = new Car($personObject);
+$person = new Person();
+$myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
@@ -1014,7 +1014,7 @@ Which statements correctly describe the error?
 
  - There is no semicolon `;` at the end of the statement on line 34.
 
- - On line 34, the statement `$personObject = new Person();` is invalid.
+ - On line 34, the statement `$person = new Person();` is invalid.
 
  - The `__construct()` method of the `Person` class requires an argument of type `string`.
 
@@ -1059,8 +1059,8 @@ class Car
   }
 }
 
-$personObject = new Person();
-$myCar = new Car($personObject);
+$person = new Person();
+$myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
@@ -1104,8 +1104,8 @@ class Car
   }
 }
 
-$personObject =  Person("John");
-$myCar = new Car($personObject);
+$person =  Person("John");
+$myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
@@ -1132,9 +1132,9 @@ Which statements correctly describe the error?
 
  - There is no semicolon `;` at the end of the statement on line 34.
 
- - There is no `new` keyword specified before `Person("John")` on line 34.
+ - On line 34, the statement `$person =  Person("John");` is invalid.
 
- - On line 34, the statement `$personObject =  Person("John");` is invalid.
+ - There is no `new` keyword specified before `Person("John")` on line 34.
 
  - The `__construct()` method of the `Person` class requires an argument of type `string`.
 
@@ -1180,8 +1180,8 @@ class Car
   }
 }
 
-$personObject =  Person("John");
-$myCar = new Car($personObject);
+$person =  Person("John");
+$myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
@@ -1225,8 +1225,8 @@ class Car
   }
 }
 
-$personObject = new Person("John");
-$myCar = new Car("$personObject");
+$person = new Person("John");
+$myCar = new Car("$person");
 print_r($myCar);
 ?>
 ```
@@ -1245,17 +1245,17 @@ Execute the program. What are the error messages?
  - Uncaught TypeError: Argument `1` passed to `Car::__construct()` must be an instance of Person, string given, called on line 35 and defined on line number 28
 
 
-/// type=MS, answer=[2,3,5]
+/// type=MS, answer=[2,4,5]
 
 Which statements correctly describe the error?
 
  - There is no semicolon `;` at the end of the statement on line 34.
 
- - On line 35, the argument `$personObject` is enclosed in double quotes `""`.
+ - On line 35, the argument `$person` is enclosed in double quotes `""`.
 
- - On line 35, the statement `$myCar = new Car("$personObject");` is invalid.
+ - There is no `new` keyword specified before `Car("$person")` on line 35.
 
- - There is no `new` keyword specified before `Car("$personObject")` on line 35.
+ - On line 35, the statement `$myCar = new Car("$person");` is invalid.
 
  - The `__construct()` method of the `Car` class requires an argument of type `Object`.
 
@@ -1300,8 +1300,8 @@ class Car
   }
 }
 
-$personObject = new Person("John");
-$myCar = new Car("$personObject");
+$person = new Person("John");
+$myCar = new Car("$person");
 print_r($myCar);
 ?>
 ```
