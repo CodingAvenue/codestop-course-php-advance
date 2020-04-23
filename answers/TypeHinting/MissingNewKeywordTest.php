@@ -31,7 +31,7 @@ class Car
     }
 }
 
-$personObject = new Person("John");
-$myCar = new Car($personObject);
+$person = new Person("John");
+$myCar = new Car($person);
 print_r($myCar);
 ?>

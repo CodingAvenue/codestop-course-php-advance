@@ -16,7 +16,7 @@ class Person
     }
 }
 
-$personObject = new Person();
-$personObject->setName("Anna");
-echo "Person name: " . $personObject->getName();
+$person = new Person();
+$person->setName("Anna");
+echo "Person name: " . $person->getName();
 ?>
