@@ -17,7 +17,7 @@ if (isset($_COOKIE['user'])) {
 }
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=92a89979-1cea-4155-86d8-909a8c0a2ac5, answer=[4]
 
 Execute the program. What is its output?
 
@@ -32,7 +32,7 @@ Execute the program. What is its output?
  - It prints `The cookie value is: My Cookie`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=9ab1416e-dc4c-45cb-9042-d0309a5688ae, answer=[5]
 
 Reload the program. What is its output?
 
@@ -47,7 +47,7 @@ Reload the program. What is its output?
  - It prints `The cookie value is: My Cookie`.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=21b75c9b-de14-472c-9535-b55b4b0e9c2a, answer=[4]
 
 Why is there no output displayed the first time you execute the program?
 
@@ -62,7 +62,7 @@ Why is there no output displayed the first time you execute the program?
  - The statement `setcookie("user", "My Cookie", time() + 60);` is invalid.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=5e9878c7-8236-4650-8165-442878da55eb, answer=[2]
 
 In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, what is `setcookie()`?
 
@@ -77,7 +77,7 @@ In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, what 
  - It is a parameter.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=20a72603-9671-4ff1-b515-3512729f2d5c, answer=[1]
 
 In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, what does `user` indicate?
 
@@ -92,7 +92,7 @@ In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, what 
  - The domain name of the cookie. 
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=bbcc2a34-271b-4f39-b476-985883d8aa4c, answer=[2]
 
 In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, what does `My Cookie` indicate?
 
@@ -107,7 +107,7 @@ In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, what 
  - The domain name of the cookie. 
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=a4386cfc-f01f-460e-acf2-0caba968e3d4, answer=[3]
 
 In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, what does `time() + 60` indicate?
 
@@ -122,7 +122,7 @@ In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, what 
  - The domain name of the cookie. 
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=c6ce65d7-25bf-4551-928d-bd7a3681333c, answer=[2]
 
 On line 2, what does `setcookie("user", "My Cookie", time() + 60);` do?
 
@@ -137,7 +137,7 @@ On line 2, what does `setcookie("user", "My Cookie", time() + 60);` do?
  - It accesses the `user` cookie with the value `My Cookie` that expires in `60` seconds.
  
 
-/// type=SS, answer=[5]
+/// type=SS, id=ecb46177-a633-478b-8093-36fcf8bf22ef, answer=[5]
 
 In the `if` statement on lines 4 and 5, what is `$_COOKIE`?
 
@@ -152,7 +152,7 @@ In the `if` statement on lines 4 and 5, what is `$_COOKIE`?
  - It is a superglobal variable.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=9af71b02-fb3b-4502-a02a-b2d14e431cbe, answer=[5]
 
 On line 4, what does `isset($_COOKIE['user'])` do?
 
@@ -167,7 +167,7 @@ On line 4, what does `isset($_COOKIE['user'])` do?
  - It checks whether the `user` cookie is set or not.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=56b70b76-6b99-4dff-8685-45508aca6ea0, answer=[5]
 
 On lines 4 and 5, what does `$_COOKIE['user']` do?
 
@@ -182,7 +182,7 @@ On lines 4 and 5, what does `$_COOKIE['user']` do?
  - It accesses the value of the `user` cookie.
  
 
-/// type=MS, answer=[1,2,3]
+/// type=MS, id=168e8e67-de68-4b18-b438-02fbffdfd4a0, answer=[1,2,3]
 
 Which statements correctly describe the code on lines 4, 5, and 6?
 
@@ -227,7 +227,7 @@ setcookie($cookieName, $cookieValue, $expiry);
     </body>
 </html>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=6b87a000-8713-4ac0-bb40-9eb2371091c9, answer=[4]
 
 Execute the program. What is its output?
 
@@ -242,7 +242,7 @@ Execute the program. What is its output?
  - It prints `Cookie Value: This is my cookie.`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=5f936ca4-f674-4d78-8300-af02d1f3e93e, answer=[5]
 
 Reload the program. What is its output?
 
@@ -257,7 +257,7 @@ Reload the program. What is its output?
  - It prints `Cookie Value: This is my cookie.`.
 
 
-/// type=MS answer=[1,4]
+/// type=MS, id=5fef0de5-3ab9-4482-b47e-cfdb8988632b, answer=[1,4]
 
 Which of the following are functions?
 
@@ -272,7 +272,7 @@ Which of the following are functions?
  - `$cookieValue`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=713d2629-4cf4-410c-a5c8-5f0cc56c1c6c, answer=[2]
 
 Which of the following is a superglobal variable?
 
@@ -287,7 +287,7 @@ Which of the following is a superglobal variable?
  - `$cookieValue`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=0661ee0d-3357-49aa-9c7a-4d2fdf02bdfc, answer=[2]
 
 On line 6, what does the `setcookie()` function do?
 
@@ -302,7 +302,7 @@ On line 6, what does the `setcookie()` function do?
  - It accesses the `my_cookie` cookie with the value `This is my cookie.` that expires in `60` seconds.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=e7e12027-ada9-44f3-b789-460a5c273a33, answer=[1]
 
 On line 6, what does the argument `$cookieName` represent? 
 
@@ -317,7 +317,7 @@ On line 6, what does the argument `$cookieName` represent?
  - The domain name of the cookie. 
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=f8a621ae-5908-45ca-b9e7-ec7a27510a93, answer=[5]
 
 Which statement best describes `$_COOKIE[$cookieName]`?
 
@@ -347,7 +347,7 @@ if (isset($_COOKIE['user'])) {
 }
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=38c86c31-3171-4024-bb47-8099a1e2aa29, answer=[4]
 
 Execute the program. What is its output?
 
@@ -362,7 +362,7 @@ Execute the program. What is its output?
  - It prints `The cookie value is: My Cookie`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=bb884279-65a7-4d03-ae45-ecc683bb9a38, answer=[5]
 
 Reload the program. What is its output?
 
@@ -377,7 +377,7 @@ Reload the program. What is its output?
  - It prints `The cookie value is: My Cookie`.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=340b6ab8-096a-46e7-9143-826c56a6aadb, answer=[4]
 
 In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, replace `time() + 60` with `time() - 3600`. Execute and reload the program. What is its output?
 
@@ -407,7 +407,7 @@ if (isset($_COOKIE['user'])) {
 }
 ?>
 ```
-/// type=MS, answer=[2,5]
+/// type=MS, id=6e8ae29f-3465-4123-988f-6dd5379775d6, answer=[2,5]
 
 Why is there no output displayed after replacing `time() + 60` with `time() - 3600`?
 
@@ -422,7 +422,7 @@ Why is there no output displayed after replacing `time() + 60` with `time() - 36
  - Setting the expiration time to `time() - 3600` deletes the `user` cookie stored in the user's computer.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=5a647c0c-c714-47a7-942c-4202d74ae1c6, answer=[5]
 
 In the statement `setcookie("user", "My Cookie", time() - 3600);` on line 2, what does `time() - 3600` do?
 
@@ -437,7 +437,7 @@ In the statement `setcookie("user", "My Cookie", time() - 3600);` on line 2, wha
  - It sets the expiration time of the `user` cookie to one hour ago.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=987a9d19-e0e7-4066-a85e-60c86ab3175c, answer=[2]
 
 Which statement best describes `setcookie("user", "My Cookie", time() - 3600);` on line 2?
 
@@ -461,7 +461,7 @@ Which statement best describes `setcookie("user", "My Cookie", time() - 3600);` 
 
 ### Part 2: Knowledge Assessment
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=7d27a650-65e3-499a-83f7-1b58d6d5aa64, answer=[3,4]
 
 Which statements are true about a cookie?
 
@@ -476,7 +476,7 @@ Which statements are true about a cookie?
  - It sends a URL encoded cookie together with the rest of the HTTP headers.
 
 
-/// type=MS, answer=[2,5]
+/// type=MS, id=073b97db-48cc-43cb-a7fb-67748e09f853, answer=[2,5]
 
 Which statements correctly describe the `setcookie()` function?
 
@@ -491,7 +491,7 @@ Which statements correctly describe the `setcookie()` function?
  - It sends a URL encoded cookie together with the rest of the HTTP headers.
 
 
-/// type=MS, answer=[2,3,4,5]
+/// type=MS, id=c85b286a-e949-4319-b919-ac15f41f4203, answer=[2,3,4,5]
 
 Which of the following are `setcookie()` parameters?
 
@@ -506,7 +506,7 @@ Which of the following are `setcookie()` parameters?
  - `expires`
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=3b319258-df72-4b7c-aae9-3996cb71f078, answer=[1]
 
 Which statement best describes the `$_COOKIE` superglobal variable.
 
@@ -541,7 +541,7 @@ if (isset($_COOKIE['user'])) {
 }
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=a38a9b57-865f-43b6-9e43-391cab62bb6a, answer=[2]
 
 Execute the program. What is its output?
 
@@ -556,7 +556,7 @@ Execute the program. What is its output?
  - It prints `The cookie value is: My Cookie`.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=a8a4a43c-3fc8-4bbf-8325-6ddc118af5cf, answer=[4]
 
 What is the error message?
 
@@ -571,7 +571,7 @@ What is the error message?
  - syntax error, unexpected `''user''` (T_CONSTANT_ENCAPSED_STRING), expecting `','` or `';'` on line number 5
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=71dc90f2-dfd3-4de4-b2d4-5389d734ea9a, answer=[4,5]
 
 Which statements correctly describe the error?
 
@@ -588,7 +588,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Cookies/MissingCommaBetweenArgumentTest.php]
+/// type=CR, id=b7d8ddaf-8eab-4e75-a2d5-089a23ec1622, answer=[tests/Cookies/MissingCommaBetweenArgumentTest.php]
 
 Correct the code so that it creates a cookie named `user` and outputs the string `The cookie value is: My Cookie` when reloading the program.
 
@@ -616,7 +616,7 @@ if (isset($_COOKIE['user'])) {
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=785302cc-2387-4ba1-86a7-c710612e9d29, answer=[5]
 
 Execute the program. What is the error message?
 
@@ -631,7 +631,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `''user''` (T_CONSTANT_ENCAPSED_STRING), expecting `','` or `';'` on line number 5
 
 
-/// type=MS, answer=[1,2]
+/// type=MS, id=7b11ccbf-380b-4adb-b899-90a0195cc093, answer=[1,2]
 
 Which statements correctly describe the error?
 
@@ -648,7 +648,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Cookies/MissingSquareBracketTest.php]
+/// type=CR, id=ddeb523f-526c-4cdb-9445-a8a419474bf8, answer=[tests/Cookies/MissingSquareBracketTest.php]
 
 Correct the code so that it creates a cookie named `user` and outputs the string `The cookie value is: My Cookie` when reloading the program.
 
@@ -691,7 +691,7 @@ setcookie($cookieName, $cookieValue, $expiry);
     </body>
 </html>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=4f48fd2a-db84-4c4a-a8a7-ba224f901e82, answer=[3]
 
 Execute the program. What is the error message?
 
@@ -706,7 +706,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `''user''` (T_CONSTANT_ENCAPSED_STRING), expecting `','` or `';'` on line number 5
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=f17899e3-d55b-43a2-ad9d-c8ecbd79a841, answer=[1,3]
 
 Which statements correctly describe the error?
 
@@ -723,7 +723,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Cookies/MissingPlusSignOnExpiryTest.php]
+/// type=CR, id=0263d7e9-a562-439f-9d87-f60d4842e6d2, answer=[tests/Cookies/MissingPlusSignOnExpiryTest.php]
 
 Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
@@ -781,7 +781,7 @@ setcookie($cookieName, $cookieValue, $expiry);
     </body>
 </html>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=a4967d08-8e4e-40a9-9e23-0e202a0f7b9c, answer=[1]
 
 Execute the program. What is the error message?
 
@@ -796,7 +796,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `''user''` (T_CONSTANT_ENCAPSED_STRING), expecting `','` or `';'` on line number 5
 
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=c7a7257c-837b-44f4-9154-df3cd65f2aeb, answer=[3,4]
 
 Which statements correctly describe the error?
 
@@ -813,7 +813,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Cookies/MissingArgumentOnSuperglobalCookieTest.php]
+/// type=CR, id=749e1ec5-b953-4375-8b13-bb276f945b64, answer=[tests/Cookies/MissingArgumentOnSuperglobalCookieTest.php]
 
 Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
@@ -871,7 +871,7 @@ setcookie("", $cookieValue, $expiry);
     </body>
 </html>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=0f0b2f8a-2460-4d60-919e-e30994b2c486, answer=[2]
 
 Execute the program. What is the error message?
 
@@ -886,7 +886,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `''user''` (T_CONSTANT_ENCAPSED_STRING), expecting `','` or `';'` on line number 5
 
 
-/// type=MS, answer=[1,2,5]
+/// type=MS, id=f1a9e327-f096-4a67-93e4-09b9f0b0a559, answer=[1,2,5]
 
 Which statements correctly describe the error?
 
@@ -903,7 +903,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Cookies/MissingCookieNameArgumentOnSetCookieTest.php]
+/// type=CR, id=1295b326-01f4-4ccd-99b5-e16d6dcf87bd, answer=[tests/Cookies/MissingCookieNameArgumentOnSetCookieTest.php]
 
 Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
@@ -940,7 +940,7 @@ setcookie("", $cookieValue, $expiry);
 
 ### Part 4: Practice
 
-/// type=CR, answer=[tests/Cookies/CreateCookieWithSetCookieTest.php]
+/// type=CR, id=98363053-945e-43a2-8602-3c1ca6e96957, answer=[tests/Cookies/CreateCookieWithSetCookieTest.php]
 
 Write a program that uses `setcookie()` and `$_COOKIE` to create and access cookies. First, use the `setcookie()` function that passes the arguments `test_cookie`, `This is a test cookie.`, and `time + 360` respectively. Next, add an `if` statement that uses `isset()` and `$_COOKIE` to evaluate whether the `test_cookie` cookie is set or not. Inside the `if` block, add the statement `echo "Cookie Value: " . $_COOKIE[test_cookie];`. Then, run the program to view the output.
 
