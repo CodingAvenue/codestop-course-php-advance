@@ -33,15 +33,15 @@ setcookie("user", "Anna", time() + 60);
     <head>
         <title>Creating and Accessing Cookie</title>
     </head>
-    <body>  
-        <?php  
-            if(!isset($_COOKIE["user"])) {  
-                echo "Sorry, a cookie is not found!";  
-            } else {  
-                echo "<br/>Cookie Value: " . $_COOKIE["user"];  
-            }  
-        ?>  
-    </body>  
+    <body>
+        <?php
+        if(!isset($_COOKIE["user"])) {
+            echo "Sorry, a cookie is not found!";
+        } else {
+            echo "<br/>Cookie Value: " . $_COOKIE["user"];
+        }
+        ?>
+    </body>
 </html>
 ```
 

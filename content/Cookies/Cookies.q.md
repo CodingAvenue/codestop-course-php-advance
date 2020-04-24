@@ -13,7 +13,7 @@
 setcookie("user", "My Cookie", time() + 60);
 
 if (isset($_COOKIE['user'])) {
-	echo "The cookie value is: " . $_COOKIE['user'];
+    echo "The cookie value is: " . $_COOKIE['user'];
 }
 ?>
 ```
@@ -213,18 +213,18 @@ setcookie($cookieName, $cookieValue, $expiry);
 ?>
 
 <html>
-	<head>
-		<title>Creating and Accessing Cookie</title>
-	</head>
-	<body>  
-		<?php  
-		if(!isset($_COOKIE[$cookieName])) {  
-			echo "Sorry, a cookie is not found!";  
-		} else {  
-			echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
-		}  
-		?>  
-	</body>  
+    <head>
+        <title>Creating and Accessing Cookie</title>
+    </head>
+    <body>
+        <?php
+        if(!isset($_COOKIE[$cookieName])) {  
+            echo "Sorry, a cookie is not found!";  
+        } else {
+            echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
+        }
+        ?>
+    </body>
 </html>
 ```
 /// type=SS, answer=[4]
@@ -343,7 +343,7 @@ Which statement best describes `$_COOKIE[$cookieName]`?
 setcookie("user", "My Cookie", time() + 60);
 
 if (isset($_COOKIE['user'])) {
-	echo "The cookie value is: " . $_COOKIE['user'];
+    echo "The cookie value is: " . $_COOKIE['user'];
 }
 ?>
 ```
@@ -403,7 +403,7 @@ In the statement `setcookie("user", "My Cookie", time() + 60);` on line 2, repla
 setcookie("user", "My Cookie", time() - 3600);
 
 if (isset($_COOKIE['user'])) {
-	echo "The cookie value is: " . $_COOKIE['user'];
+    echo "The cookie value is: " . $_COOKIE['user'];
 }
 ?>
 ```
@@ -537,7 +537,7 @@ Which statement best describes the `$_COOKIE` superglobal variable.
 setcookie("user", "My Cookie" time() + 60);
 
 if (isset($_COOKIE['user'])) {
-	echo "The cookie value is: " . $_COOKIE['user'];
+    echo "The cookie value is: " . $_COOKIE['user'];
 }
 ?>
 ```
@@ -597,7 +597,7 @@ Correct the code so that it creates a cookie named `user` and outputs the string
 setcookie("user", "My Cookie" time() + 60);
 
 if (isset($_COOKIE['user'])) {
-	echo "The cookie value is: " . $_COOKIE['user'];
+    echo "The cookie value is: " . $_COOKIE['user'];
 }
 ?>
 ```
@@ -612,7 +612,7 @@ if (isset($_COOKIE['user'])) {
 setcookie("user", "My Cookie", time() + 60);
 
 if (isset($_COOKIE['user'])) {
-	echo "The cookie value is: " . $_COOKIE'user'];
+    echo "The cookie value is: " . $_COOKIE'user'];
 }
 ?>
 ```
@@ -657,7 +657,7 @@ Correct the code so that it creates a cookie named `user` and outputs the string
 setcookie("user", "My Cookie", time() + 60);
 
 if (isset($_COOKIE['user'])) {
-	echo "The cookie value is: " . $_COOKIE'user'];
+    echo "The cookie value is: " . $_COOKIE'user'];
 }
 ?>
 ```
@@ -677,18 +677,18 @@ setcookie($cookieName, $cookieValue, $expiry);
 ?>
 
 <html>
-	<head>
-		<title>Creating and Accessing Cookie</title>
-	</head>
-	<body>  
-		<?php  
-		if(!isset($_COOKIE[$cookieName])) {  
-			echo "Sorry, a cookie is not found!";  
-		} else {  
-			echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
-		}  
-		?>  
-	</body>  
+    <head>
+        <title>Creating and Accessing Cookie</title>
+    </head>
+    <body>  
+        <?php  
+        if(!isset($_COOKIE[$cookieName])) {  
+            echo "Sorry, a cookie is not found!";  
+        } else {
+            echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
+        }
+        ?>
+    </body>
 </html>
 ```
 /// type=SS, answer=[3]
@@ -737,18 +737,18 @@ setcookie($cookieName, $cookieValue, $expiry);
 ?>
 
 <html>
-	<head>
-		<title>Creating and Accessing Cookie</title>
-	</head>
-	<body>  
-		<?php  
-		if(!isset($_COOKIE[$cookieName])) {  
-			echo "Sorry, a cookie is not found!";  
-		} else {  
-			echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
-		}  
-		?>  
-	</body>  
+    <head>
+        <title>Creating and Accessing Cookie</title>
+    </head>
+    <body>
+        <?php
+        if(!isset($_COOKIE[$cookieName])) {  
+            echo "Sorry, a cookie is not found!";  
+        } else {
+            echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
+        }
+        ?>
+    </body>
 </html>
 ```
 
@@ -767,18 +767,18 @@ setcookie($cookieName, $cookieValue, $expiry);
 ?>
 
 <html>
-	<head>
-		<title>Creating and Accessing Cookie</title>
-	</head>
-	<body>  
-		<?php  
-		if(!isset($_COOKIE[])) {  
-			echo "Sorry, a cookie is not found!";  
-		} else {  
-			echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
-		}  
-		?>  
-	</body>  
+    <head>
+        <title>Creating and Accessing Cookie</title>
+    </head>
+    <body>
+        <?php
+        if(!isset($_COOKIE[])) {  
+            echo "Sorry, a cookie is not found!";  
+        } else {
+            echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
+        }
+        ?>
+    </body>
 </html>
 ```
 /// type=SS, answer=[1]
@@ -827,18 +827,18 @@ setcookie($cookieName, $cookieValue, $expiry);
 ?>
 
 <html>
-	<head>
-		<title>Creating and Accessing Cookie</title>
-	</head>
-	<body>  
-		<?php  
-		if(!isset($_COOKIE[])) {  
-			echo "Sorry, a cookie is not found!";  
-		} else {  
-			echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
-		}  
-		?>  
-	</body>  
+    <head>
+        <title>Creating and Accessing Cookie</title>
+    </head>
+    <body>
+        <?php
+        if(!isset($_COOKIE[])) {  
+            echo "Sorry, a cookie is not found!";  
+        } else {
+            echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
+        }
+        ?>
+    </body>
 </html>
 ```
 
@@ -857,18 +857,18 @@ setcookie("", $cookieValue, $expiry);
 ?>
 
 <html>
-	<head>
-		<title>Creating and Accessing Cookie</title>
-	</head>
-	<body>  
-		<?php  
-		if(!isset($_COOKIE[$cookieName])) {  
-			echo "Sorry, a cookie is not found!";  
-		} else {  
-			echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
-		}  
-		?>  
-	</body>  
+    <head>
+        <title>Creating and Accessing Cookie</title>
+    </head>
+    <body>
+        <?php
+        if(!isset($_COOKIE[$cookieName])) {  
+            echo "Sorry, a cookie is not found!";  
+        } else {
+            echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
+        }
+        ?>
+    </body>
 </html>
 ```
 /// type=SS, answer=[2]
@@ -917,18 +917,18 @@ setcookie("", $cookieValue, $expiry);
 ?>
 
 <html>
-	<head>
-		<title>Creating and Accessing Cookie</title>
-	</head>
-	<body>  
-		<?php  
-		if(!isset($_COOKIE[$cookieName])) {  
-			echo "Sorry, a cookie is not found!";  
-		} else {  
-			echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
-		}  
-		?>  
-	</body>  
+    <head>
+        <title>Creating and Accessing Cookie</title>
+    </head>
+    <body>
+        <?php
+        if(!isset($_COOKIE[$cookieName])) {  
+            echo "Sorry, a cookie is not found!";  
+        } else {
+            echo "<br/>Cookie Value: " . $_COOKIE[$cookieName];  
+        }
+        ?>
+    </body>
 </html>
 ```
 
