@@ -14,17 +14,17 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 $person = new Person();
@@ -224,32 +224,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person = new Person("John");
@@ -389,32 +389,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person = new Person("John");
@@ -449,32 +449,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person = new Person(45.786);
@@ -524,32 +524,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 
@@ -584,32 +584,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 
@@ -644,32 +644,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $myCar = new Car("John");
@@ -746,17 +746,17 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 $person = new Person();
@@ -821,17 +821,17 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 $person = new Person();
@@ -851,17 +851,17 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 $person = new Person();
@@ -911,17 +911,17 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 $person = new Person();
@@ -941,32 +941,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person = new Person();
@@ -1031,32 +1031,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person = new Person();
@@ -1076,32 +1076,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person =  Person("John");
@@ -1152,32 +1152,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person =  Person("John");
@@ -1197,32 +1197,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person = new Person("John");
@@ -1272,32 +1272,32 @@ declare(strict_types = 1);
 
 class Person 
 {
-  protected $name;
+    protected $name;
 
-  public function __construct(string $name)
-  {
-    $this->name = $name;
-  }
+    public function __construct(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function setName(string $name)
-  {
-    $this->name = $name;
-  }
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
 
-  public function getName() : string
-  {
-    return $this->name;
-  }
+    public function getName() : string
+    {
+        return $this->name;
+    }
 }
 
 class Car
 {
-  protected $driver;
+    protected $driver;
 
-  public function __construct(Person $driver)
-  {
-    $this->driver = $driver;
-  }
+    public function __construct(Person $driver)
+    {
+        $this->driver = $driver;
+    }
 }
 
 $person = new Person("John");
