@@ -17,7 +17,7 @@ $_SESSION["name"] = "Diana";
 echo 'Welcome, ' . $_SESSION["name"] . '!';
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=d1da54aa-3f1c-496a-9e18-62468beb54d3, answer=[5]
 
 Execute the program. What is its output?
 
@@ -32,7 +32,7 @@ Execute the program. What is its output?
  - It prints `Welcome, Diana!`.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=c9d8626e-7e29-4015-9f8d-007486531da0, answer=[3]
 
 What is `session_start()` on line 2?
 
@@ -47,7 +47,7 @@ What is `session_start()` on line 2?
  - It is a session variable.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=24e988f4-fe4c-4787-a901-664ca01711b4, answer=[3]
 
 On line 2, what does `session_start();` do?
 
@@ -62,7 +62,7 @@ On line 2, what does `session_start();` do?
  - It accesses a session variable.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=85723c4e-2630-470c-8c3a-c965b9524196, answer=[5]
 
 In the statement `$_SESSION["name"] = "Diana";` on line 4, what is `$_SESSION`?
 
@@ -77,7 +77,7 @@ In the statement `$_SESSION["name"] = "Diana";` on line 4, what is `$_SESSION`?
  - It is a superglobal variable.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=d81171e9-ece8-41bc-af02-2151314f4a0d, answer=[5]
 
 In the statement `$_SESSION["name"] = "Diana";` on line 4, what is `$_SESSION["name"]`?
 
@@ -92,7 +92,7 @@ In the statement `$_SESSION["name"] = "Diana";` on line 4, what is `$_SESSION["n
  - It is a session variable.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=e2c38f49-53c3-4802-91a6-29b553debd40, answer=[1]
 
 In the statement `$_SESSION["name"] = "Diana";` on line 4, what is `Diana`?
 
@@ -107,7 +107,7 @@ In the statement `$_SESSION["name"] = "Diana";` on line 4, what is `Diana`?
  - It is a session variable.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=f73a8136-fc9a-478f-b1b6-c4467fe99a09, answer=[3]
 
 Which statement best describes `$_SESSION["name"] = "Diana";` on line 4?
 
@@ -122,7 +122,7 @@ Which statement best describes `$_SESSION["name"] = "Diana";` on line 4?
  - It removes the value `Diana` from the `$_SESSION["name"]` session variable.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=f2aecb23-ae9e-4c82-9e03-5f72f0c7b6ad, answer=[5]
 
 In the `echo` statement on line 6, what does `$_SESSION["name"]` do?
 
@@ -154,7 +154,7 @@ $_SESSION["lastName"] = "Miller";
 echo session_id() . ' ' . $_SESSION["firstName"] . ' ' . $_SESSION["lastName"];
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=f86ed343-b8fd-4854-a226-3461f79b5232, answer=[5]
 
 Execute the program. What is its output?
 
@@ -169,7 +169,7 @@ Execute the program. What is its output?
  - It prints `test-session-123 John Miller`.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=6bb44d96-6126-45ab-8ee6-d2bcdea53a6b, answer=[1]
 
 Which of the following is a superglobal variable?
 
@@ -184,7 +184,7 @@ Which of the following is a superglobal variable?
  - `session_id("test-session-123")`
 
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=a62520fe-e58b-4aba-84ef-425fd7e59a91, answer=[3,4]
 
 Which of the following are session variables?
 
@@ -199,7 +199,7 @@ Which of the following are session variables?
  - `session_id("test-session-123")`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=1907932e-d9ba-4913-8df6-1a796b3f182e, answer=[2]
 
 Which function creates a new session?
 
@@ -214,7 +214,7 @@ Which function creates a new session?
  - `session_id("test-session-123")`
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=b8aded39-05e6-4b68-b802-d570c4556fbb, answer=[1]
 
 On line 3, what does `session_id("test-session-123");` do?
 
@@ -229,7 +229,7 @@ On line 3, what does `session_id("test-session-123");` do?
  - It accesses the session ID `test-session-123`.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=535640b8-b3f8-4022-8ee3-9115b8f84ff7, answer=[3]
 
 Which statement best describes the code on line 5?
 
@@ -244,7 +244,7 @@ Which statement best describes the code on line 5?
  - It removes the value `John` from the `$_SESSION["firstName"]` session variable.
 
 
-/// type=MS, answer=[2,5]
+/// type=MS, id=3318ac8e-4bf0-4b76-a58b-c0439099a94e, answer=[2,5]
 
 In the `echo` statement on line 8, what does `session_id()` do?
 
@@ -276,7 +276,7 @@ $_SESSION["lastName"] = "Miller";
 echo session_id() . ' ' . $_SESSION["firstName"] . ' ' . $_SESSION["lastName"];
 ?>
 ```
-/// type=MS, answer=[1,4]
+/// type=MS, id=473eac0d-ace7-4577-a173-3b3cc9e50731, answer=[1,4]
 
 Add the statement `unset($_SESSION["firstName"]);` on line 7. Execute the program. What are its outputs?
 
@@ -308,7 +308,7 @@ unset($_SESSION["firstName"]);
 echo session_id() . ' ' . $_SESSION["firstName"] . ' ' . $_SESSION["lastName"];
 ?>
 ```
-/// type=MS, answer=[3,4,5]
+/// type=MS, id=b24c4bbe-5f5e-40db-8faf-2ef61dde4346, answer=[3,4,5]
 
 Why does adding the statement `unset($_SESSION["firstName"]);` produce an error?
 
@@ -323,7 +323,7 @@ Why does adding the statement `unset($_SESSION["firstName"]);` produce an error?
  - On line 7, the `unset($_SESSION["firstName"]);` statement removes the `$_SESSION["firstName"]` session variable.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=8d649459-3d59-446a-ba4e-dc9dc4d5f03d, answer=[1]
 
 What does `unset($_SESSION["firstName"]);` do?
 
@@ -365,7 +365,7 @@ if (!empty($_POST)) {
     </body>
 </html>
 ```
-/// type=SS, choiceType=HTML, answer=[5]
+/// type=SS, id=7e7fe807-d8f0-4f2f-8ad8-39065d192b42, answer=[5]
 
 Execute the program. What is its output?
 
@@ -396,7 +396,7 @@ Execute the program. What is its output?
     </form>
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=a4c40767-ce72-4280-b16b-f0c330e36065, answer=[5]
 
 In the browser window, click the `Submit` button. What is its result?
 
@@ -411,7 +411,7 @@ In the browser window, click the `Submit` button. What is its result?
  - It displays a message `This is a required field`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=c7243cc9-f551-4df8-916b-8579d1cf3ded, answer=[5]
 
 In the browser window, replace `Username` with `Charles` and `Password` with `12345`. Click the `Submit` button. What is its output?
 
@@ -426,7 +426,7 @@ In the browser window, replace `Username` with `Charles` and `Password` with `12
  - It prints `Hello, Charles.`.
 
 
-/// type=MS, answer=[2,3,4]
+/// type=MS, id=39e726f3-7284-439a-a4f4-3dae230ef5fd, answer=[2,3,4]
 
 Which of the following are functions?
 
@@ -441,7 +441,7 @@ Which of the following are functions?
  - `$_POST['password']`
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=0d670141-9c6d-4ad6-8291-cbc947c5e725, answer=[5]
 
 In the `if` statement on line 5, what is `$_POST`?
 
@@ -456,7 +456,7 @@ In the `if` statement on line 5, what is `$_POST`?
  - It is a superglobal variable.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=0d9e5b04-43b9-4aae-895c-d890e16bb86c, answer=[5]
 
 In the `if` statement on line 5, what does `$_POST['username']` do?
 
@@ -480,7 +480,7 @@ In the `if` statement on line 5, what does `$_POST['username']` do?
 
 ### Part 2: Knowledge Assessment
 
-/// type=SS, answer=[1]
+/// type=SS, id=aff6e7ab-c9b1-43fe-9d8f-270058675e87, answer=[1]
 
 Which statement is true about a session?
 
@@ -495,7 +495,7 @@ Which statement is true about a session?
  - It is a way to store information state and history of user activities in a certain application using a unique session ID.
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=598f6b0f-6a50-4b26-9b16-8469ab78a5d0, answer=[1,3]
 
 Which of the following are superglobal variables?
 
@@ -510,7 +510,7 @@ Which of the following are superglobal variables?
  - `session_start()`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=9b983535-91ff-4b26-ad3a-cdcbe1586df1, answer=[2]
 
 Which statement best describes the `session_start()` function?
 
@@ -525,7 +525,7 @@ Which statement best describes the `session_start()` function?
  - It is a way to store information state and history of user activities in a certain application using a unique session ID.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=8b988735-2c59-4062-af90-dcb0f5eb9fc5, answer=[1]
 
 Which statement best describes the `session_id()` function?
 
@@ -540,7 +540,7 @@ Which statement best describes the `session_id()` function?
  - It is a way to store information state and history of user activities in a certain application using a unique session ID.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=e6d23293-341a-475b-ae6c-66c15dd2e133, answer=[1]
 
 Which statement is true about the `$_SESSION` superglobal variable?
 
@@ -555,7 +555,7 @@ Which statement is true about the `$_SESSION` superglobal variable?
  - It is a way to store information state and history of user activities in a certain application using a unique session ID.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=d0bedce5-e344-43e8-a18f-22900fbc7611, answer=[4]
 
 Which statement is true about the `$_POST` superglobal variable?
 
@@ -589,7 +589,7 @@ session_start();
 echo 'Welcome, ' . $_SESSION["name"] . '!';
 ?>
 ```
-/// type=MS, answer=[2,3]
+/// type=MS, id=59b063ab-45cd-41a1-9550-8ad2fe664cc6, answer=[2,3]
 
 Execute the program. What are its outputs?
 
@@ -604,7 +604,7 @@ Execute the program. What are its outputs?
  - It prints `Welcome, Diana!`.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=3b9d1379-d677-45e9-99e2-bc197d0c17c1, answer=[1]
 
 What is the error message?
 
@@ -619,7 +619,7 @@ What is the error message?
  - syntax error, unexpected `'"'`, expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) on line number 5
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=681d80f8-c36c-40ea-893b-cc7518099b76, answer=[1,5]
 
 Which statements correctly describe the error?
 
@@ -636,7 +636,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Sessions/MisplacedSessionStartFunctionTest.php]
+/// type=CR, id=1cf4b927-6d18-44f2-81a3-aa9b4ed4be69, answer=[tests/Sessions/MisplacedSessionStartFunctionTest.php]
 
 Correct the code so that it outputs the string `Welcome, Diana!`.
 
@@ -664,7 +664,7 @@ $_SESSION["name"] = "Diana";
 echo 'Welcome, ' . $_SESSION[] . '!';
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=877f2fef-192a-4ee8-86b4-89ba7994edf0, answer=[3]
 
 Execute the program. What is the error message?
 
@@ -679,7 +679,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'"'`, expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) on line number 5
 
 
-/// type=MS, answer=[2,3]
+/// type=MS, id=b4fa6b02-9064-4d0b-9edd-e30fa926d38d, answer=[2,3]
 
 Which statements correctly describe the error?
 
@@ -696,7 +696,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Sessions/MissingKeyOnSessionVariableTest.php]
+/// type=CR, id=64871d7a-dbc4-4f38-a39b-701dfbce83e6, answer=[tests/Sessions/MissingKeyOnSessionVariableTest.php]
 
 Correct the code so that it outputs the string `Welcome, Diana!`.
 
@@ -726,7 +726,7 @@ $_SESSION["lastName"] = "Miller";
 echo session_id() . ' ' . $_SESSION["firstName"] . ' ' . $_SESSION["lastName"];
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=caaaad45-b356-4d33-8750-db88b06cf609, answer=[5]
 
 Execute the program. What is the error message?
 
@@ -741,7 +741,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'"'`, expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) on line number 5
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=c63d6b15-3825-4a9d-ba11-9c4917d7809a, answer=[3,5]
 
 Which statements correctly describe the error?
 
@@ -758,7 +758,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Sessions/MisquotedSessionIdArgumentTest.php]
+/// type=CR, id=7d433c76-4581-4820-a844-9e7ba279ff11, answer=[tests/Sessions/MisquotedSessionIdArgumentTest.php]
 
 Correct the code so that it outputs the string `test-session-123 John Miller`.
 
@@ -790,7 +790,7 @@ $_SESSION["lastName"] = "Miller";
 echo session_id() . ' ' . $_SESSION["firstName"] . ' ' . $_SESSION["lastName"];
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=25be2b66-8299-4e10-8ebb-689121f168a4, answer=[4]
 
 Execute the program. What is the error message?
 
@@ -805,7 +805,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'"'`, expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) on line number 5
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=5be890d8-999b-4b3b-b7fa-c18a35403222, answer=[1,3]
 
 Which statements correctly describe the error?
 
@@ -822,7 +822,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Sessions/IncorrectSessionStartFunctionTest.php]
+/// type=CR, id=20af4580-301f-4b39-ae3e-08149ff5475c, answer=[tests/Sessions/IncorrectSessionStartFunctionTest.php]
 
 Correct the code so that it outputs the string `test-session-123 John Miller`.
 
@@ -854,7 +854,7 @@ unset($_SESSION["firstName"]);
 echo session_id() . ' ' . $_SESSION["firstName"] . ' ' . $_SESSION["lastName"];
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=62ada021-5ce7-4408-9308-b87485025f32, answer=[2]
 
 Execute the program. What is the error message?
 
@@ -869,7 +869,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'"'`, expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) on line number 5
 
 
-/// type=MS, answer=[1,3,5]
+/// type=MS, id=023581d5-120f-425d-88fa-3710dec5b93c, answer=[1,3,5]
 
 Which statements correctly describe the error?
 
@@ -886,7 +886,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Sessions/UndefinedFirstnameSessionVariableTest.php]
+/// type=CR, id=4d94c074-db22-4114-ad53-cab3c7bdf168, answer=[tests/Sessions/UndefinedFirstnameSessionVariableTest.php]
 
 Correct the code so that it outputs the string `test-session-123 John Miller`.
 
@@ -909,7 +909,7 @@ echo session_id() . ' ' . $_SESSION["firstName"] . ' ' . $_SESSION["lastName"];
 
 ### Part 4: Practice
 
-/// type=CR, answer=[tests/Sessions/CreateAndAccessSessionVariablesTest.php]
+/// type=CR, id=a818f5f0-0636-4d20-9dd3-a713bd48e412, answer=[tests/Sessions/CreateAndAccessSessionVariablesTest.php]
 
 Write a program that uses `session_start()` and `$_SESSION` to create and access session data. First, add the `session_start();` function call to start a new session. Then, add a statement that calls the `session_id()` function with the argument `practice-session-101`. Next, create the session variables `$_SESSION["name"]` and `$_SESSION["password"]`, and assign the values `James` and `123-pass` respectively. Add another statement `echo session_id() . ' ' . $_SESSION["name"];`. Then, run the program to view the output.
 
