@@ -561,7 +561,7 @@ What is the error message?
 
 Which statements correctly describe the error?
 
- - There is no semicolon `;` at the end of the statement on line 2;
+ - There is no semicolon `;` at the end of the statement on line 2.
 
  - On line 3, the second operand `Very Good` is enclosed in double quotes `""`.
 
@@ -617,7 +617,7 @@ Execute the program. What is the error message?
 
 Which statements correctly describe the error?
 
- - There is no semicolon `;` at the end of the statement on line 2;
+ - There is no semicolon `;` at the end of the statement on line 2.
 
  - On line 3, the second operand `Very Good` is enclosed in double quotes `""`.
 
@@ -674,7 +674,7 @@ Execute the program. What is the error message?
 
 Which statement best describes the error?
 
- - There is no semicolon `;` at the end of the statement on line 2;
+ - There is no semicolon `;` at the end of the statement on line 2.
 
  - On line 3, the second operand `Very Good` is enclosed in double quotes `""`.
 
@@ -730,7 +730,7 @@ Execute the program. What is the error message?
 
 Which statements correctly describe the error?
 
- - There is no semicolon `;` at the end of the statement on line 2;
+ - There is no semicolon `;` at the end of the statement on line 2.
 
  - On line 3, the second operand `Very Good` is not enclosed in double quotes `""`.
 
@@ -786,7 +786,7 @@ Execute the program. What is the error message?
 
 Which statements correctly describe the error?
 
- - There is no semicolon `;` at the end of the statement on line 2;
+ - There is no semicolon `;` at the end of the statement on line 2.
 
  - On line 3, the operand `Invalid value` is enclosed in double quotes `""`.
 
