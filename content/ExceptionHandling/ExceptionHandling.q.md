@@ -18,7 +18,7 @@ function divide($dividend, $divisor)
 echo divide(10, 0);
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=7185a125-0c15-492d-a7aa-351c031c4d7d, answer=[3]
 
 Execute the program. What is its output?
 
@@ -33,7 +33,7 @@ Execute the program. What is its output?
  - It prints `divide(10, 0)`.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=5aadb346-74a8-4a96-aaea-866e9f88e74f, answer=[1]
 
 What is the error message?
 
@@ -48,7 +48,7 @@ What is the error message?
  - syntax error, unexpected `'E_USER_WARNING'` (T_STRING), expecting `','` or `')'` on line number 5
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=cbff4dae-b9e2-45a0-b4a3-a5b2f72b3044, answer=[1,5]
 
 Which statements correctly describe the error?
 
@@ -88,7 +88,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=d43c95b7-c79f-4443-80ae-413584559f33, answer=[5]
 
 Execute the program. What is its output?
 
@@ -103,7 +103,7 @@ Execute the program. What is its output?
  - It prints `Exception caught: The value '0' as a divisor is not allowed.`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=9912f792-ee3e-4e5f-9afa-3764b7ab21ed, answer=[5]
 
 Which of the following is a function?
 
@@ -118,7 +118,7 @@ Which of the following is a function?
  - `divide()`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=5fc23c65-0c73-4d8c-9be8-148caa47a81b, answer=[2]
 
 In the statement `throw new Exception("The value '0' as a divisor is not allowed.");` on line 5, what is `throw`?
 
@@ -133,7 +133,7 @@ In the statement `throw new Exception("The value '0' as a divisor is not allowed
  - It is a parameter.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=79f8cd6e-2cf1-45e2-81c8-42bdb05110d5, answer=[2]
 
 In the statement `throw new Exception("The value '0' as a divisor is not allowed.");` on line 5, what is `new`?
 
@@ -148,7 +148,7 @@ In the statement `throw new Exception("The value '0' as a divisor is not allowed
  - It is a parameter.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=8b3abb9f-4e55-420a-996c-65586e52df72, answer=[1]
 
 In the statement `throw new Exception("The value '0' as a divisor is not allowed.");` on line 5, what is `Exception`?
 
@@ -163,7 +163,7 @@ In the statement `throw new Exception("The value '0' as a divisor is not allowed
  - It is a parameter.
 
 
-/// type=MS, answer=[1,2,5]
+/// type=MS, id=67e9ca0a-e86d-4909-b81f-f1fe1ed91e1f, answer=[1,2,5]
 
 On line 5, what does the statement `throw new Exception("The value '0' as a divisor is not allowed.");` do?
 
@@ -178,7 +178,7 @@ On line 5, what does the statement `throw new Exception("The value '0' as a divi
  - It creates a new object of the `Exception` class passing the argument `The value '0' as a divisor is not allowed.`.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=80b30725-3929-4a21-a815-1b8db6dd966a, answer=[2]
 
 In the `try { echo divide(10, 0); }` block on lines 12, 13, and 14, what is `try`?
 
@@ -193,7 +193,7 @@ In the `try { echo divide(10, 0); }` block on lines 12, 13, and 14, what is `try
  - It is a parameter.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=6a096e85-b030-4f80-bb4f-1b6a764f6e1e, answer=[5]
 
 On lines 12, 13, and 14, what does the `try { echo divide(10, 0); }` block do?
 
@@ -208,7 +208,7 @@ On lines 12, 13, and 14, what does the `try { echo divide(10, 0); }` block do?
  - It facilitates the catching of a possible exception thrown by the `divide(10, 0)` function call.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=2c4c02a3-56d3-4a65-a79b-63a05334a8d1, answer=[2]
 
 In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` block on lines 14, 15, and 16, what is `catch`?
 
@@ -223,7 +223,7 @@ In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` 
  - It is a parameter.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=f799b3df-bc73-44cd-9fa5-92edc0d7700e, answer=[1]
 
 In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` block on lines 14, 15, and 16, what is `Exception`?
 
@@ -238,7 +238,7 @@ In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` 
  - It is a parameter.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=703bc42f-1bd3-4799-839e-934933a68ccd, answer=[5]
 
 In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` block on lines 14, 15, and 16, what is `$e`?
 
@@ -253,7 +253,7 @@ In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` 
  - It is an instance of the `Exception` class.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=3f7fb2fa-faf4-4348-b025-14687a3432a6, answer=[5]
 
 In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` block on lines 14, 15, and 16, what does `Exception $e` do?
 
@@ -268,7 +268,7 @@ In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` 
  - It creates the `$e` object as an instance of the `Exception` class.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=43361ac8-3f6c-4dc7-b20e-231f16b22896, answer=[4]
 
 In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` block on lines 14, 15, and 16, what does `$e->getMessage()` do?
 
@@ -283,7 +283,7 @@ In the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` 
  - It removes the `getMessage()` method of the `$e` object.
 
 
-/// type=MS, answer=[1,4]
+/// type=MS, id=f7105568-7eaf-4926-89ee-c8095c3363dc, answer=[1,4]
 
 On lines 14, 15, and 16, what does the `catch (Exception $e) { echo "Exception caught: " . $e->getMessage(); }` block do?
 
@@ -328,7 +328,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=3bb18743-814c-44ed-a313-5a87ad935b77, answer=[5]
 
 Execute the program. What is its output?
 
@@ -343,7 +343,7 @@ Execute the program. What is its output?
  - It prints `Exception caught: Invalid argument value provided in /index.php on line number 5`.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=699e4658-0f13-46ce-bc78-b3d747f44881, answer=[4,5]
 
 Which of the following are exception classes?
 
@@ -358,7 +358,7 @@ Which of the following are exception classes?
  - `InvalidArgumentException`
 
 
-/// type=MS, answer=[1,2,3]
+/// type=MS, id=bc33de8d-2b1d-42d7-8e46-a90537529a93, answer=[1,2,3]
 
 Which of the following are method calls?
 
@@ -373,7 +373,7 @@ Which of the following are method calls?
  - `InvalidArgumentException $ie`
 
 
-/// type=MS, answer=[1,2]
+/// type=MS, id=8ada7d0b-7d46-4f97-9dd1-e68c61116528, answer=[1,2]
 
 Which of the following are keywords?
 
@@ -388,7 +388,7 @@ Which of the following are keywords?
  - `InvalidArgumentException`
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=47533045-9af8-462c-b5af-6d88766515f8, answer=[3]
 
 What value is returned by `$ie->getMessage()` on line 18?
 
@@ -403,7 +403,7 @@ What value is returned by `$ie->getMessage()` on line 18?
  - `Invalid argument value provided in /index.php on line number 5`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=d60f951a-5a50-434a-9eed-6a304244f4df, answer=[2]
 
 What value is returned by `$ie->getFile()` on line 18?
 
@@ -418,7 +418,7 @@ What value is returned by `$ie->getFile()` on line 18?
  - `Invalid argument value provided in /index.php on line number 5`
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=117ab073-8ae1-4769-b734-ff88146bff0b, answer=[1]
 
 What value ir returned by `$ie->getLine()` on line 18?
 
@@ -433,7 +433,7 @@ What value ir returned by `$ie->getLine()` on line 18?
  - `Invalid argument value provided in /index.php on line number 5`
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=20f7e0a2-2d48-44d5-bffd-e6fe8f585e55, answer=[3,5]
 
 Which statements correctly describe the `if` block on lines 4, 5, and 6?
 
@@ -448,7 +448,7 @@ Which statements correctly describe the `if` block on lines 4, 5, and 6?
  - It evaluates the conditional expression `!is_numeric($divisor) || !is_numeric($dividend)`.
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=be788413-a4e8-49ea-9b58-2446197e0111, answer=[1,3]
 
 Which statements correctly describe the `elseif` block on lines 7, 8, and 9?
 
@@ -463,7 +463,7 @@ Which statements correctly describe the `elseif` block on lines 7, 8, and 9?
  - It displays the exception message `The value '0' as a divisor is not allowed.`.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=a3331b4b-c141-4311-ae27-663ebd4c839a, answer=[4,5]
 
 Which statements correctly describe the `catch` block on lines 17 and 18?
 
@@ -478,7 +478,7 @@ Which statements correctly describe the `catch` block on lines 17 and 18?
  - It executes the `echo` statement if an `InvalidArgumentException` exception occurs in the `try` block.
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=dae0d2ce-56f8-472c-a504-fca718ee561e, answer=[3,5]
 
 Which statements correctly describe the `catch` block on lines 19 and 20?
 
@@ -523,7 +523,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=d9f3eef9-489a-4bf2-a28a-56785cd4fee3, answer=[1]
 
 In the function call `divide(10, "hello")` on line 16, replace `"hello"` with `5`. Execute the program. What is its output?
 
@@ -568,7 +568,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=34cf43aa-02f2-4a01-a3ec-f66f92d1f668, answer=[4]
 
 In the function call `divide(10, 5)` on line 16, replace `5` with `0`. Execute the program. What is its output?
 
@@ -613,7 +613,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=af0f81f8-dd10-43ea-a997-c22b44849a89, answer=[5]
 
 In the function call `divide(10, 0)` on line 16, replace `10` with `"test"`. Execute the program. What is its output?
 
@@ -636,7 +636,7 @@ In the function call `divide(10, 0)` on line 16, replace `10` with `"test"`. Exe
 
 ### Part 2: Knowledge Assessment
 
-/// type=SS, answer=[4]
+/// type=SS, id=6087d4e4-7fc3-4d49-a83f-94c54bcaffd1, answer=[4]
 
 Which statement best describes an exception?
 
@@ -651,7 +651,7 @@ Which statement best describes an exception?
  - It is the process of detecting and dealing with unexpected events that occur in a program properly.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=251cb971-495b-42c8-835a-6ed81f5911fe, answer=[5]
 
 Which statement best describes exception handling?
 
@@ -666,7 +666,7 @@ Which statement best describes exception handling?
  - It is the process of detecting and dealing with unexpected events that occur in a program properly.
 
 
-/// type=MS, answer=[2,3,4]
+/// type=MS, id=3fc24fa9-6c73-4382-a1c6-29f278d1a14e, answer=[2,3,4]
 
 Which of the following are exception handling keywords?
 
@@ -681,7 +681,7 @@ Which of the following are exception handling keywords?
  - `return`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=f365e739-3cc8-4896-ba4f-fdebc24775df, answer=[2]
 
 Which statement is true about the `Exception` class?
 
@@ -696,7 +696,7 @@ Which statement is true about the `Exception` class?
  - It is the process of detecting and dealing with unexpected events that occur in a program properly.
 
 
-/// type=MS, answer=[1,2,3,5]
+/// type=MS, id=b99db641-8a0d-4a80-82ec-d39c837ccb38, answer=[1,2,3,5]
 
 Which of the following are the methods of the `Exception` class?
 
@@ -741,7 +741,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=858a3c25-66d5-4f03-88d6-a377536d5ed3, answer=[2]
 
 Execute the program. What is its output?
 
@@ -756,7 +756,7 @@ Execute the program. What is its output?
  - It prints `Exception caught: The value '0' as a divisor is not allowed.`.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=c070a0d4-91a4-4155-a5cc-9a3dc44adad2, answer=[1]
 
 What is the error message?
 
@@ -771,7 +771,7 @@ What is the error message?
  - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 17
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=412efeae-0e68-48d1-bed3-5a07210ebb66, answer=[3,5]
 
 Which statements correctly describe the error?
 
@@ -788,7 +788,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ExceptionHandling/MissingNewInTheThrowStatementTest.php]
+/// type=CR, id=8cf386cf-04e1-4e3d-be8c-ee49330b3b00, answer=[tests/ExceptionHandling/MissingNewInTheThrowStatementTest.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -836,7 +836,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=9f15d684-d006-489a-a015-962a9c17d6f6, answer=[3]
 
 Execute the program. What is the error message?
 
@@ -851,7 +851,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 17
 
 
-/// type=MS, answer=[1,4,5]
+/// type=MS, id=5bc3aa8e-52b2-4aaf-8a2c-d416bc6a8356, answer=[1,4,5]
 
 Which statements correctly describe the error?
 
@@ -868,7 +868,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ExceptionHandling/MissingExceptionInstanceVariableInCatchTest.php]
+/// type=CR, id=717bca2b-70ed-4275-913d-aa78ff010226, answer=[tests/ExceptionHandling/MissingExceptionInstanceVariableInCatchTest.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -916,7 +916,7 @@ try
 }
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=e88149ac-6a2b-4003-a3cd-8891260e695b, answer=[2]
 
 Execute the program. What is the error message?
 
@@ -931,7 +931,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 17
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=94f94aaf-8d4a-417e-9637-49ed6e91b719, answer=[3]
 
 Which statement best describes the error?
 
@@ -948,7 +948,7 @@ Which statement best describes the error?
 :::
 
 
-/// type=CR, answer=[tests/ExceptionHandling/MissingOpenCurlyBraceAfterTryTest.php]
+/// type=CR, id=81bfec02-52b5-4039-a7c2-14e44c6f3d5f, answer=[tests/ExceptionHandling/MissingOpenCurlyBraceAfterTryTest.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -1001,7 +1001,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=5c57d178-df85-4d48-b634-3e73bd25d45e, answer=[5]
 
 Execute the program. What is the error message?
 
@@ -1016,7 +1016,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 17
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=e7be3a5a-7ddd-428c-9418-e94954beb9b4, answer=[1,5]
 
 Which statements correctly describe the error?
 
@@ -1033,7 +1033,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ExceptionHandling/MissingDollarSignOnObjectVariableTest.php]
+/// type=CR, id=67013dfd-ae88-4ba4-8ef4-357b4e415596, answer=[tests/ExceptionHandling/MissingDollarSignOnObjectVariableTest.php]
 
 Correct the code so that it outputs the string `Exception caught: Invalid argument value provided in /index.php on line number 5`.
 
@@ -1091,7 +1091,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=9330951a-bdea-400f-83cc-c28057053a33, answer=[4]
 
 Execute the program. What is the error message?
 
@@ -1106,7 +1106,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 17
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=4b34e967-5250-469b-8d76-ccff1187b5f8, answer=[3,5]
 
 Which statements correctly describe the error?
 
@@ -1123,7 +1123,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ExceptionHandling/MissingObjectOperatorOnMethodCallTest.php]
+/// type=CR, id=5114fcb0-bfd6-4626-b851-3adeeb23904f, answer=[tests/ExceptionHandling/MissingObjectOperatorOnMethodCallTest.php]
 
 Correct the code so that it outputs the string `Exception caught: Invalid argument value provided in /index.php on line number 5`.
 
@@ -1181,7 +1181,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=810c4a46-5df2-4e62-8909-4eb21784e388, answer=[3]
 
 Remove the parentheses `()` from `$e->getCode()` in the `echo` statement on line 20. Execute the program. What is the error message?
 
@@ -1226,7 +1226,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=145aa515-3185-4958-8365-4b29f0f7fe9d, answer=[1]
 
 Remove the close curly brace `}` before `catch` on line 19. Execute the program. What is the error message?
 
@@ -1271,7 +1271,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=08cdc8ab-30be-4103-925b-015eacac94db, answer=[2]
 
 Remove the close parenthesis `)` after `$ie` on line 17. Execute the program. What is the error message?
 
@@ -1316,7 +1316,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=13c1a4f1-9dd4-4599-92b2-f05746e0f9a6, answer=[4]
 
 Remove the `try` keyword before the open curly brace `{` on line 15. Execute the program. What is the error message?
 
@@ -1361,7 +1361,7 @@ function divide($dividend, $divisor)
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=a42c2399-6eb1-4530-8956-38054ac2de1b, answer=[5]
 
 Remove the comma `,` between the arguments `10` and `0` from the `divide()` function call on line 16. Execute the program. What is the error message?
 
@@ -1378,7 +1378,7 @@ Remove the comma `,` between the arguments `10` and `0` from the `divide()` func
 :::
 
 
-/// type=CR, answer=[tests/ExceptionHandling/CorrectMultipleErrorsTest.php]
+/// type=CR, id=a60cae27-85b5-454e-a428-fa0fc1154082, answer=[tests/ExceptionHandling/CorrectMultipleErrorsTest.php]
 
 Correct the code so that it outputs the string `Exception caught: [0] The value '0' as a divisor is not allowed.`.
 
@@ -1415,7 +1415,7 @@ function divide($dividend, $divisor)
 
 ### Part 4: Practice
 
-/// type=CR, answer=[tests/ExceptionHandling/CreateFunctionThatThrowsExceptionTest.php]
+/// type=CR, id=de4d4385-fe7b-4417-bd1d-077381d10c9b, answer=[tests/ExceptionHandling/CreateFunctionThatThrowsExceptionTest.php]
 
 Write a program that uses `throw`, `try`, and `catch` keywords to handle exceptions gracefully. First, create a funtion named `OpenFile()` with the parameter `$file`. Inside the function body, create an `if-else` statement to test if `$file` exists or not. In the `if` construct, add the condition `!file_exists($file)`. Inside the `if` block, add the statement `throw new Exception("Sorry, the file does not exist");`. Inside the `else` block, add the statement `fopen($file, "w");`. Next, Add a `try` and `catch` block. Inside the `try` block, add the statement `OpenFile("myTest.txt");` Then, add the `catch` block `catch (Exception $e) { echo "Exception caught: " . $e->getMessage() . " in " . $e->getFile() . " on line number " . $e->getLine(); }`. Run the program to view the output.
 
