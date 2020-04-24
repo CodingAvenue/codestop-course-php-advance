@@ -32,7 +32,7 @@ $person->setName("Anna");
 echo "Person name: " . $person->getName();
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=6b2aa433-5358-4fed-ab33-b8f900a0859b, answer=[5]
 
 Execute the program. What is its output?
 
@@ -47,7 +47,7 @@ Execute the program. What is its output?
  - It prints `Person name: Anna`.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=350750fd-205b-4b27-b1ce-36b59cdde86f, answer=[3]
 
 Which of the following is a class?
 
@@ -62,7 +62,7 @@ Which of the following is a class?
  - `getName()`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=fc344a68-1a88-4830-b953-360d84ed400d, answer=[2]
 
 Which of the following is a property?
 
@@ -77,7 +77,7 @@ Which of the following is a property?
  - `getName()`
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=92011981-3bc5-4bd5-bc21-0f56857afed2, answer=[4,5]
 
 Which of the following are methods?
 
@@ -92,7 +92,7 @@ Which of the following are methods?
  - `getName()`
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=af8c2761-83f4-41eb-b37f-a2dc224a2261, answer=[4]
 
 In the statement `declare(strict_types = 1);` on line 2, what is `declare`?
 
@@ -107,7 +107,7 @@ In the statement `declare(strict_types = 1);` on line 2, what is `declare`?
  - It is an operator.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=a7366c32-376a-4295-b872-6b9b6489b6fc, answer=[2]
 
 In the statement `declare(strict_types = 1);` on line 2, what is `strict_types`?
 
@@ -122,7 +122,7 @@ In the statement `declare(strict_types = 1);` on line 2, what is `strict_types`?
  - It is an operator.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=23d532c0-d8ac-4efa-824c-10779ecba445, answer=[2]
 
 On line 2, what does `declare(strict_types = 1);` do?
 
@@ -137,7 +137,7 @@ On line 2, what does `declare(strict_types = 1);` do?
  - It applies type declarations to methods of the `Person` class.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=a8a1a5cf-c755-4a2e-94b4-44badc82e9c3, answer=[3]
 
 In the method declaration `public function setName(string $name){}` on line 8, what is `string`?
 
@@ -152,7 +152,7 @@ In the method declaration `public function setName(string $name){}` on line 8, w
  - It is an operator.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=9084ed22-2c00-4635-abc5-1dac7491cecb, answer=[2]
 
 In the method declaration `public function setName(string $name){}` on line 8, what is `$name`?
 
@@ -167,7 +167,7 @@ In the method declaration `public function setName(string $name){}` on line 8, w
  - It is an operator.
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=99b8cd12-60c5-40ea-88ab-928efb083348, answer=[3,5]
 
 In the method declaration `public function setName(string $name){}` on line 8, what does `string $name` do?
 
@@ -182,7 +182,7 @@ In the method declaration `public function setName(string $name){}` on line 8, w
  - It enables the `setName()` method to only accept values of type `string` as an argument.
 
 
-/// type=MS, answer=[2,5]
+/// type=MS, id=2ef9b03a-5b3f-4e82-89cf-3b94b8e81ce5, answer=[2,5]
 
 Which statements correctly describe the `setName()` method of the `Person` class?
 
@@ -197,7 +197,7 @@ Which statements correctly describe the `setName()` method of the `Person` class
  - It sets a value of the `$name` property of the `Person` class.
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=5493b532-c275-4943-8e74-36e6932c0106, answer=[1,3]
 
 Which statements correctly describe the `getName()` method of the `Person` class?
 
@@ -257,7 +257,7 @@ $myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=de0b605b-2c4a-40ed-b37c-0887d0a13f51, answer=[5]
 
 Execute the program. What is its output?
 
@@ -272,7 +272,7 @@ Execute the program. What is its output?
  - It prints `Car Object ( [driver:protected] => Person Object ( [name:protected] => John ) )`.
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=17c6183c-9769-41bb-a9ee-ca109907e238, answer=[1,3]
 
 Which of the following are classes?
 
@@ -287,7 +287,7 @@ Which of the following are classes?
  - `__construct()`
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=188355a9-b781-487a-9c28-ca112f974100, answer=[2,4]
 
 Which of the following are objects?
 
@@ -302,7 +302,7 @@ Which of the following are objects?
  - `__construct()`
 
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=33a6c531-cde2-42db-96fe-922569ae1e17, answer=[3,4]
 
 Which of the following are type declarations?
 
@@ -317,7 +317,7 @@ Which of the following are type declarations?
  - `protected $name;`
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=46612363-7956-414a-9f05-119dbd81eead, answer=[2]
 
 Which statement best describes `declare(strict_types = 1);` on line 2?
 
@@ -332,7 +332,7 @@ Which statement best describes `declare(strict_types = 1);` on line 2?
  - It applies type declarations to methods of the `Person` class.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=8b4c1606-75c7-49a8-b820-02de2b43e415, answer=[1]
 
 In the method declaration `public function __construct(Person $driver)(){}` on line 28, what is `Person`?
 
@@ -347,7 +347,7 @@ In the method declaration `public function __construct(Person $driver)(){}` on l
  - It is an argument.
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=5d737256-a8f9-48ca-8ca8-ede38a31ff38, answer=[3,5]
 
 In the method declaration `public function __construct(Person $driver)(){}` on line 28, what does `Person $driver` do?
 
@@ -362,7 +362,7 @@ In the method declaration `public function __construct(Person $driver)(){}` on l
  - It enables the `__construct()` method to only accept values of type `Object` as an argument.
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=b1770333-10c5-4def-a97e-64b989a7ef21, answer=[2,4]
 
 Which statements correctly describe the `__construct()` method of the `Car` class?
 
@@ -422,7 +422,7 @@ $myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=5f08a9e1-d009-43bc-914c-89baff3cbaee, answer=[2]
 
 In the statement `$person = new Person("John");` on line 34, replace the argument `"John"` with `45.786`. Execute the program. What is its output?
 
@@ -482,7 +482,7 @@ $myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
-/// type=MS, answer=[4,5]
+/// type=MS, id=8559baa0-96b0-4245-97d0-57bccd8b990d, answer=[4,5]
 
 Why does the statement `$person = new Person(45.786);` on line 34 produce an error?
 
@@ -497,7 +497,7 @@ Why does the statement `$person = new Person(45.786);` on line 34 produce an err
  - In the statement `$person = new Person(45.786);` on line 34, the argument `45.786` is invalid.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=0bcd96e1-dee4-498a-9cdb-d82595a421e3, answer=[2]
 
 Remove the statement `$person = new Person(45.786);` on line 34. Execute the program. What is its output?
 
@@ -557,7 +557,7 @@ $myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=34c7c488-da1a-4f30-a508-54dcae259c9d, answer=[2]
 
 In the satement `$myCar = new Car($person);` on line 35, replace `$person` with `"John"`. Execute the program. What is its output?
 
@@ -617,7 +617,7 @@ $myCar = new Car("John");
 print_r($myCar);
 ?>
 ```
-/// type=MS, answer=[4,5]
+/// type=MS, id=018e01b3-684c-464f-a1e9-4e78fff61a2f, answer=[4,5]
 
 Why does the statement `$myCar = new Car("John");` on line 35 produce an error?
 
@@ -676,7 +676,7 @@ $myCar = new Car("John");
 print_r($myCar);
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=b8c2622b-362a-4ab3-ad1e-a853bcc6dd35, answer=[5]
 
 In the statement `$myCar = new Car("John");` on line 34, replace `"John"` with `new Person("John")`. Execute the program. What is its output?
 
@@ -699,7 +699,7 @@ In the statement `$myCar = new Car("John");` on line 34, replace `"John"` with `
 
 ### Part 2: Knowledge Assessment
 
-/// type=MS, answer=[2,4,5]
+/// type=MS, id=0e2867c7-de2c-4bfc-897e-dc59c8f1891b, answer=[2,4,5]
 
 Which statements are true about type hinting?
 
@@ -714,7 +714,7 @@ Which statements are true about type hinting?
  - It enables a function to specify the data type of a value that an argument accepts.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=4ebd0cda-d2fc-46c5-b928-260a386fd43f, answer=[3]
 
 What does `declare(strict_types = 1)` do?
 
@@ -764,7 +764,7 @@ $person->setName(45);
 echo "Person name: " . $person->getName();
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=6dea5b36-980f-4818-bc13-0c5384be371f, answer=[3]
 
 Execute the program. What is its output?
 
@@ -779,7 +779,7 @@ Execute the program. What is its output?
  - It prints `Person name: Anna`.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=7fdbb116-269a-479f-b9dd-ffc2ae37a73a, answer=[3]
 
 What is the error message?
 
@@ -794,7 +794,7 @@ What is the error message?
  - Uncaught TypeError: Argument `1` passed to `Car::__construct()` must be an instance of Person, string given, called on line 35 and defined on line number 28
 
 
-/// type=MS, answer=[2,4,5]
+/// type=MS, id=3bb8fd1b-5f25-4cd0-bd02-843a6d40b962, answer=[2,4,5]
 
 Which statements correctly describe the error?
 
@@ -811,7 +811,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/TypeHinting/IncorrectArgumentTypePassTest.php]
+/// type=CR, id=b656c24c-e186-4617-a7b9-c4bfe11b12f5, answer=[tests/TypeHinting/IncorrectArgumentTypePassTest.php]
 
 Correct the code so that it outputs the string `Person name: Anna`.
 
@@ -869,7 +869,7 @@ $person->setName();
 echo "Person name: " . $person->getName();
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=f194bb8c-a825-4c2f-a852-f8db16421030, answer=[3]
 
 Execute the program. What is the error message?
 
@@ -884,7 +884,7 @@ Execute the program. What is the error message?
  - Uncaught TypeError: Argument `1` passed to `Car::__construct()` must be an instance of Person, string given, called on line 35 and defined on line number 28
 
 
-/// type=MS, answer=[2,4,5]
+/// type=MS, id=864eac27-7af3-46e5-a992-0b63b1d3450a, answer=[2,4,5]
 
 Which statements correctly describe the error?
 
@@ -901,7 +901,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/TypeHinting/NoArgumentSpecifiedOnMethodTest.php]
+/// type=CR, id=661b296f-e22f-4ff3-82d3-c26182e75f51, answer=[tests/TypeHinting/NoArgumentSpecifiedOnMethodTest.php]
 
 Correct the code so that it outputs the string `Person name: Anna`.
 
@@ -974,7 +974,7 @@ $myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=0578c836-f02e-461d-8188-e29948714cc7, answer=[1]
 
 Execute the program. What is its output?
 
@@ -989,7 +989,7 @@ Execute the program. What is its output?
  - It prints `Car Object ( [driver:protected] => Person Object ( [name:protected] => John ) )`.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=2fe9bd08-23d2-4e6f-a668-a835049eaad5, answer=[4]
 
 What is the error message?
 
@@ -1004,7 +1004,7 @@ What is the error message?
  - Uncaught TypeError: Argument `1` passed to `Car::__construct()` must be an instance of Person, string given, called on line 35 and defined on line number 28
 
 
-/// type=MS, answer=[1,4,5]
+/// type=MS, id=85110dfc-9125-476f-9fcf-5e2066121a3e, answer=[1,4,5]
 
 Which statements correctly describe the error?
 
@@ -1021,7 +1021,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/TypeHinting/NoArgumentSpecifiedOnPersonTest.php]
+/// type=CR, id=fb3985c4-84b5-400a-a81a-1a0c18f0ba91, answer=[tests/TypeHinting/NoArgumentSpecifiedOnPersonTest.php]
 
 Correct the code so that it outputs the string `Car Object ( [driver:protected] => Person Object ( [name:protected] => John ) )`.
 
@@ -1109,7 +1109,7 @@ $myCar = new Car($person);
 print_r($myCar);
 ?>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=1878fc42-7ab7-423b-ba57-6a583bae6e24, answer=[1]
 
 Execute the program. What is the error message?
 
@@ -1124,7 +1124,7 @@ Execute the program. What is the error message?
  - Uncaught TypeError: Argument `1` passed to `Car::__construct()` must be an instance of Person, string given, called on line 35 and defined on line number 28
 
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=644b5ef9-87e8-456f-a547-908a2f1b775c, answer=[3,4]
 
 Which statements correctly describe the error?
 
@@ -1142,7 +1142,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/TypeHinting/MissingNewKeywordTest.php]
+/// type=CR, id=7274abcb-3f4a-4923-ae26-3eb80549c328, answer=[tests/TypeHinting/MissingNewKeywordTest.php]
 
 Correct the code so that it outputs the string `Car Object ( [driver:protected] => Person Object ( [name:protected] => John ) )`.
 
@@ -1230,7 +1230,7 @@ $myCar = new Car("$person");
 print_r($myCar);
 ?>
 ```
-/// type=MS, answer=[2,5]
+/// type=MS, id=7843c3ff-5f2c-4da4-acb7-bc1352d089ba, answer=[2,5]
 
 Execute the program. What are the error messages?
 
@@ -1245,7 +1245,7 @@ Execute the program. What are the error messages?
  - Uncaught TypeError: Argument `1` passed to `Car::__construct()` must be an instance of Person, string given, called on line 35 and defined on line number 28
 
 
-/// type=MS, answer=[2,4,5]
+/// type=MS, id=de501e39-2e0e-44f9-ba21-389bf2cc1884, answer=[2,4,5]
 
 Which statements correctly describe the error?
 
@@ -1262,7 +1262,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/TypeHinting/RemoveUnwantedDoubleQuotesTest.php]
+/// type=CR, id=9f3f7717-408f-424c-9a55-cd19f336de8c, answer=[tests/TypeHinting/RemoveUnwantedDoubleQuotesTest.php]
 
 Correct the code so that it outputs the string `Car Object ( [driver:protected] => Person Object ( [name:protected] => John ) )`.
 
@@ -1314,7 +1314,7 @@ print_r($myCar);
 
 ### Part 4: Practice
 
-/// type=CR, answer=[tests/TypeHinting/CreateMethodsWithTypeDeclarationsTest.php]
+/// type=CR, id=328d8314-835a-4a17-b78a-8daf068fffbf, answer=[tests/TypeHinting/CreateMethodsWithTypeDeclarationsTest.php]
 
 Write a program that adds type declarations to methods of a certain class. First, add a statement `declare(strict_types = 1);` after the `<?php` tag. Then, use a `class` keyword to declare a class named `Animal`. Within the curly braces `{}`, add the following statements:
 
