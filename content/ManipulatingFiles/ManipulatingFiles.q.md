@@ -26,7 +26,7 @@ copyFile($myFile, $myCopiedFile);
 readFileContent($myCopiedFile);
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=6568a802-44e4-4756-8127-0237ac7dbbb5, answer=[4]
 
 Execute the program. What is its output?
 
@@ -41,7 +41,7 @@ Execute the program. What is its output?
  - It prints `This is a test document content.` and `This is the end of the test document content.` in separate lines.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=b03cfbca-fa4d-47b9-b0ae-704dd6b1a277, answer=[1]
 
 Which of the following is an error handling function?
 
@@ -56,7 +56,7 @@ Which of the following is an error handling function?
  - `readFileContent()`
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=6c8e4299-f5fb-47bc-b37f-5d55c3b7c8c4, answer=[3,5]
 
 Which of the following are user-defined functions?
 
@@ -71,7 +71,7 @@ Which of the following are user-defined functions?
  - `readFileContent()`
 
 
-/// type=MS, answer=[1,3,4]
+/// type=MS, id=3523a430-b9e0-4123-a9ac-55ee1c2af8d5, answer=[1,3,4]
 
 Which of the following are parameters?
 
@@ -86,7 +86,7 @@ Which of the following are parameters?
  - `$myCopiedFile`
 
 
-/// type=MS, answer=[2,5]
+/// type=MS, id=cf20337d-0283-4252-9707-2d84a0bf68cc, answer=[2,5]
 
 Which of the following are arguments?
 
@@ -101,7 +101,7 @@ Which of the following are arguments?
  - `$myCopiedFile`
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=ba057519-671c-4187-8f62-dcaf51e52c01, answer=[2,4]
 
 Which of the following are file handling functions?
 
@@ -116,7 +116,7 @@ Which of the following are file handling functions?
  - `readFileContent()`
 
 
-/// type=MS, answer=[1,2,3,4]
+/// type=MS, id=8cdb8824-097f-45c9-9ab6-5a45833342ad, answer=[1,2,3,4]
 
 Which of the following are function calls?
 
@@ -131,7 +131,7 @@ Which of the following are function calls?
  - `function readFileContent($fileToRead) {... }`
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=e38c3312-8dfb-4a2a-89c8-5658360a0de0, answer=[3]
 
 Which of the following is a magic constant?
 
@@ -146,7 +146,7 @@ Which of the following is a magic constant?
  - `readFile()`
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=243f7311-0505-4f0b-961f-64ddabc1abff, answer=[1]
 
 On line 4, what does the `copy($file, $copiedFile)` function call do?
 
@@ -161,7 +161,7 @@ On line 4, what does the `copy($file, $copiedFile)` function call do?
  - It removes the content of `$file` from `$copiedFile`.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=0a592fcd-b32e-451d-a740-9e3cdd35a7cd, answer=[4,5]
 
 Which statements correctly describe the `copyFile()` function?
 
@@ -176,7 +176,7 @@ Which statements correctly describe the `copyFile()` function?
  - It is a user-defined function that requires two arguments.
 
 
-/// type=MS, answer=[1,4]
+/// type=MS, id=9f39d39f-253e-467d-83da-c2a3fe695d31, answer=[1,4]
 
 On line 9, what does the `readfile($fileToRead)` function call do?
 
@@ -191,7 +191,7 @@ On line 9, what does the `readfile($fileToRead)` function call do?
  - It copies the content of the specified `$fileToRead` to another file.
 
 
-/// type=MS, answer=[1,4,5]
+/// type=MS, id=18f0bd81-7ff4-4330-8eeb-c058b5f940b7, answer=[1,4,5]
 
 Which statements correctly describe the `readFileContent()` function?
 
@@ -224,7 +224,7 @@ renameFile($file, "myRenamedDocument.txt");
 echo readlink(__DIR__ . "/myRenamedDocument.txt");
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=066eaaff-0a4b-440a-8521-47bb2d2fe35b, answer=[5]
 
 Execute the program. What is its output?
 
@@ -239,7 +239,7 @@ Execute the program. What is its output?
  - It prints `C:\xampp\htdocs\PhpProjectFileHandling\myRenamedDocument.txt`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=8b7b5ed8-6c54-4c01-a87d-447e1febe284, answer=[5]
 
 Which of the following is a user-defined function?
 
@@ -254,7 +254,7 @@ Which of the following is a user-defined function?
  - `renameFile()`
 
 
-/// type=MS, answer=[1,2,3,4]
+/// type=MS, id=0ca32779-f3f0-4201-a39e-c5fba7faebc2, answer=[1,2,3,4]
 
 Which of the following are function calls?
 
@@ -269,7 +269,7 @@ Which of the following are function calls?
  - `function renameFile($fileToRename, $newName) {... }`
 
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=177c218a-e5dc-4b89-81f9-09f703eaf423, answer=[3,4]
 
 Which of the following are file handling functions?
 
@@ -284,7 +284,7 @@ Which of the following are file handling functions?
  - `renameFile()`
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=ea49342e-88c4-4946-a25c-a77a0ad77b69, answer=[4]
 
 On line 4, what does the `rename($fileToRename, $newName)` function call do?
 
@@ -299,7 +299,7 @@ On line 4, what does the `rename($fileToRename, $newName)` function call do?
  - It writes the content of `$fileToRename` to the specified `$newName`.
 
 
-/// type=MS, answer=[3,4,5]
+/// type=MS, id=61d7420f-0517-4c0e-ab8d-bca18b1c8556, answer=[3,4,5]
 
 Which statements correctly describe the `renameFile()` function?
 
@@ -314,7 +314,7 @@ Which statements correctly describe the `renameFile()` function?
  - It prints the message `Unable to rename the file.` if an error occurs.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=7fc35062-43e0-437e-a7a4-da0aefa5cd05, answer=[5]
 
 In the `echo` statement on line 9, what does the `readlink(__DIR__ . "/myRenamedDocument.txt")` function call do?
 
@@ -357,7 +357,7 @@ $newFile = __DIR__ . "/myRenamedDocument.txt";
 deleteFile($newFile);
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=297b81d1-7784-4f52-9e6a-0a322c5576a1, answer=[5]
 
 Execute the program. What is its output?
 
@@ -372,7 +372,7 @@ Execute the program. What is its output?
  - It prints `The file is deleted successfully.`.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=044bc96b-ed26-4449-881d-d6d1622b65f2, answer=[4,5]
 
 Which of the following are user-defined functions?
 
@@ -387,7 +387,7 @@ Which of the following are user-defined functions?
  - `deleteFile()`
 
 
-/// type=MS, answer=[2,3]
+/// type=MS, id=a591b9e2-100c-412f-a62e-e4cc660a6b7f, answer=[2,3]
 
 Which of the following are file handling functions?
 
@@ -402,7 +402,7 @@ Which of the following are file handling functions?
  - `deleteFile()`
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=7f1f643f-9d91-45f5-8af1-715ba1a54c73, answer=[4]
 
 Which statement best describes `rename($fileToRename, $newName)` on line 4?
 
@@ -417,7 +417,7 @@ Which statement best describes `rename($fileToRename, $newName)` on line 4?
  - It writes the content of `$fileToRename` to the specified `$newName`.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=82869296-1d08-495b-8256-09e4faa3e0cd, answer=[2]
 
 In the `if` statement on line 9, what does the `unlink($fileToDelete)` function call do?
 
@@ -432,7 +432,7 @@ In the `if` statement on line 9, what does the `unlink($fileToDelete)` function 
  - It reads the content of the specified `$fileToDelete`.
 
 
-/// type=MS, answer=[1,3,4,5]
+/// type=MS, id=65e37e62-3cb0-44a5-94b9-c2326b173e02, answer=[1,3,4,5]
 
 Which statements correctly describe the `deleteFile()` function?
 
@@ -471,7 +471,7 @@ copyFile($myFile, $myCopiedFile);
 readFileContent($myCopiedFile);
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=8f458037-cec7-42b9-b5fe-3331354fecc3, answer=[4]
 
 Execute the program. What is its output?
 
@@ -486,7 +486,7 @@ Execute the program. What is its output?
  - It prints `This is a test document content.` and `This is the end of the test document content.` in separate lines.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=da4a7913-8cef-417a-bc4c-2aac8102a93d, answer=[4]
 
 On line 15, replace the `readFileContent($myCopiedFile);` function call with `echo file_get_contents($myCopiedFile);`. Execute the program. What is its output?
 
@@ -525,7 +525,7 @@ copyFile($myFile, $myCopiedFile);
 echo file_get_contents($myCopiedFile);
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=decf893f-5f03-4eac-bf2f-c6c8a9b557d9, answer=[4]
 
 In the `echo` statement on line 15, what does the `file_get_contents($myCopiedFile)` function call do?
 
@@ -549,7 +549,7 @@ In the `echo` statement on line 15, what does the `file_get_contents($myCopiedFi
 
 ### Part 2: Knowledge Assessment
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=18bfb50d-f34e-48d7-ab84-083ebaa3ed49, answer=[3,5]
 
 Which statements correctly describe the `readlink()` function?
 
@@ -564,7 +564,7 @@ Which statements correctly describe the `readlink()` function?
  - It returns the symbolic link of the specified file.
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=677e51e8-bb60-4642-a979-8635ace8063a, answer=[1,5]
 
 Which statements are true about the `unlink()` function?
 
@@ -579,7 +579,7 @@ Which statements are true about the `unlink()` function?
  - It generates the `E_WARNING` level error on failure.
 
 
-/// type=MS, answer=[1,4]
+/// type=MS, id=9265f711-4899-43b8-b924-50040236a15c, answer=[1,4]
 
 Which statements correctly describe the `readfile()` function?
 
@@ -594,7 +594,7 @@ Which statements correctly describe the `readfile()` function?
  - It returns the symbolic link of the specified file.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=fbfd3f1f-2c42-4773-ad05-3193b8db661e, answer=[2]
 
 Which statement is true about the `rename()` function?
 
@@ -609,7 +609,7 @@ Which statement is true about the `rename()` function?
  - It returns the symbolic link of the specified file.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=1248b529-b307-4c5c-b4cd-fd0438d83a20, answer=[4]
 
 Which statement best describes the `file_get_contents()` function?
 
@@ -653,7 +653,7 @@ copyFile($myFile $myCopiedFile);
 readFileContent($myCopiedFile);
 ?>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=96f03e55-b037-47bb-997f-35cc2d8ef66f, answer=[1]
 
 Execute the program. What is its output?
 
@@ -668,7 +668,7 @@ Execute the program. What is its output?
  - It prints `This is a test document content.` and `This is the end of the test document content.` in separate lines.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=3b896dee-fa46-4256-8d1e-b7a1a0918db6, answer=[5]
 
 What is the error message?
 
@@ -683,7 +683,7 @@ What is the error message?
  - syntax error, unexpected `'$myCopiedFile'` (T_VARIABLE), expecting `','` or `')'` on line number 14
 
 
-/// type=MS, answer=[2,5]
+/// type=MS, id=0f27fba9-d40a-48b1-bc81-dad13b0a8c60, answer=[2,5]
 
 Which statements correctly describe the error?
 
@@ -700,7 +700,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ManipulatingFiles/MissingCommaBetweenArgumentsTest.php]
+/// type=CR, id=dbce005f-398b-43d1-aa9d-8a372818abc5, answer=[tests/ManipulatingFiles/MissingCommaBetweenArgumentsTest.php]
 
 Correct the code so that it successfully copies and reads the content of the specified file.
 
@@ -746,7 +746,7 @@ copyFile($myFile, $myCopiedFile);
 readFileContent($myCopiedFile);
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=94c62a0a-5470-4c91-b3e5-cca76180672f, answer=[3]
 
 Execute the program. What is the error message?
 
@@ -761,7 +761,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'$myCopiedFile'` (T_VARIABLE), expecting `','` or `')'` on line number 14
 
 
-/// type=MS, answer=[2,3,4]
+/// type=MS, id=eb725b91-89ac-47d8-97cd-73a47240b23d, answer=[2,3,4]
 
 Which statements correctly describe the error?
 
@@ -778,7 +778,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ManipulatingFiles/MissingArgumentOnReadfileTest.php]
+/// type=CR, id=3a342a9c-cbb2-42f9-b90f-da281ff998e6, answer=[tests/ManipulatingFiles/MissingArgumentOnReadfileTest.php]
 
 Correct the code so that it successfully copies and reads the content of the specified file.
 
@@ -824,7 +824,7 @@ copyFile($myFile, $myCopiedFile);
 readFileContent($myCopiedFile);
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=27b334ec-fb92-47c1-81ea-1238ea7671ff, answer=[2]
 
 Execute the program. What is the error message?
 
@@ -839,7 +839,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'$myCopiedFile'` (T_VARIABLE), expecting `','` or `')'` on line number 14
 
 
-/// type=MS, answer=[1,2,3]
+/// type=MS, id=c4fe0294-605e-4a0d-8441-c60c03b14b4e, answer=[1,2,3]
 
 Which statements correctly describe the error?
 
@@ -856,7 +856,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ManipulatingFiles/MissingOneArgumentOnCopyFunctionTest.php]
+/// type=CR, id=35551047-c916-4def-b775-9d1ddca54e1f, answer=[tests/ManipulatingFiles/MissingOneArgumentOnCopyFunctionTest.php]
 
 Correct the code so that it successfully copies and reads the content of the specified file.
 
@@ -896,7 +896,7 @@ renameFile($file, "myRenamedDocument.txt");
 echo readlink(__DIR__ . "/myRenamedDocument.txt");
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=982b4bd2-20b9-419e-9f05-d752d9231c0b, answer=[4]
 
 Execute the program. What is the error message?
 
@@ -911,7 +911,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'$myCopiedFile'` (T_VARIABLE), expecting `','` or `')'` on line number 14
 
 
-/// type=MS, answer=[2,5]
+/// type=MS, id=7b6be8c9-47f6-473d-b55d-465772acb30a, answer=[2,5]
 
 Which statements correctly describe the error?
 
@@ -928,7 +928,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ManipulatingFiles/MissingCommaBetweenArgumentsOnRenameTest.php]
+/// type=CR, id=093174e3-0ef1-449f-a2e4-06549b2d4935, answer=[tests/ManipulatingFiles/MissingCommaBetweenArgumentsOnRenameTest.php]
 
 Correct the code so that it successfully renames the specified file.
 
@@ -972,7 +972,7 @@ $newFile = __DIR__ . "/myRenamedDocument.txt";
 deleteFile($newFile);
 ?>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=cb18fd04-c631-4c2f-9b98-cdc30cd0c65b, answer=[1]
 
 Execute the program. What is the error message?
 
@@ -987,7 +987,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'$myCopiedFile'` (T_VARIABLE), expecting `','` or `')'` on line number 14
 
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=6e56f6e7-7457-48e3-bd14-f53fcbfb6526, answer=[3,4]
 
 Which statements correctly describe the error?
 
@@ -1004,7 +1004,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ManipulatingFiles/MissingOpenParenthesisAfterUnlinkTest.php]
+/// type=CR, id=e8831cb5-3308-4b9e-ac4f-2cf8ba537893, answer=[tests/ManipulatingFiles/MissingOpenParenthesisAfterUnlinkTest.php]
 
 Correct the code so that it successfully renames and deletes the specified file.
 
@@ -1058,7 +1058,7 @@ $newFile = __DIR__ . "/myRenamedDocument.txt";
 deleteFile($newFile);
 ?>
 ```
-/// type=MS, answer=[1,3,5]
+/// type=MS, id=f3fb2338-a089-40b9-8ecc-5ebbbf12b2f7, answer=[1,3,5]
 
 Execute the program. What are the error messages?
 
@@ -1073,7 +1073,7 @@ Execute the program. What are the error messages?
  - Warning: `rename(\testDocument.txt,myRenamedDocumenttxt)`: The system cannot find the file specified. (code: 2) on line number 4
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=03cc9efb-7f9c-4117-a486-d0c6e95c896f, answer=[1,5]
 
 Which statements correctly describe the error?
 
@@ -1090,7 +1090,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/ManipulatingFiles/MissingDoubleQuotesOnArgumentTest.php]
+/// type=CR, id=62601e38-1b70-47d8-86dd-25f8503110e6, answer=[tests/ManipulatingFiles/MissingDoubleQuotesOnArgumentTest.php]
 
 Correct the code so that it successfully renames and deletes the specified file.
 
@@ -1124,7 +1124,7 @@ deleteFile($newFile);
 
 ### Part 4: Practice
 
-/// type=CR, answer=[tests/ManipulatingFiles/CreateFileManipulationFunctionsTest.php]
+/// type=CR, id=a693f337-682b-455a-8a91-0321f33438e9, answer=[tests/ManipulatingFiles/CreateFileManipulationFunctionsTest.php]
 
 Write a program that uses the different file handling functions like `unlink()`, `rename()`, and `readfile()` to manipulate files. First, create a function named `changeFileName()` with two parameters `$oldFile` and `$newName`. Inside the function body, add the statement `rename($oldFile, $newName) or die("Unable to rename the file.");`. Then, create another function named `readFileContent()` with a parameter named `$file`. Inside the function body, add the statement `readfile($file) or die("Unable to read the file.");`. Next, create another function named `deleteFile()` with a parameter named `$fileToDelete`. Inside the function body, add an `if-else` statement to check if the specified `$fileToDelete` is deleted successfully or not. In the `if` construct, add the condition `!unlink($fileToDelete)`. Inside the `if` block, create an `echo` statement to display the string `Unable to delete the file.`. In the `else` block, create an `echo` statement to display the string `The file is deleted successfully.`. After the function definition, add the assignment statement `$myFile = __DIR__ . "/myTestDocument.txt";`. Then, add the function call `changeFileName($myFile, "myPracticeDocument.txt");`. Next, add another assignment statement `$myNewFile = __DIR__ . "/myPracticeDocument.txt";`. Lastly, add two function calls `readFileContent($myNewFile)` and `deleteFile($myNewFile)` respectively. Run the program to view the result.
 
