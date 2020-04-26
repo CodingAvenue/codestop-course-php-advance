@@ -62,7 +62,7 @@ class Person
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=378a7604-432b-4efa-80aa-b4fb600781c7, answer=[5]
 
 Execute the program. What is its output?
 
@@ -77,7 +77,7 @@ Execute the program. What is its output?
  - It prints `John is 15 years old.`.
 
 
-/// type=MS, answer=[1,2,3,5]
+/// type=MS, id=c0fc9e88-e3d4-47a0-8a56-765c6ef7113c, answer=[1,2,3,5]
 
 Which of the following are keywords?
 
@@ -92,7 +92,7 @@ Which of the following are keywords?
  - `function`
 
 
-/// type=MS, answer=[1,2]
+/// type=MS, id=dce2dc5c-a6c5-4769-aae1-6c1e7c7ff846, answer=[1,2]
 
 Which of the following are classes?
 
@@ -107,7 +107,7 @@ Which of the following are classes?
  - `__construct()`
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=51ceaeba-d1e0-4e44-9fe7-1f5960a2c556, answer=[3]
 
 Which of the following is an object?
 
@@ -122,7 +122,7 @@ Which of the following is an object?
  - `__construct()`
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=10715009-6377-484e-9a70-cf7947ca19a1, answer=[4,5]
 
 Which of the following are methods?
 
@@ -137,7 +137,7 @@ Which of the following are methods?
  - `__construct()`
 
 
-/// type=MS, answer=[1,2]
+/// type=MS, id=428883cb-8c13-4be5-aa83-670a02341c04, answer=[1,2]
 
 Which of the following are properties?
 
@@ -152,7 +152,7 @@ Which of the following are properties?
  - `__construct()`
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=e532501a-47bd-4608-90d0-a7dba6fec51c, answer=[5]
 
 In the statement `require __DIR__ . '/Person.php';` on line 2 of `Student.php`, what is `require`?
 
@@ -167,7 +167,7 @@ In the statement `require __DIR__ . '/Person.php';` on line 2 of `Student.php`, 
  - It is a language construct.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=37206ed7-51e8-4829-a0ae-1c90554ab8a3, answer=[4]
 
 In the statement `require __DIR__ . '/Person.php';` on line 2 of `Student.php`, what is `__DIR__`?
 
@@ -182,7 +182,7 @@ In the statement `require __DIR__ . '/Person.php';` on line 2 of `Student.php`, 
  - It is a language construct.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=2b6123c3-d931-40fc-a951-63c6fda36419, answer=[5]
 
 In the statement `require __DIR__ . '/Person.php';` on line 2 of `Student.php`, what is `Person.php`?
 
@@ -197,7 +197,7 @@ In the statement `require __DIR__ . '/Person.php';` on line 2 of `Student.php`, 
  - It is the name of the file to be included.
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=def1e61d-3c92-4ced-aaa4-d0a9570d323c, answer=[1,3]
 
 On line 2 of `Student.php`, what does the statement `require __DIR__ . '/Person.php';` do?
 
@@ -272,7 +272,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=9b99e136-01da-4e76-b53e-eec498252b10, answer=[2]
 
 Execute the program. What is its output?
 
@@ -287,7 +287,7 @@ Execute the program. What is its output?
  - It produces an error.
 
 
-/// type=MS, answer=[1,3,4]
+/// type=MS, id=427afca5-2c48-4de7-a6f5-882e7ded159a, answer=[1,3,4]
 
 Which of the following are exception handling keywords?
 
@@ -302,7 +302,7 @@ Which of the following are exception handling keywords?
  - `__DIR__`
 
 
-/// type=MS, answer=[3,4,5]
+/// type=MS, id=722b35db-3446-4690-9ce8-89f553fccbb1, answer=[3,4,5]
 
 Which of the following are exception classes?
 
@@ -317,7 +317,7 @@ Which of the following are exception classes?
  - `DivideByNegativeException`
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=90c939f9-fc7a-49d0-8527-1f5c34aaa3b9, answer=[3]
 
 Which of the following is a magic constant?
 
@@ -332,7 +332,7 @@ Which of the following is a magic constant?
  - `require_once`
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=5b261ffb-a854-4ccb-964c-43a65ef74727, answer=[4]
 
 In the statement `require_once __DIR__ . "/DivideByZeroException.php";` on line 2 of `main.php`, what is `require_once`?
 
@@ -347,7 +347,7 @@ In the statement `require_once __DIR__ . "/DivideByZeroException.php";` on line 
  - It is the name of the file to be included.
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=e97bc513-0107-4fd1-8c96-0640df994368, answer=[1,5]
 
 On line 2 of `main.php`, what does the statement `require_once __DIR__ . "/DivideByZeroException.php";` do?
 
@@ -362,7 +362,7 @@ On line 2 of `main.php`, what does the statement `require_once __DIR__ . "/Divid
  - It includes the content of the file `DivideByZeroException.php` into the file `main.php` once.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=2607edd8-fb98-4b58-a6e2-02974a41a60a, answer=[4]
 
 In the statement `include_once __DIR__ . "/DivideByNegativeException.php";` on line 3 of `main.php`, what is `include_once`?
 
@@ -377,7 +377,7 @@ In the statement `include_once __DIR__ . "/DivideByNegativeException.php";` on l
  - It is the name of the file to be included.
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=356a212f-be65-41ab-b6aa-2a8a7308da84, answer=[1,5]
 
 On line 3 of `main.php`, what does the statement `include_once __DIR__ . "/DivideByNegativeException.php";` do?
 
@@ -452,7 +452,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=e578c7de-a43d-47f2-a791-8a67e715ac5f, answer=[3]
 
 Execute the program. What is its output?
 
@@ -467,7 +467,7 @@ Execute the program. What is its output?
  - It produces an error.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=5f90d2ff-54a7-451e-a4f1-fe6a71a7b742, answer=[4,5]
 
 Which of the following are language constructs?
 
@@ -482,7 +482,7 @@ Which of the following are language constructs?
  - `require_once`
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=2bc56cc3-afcc-4ce3-bc5d-0d6f8d6f0fe0, answer=[1,3]
 
 Which statements correctly describe `include __DIR__ . "/DivideByZeroException.php";`?
 
@@ -497,7 +497,7 @@ Which statements correctly describe `include __DIR__ . "/DivideByZeroException.p
  - It creates the content of the file `DivideByZeroException.php` within the file `main.php`.
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=5bd4d60c-f612-4032-a6f7-36ea1169414e, answer=[1,5]
 
 Which statements correctly describe `require_once __DIR__ . "/DivideByNegativeException.php";`?
 
@@ -512,7 +512,7 @@ Which statements correctly describe `require_once __DIR__ . "/DivideByNegativeEx
  - It includes the content of the file `DivideByNegativeException.php` into the file `main.php` once.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=51c2ca26-d53c-4e28-990e-9e5e1fb18e9c, answer=[3]
 
 On line 2 of `main.php`, replace `include` with `require`. Execute the program. What is its output?
 
@@ -587,7 +587,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=dd0c97e6-3cf6-4d31-91e6-edd76d7ec6dc, answer=[3]
 
 On line 2 of `main.php`, enclose `__DIR__ . "/DivideByZeroException.php"` in parentheses `()`. Execute the program. What is its output?
 
@@ -611,7 +611,7 @@ On line 2 of `main.php`, enclose `__DIR__ . "/DivideByZeroException.php"` in par
 
 ### Part 2: Knowledge Assessment
 
-/// type=SS, answer=[2]
+/// type=SS, id=9b8249e4-160e-4bec-a9ee-9522a7528ee0, answer=[2]
 
 Which statement is true about file inclusion?
 
@@ -626,7 +626,7 @@ Which statement is true about file inclusion?
  - It is the process of detecting and dealing with unexpected events that occur in a program properly.
 
 
-/// type=MS, answer=[1,2,4,5]
+/// type=MS, id=a3081793-d562-485b-bdd8-dabe18b67abd, answer=[1,2,4,5]
 
 Which language constructs are used for file inclusion?
 
@@ -641,7 +641,7 @@ Which language constructs are used for file inclusion?
  - `require_once`
 
 
-/// type=MS, answer=[2,5]
+/// type=MS, id=58da1585-4d6b-4140-bc8c-d366fc1c4f0e, answer=[2,5]
 
 Which statements correctly describe the `require` construct?
 
@@ -656,7 +656,7 @@ Which statements correctly describe the `require` construct?
  - It returns `E_COMPILE_ERROR` and terminates the execution of a program if the specified file does not exist.
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=7deeb2fd-50fb-4c75-8d99-e53c93ee50c6, answer=[3,5]
 
 Which statements correctly describe the `require_once` construct?
 
@@ -671,7 +671,7 @@ Which statements correctly describe the `require_once` construct?
  - It returns `E_COMPILE_ERROR` and terminates the execution of a program if the specified file does not exist.
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=ed3e5b35-269b-444a-9893-f711f55cb9b8, answer=[2,4]
 
 Which statements correctly describe the `include` construct?
 
@@ -686,7 +686,7 @@ Which statements correctly describe the `include` construct?
  - It returns `E_COMPILE_ERROR` and terminates the execution of a program if the specified file does not exist.
 
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=8fcb3be5-6f54-4710-8ee6-c42fe6dbfb6d, answer=[3,4]
 
 Which statements correctly describe the `include_once` construct?
 
@@ -766,7 +766,7 @@ class Person
 }
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=a0a6f879-3bb6-4eab-8c3f-7011de187d9b, answer=[3]
 
 Execute the program. What is its output?
 
@@ -781,7 +781,7 @@ Execute the program. What is its output?
  - It prints `John is 15 years old.`.
 
 
-/// type=MS, answer=[1,3,5]
+/// type=MS, id=c2669b38-e4db-4c18-be64-46c268f631c5, answer=[1,3,5]
 
 What are the error messages?
 
@@ -796,7 +796,7 @@ What are the error messages?
  - Warning: include(): Failed opening `'/Personphp'` for inclusion (include_path='C:\xampp\php\PEAR') in /Student.php on line 2
 
 
-/// type=MS, answer=[1,2]
+/// type=MS, id=4f3c7ddd-c718-45bc-b6f6-9cfce19aef97, answer=[1,2]
 
 Which statements correctly describe the error?
 
@@ -813,7 +813,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/FileInclusion/IncorrectFilenameSpecifiedInIncludeTest.php], filename=[Student.php,Person.php]
+/// type=CR, id=49f69ec2-2dbd-47bf-bb65-18b0af6a8d7e, answer=[tests/FileInclusion/IncorrectFilenameSpecifiedInIncludeTest.php], filename=[Student.php,Person.php]
 
 Correct the code so that it outputs the string `John is 15 years old.`.
 
@@ -931,7 +931,7 @@ class Person
 }
 ?>
 ```
-/// type=MS, answer=[2,4]
+/// type=MS, id=d419eb7b-00d0-4183-88b3-4901c0f818be, answer=[2,4]
 
 Execute the program. What are the error messages?
 
@@ -946,7 +946,7 @@ Execute the program. What are the error messages?
  - Warning: include(): Failed opening `'/Personphp'` for inclusion (include_path='C:\xampp\php\PEAR') in /Student.php on line 2
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=c9c1de15-d2d8-4e7f-8e9e-49a36bd3aaea, answer=[2,4]
 
 Which statements correctly describe the error?
 
@@ -963,7 +963,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/FileInclusion/IncorrectFilePathSpecifiedInIncludeTest.php], filename=[Student.php,Person.php]
+/// type=CR, id=1583d9fd-173d-41a9-ab3c-84515331e5f1, answer=[tests/FileInclusion/IncorrectFilePathSpecifiedInIncludeTest.php], filename=[Student.php,Person.php]
 
 Correct the code so that it outputs the string `John is 15 years old.`.
 
@@ -1082,7 +1082,7 @@ class Person
 }
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=09db0e9d-3848-47fe-b884-b3520bd780af, answer=[3]
 
 Execute the program. What is the error message?
 
@@ -1097,7 +1097,7 @@ Execute the program. What is the error message?
  - Warning: include_once(): Failed opening `'__DRI__/DivideByNegativeException.php'` for inclusion (include_path='C:\xampp\php\PEAR') in /main.php on line 3
 
 
-/// type=MS, answer=[2,3,4]
+/// type=MS, id=7ceebec5-cfdd-40c4-afbe-268e58992049, answer=[2,3,4]
 
 Which statements correctly describe the error?
 
@@ -1114,7 +1114,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/FileInclusion/DuplicateFileInclusionStatementTest.php], filename=[Student.php,Person.php]
+/// type=CR, id=7f859102-74fb-49bb-9b04-46bd3b3f76ab, answer=[tests/FileInclusion/DuplicateFileInclusionStatementTest.php], filename=[Student.php,Person.php]
 
 Correct the code so that it outputs the string `John is 15 years old.`.
 
@@ -1233,7 +1233,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=d7d74fb1-336f-4c3b-a669-a7c1da6a21a9, answer=[1]
 
 Execute the program. What is the error message?
 
@@ -1248,7 +1248,7 @@ Execute the program. What is the error message?
  - Warning: include_once(): Failed opening `'__DRI__/DivideByNegativeException.php'` for inclusion (include_path='C:\xampp\php\PEAR') in /main.php on line 3
 
 
-/// type=MS, answer=[3,4,5]
+/// type=MS, id=fd7b0902-ab50-4f2b-8c30-dd52370cf6b4, answer=[3,4,5]
 
 Which statements correctly describe the error?
 
@@ -1265,7 +1265,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/FileInclusion/MissingOpenDoubleQuoteTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=431a74cd-fc48-4740-a203-6471cbb77638, answer=[tests/FileInclusion/MissingOpenDoubleQuoteTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs `2`.
 
@@ -1383,7 +1383,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=MS, answer=[2,4,5]
+/// type=MS, id=42efa459-d1a5-429d-8e25-68f98c943b9d, answer=[2,4,5]
 
 Execute the program. What are the error messages?
 
@@ -1398,7 +1398,7 @@ Execute the program. What are the error messages?
  - Warning: include_once(): Failed opening `'__DRI__/DivideByNegativeException.php'` for inclusion (include_path='C:\xampp\php\PEAR') in /main.php on line 3
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=9827a9fd-cf83-4a09-8535-3ccd5938b9f8, answer=[2,4]
 
 Which statements correctly describe the error?
 
@@ -1415,7 +1415,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/FileInclusion/MisspelledMagicConstantDirTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=79aea90f-fc01-4d56-ab7d-5f7ff5c08dec, answer=[tests/FileInclusion/MisspelledMagicConstantDirTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs `2`.
 
@@ -1482,7 +1482,7 @@ class DivideByNegativeException extends Exception
 
 ### Part 4: Practice
 
-/// type=CR, answer=[tests/FileInclusion/CreateFileInclusionStatementsTest.php], filename=[MyShape.php,Circle.php,Square.php,main.php]
+/// type=CR, id=91d01b35-fff1-416a-bb7e-5e5d82b9563e, answer=[tests/FileInclusion/CreateFileInclusionStatementsTest.php], filename=[MyShape.php,Circle.php,Square.php,main.php]
 
 Given the implementations of the interface and classes below, create statements that use `require`, `require_once`, `include`, and `include_once` constructs to include and evaluate the content of a certain file into another PHP file. In the `Circle.php` tab, add an `include_once` statement that includes the content of the `MyShape` interface into the `Circle.php` file. In the `Square.php` tab, add a `require_once` statement that includes the content of the `MyShape` interface into the `Square.php` file. In the `main.php` tab, add two file inclusion statements that use `include` and `require` constructs to include the content of the files `Circle.php` and `Square.php` into the file `main.php`. Then, run the program to view the result.
 
