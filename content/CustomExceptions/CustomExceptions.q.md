@@ -40,7 +40,7 @@ class DivideByZeroException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=de2e39a2-0987-4a22-bdee-ee22dbf7fc89, answer=[5]
 
 Execute the program. What is its output?
 
@@ -55,7 +55,7 @@ Execute the program. What is its output?
  - It prints `Exception caught: The value '0' as a divisor is not allowed.`.
 
 
-/// type=MS, answer=[2,3,5]
+/// type=MS, id=6859c04f-8552-4753-b772-3eeb94ec1fbd, answer=[2,3,5]
 
 Which of the following are exception handling keywords?
 
@@ -70,7 +70,7 @@ Which of the following are exception handling keywords?
  - `catch`
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=4b90fab7-61e7-4c76-bf52-b614ebe1f403, answer=[4,5]
 
 Which of the following are classes?
 
@@ -85,7 +85,7 @@ Which of the following are classes?
  - `DivideByZeroException`
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=8a3162e3-cc31-44fc-8396-cde87ff82562, answer=[1]
 
 Which of the following is an object?
 
@@ -100,7 +100,7 @@ Which of the following is an object?
  - `DivideByZeroException`
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=9edf2940-456e-472a-8156-dfd9a975f340, answer=[4]
 
 In the declaration `class DivideByZeroException extends Exception` on line 2 of `DivideByZeroException.php`, what is `class`?
 
@@ -115,7 +115,7 @@ In the declaration `class DivideByZeroException extends Exception` on line 2 of 
  - It is an exception.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=39f06b29-daea-4f5f-ab49-ba46eeebecc2, answer=[1]
 
 In the declaration `class DivideByZeroException extends Exception` on line 2 of `DivideByZeroException.php`, what is `Exception`?
 
@@ -130,7 +130,7 @@ In the declaration `class DivideByZeroException extends Exception` on line 2 of 
  - It is an exception.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=10ca3798-3e29-49f8-a9ac-3221fa124df0, answer=[4]
 
 In the declaration `class DivideByZeroException extends Exception` on line 2 of `DivideByZeroException.php`, what is `extends`?
 
@@ -145,7 +145,7 @@ In the declaration `class DivideByZeroException extends Exception` on line 2 of 
  - It is an exception.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=0717bb8e-47e3-480f-befa-5e20d04c5c2e, answer=[5]
 
 In the declaration `class DivideByZeroException extends Exception` on line 2 of `DivideByZeroException.php`, what is `DivideByZeroException`?
 
@@ -160,7 +160,7 @@ In the declaration `class DivideByZeroException extends Exception` on line 2 of 
  - It is a custom exception class.
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=e45c77a4-c237-43b5-840e-f2bb39bcafc5, answer=[2,4]
 
 On line 2 of `DivideByZeroException.php`, what does `class DivideByZeroException extends Exception` do?
 
@@ -175,7 +175,7 @@ On line 2 of `DivideByZeroException.php`, what does `class DivideByZeroException
  - It creates the `Exception` class that inherits all the public and protected properties and methods of the `DivideByZeroException` class.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=d575a1e4-f1f1-44c2-bebd-94a977c8c57a, answer=[4]
 
 In the statement `require_once(__DIR__ . "/DivideByZeroException.php");` on line 2 of `Main.php`, what is `require_once`?
 
@@ -190,7 +190,7 @@ In the statement `require_once(__DIR__ . "/DivideByZeroException.php");` on line
  - It is a custom exception class.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=4420d4aa-1fe9-4ac2-8bec-aa6b91aaad9c, answer=[5]
 
 In the statement `require_once(__DIR__ . "/DivideByZeroException.php");` on line 2 of `Main.php`, what is `__DIR__`?
 
@@ -205,7 +205,7 @@ In the statement `require_once(__DIR__ . "/DivideByZeroException.php");` on line
  - It is a magic constant.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=c1d5c0e6-a415-44f3-9ac6-8df5b5c7c667, answer=[3]
 
 On line 2 of `Main.php`, what does `require_once(__DIR__ . "/DivideByZeroException.php");` do?
 
@@ -220,7 +220,7 @@ On line 2 of `Main.php`, what does `require_once(__DIR__ . "/DivideByZeroExcepti
  - It excludes the file `DivideByZeroException.php` in the file `Main.php`.
 
 
-/// type=MS, answer=[1,2,5]
+/// type=MS, id=ef1fcfab-abc6-4c19-821a-8c87d2f98ea4, answer=[1,2,5]
 
 On line 7 of `Main.php`, what does the statement `throw new DivideByZeroException("The value '0' as a divisor is not allowed.");` do?
 
@@ -235,7 +235,7 @@ On line 7 of `Main.php`, what does the statement `throw new DivideByZeroExceptio
  - It creates a new object of the `DivideByZeroException` class passing the argument `The value '0' as a divisor is not allowed.`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=56086bff-cef5-4a36-8d78-67177ad6ef77, answer=[5]
 
 On lines 13, 14, and 14 of `Main.php`, what does the `try { echo divide(10, 0); }` block do?
 
@@ -250,7 +250,7 @@ On lines 13, 14, and 14 of `Main.php`, what does the `try { echo divide(10, 0); 
  - It facilitates the catching of a possible exception thrown by the `divide(10, 0)` function call.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=f3dd3528-b931-4f2b-a323-7d5e621ddce7, answer=[4,5]
 
 On lines 15, 16, and 17 of `Main.php`, what does the `catch (DivideByZeroException $div) { echo "Exception caught: " . $div->errorMessage(); }` block do?
 
@@ -265,7 +265,7 @@ On lines 15, 16, and 17 of `Main.php`, what does the `catch (DivideByZeroExcepti
  - It executes the `echo` statement if a `DivideByZeroException` exception occurs in the `try` block.
 
 
-/// type=MS, answer=[2,3,5]
+/// type=MS, id=7bcd3acd-3915-4c46-95d7-aa22a5a3ab5f, answer=[2,3,5]
 
 Which statements correctly describe the `DivideByZeroException` class?
 
@@ -340,7 +340,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=d45d7839-8295-4e2d-bc40-da2eb3ccfdff, answer=[5]
 
 Execute the program. What is its output?
 
@@ -355,7 +355,7 @@ Execute the program. What is its output?
  - It prints `Exception caught: A negative number as a divisor is encountered in /Main.php`.
 
 
-/// type=MS, answer=[2,3,5]
+/// type=MS, id=b2d7d77a-a787-4267-9028-e868651123c9, answer=[2,3,5]
 
 Which of the following are exception handling keywords?
 
@@ -370,7 +370,7 @@ Which of the following are exception handling keywords?
  - `catch`
 
 
-/// type=MS, answers=[4,5]
+/// type=MS, id=94be0501-44c5-4f48-94bc-731229233039, answer=[4,5]
 
 Which of the following are custom exception classes?
 
@@ -385,7 +385,7 @@ Which of the following are custom exception classes?
  - `DivideByNegativeException`
 
 
-/// type=MS, answer=[3,4,5]
+/// type=MS, id=afd67206-cb61-4a0f-b6d1-fe3a2503d14f, answer=[3,4,5]
 
 Which of the following are custom exception methods?
 
@@ -400,7 +400,7 @@ Which of the following are custom exception methods?
  - `myErrorMessage()`
 
 
-/// type=MS, answer=[1,2]
+/// type=MS, id=07d1b8de-ee97-4cbf-b288-f0b2949355d3, answer=[1,2]
 
 Which of the following are objects?
 
@@ -415,7 +415,7 @@ Which of the following are objects?
  - `DivideByNegativeException`
 
 
-/// type=MS, answer=[2,3,4]
+/// type=MS, id=8a9cc8e3-0f14-4ebf-bd27-9a0cce72dd7a, answer=[2,3,4]
 
 Which statements correctly describe the `DivideByNegativeException` class?
 
@@ -430,7 +430,7 @@ Which statements correctly describe the `DivideByNegativeException` class?
  - It catches the possible `Exception` exception that occurs in a program.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=dee43f80-3335-485d-b31e-1dbc48fefe0b, answer=[4,5]
 
 Which statements correctly describe the `myErrorMessage()` method of the `DivideByNegativeException` class?
 
@@ -445,7 +445,7 @@ Which statements correctly describe the `myErrorMessage()` method of the `Divide
  - It returns the error message `A negative number as a divisor is encountered` if an exception occurs.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=3f1dda27-ee0d-49c2-83bb-3868b600998e, answer=[4,5]
 
 Which statements correctly describe the `myErrorFile()` method of the `DivideByNegativeException` class?
 
@@ -460,7 +460,7 @@ Which statements correctly describe the `myErrorFile()` method of the `DivideByN
  - It is a user-defined method of the `DivideByNegativeException` class.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=1b451bdc-2891-46b9-aff5-a5a6ec1d315f, answer=[4,5]
 
 Which statements correctly describe the `catch` block on lines 18 and 19 of `Main.php`?
 
@@ -475,7 +475,7 @@ Which statements correctly describe the `catch` block on lines 18 and 19 of `Mai
  - It executes the `echo` statement if a `DivideByZeroException` exception occurs in the `try` block.
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=276afd10-9d42-4aa2-bc68-b5ac1a211e20, answer=[4,5]
 
 Which statements correctly describe the `catch` block on lines 20 and 21 of `Main.php`?
 
@@ -499,7 +499,7 @@ Which statements correctly describe the `catch` block on lines 20 and 21 of `Mai
 
 ### Part 2: Knowledge Assessment
 
-/// type=SS, answer=[4]
+/// type=SS, id=5ec04799-eee7-4e88-b4a8-725a4b9fff82, answer=[4]
 
 Which statement best describes an exception?
 
@@ -514,7 +514,7 @@ Which statement best describes an exception?
  - It is the process of detecting and dealing with unexpected events that occur in a program properly.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=beb5a64e-605d-4c14-9100-a1ab1a9ea4cc, answer=[5]
 
 Which statement best describes exception handling?
 
@@ -529,7 +529,7 @@ Which statement best describes exception handling?
  - It is the process of detecting and dealing with unexpected events that occur in a program properly.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=0504508d-f63f-4f85-ab1a-5c7554557ad3, answer=[5]
 
 Which statement best describes the custom exception handling class?
 
@@ -587,7 +587,7 @@ class DivideByZeroException  Exception
 }
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=8bb6ecd1-f493-4b5c-8a4c-a34edf53f0d5, answer=[3]
 
 Execute the program. What is its output?
 
@@ -602,7 +602,7 @@ Execute the program. What is its output?
  - It prints `Exception caught: The value '0' as a divisor is not allowed.`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=0cd9a1f0-397f-49c0-9cd1-00feca2b347b, answer=[5]
 
 What is the error message?
 
@@ -617,7 +617,7 @@ What is the error message?
  - syntax error, unexpected `'Exception'` (T_STRING), expecting `'{'` in /DivideByZeroException.php on line number 2
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=45a8a50a-f1fe-49d7-aab3-1f0f79149a11, answer=[4,5]
 
 Which statements correctly describe the error?
 
@@ -634,7 +634,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/CustomExceptions/MissingExtendsKeywordTest.php], filename=[Main.php,DivideByZeroException.php]
+/// type=CR, id=66a98760-cdcb-460b-86b9-13b53f9cdfaa, answer=[tests/CustomExceptions/MissingExtendsKeywordTest.php], filename=[Main.php,DivideByZeroException.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -708,7 +708,7 @@ try {
 }
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=999e0f24-5a77-4fa1-88fc-a5794540d9b1, answer=[4]
 
 Execute the program. What is the error message?
 
@@ -723,7 +723,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'Exception'` (T_STRING), expecting `'{'` in /DivideByZeroException.php on line number 2
 
 
-/// type=MS, answer=[3,4]
+/// type=MS, id=23ffa848-9e12-4188-9d95-80ec1c0c1d67, answer=[3,4]
 
 Which statements correctly describe the error?
 
@@ -740,7 +740,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/CustomExceptions/MissingClassKeywordTest.php], filename=[Main.php,DivideByZeroException.php]
+/// type=CR, id=e1828711-fb4e-4469-92f6-a75712617a9c, answer=[tests/CustomExceptions/MissingClassKeywordTest.php], filename=[Main.php,DivideByZeroException.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -814,7 +814,7 @@ class DivideByZeroException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=2cc05785-6ff4-438d-be9e-7f18b63908b7, answer=[2]
 
 Execute the program. What is the error message?
 
@@ -829,7 +829,7 @@ Execute the program. What is the error message?
  - syntax error, unexpected `'Exception'` (T_STRING), expecting `'{'` in /DivideByZeroException.php on line number 2
 
 
-/// type=MS, answer=[4,5]
+/// type=MS, id=b5953095-e80b-4c9a-8c3e-37a8346002ba, answer=[4,5]
 
 Which statements correctly describe the error?
 
@@ -846,7 +846,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/CustomExceptions/MisspelledThrowKeywordTest.php], filename=[Main.php,DivideByZeroException.php]
+/// type=CR, id=af590d6b-0381-40da-9dc3-11cf9fb28891, answer=[tests/CustomExceptions/MisspelledThrowKeywordTest.php], filename=[Main.php,DivideByZeroException.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -941,7 +941,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=MS, answer=[2,3]
+/// type=MS, id=2612505b-a08b-47fb-8b59-37c4ec19c8ce, answer=[2,3]
 
 Execute the program. What are the error messages?
 
@@ -956,7 +956,7 @@ Execute the program. What are the error messages?
  - Uncaught Error: Call to undefined function `DivideByNegativeException()` in /Main.php on line number 10
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=98d70caa-9ab8-4c49-bb4a-fdeaf73540bc, answer=[5]
 
 Which statement best describes the error?
 
@@ -973,7 +973,7 @@ Which statement best describes the error?
 :::
 
 
-/// type=CR, answer=[tests/CustomExceptions/MissingRequireStatementTest.php], filename=[Main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=f4f2b2ec-00f9-4044-bde4-ffb76e3920db, answer=[tests/CustomExceptions/MissingRequireStatementTest.php], filename=[Main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs the string `Exception caught: A negative number as a divisor is encountered in /Main.php`.
 
@@ -1090,7 +1090,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=MS, answer=[4,5]
+/// type=MS, id=a5861f56-0196-4cf2-9b4e-2ed4182eb2d0, answer=[4,5]
 
 Execute the program. What are the error messages?
 
@@ -1105,7 +1105,7 @@ Execute the program. What are the error messages?
  - Uncaught Error: Call to undefined function `DivideByNegativeException()` in /Main.php on line number 10
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=f7c9f882-7b94-41c2-9b48-b307da988e9e, answer=[3,5]
 
 Which statements correctly describe the error?
 
@@ -1122,7 +1122,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/CustomExceptions/MissingNewKeywordClassInstanceTest.php], filename=[Main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=98b81697-b874-4021-81c7-ca82020dcbb5, answer=[tests/CustomExceptions/MissingNewKeywordClassInstanceTest.php], filename=[Main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs the string `Exception caught: A negative number as a divisor is encountered in /Main.php`.
 
@@ -1240,7 +1240,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=MS, answer=[1,2,5]
+/// type=MS, id=74e2c2b1-221e-4fd7-b64a-859d905ab615, answer=[1,2,5]
 
 On line 11 of `DivideByNegativeException.php`, remove the object operator `->` from `$this->getFile()`. Execute the program. What are the error messages?
 
@@ -1315,7 +1315,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=e4acbf4b-4cb7-4a27-819b-f50111afee4a, answer=[3]
 
 On line 4 of `DivideByZeroException.php`, remove the parentheses `()` from `public function errorMessage()`. Execute the program. What is the error message?
 
@@ -1390,7 +1390,7 @@ class DivideByNegativeException extends Exception
 }
 ?>
 ```
-/// type=SS, answer=[4]
+/// type=SS, id=a8e3b0bd-3153-41b7-b9c1-d32fc717c26e, answer=[4]
 
 On line 18 of `Main.php`, remove `$div` from `catch (DivideByZeroException $div)`. Execute the program. What is the error message?
 
@@ -1407,7 +1407,7 @@ On line 18 of `Main.php`, remove `$div` from `catch (DivideByZeroException $div)
 :::
 
 
-/// type=CR, answer=[tests/CustomExceptions/CorrectMultipleErrorsTest.php], filename=[Main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=e1359fb8-0dfd-48e3-b96d-3fba4545b61f, answer=[tests/CustomExceptions/CorrectMultipleErrorsTest.php], filename=[Main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs the string `Exception caught: A negative number as a divisor is encountered in /Main.php`.
 
@@ -1473,7 +1473,7 @@ class DivideByNegativeException extends Exception
 
 ### Part 4: Practice
 
-/// type=CR, answer=[tests/CustomExceptions/CreateNewCustomExceptionClassTest.php], filename=[PracticeMain.php,FileNotFoundException.php]
+/// type=CR, id=9d777c4d-89ed-4b03-8e32-24c162af398e, answer=[tests/CustomExceptions/CreateNewCustomExceptionClassTest.php], filename=[PracticeMain.php,FileNotFoundException.php]
 
 Write a program that creates a custom exception class to handle exceptions gracefully. In the `FileNotFoundException.php` tab, use a `class` keyword to declare a custom exception class named `FileNotFoundException` that extends the `Exception` class. Within the curly braces `{}`, add a `public` method named `getErrorMessage()`. Inside the `getErrorMessage()` method body, add the statement `return $this->getMessage()`.
 
