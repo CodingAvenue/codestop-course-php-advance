@@ -45,7 +45,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, choiceType=HTML, answer=[1]
+/// type=SS, choiceType=HTML, id=15f40a1b-2383-44ed-8249-10bc69e9835b, answer=[1]
 
 Execute the program. What is its output?
 
@@ -60,7 +60,7 @@ Execute the program. What is its output?
  - <h3>{Favorites}</h3><p><em>My favorite fruit is: {Apple}</em><br/><em>My favorite color is: {Gray}</em></p>
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=088bd42a-7ce6-48e6-9d6b-f3d74ac67660, answer=[4]
 
 Which of the following is a user-defined function?
 
@@ -75,7 +75,7 @@ Which of the following is a user-defined function?
  - `file_get_contents()`
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=29d75481-d3a8-49a7-911b-9390b3189f67, answer=[2,4]
 
 Which of the following are function calls?
 
@@ -90,7 +90,7 @@ Which of the following are function calls?
  - `function readTemplate($file, $array) {... }`
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=5f770cc6-31e7-4d7e-b4d0-b3bb0850e2bf, answer=[5]
 
 Which of the following is a file handling function?
 
@@ -105,7 +105,7 @@ Which of the following is a file handling function?
  - `file_get_contents()`
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=1400bb37-0add-43f2-9fe7-d4bbbedd7e15, answer=[3]
 
 In the statement `$output = file_get_contents($file);` on line 5 of `main.php`, what does `file_get_contents($file)` do?
 
@@ -120,7 +120,7 @@ In the statement `$output = file_get_contents($file);` on line 5 of `main.php`, 
  - It converts the content of the specified `$file` into a string.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=34b70d74-32ab-4cfc-be61-f39fbc9a7182, answer=[4]
 
 Which statement best describes `$output = file_get_contents($file);` on line 5 of `main.php`?
 
@@ -135,7 +135,7 @@ Which statement best describes `$output = file_get_contents($file);` on line 5 o
  - It converts the content of the specified `$file` into a string and assigns it to `$output`.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=83472697-84ce-4c6f-8b50-3fee51d70490, answer=[3]
 
 Which statement best describes `str_replace($replace, $val, $output)` on line 8 of `main.php`?
 
@@ -150,7 +150,7 @@ Which statement best describes `str_replace($replace, $val, $output)` on line 8 
  - It removes the string of `$replace` and `$val` from `$output`.
 
 
-/// type=MS, answer=[2,3,5]
+/// type=MS, id=9184a1b7-6ffa-4c10-a08b-cd05117c9963, answer=[2,3,5]
 
 Which statements correctly describe the `readTemplate()` function of `main.php`?
 
@@ -165,7 +165,7 @@ Which statements correctly describe the `readTemplate()` function of `main.php`?
  - It is a user-defined function that requires two arguments of types `resource` and `array`.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=d96f9f68-a892-4697-bddf-e75ec904d54a, answer=[5]
 
 On line 18 of `main.php`, what is `'title' => "Favorites"`?
 
@@ -180,7 +180,7 @@ On line 18 of `main.php`, what is `'title' => "Favorites"`?
  - It is an array element.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=9a3cabbf-3fd0-4bc5-818f-55a025e368ec, answer=[4]
 
 In the array element `'title' => "Favorites"`, what is `title`?
 
@@ -195,7 +195,7 @@ In the array element `'title' => "Favorites"`, what is `title`?
  - It is an array element.
 
 
-/// type=SS, answer=[1]
+/// type=SS, id=cc97e4f7-a72d-4352-939c-6bbfbf1e0674, answer=[1]
 
 In the array element `'title' => "Favorites"`, what is `Favorites`?
 
@@ -210,7 +210,7 @@ In the array element `'title' => "Favorites"`, what is `Favorites`?
  - It is an array element.
 
 
-/// type=MS, answer=[1,2,5]
+/// type=MS, id=87fb02dc-8e00-4b17-be06-730a8155ffc8, answer=[1,2,5]
 
 Which of the following are HTML tags?
 
@@ -225,7 +225,7 @@ Which of the following are HTML tags?
  - `<em></em>`
 
 
-/// type=MS, answer=[3,5]
+/// type=MS, id=de4cafb0-8876-4bd5-a995-19584c47c0a6, answer=[3,5]
 
 Which of the following are HTML elements?
 
@@ -240,7 +240,7 @@ Which of the following are HTML elements?
  - `<em>My favorite color is: {color}</em>`
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=748e75cb-cfdf-4f02-a2c0-5ca28c80c415, answer=[4]
 
 In the HTML element `<h3>{title}</h3>` on line 3 of `template.tpl`, what is `{title}`?
 
@@ -255,7 +255,7 @@ In the HTML element `<h3>{title}</h3>` on line 3 of `template.tpl`, what is `{ti
  - It is an HTML element.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=5ac11c3b-257d-4baf-a663-6c9b3fe90742, answer=[3]
 
 In the HTML element `<h3>{title}</h3>` on line 3 of `template.tpl`, what does the Smarty tag `{title}` do?
 
@@ -333,7 +333,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, choiceType=HTML, answer=[2]
+/// type=SS, choiceType=HTML, id=b9db4195-f426-4b13-8d56-9016d6286879, answer=[2]
 
 Execute the program. What is its output?
 
@@ -348,7 +348,7 @@ Execute the program. What is its output?
  - <table style = "border-collapse: separate; width: 300px;border: 3px solid gray;"><tr style = "border: 3px solid gray"><th style = "color: white; background-color: green;"> Subject </th><th style = "color: white; background-color: green;"> Score </th></tr><tr style = "border: 3px solid gray"><td style = "border: 3px solid gray"> Science </td><td style = "border: 3px solid gray"> 75 </td></tr><tr style = "border: 3px solid gray"><td style = "border: 3px solid gray"> Language </td><td style = "border: 3px solid gray"> 65 </td></tr></table>
 
 
-/// type=MS, answer=[1,3,4]
+/// type=MS, id=e2e51962-0604-4bae-97dc-5b126cd98a3d, answer=[1,3,4]
 
 Which of the following are function calls?
 
@@ -363,7 +363,7 @@ Which of the following are function calls?
  - `function readTemplate($file, $array) {... }`
 
 
-/// type=MS, answer=[1,2,3]
+/// type=MS, id=96a6fbbb-92c4-43c5-8d78-1e7bc023c779, answer=[1,2,3]
 
 Which of the following are Smarty tags?
 
@@ -378,7 +378,7 @@ Which of the following are Smarty tags?
  - `tr { border: 3px solid gray; }`
 
 
-/// type=MS, answer=[2,3,4]
+/// type=MS, id=65519bc8-ef0c-4977-accd-f641206488a1, answer=[2,3,4]
 
 Which of the following are array elements?
 
@@ -393,7 +393,7 @@ Which of the following are array elements?
  - `<caption> {title} </caption>`
 
 
-/// type=MS, answer=[3,4,5]
+/// type=MS, id=5a68ad69-a5b4-4ccf-96ce-da86f541d5f7, answer=[3,4,5]
 
 Which of the following are array keys?
 
@@ -408,7 +408,7 @@ Which of the following are array keys?
  - `Language`
 
 
-/// type=MS, answer=[1,2,4,5]
+/// type=MS, id=ce1ba7f9-216e-4189-b206-0c55e27ccb58, answer=[1,2,4,5]
 
 Which of the following are array values?
 
@@ -423,7 +423,7 @@ Which of the following are array values?
  - `Exam Results`
 
 
-/// type=MS, answer=[1,3]
+/// type=MS, id=3965762b-e2b0-4800-9315-dfca320cb0b1, answer=[1,3]
 
 In `main.php`, which statements correctly describe `readTemplate($templateFile, array(... ))` on line 15?
 
@@ -438,7 +438,7 @@ In `main.php`, which statements correctly describe `readTemplate($templateFile, 
  - It creates the `readTemplate()` function with two parameters `$templateFile` and `array(... )`.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=1bc155d4-52d3-4efb-8204-d4dc742d4052, answer=[4]
 
 In `main.php`, what key is associated with the value `75`?
 
@@ -453,7 +453,7 @@ In `main.php`, what key is associated with the value `75`?
  - `Language`
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=2ea0ab42-4c03-4d54-ae4f-254e3159f4c5, answer=[4]
 
 On line 6 of `resultTemplate.tpl`, what is `caption-side: top;`?
 
@@ -468,7 +468,7 @@ On line 6 of `resultTemplate.tpl`, what is `caption-side: top;`?
  - It is a CSS declaration block.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=b74e4466-1075-485d-9e9c-54f566557c4c, answer=[5]
 
 In the style rule `tr { border: 3px solid gray; }` of `resultTemplate.tpl`, what is `{ border: 3px solid gray; }`?
 
@@ -483,7 +483,7 @@ In the style rule `tr { border: 3px solid gray; }` of `resultTemplate.tpl`, what
  - It is a CSS declaration block.
 
 
-/// type=SS, answer=[3]
+/// type=SS, id=905f8d5b-b148-411e-a758-cb8c7a543802, answer=[3]
 
 In the HTML element `<td> {Language} </td>` on line 24 of `resultTemplate.tpl`, what does the Smarty tag `{Language}` do?
 
@@ -498,7 +498,7 @@ In the HTML element `<td> {Language} </td>` on line 24 of `resultTemplate.tpl`, 
  - It removes the `Language` element from an associative array.
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=0bec71a6-a305-4316-92f0-fc63f76ec91c, answer=[4]
 
 Which statement best describes `$output = file_get_contents($file);` on line 5 of `main.php`?
 
@@ -513,7 +513,7 @@ Which statement best describes `$output = file_get_contents($file);` on line 5 o
  - It converts the content of the specified `$file` into a string and assigns it to `$output`.
 
 
-/// type=MS, answer=[2,3,5]
+/// type=MS, id=90bd4a55-dce0-4fd5-b7b1-6aab13c69f96, answer=[2,3,5]
 
 Which statements correctly describe the `readTemplate()` function of `main.php`?
 
@@ -571,7 +571,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, choiceType=HTML, answer=[5]
+/// type=SS, choiceType=HTML, id=17e17ee2-a6c9-4c0e-9813-ec0a2f35b337, answer=[5]
 
 In the array element `'color' => "Gray"` on line 20 of `main.php`, replace `color` with `colors`. Execute the program. What is its output?
 
@@ -629,7 +629,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=MS, answer=[4,5]
+/// type=MS, id=c6582bf1-2bac-428b-b865-319a7db07a30, answer=[4,5]
 
 Why does the Smarty tag `{color}` not replaced with the array value `Gray` when rendered in the web browser window?
 
@@ -707,7 +707,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, choiceType=HTML, answer=[2]
+/// type=SS, choiceType=HTML, id=a7a313c0-7395-450e-a1c0-8bb4d19afcfa, answer=[2]
 
 Execute the program. What is its output?
 
@@ -722,7 +722,7 @@ Execute the program. What is its output?
  - <table style = "border-collapse: separate; width: 300px;border: 3px solid gray;"><tr style = "border: 3px solid gray"><th style = "color: white; background-color: green;"> Subject </th><th style = "color: white; background-color: green;"> Score </th></tr><tr style = "border: 3px solid gray"><td style = "border: 3px solid gray"> Science </td><td style = "border: 3px solid gray"> 75 </td></tr><tr style = "border: 3px solid gray"><td style = "border: 3px solid gray"> Language </td><td style = "border: 3px solid gray"> 65 </td></tr></table>
 
 
-/// type=SS, choiceType=HTML, answer=[5]
+/// type=SS, choiceType=HTML, id=a4e0e910-3fad-4c52-aedb-13e43880f1bf, answer=[5]
 
 On line 11 of `resultTemplate.tpl`, remove the semicolon `;` after the CSS declaration `color: white`. Execute the program. What is its output?
 
@@ -746,7 +746,7 @@ On line 11 of `resultTemplate.tpl`, remove the semicolon `;` after the CSS decla
 
 ### Part 2: Knowledge Assessment
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=90892e74-be4e-4370-8798-4c8fe00493d3, answer=[2,4]
 
 Which statements correctly describe a template?
 
@@ -761,7 +761,7 @@ Which statements correctly describe a template?
  - It is a software designed to provide an easier way of combining templates and related data elements in producing a certain document.
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=1879f6d2-2c50-4b23-bd8c-9401134e7161, answer=[5]
 
 Which statement is true about the template engine?
 
@@ -776,7 +776,7 @@ Which statement is true about the template engine?
  - It is a software designed to provide an easier way of combining templates and related data elements in producing a certain document.
 
 
-/// type=MS, answer=[1,2,5]
+/// type=MS, id=b609595d-e312-40f6-a75c-f17631e88895, answer=[1,2,5]
 
 Which of the following are PHP template engines?
 
@@ -791,7 +791,7 @@ Which of the following are PHP template engines?
  - `Smarty`
 
 
-/// type=SS, answer=[4]
+/// type=SS, id=a236fb40-76ba-4ea3-b14c-7d9c49e692aa, answer=[4]
 
 Which file extension is used for the `Smarty` template?
 
@@ -806,7 +806,7 @@ Which file extension is used for the `Smarty` template?
  - `.html`
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=db731afe-f371-42eb-98c6-22f476d0f9a0, answer=[5]
 
 Which delimiter is used for the `Smarty` tags?
 
@@ -868,7 +868,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=MS, answer=[1,2]
+/// type=MS, id=b774c6ea-ac4d-4559-a502-d1041dc4ecc3, answer=[1,2]
 
 Execute the program. What are the error messages?
 
@@ -883,7 +883,7 @@ Execute the program. What are the error messages?
  - Warning: Missing argument `2` for `readTemplate()`, called in `/main.php` on line number 18 and defined in `/main.php` on line number 2
 
 
-/// type=MS, answer=[2,3,4]
+/// type=MS, id=7b47649e-ca45-4588-b299-ee69cc36c2d9, answer=[2,3,4]
 
 Which statements correctly describe the error?
 
@@ -900,7 +900,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Templates/IncorrectArgumentVariableOnFileGetContentTest.php], filename=[main.php,template.tpl]
+/// type=CR, id=5eb6fd05-6806-443a-aa80-ed57cd02d514, answer=[tests/Templates/IncorrectArgumentVariableOnFileGetContentTest.php], filename=[main.php,template.tpl]
 
 Correct the code so that it properly renders the content of `template.tpl` in the web browser window.
 
@@ -984,7 +984,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, answer=[3]
+/// type=SS, id=f23ba703-9e79-4eb2-8721-d8fdb45b1de0, answer=[3]
 
 Execute the program. What is the error message?
 
@@ -999,7 +999,7 @@ Execute the program. What is the error message?
  - Warning: Missing argument `2` for `readTemplate()`, called in `/main.php` on line number 18 and defined in `/main.php` on line number 2
 
 
-/// type=MS, answer=[2,4]
+/// type=MS, id=41734513-7b88-4f7a-a938-c0870cf0c639, answer=[2,4]
 
 Which statements correctly describe the error?
 
@@ -1016,7 +1016,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Templates/MissingCommaBetweenArgumentsTest.php], filename=[main.php,template.tpl]
+/// type=CR, id=f3c5f0b1-c909-4f13-af26-954d9b93ca1e, answer=[tests/Templates/MissingCommaBetweenArgumentsTest.php], filename=[main.php,template.tpl]
 
 Correct the code so that it properly renders the content of `template.tpl` in the web browser window.
 
@@ -1100,7 +1100,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=MS, answer=[4,5]
+/// type=MS, id=3ab0fdad-03ec-4821-bc48-8a40e49b74e8, answer=[4,5]
 
 Execute the program. What are the error messages?
 
@@ -1115,7 +1115,7 @@ Execute the program. What are the error messages?
  - Warning: Missing argument `2` for `readTemplate()`, called in `/main.php` on line number 18 and defined in `/main.php` on line number 2
 
 
-/// type=MS, answer=[1,2,5]
+/// type=MS, id=2254ef96-6692-4d86-b164-b7b9d1ecc0ea, answer=[1,2,5]
 
 Which statements correctly describe the error?
 
@@ -1132,7 +1132,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Templates/MissingFirstArgumentOnReadTemplateTest.php], filename=[main.php,template.tpl]
+/// type=CR, id=f0c49ebc-76cf-4ec6-bbb7-f245c2a2b932, answer=[tests/Templates/MissingFirstArgumentOnReadTemplateTest.php], filename=[main.php,template.tpl]
 
 Correct the code so that it properly renders the content of `template.tpl` in the web browser window.
 
@@ -1216,7 +1216,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=76cb72d3-aa0f-47a5-9d9f-2fd7f213d995, answer=[2]
 
 Execute the program. What is the error message?
 
@@ -1231,7 +1231,7 @@ Execute the program. What is the error message?
  - Warning: `file_exists()` expects parameter `1` to be a valid path, array given in `/main.php` on line number 4
 
 
-/// type=MS, answer=[2,4,5]
+/// type=MS, id=1a840f19-d2f1-44d9-b114-e616050bd1f0, answer=[2,4,5]
 
 Which statements correctly describe the error?
 
@@ -1248,7 +1248,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, answer=[tests/Templates/IncorrectOperatorForAssociativeArrayTest.php], filename=[main.php,template.tpl]
+/// type=CR, id=5a3b951e-d541-4af0-aae9-d8fd98674353, answer=[tests/Templates/IncorrectOperatorForAssociativeArrayTest.php], filename=[main.php,template.tpl]
 
 Correct the code so that it properly renders the content of `template.tpl` in the web browser window.
 
@@ -1352,7 +1352,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, choiceType=HTML, answer=[2]
+/// type=SS, choiceType=HTML, id=22c3e0df-73c9-4997-90da-592cf62f4288, answer=[2]
 
 Execute the program. What is its output?
 
@@ -1367,7 +1367,7 @@ Execute the program. What is its output?
  - <table style = "border-collapse: separate; width: 300px;border: 3px solid gray;"><tr style = "border: 3px solid gray"><th style = "color: white; background-color: green;"> Subject </th><th style = "color: white; background-color: green;"> Score </th></tr><tr style = "border: 3px solid gray"><td style = "border: 3px solid gray"> Science </td><td style = "border: 3px solid gray"> 75 </td></tr><tr style = "border: 3px solid gray"><td style = "border: 3px solid gray"> Language </td><td style = "border: 3px solid gray"> 65 </td></tr></table>
 
 
-/// type=SS, answer=[5]
+/// type=SS, id=f3d54ecc-a804-481d-83d2-e45e9a98fbe7, answer=[5]
 
 On line 14 of `main.php`, remove the concatenation operator `.` between `__DIR__` and `'/resultTemplate.tpl'`. Execute the program. What is the error message?
 
@@ -1445,7 +1445,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=7c73354d-266c-4b73-a2d7-b5ed21f08023, answer=[1]
 
 On line 8 of `main.php`, remove the `$output` argument from the `str_replace($replace, $val, $output)` function call. Execute the program. What is the error message?
 
@@ -1523,7 +1523,7 @@ echo $testTemplate;
     </body>
 </html>
 ```
-/// type=SS, answer=[2]
+/// type=SS, id=e480e910-cfd2-4bef-812e-4fdfc3da5518, answer=[2]
 
 In the `foreach ($array as $key => $val)` construct on line 6 of `main.php`, remove `as` between `$array` and `$key`. Execute the program. What is the error message?
 
@@ -1540,7 +1540,7 @@ In the `foreach ($array as $key => $val)` construct on line 6 of `main.php`, rem
 :::
 
 
-/// type=CR, answer=[tests/Templates/CorrectMultipleErrorsTest.php], filename=[main.php,resultTemplate.tpl]
+/// type=CR, id=8131c801-225b-4889-9993-4530b576a8e4, answer=[tests/Templates/CorrectMultipleErrorsTest.php], filename=[main.php,resultTemplate.tpl]
 
 Correct the code so that it properly renders the content of `resultTemplate.tpl` in the web browser window.
 
@@ -1609,7 +1609,7 @@ echo $testTemplate;
 
 ### Part 4: Practice
 
-/// type=CR, answer=[tests/Templates/ReadAndAccessTemplateTest.php], filename=[main.php,practiceTemplate.tpl]
+/// type=CR, id=e425c8c3-31b6-45d6-8d12-5f2ad56b85a7, answer=[tests/Templates/ReadAndAccessTemplateTest.php], filename=[main.php,practiceTemplate.tpl]
 
 Given the `practiceTemplate.tpl` template and the initial `main.php` implementations, write a program statement that parses and returns the content of the `practiceTemplate.tpl` template. In the `main.php` tab, add a statement that assigns `__DIR__ . '/practiceTemplate.tpl'` to a variable named `$practice`. Add another statement that assigns the associative array `array ('title' => "Practice Template", 'name' => "CodeStop", 'courseOffered' => "Courses Offered", 'motto' => "Learning by Coding", 'footer' => "All Rights Reserved CodeStop © 2017");` to a variable named `$contentArray`. Then, add a statement that calls the `readTemplate()` function passing two arguments `$practice` and `$contentArray` respectively and assigns it to a variable named `$practiceContent`. Next, create an `echo` statement to display the value of `$contentArray`. Run the program to view the output. 
 
