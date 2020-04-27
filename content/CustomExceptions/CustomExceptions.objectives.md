@@ -10,4 +10,4 @@ After completing this lesson, the students should be able to:
 
  - Identify and correct errors when creating customized exception handling classes and methods.
 
- - Write a program that extends the `Exception` class in creating customized exception handling class and methods.
+ - Write a program that extends the `Exception` class in creating customized exception handling classes and methods.
