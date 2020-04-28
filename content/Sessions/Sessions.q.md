@@ -365,7 +365,7 @@ if (!empty($_POST)) {
     </body>
 </html>
 ```
-/// type=SS, id=7e7fe807-d8f0-4f2f-8ad8-39065d192b42, answer=[5]
+/// type=SS, choiceType=HTML, id=7e7fe807-d8f0-4f2f-8ad8-39065d192b42, answer=[5]
 
 Execute the program. What is its output?
 
