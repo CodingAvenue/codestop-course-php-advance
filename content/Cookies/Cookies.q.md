@@ -942,7 +942,7 @@ setcookie("", $cookieValue, $expiry);
 
 /// type=CR, id=98363053-945e-43a2-8602-3c1ca6e96957, answer=[tests/Cookies/CreateCookieWithSetCookieTest.php]
 
-Write a program that uses `setcookie()` and `$_COOKIE` to create and access cookies. First, use the `setcookie()` function that passes the arguments `test_cookie`, `This is a test cookie.`, and `time + 360` respectively. Next, add an `if` statement that uses `isset()` and `$_COOKIE` to evaluate whether the `test_cookie` cookie is set or not. Inside the `if` block, add the statement `echo "Cookie Value: " . $_COOKIE[test_cookie];`. Then, run the program to view the output.
+Write a program that uses `setcookie()` and `$_COOKIE` to create and access cookies. First, use the `setcookie()` function that passes the arguments `test_cookie`, `This is a test cookie.`, and `time() + 360` respectively. Next, add an `if` statement that uses `isset()` and `$_COOKIE` to evaluate whether the `test_cookie` cookie is set or not. Inside the `if` block, add the statement `echo "Cookie Value: " . $_COOKIE['test_cookie'];`. Then, run the program to view the output.
 
 ```php
 <?php
