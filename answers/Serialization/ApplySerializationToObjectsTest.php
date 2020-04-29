@@ -36,7 +36,7 @@ class Animal
     }
 }
 
-$pet = new Animal('Cat', 3, 'Catsie');
+$pet = new Animal('Cat', 3);
 $pet->display();
 $converted = serialize($pet);
 echo "The serialized object is: " . $converted . "\n";
