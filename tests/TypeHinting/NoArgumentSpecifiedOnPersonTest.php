@@ -223,6 +223,22 @@ class NoArgumentSpecifiedOnPersonTest extends TestCase
         $this->assertEquals(1, $nodes->count(), "Expecting one assignment statement in the `__construct()` method of the `Car` class.");
     }
 
+    public function testPrintR()
+    {
+        $obj = self::$code->find('call[name="print_r"]');
+
+        $this->assertEquals(1, $obj->count(), "Expecting two `print_r()` function call.");
+    }
+
+    public function testPrintArgs()
+    {
+        $obj = self::$code->find('call[name="print_r"]');
+        $subNode = $obj->getSubNode()->getSubNode('args');
+        $args = $subNode->find('variable[name="myCar"]');
+
+        $this->assertEquals(1, $args->count(), "Expecting a variable named `myCar` as argument in the `print_r()` function call.");
+    }
+
     //still need implementations in the proof
 
     // public function testDriverParamCons()
