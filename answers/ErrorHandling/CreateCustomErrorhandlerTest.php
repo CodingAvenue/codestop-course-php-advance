@@ -16,5 +16,5 @@ function myTestErrorHandler($error_no, $error_msg, $error_file, $error_line)
 }
 
 set_error_handler("myTestErrorHandler");
-echo OpenFile("myTest.txt");
+echo openFile("myTest.txt");
 ?>
