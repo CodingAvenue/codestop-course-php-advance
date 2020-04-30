@@ -39,7 +39,7 @@ class UnquotedArgumentOnSetErrorHandlerFunctionTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('call[name="divide"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `divide()` function call in the echo statement.");
     }
 
     public function testSetErrorHandlerCall()
