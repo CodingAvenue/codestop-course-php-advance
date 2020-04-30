@@ -917,7 +917,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=7729b268-1345-4b87-8637-16760e18074c, answer=[tests/ErrorHandling/MissingCommaBetweenArgumentsTest.php]
+/// type=CR, id=7729b268-1345-4b87-8637-16760e18074c, answer=[tests/ErrorHandling/MissingFirstArgumentOnTriggerErrorTest.php]
 
 Correct the code so that it outputs the string `Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
 
