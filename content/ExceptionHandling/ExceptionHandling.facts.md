@@ -32,7 +32,6 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new Exception("The value '0' as a divisor is not allowed.");
-        return false;
     } else {
         return ($dividend / $divisor);
     }
