@@ -11,7 +11,7 @@ function divide($dividend, $divisor)
 }
 
 try {
-    echo divide(10, "hello");
+    echo divide(10, 0);
 } catch (InvalidArgumentException $ie) {
     echo "Exception caught: " . $ie->getMessage() . " in " . $ie->getFile() . " on line number " . $ie->getLine();
 } catch (Exception $e) {
