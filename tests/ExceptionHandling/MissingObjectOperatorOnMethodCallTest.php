@@ -22,7 +22,7 @@ class MissingObjectOperatorOnMethodCallTest extends TestCase
     {
         $evaluator = self::$code->evaluator();
         $evaled    = $evaluator->evaluate();
-        $expected  = "Exception caught: Invalid argument value provided in C:\Users\ccanda\codestop-course-php-advanced\answers\ExceptionHandling\MissingObjectOperatorOnMethodCallTest.php on line number 5";
+        $expected  = "Exception caught: Invalid argument value provided in C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ExceptionHandling\\MissingObjectOperatorOnMethodCallTest.php on line number 5";
 
         $this->assertEquals($expected, $evaled['output'], "Expected output is \"$expected\".");
     }

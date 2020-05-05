@@ -22,7 +22,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
     {
         $evaluator = self::$code->evaluator();
         $evaled    = $evaluator->evaluate();
-        $expected  = "Exception caught: Sorry, the file does not exist in C:\Users\ccanda\codestop-course-php-advanced\answers\ExceptionHandling\CreateFunctionThatThrowsExceptionTest.php on line number 5";
+        $expected  = "Exception caught: Sorry, the file does not exist in C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ExceptionHandling\\CreateFunctionThatThrowsExceptionTest.php on line number 5";
 
         $this->assertEquals($expected, $evaled['output'], "Expected output is \"$expected\".");
     }
