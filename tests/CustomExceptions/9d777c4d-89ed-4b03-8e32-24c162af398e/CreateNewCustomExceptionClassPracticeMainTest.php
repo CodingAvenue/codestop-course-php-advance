@@ -177,7 +177,7 @@ class CreateNewCustomExceptionClassPracticeMainTest extends TestCase
         $nodes = self::$code->find('include[type="require_once"]');
         $string = $nodes->find('string[value="/FileNotFoundException.php"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `/FileNotFoundException.php` as an argument in the `require_once()` statement.");
+        $this->assertEquals(1, $string->count(), "Expecting `/FileNotFoundException.php` as an argument in the `require_once()` statement.");
     }
 
     //still need to test THROW, TRY, and CATCH keywords

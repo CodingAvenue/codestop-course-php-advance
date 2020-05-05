@@ -234,7 +234,7 @@ class MissingNewKeywordClassInstanceMainTest extends TestCase
         $nodes = self::$code->find('include[type="require_once"]');
         $string = $nodes->find('string[value="/DivideByZeroException.php"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `/DivideByZeroException.php` as an argument in the `require_once()` statement.");
+        $this->assertEquals(1, $string->count(), "Expecting `/DivideByZeroException.php` as an argument in the `require_once()` statement.");
     }
 
     public function testRequireOnceCallArgsNeg()
@@ -242,7 +242,7 @@ class MissingNewKeywordClassInstanceMainTest extends TestCase
         $nodes = self::$code->find('include[type="require_once"]');
         $string = $nodes->find('string[value="/DivideByNegativeException.php"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `/DivideByNegativeException.php` as an argument in the `require_once()` statement.");
+        $this->assertEquals(1, $string->count(), "Expecting `/DivideByNegativeException.php` as an argument in the `require_once()` statement.");
     }
     //still need to test THROW, TRY, and CATCH keywords
 }
