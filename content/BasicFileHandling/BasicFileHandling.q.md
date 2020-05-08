@@ -33,11 +33,11 @@ Execute the program. What is its output?
 
  - It prints `Unable to open the file.`.
 
- - It prints `This is a test document content. `.
+ - It prints `This is a test document content.`.
 
- - It prints `This is the end of the test document content. `.
+ - It prints `This is the end of the test document content.`.
 
- - It prints `This is a test document content. ` and `This is the end of the test document content. ` in separate lines.
+ - It prints `This is a test document content.` and `This is the end of the test document content.` in separate lines.
 
 
 /// type=SS, id=87101edf-bcf3-4e75-93a7-5ad914baf452, answer=[5]
