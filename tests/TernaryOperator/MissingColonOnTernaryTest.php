@@ -74,7 +74,7 @@ class MissingColonOnTernaryTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $remarks = $nodes->find('variable[name="remarks"]');
 
-        $this->assertEquals(1, $remarks->count(), "Expecting one 'remarks' variable in the echo statement.");
+        $this->assertEquals(1, $remarks->count(), "Expecting one occurrence of the variable named 'remarks' in the echo statement.");
     }
 
     public function testGreateThanOperator()
@@ -90,7 +90,7 @@ class MissingColonOnTernaryTest extends TestCase
         $left = $nodes->getSubNode('left'); 
         $var = $left->find('variable[name="studentGrade"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one 'studentGrade' variable in the conditional expression.");
+        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named 'studentGrade' in the conditional expression.");
     }
 
     public function testValueOnCondition()
@@ -108,7 +108,7 @@ class MissingColonOnTernaryTest extends TestCase
         $subNode = $nodes->getSubNode();
         $var = $subNode->find('variable[name="studentGrade"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the 'studentGrade' variable in an assignment statement.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named 'studentGrade' in an assignment statement.");
     }
 
     public function testRemarksOnAssignment()

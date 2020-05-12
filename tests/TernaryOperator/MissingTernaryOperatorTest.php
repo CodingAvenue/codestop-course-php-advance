@@ -74,7 +74,7 @@ class CorrectTernaryOperatorTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $studentGrade = $nodes->find('variable[name="studentGrade"]');
 
-        $this->assertEquals(1, $studentGrade->count(), "Expecting one 'studentGrade' variable in the echo statement.");
+        $this->assertEquals(1, $studentGrade->count(), "Expecting one occurrence of the variable named 'studentGrade' in the echo statement.");
     }
 
     public function testScoreOnAssignment()
@@ -83,7 +83,7 @@ class CorrectTernaryOperatorTest extends TestCase
         $subNode = $nodes->getSubNode();
         $var = $subNode->find('variable[name="score"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the 'score' variable in an assignment statement.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named 'score' in an assignment statement.");
     }
 
     public function testStudentGradeOnAssignment()
@@ -92,7 +92,7 @@ class CorrectTernaryOperatorTest extends TestCase
         $subNode = $nodes->getSubNode();
         $var = $subNode->find('variable[name="studentGrade"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the 'studentGrade' variable in an assignment statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named 'studentGrade' in an assignment statement.");
     }
 
     public function testStringOnEcho()
@@ -100,7 +100,7 @@ class CorrectTernaryOperatorTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $string = $nodes->find('string[value="The student grade is: "]');
 
-        $this->assertEquals(1, $string->count(), "Expecting the string 'The student grade is: ' in the echo statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string 'The student grade is: ' in the echo statement.");
     }
     // still needs ternary operator validation here...
 }

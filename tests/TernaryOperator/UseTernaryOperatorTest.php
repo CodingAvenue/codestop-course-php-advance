@@ -74,7 +74,7 @@ class UseTernaryOperatorTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $result = $nodes->find('variable[name="result"]');
 
-        $this->assertEquals(1, $result->count(), "Expecting one 'result' variable in the echo statement.");
+        $this->assertEquals(1, $result->count(), "Expecting one occurrence of the variable named 'result' in the echo statement.");
     }
 
     public function testGreateThanEqualOperator()
@@ -90,7 +90,7 @@ class UseTernaryOperatorTest extends TestCase
         $left = $nodes->getSubNode('left'); 
         $var = $left->find('variable[name="number"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one 'number' variable in the conditional expression.");
+        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named 'number' in the conditional expression.");
     }
 
     public function testValueOnCondition()
@@ -108,7 +108,7 @@ class UseTernaryOperatorTest extends TestCase
         $subNode = $nodes->getSubNode();
         $var = $subNode->find('variable[name="number"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the 'number' variable in an assignment statement.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named 'number' in an assignment statement.");
     }
 
     public function testResultOnAssignment()
@@ -117,7 +117,7 @@ class UseTernaryOperatorTest extends TestCase
         $subNode = $nodes->getSubNode();
         $var = $subNode->find('variable[name="result"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the 'result' variable in an assignment statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named 'result' in an assignment statement.");
     }
 
     // still needs ternary operator validation here...
