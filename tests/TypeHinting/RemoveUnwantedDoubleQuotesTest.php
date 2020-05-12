@@ -121,7 +121,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $getName = $subNodes->find('method[name="getName", type="public"]');
         $name = $getName->find('property-call[name="name", variable="this"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting one `name` property call inside the `getName()` method of the `Person` class itself.");
+        $this->assertEquals(1, $name->count(), "Expecting one `name` property call in the `getName()` method of the `Person` class itself.");
     }
 
     public function testNamePropertyCallCons()
@@ -131,7 +131,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $name = $construct->find('property-call[name="name", variable="this"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting one `name` property call inside the `__construct()` method of the `Person` class itself.");
+        $this->assertEquals(1, $name->count(), "Expecting one `name` property call in the `__construct()` method of the `Person` class itself.");
     }
 
     public function testNamePropertyCallSet()
@@ -141,7 +141,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $setName = $subNodes->find('method[name="setName", type="public"]');
         $name = $setName->find('property-call[name="name", variable="this"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting one `name` property call inside the `setName()` method of the `Person` class itself.");
+        $this->assertEquals(1, $name->count(), "Expecting one `name` property call in the `setName()` method of the `Person` class itself.");
     }
 
     public function testNameParam()
@@ -210,7 +210,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $driver = $construct->find('property-call[name="driver", variable="this"]');
 
-        $this->assertEquals(1, $driver->count(), "Expecting one `driver` property call inside the `__construct()` method of the `Car` class itself.");
+        $this->assertEquals(1, $driver->count(), "Expecting one `driver` property call in the `__construct()` method of the `Car` class itself.");
     }
 
     public function testAssignmentCarCons()
@@ -227,7 +227,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
     {
         $obj = self::$code->find('call[name="print_r"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting two `print_r()` function call.");
+        $this->assertEquals(1, $obj->count(), "Expecting one `print_r()` function call.");
     }
 
     public function testPrintArgs()
@@ -236,7 +236,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $subNode = $obj->getSubNode()->getSubNode('args');
         $args = $subNode->find('variable[name="myCar"]');
 
-        $this->assertEquals(1, $args->count(), "Expecting a variable named `myCar` as argument in the `print_r()` function call.");
+        $this->assertEquals(1, $args->count(), "Expecting a variable named `myCar` as an argument in the `print_r()` function call.");
     }
 
     //still need implementations in the proof

@@ -120,7 +120,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $getName = $subNodes->find('method[name="getName", type="public"]');
         $name = $getName->find('property-call[name="name", variable="this"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting one `name` property call inside the `getName()` method of the `Person` class itself.");
+        $this->assertEquals(1, $name->count(), "Expecting one `name` property call in the `getName()` method of the `Person` class itself.");
     }
 
     public function testNamePropertyCallSet()
@@ -130,7 +130,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $setName = $subNodes->find('method[name="setName", type="public"]');
         $name = $setName->find('property-call[name="name", variable="this"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting one `name` property call inside the `setName()` method of the `Person` class itself.");
+        $this->assertEquals(1, $name->count(), "Expecting one `name` property call in the `setName()` method of the `Person` class itself.");
     }
 
     public function testNameParam()
