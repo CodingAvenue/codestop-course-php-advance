@@ -31,7 +31,7 @@ class CreateCustomErrorhandlerTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(2, $obj->count(), "Expecting two echo statements.");
+        $this->assertEquals(2, $obj->count(), "Expecting two `echo` statements.");
     }
 
     public function testOpenFileInEcho()
@@ -39,7 +39,7 @@ class CreateCustomErrorhandlerTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('call[name="openFile"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting an `openFile()` function call in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting an `openFile()` function call in the `echo` statement.");
     }
 
     public function testSetErrorHandlerCall()
@@ -55,14 +55,14 @@ class CreateCustomErrorhandlerTest extends TestCase
         $subNode = $obj->getSubNode()->getSubNode('args');
         $args = $subNode->find('string[value="myTestErrorHandler"]');
 
-        $this->assertEquals(1, $args->count(), "Expecting a string `myTestErrorHandler` as argument in the `set_error_handler()` function call.");
+        $this->assertEquals(1, $args->count(), "Expecting a string `myTestErrorHandler` as an argument in the `set_error_handler()` function call.");
     }
 
     public function testOpenFileFunction()
     {
         $nodes = self::$code->find('function[name="openFile"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a openFile() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `openFile()` function declaration.");
     }
 
     public function testFileParam()
@@ -116,7 +116,7 @@ class CreateCustomErrorhandlerTest extends TestCase
     {
         $nodes = self::$code->find('function[name="myTestErrorHandler"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a myTestErrorHandler() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `myTestErrorHandler()` function declaration.");
     }
 
     public function testErrorNoParam()

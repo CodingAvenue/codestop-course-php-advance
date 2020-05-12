@@ -31,7 +31,7 @@ class MissingFirstArgumentOnTriggerErrorTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting one echo statement.");
+        $this->assertEquals(1, $obj->count(), "Expecting one `echo` statement.");
     }
 
     public function testDivideInEcho()
@@ -46,7 +46,7 @@ class MissingFirstArgumentOnTriggerErrorTest extends TestCase
     {
         $nodes = self::$code->find('function[name="divide"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a divide() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `divide()` function declaration.");
     }
 
     public function testDividendParam()

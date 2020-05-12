@@ -31,7 +31,7 @@ class MissingCommaBetweenArgumentsTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting one echo statement.");
+        $this->assertEquals(1, $obj->count(), "Expecting one `echo` statement.");
     }
 
     public function testDivideInEcho()
@@ -39,14 +39,14 @@ class MissingCommaBetweenArgumentsTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('call[name="divide"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `divide()` functon call in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `divide()` functon call in the `echo` statement.");
     }
 
     public function testDivideFunction()
     {
         $nodes = self::$code->find('function[name="divide"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a divide() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `divide()` function declaration.");
     }
 
     public function testDividendParam()

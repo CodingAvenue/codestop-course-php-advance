@@ -31,7 +31,7 @@ class UnquotedArgumentOnSetErrorHandlerFunctionTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(2, $obj->count(), "Expecting two echo statements.");
+        $this->assertEquals(2, $obj->count(), "Expecting two `echo` statements.");
     }
 
     public function testDivideInEcho()
@@ -39,7 +39,7 @@ class UnquotedArgumentOnSetErrorHandlerFunctionTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('call[name="divide"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `divide()` function call in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `divide()` function call in the `echo` statement.");
     }
 
     public function testSetErrorHandlerCall()
@@ -55,14 +55,14 @@ class UnquotedArgumentOnSetErrorHandlerFunctionTest extends TestCase
         $subNode = $obj->getSubNode()->getSubNode('args');
         $args = $subNode->find('string[value="myErrorHandler"]');
 
-        $this->assertEquals(1, $args->count(), "Expecting a string `myErrorHandler` as argument in the `set_error_handler()` function call.");
+        $this->assertEquals(1, $args->count(), "Expecting a string `myErrorHandler` as an argument in the `set_error_handler()` function call.");
     }
 
     public function testDivideFunction()
     {
         $nodes = self::$code->find('function[name="divide"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a divide() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `divide()` function declaration.");
     }
 
     public function testDividendParam()
@@ -95,7 +95,7 @@ class UnquotedArgumentOnSetErrorHandlerFunctionTest extends TestCase
     {
         $nodes = self::$code->find('function[name="myErrorHandler"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a myErrorHandler() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `myErrorHandler()` function declaration.");
     }
 
     public function testErrorNoParam()
