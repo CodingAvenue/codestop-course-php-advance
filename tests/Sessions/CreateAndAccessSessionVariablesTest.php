@@ -40,7 +40,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $session = $arrayFetch->find('variable[name="_SESSION"]');
 
-        $this->assertEquals(2, $session->count(), "Expecting two superglobal variable named `__SESSION` in the assignment statements.");
+        $this->assertEquals(2, $session->count(), "Expecting two occurrences of the superglobal variable named `__SESSION` in the assignment statements.");
     }
 
     public function testNameString()
@@ -104,14 +104,14 @@ class CreateAndAccessSessionVariablesTest extends TestCase
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for session_start() function.");
+        $this->assertEquals(1, $start->count(), "Expecting a function call for `session_start()` function.");
     }
 
     public function testSessionIdCall()
     {
         $sid = self::$code->find('call[name="session_id"]');
 
-        $this->assertEquals(2, $sid->count(), "Expecting two function calls for session_id() function.");
+        $this->assertEquals(2, $sid->count(), "Expecting two function calls for `session_id()` function.");
     }
 
     public function testSessionIdCallArgs()
@@ -120,7 +120,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $args = $sid->getSubnode("args");
         $string = $args->find('string[value="practice-session-101"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string argument `practice-session-101` in the session_id() function call.");
+        $this->assertEquals(1, $string->count(), "Expecting a string argument `practice-session-101` in the `session_id()` function call.");
     }
 
     public function testSidCallInEcho()
@@ -128,6 +128,6 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $sid = $obj->find('call[name="session_id"]');
 
-        $this->assertEquals(1, $sid->count(), "Expecting a `session_id()` function call in the `echo` statement.");
+        $this->assertEquals(1, $sid->count(), "Expecting one `session_id()` function call in the `echo` statement.");
     }
 }

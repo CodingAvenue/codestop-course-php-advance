@@ -40,7 +40,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $session = $arrayFetch->find('variable[name="_SESSION"]');
 
-        $this->assertEquals(2, $session->count(), "Expecting two superglobal variable named `__SESSION` in the assignment statements.");
+        $this->assertEquals(2, $session->count(), "Expecting two occurrences of the superglobal variable named `__SESSION` in the assignment statements.");
     }
 
     public function testFirstNameString()
@@ -113,14 +113,14 @@ class MisquotedSessionIdArgumentTest extends TestCase
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for session_start() function.");
+        $this->assertEquals(1, $start->count(), "Expecting a function call for `session_start()` function.");
     }
 
     public function testSessionIdCall()
     {
         $sid = self::$code->find('call[name="session_id"]');
 
-        $this->assertEquals(2, $sid->count(), "Expecting two function calls for session_id() function.");
+        $this->assertEquals(2, $sid->count(), "Expecting two function calls for `session_id()` function.");
     }
 
     public function testSessionIdCallArgs()
@@ -129,7 +129,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $args = $sid->getSubnode("args");
         $string = $args->find('string[value="test-session-123"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string argument `test-session-123` in the session_id() function call.");
+        $this->assertEquals(1, $string->count(), "Expecting a string argument `test-session-123` in the `session_id()` function call.");
     }
 
     public function testSidCallInEcho()

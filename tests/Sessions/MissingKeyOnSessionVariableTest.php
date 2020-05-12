@@ -40,7 +40,7 @@ class MisplacedSessionStartFunctionTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $session = $arrayFetch->find('variable[name="_SESSION"]');
 
-        $this->assertEquals(1, $session->count(), "Expecting one superglobal variable named `__SESSION` in the assignment statement.");
+        $this->assertEquals(1, $session->count(), "Expecting one superglobal variable named `__SESSION` in an assignment statement.");
     }
 
     public function testNameString()
@@ -88,6 +88,6 @@ class MisplacedSessionStartFunctionTest extends TestCase
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for session_start() function.");
+        $this->assertEquals(1, $start->count(), "Expecting a function call for `session_start()` function.");
     }
 }

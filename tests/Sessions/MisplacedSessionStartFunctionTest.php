@@ -88,6 +88,6 @@ class MisplacedSessionStartFunctionTest extends TestCase
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for session_start() function.");
+        $this->assertEquals(1, $start->count(), "Expecting a function call for `session_start()` function.");
     }
 }
