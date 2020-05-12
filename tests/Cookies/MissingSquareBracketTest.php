@@ -31,7 +31,7 @@ class MissingSquareBracketTest extends TestCase
     {
         $obj = self::$code->find('construct[name="if"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting one if statement.");
+        $this->assertEquals(1, $obj->count(), "Expecting one `if` statement.");
     }
 
     public function testCookieVarInIf()
@@ -41,7 +41,7 @@ class MissingSquareBracketTest extends TestCase
         $arrayFetch = $subNode->find('datatype[name="arrayfetch"]');
         $cookie = $arrayFetch->find('variable[name="_COOKIE"]');
 
-        $this->assertEquals(2, $cookie->count(), "Expecting two superglobal variable named `__COOKIE` in the `if` condition.");
+        $this->assertEquals(2, $cookie->count(), "Expecting two occurrences of the superglobal variable named `__COOKIE` in the `if` statement.");
     }
 
     public function testStringInIf()
@@ -51,7 +51,7 @@ class MissingSquareBracketTest extends TestCase
         $arrayFetch = $subNode->find('datatype[name="arrayfetch"]');
         $string = $arrayFetch->find('string[value="user"]');
 
-        $this->assertEquals(2, $string->count(), "Expecting two strings `user` in the `__COOKIE` superglobal variable.");
+        $this->assertEquals(2, $string->count(), "Expecting two occurrences of the string `user` in the `__COOKIE` superglobal variable.");
     }
 
     public function testEchoInIf()
@@ -99,7 +99,7 @@ class MissingSquareBracketTest extends TestCase
     {
         $set = self::$code->find('call[name="setcookie"]');
 
-        $this->assertEquals(1, $set->count(), "Expecting a function call for setcookie() function.");
+        $this->assertEquals(1, $set->count(), "Expecting a function call for `setcookie()` function.");
     }
 
     public function testSetCookieStringArgs()
@@ -128,7 +128,7 @@ class MissingSquareBracketTest extends TestCase
         $left = $opr->getSubnode('left');
         $time = $left->find('call[name="time"]');
 
-        $this->assertEquals(1, $time->count(), "Expecting a `time()` function call as argument of the `setcookie` function call.");
+        $this->assertEquals(1, $time->count(), "Expecting a `time()` function call as an argument of the `setcookie()` function call.");
     }
 
     public function testSetCookieCallArgs4()
@@ -139,6 +139,6 @@ class MissingSquareBracketTest extends TestCase
         $left = $opr->getSubnode('left');
         $int = $left->find('integer'); // nice to have ---if we can identify the value like 360
 
-        $this->assertEquals(1, $int->count(), "Expecting an interger argument of the `setcookie` function call.");
+        $this->assertEquals(1, $int->count(), "Expecting an integer argument of the `setcookie()` function call.");
     }
 }

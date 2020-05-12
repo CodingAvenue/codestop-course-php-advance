@@ -62,7 +62,7 @@ class MissingPlusSignOnExpiryTest extends TestCase
     {
         $obj = self::$code->find('construct[name="if"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting one if statement.");
+        $this->assertEquals(1, $obj->count(), "Expecting one `if` statement.");
     }
 
     public function testCookieVarInIf()
@@ -72,7 +72,7 @@ class MissingPlusSignOnExpiryTest extends TestCase
         $arrayFetch = $subNode->find('datatype[name="arrayfetch"]');
         $cookie = $arrayFetch->find('variable[name="_COOKIE"]');
 
-        $this->assertEquals(2, $cookie->count(), "Expecting two superglobal variable named `__COOKIE` in the `if` condition.");
+        $this->assertEquals(2, $cookie->count(), "Expecting two occurrences of the superglobal variable named `__COOKIE` in the `if` statement.");
     }
 
     public function testVariableInIf()
@@ -82,7 +82,7 @@ class MissingPlusSignOnExpiryTest extends TestCase
         $arrayFetch = $subNode->find('datatype[name="arrayfetch"]');
         $var = $arrayFetch->find('variable[name="cookieName"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two variables `cookieName` in the `__COOKIE` superglobal variable.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `cookieName` in the `__COOKIE` superglobal variable.");
     }
 
     public function testEchoInIf()
@@ -124,7 +124,7 @@ class MissingPlusSignOnExpiryTest extends TestCase
         $arrayFetch = $testEcho->find('datatype[name="arrayfetch"]');
         $var = $arrayFetch->find('variable[name="cookieName"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting a variable `cookieName` in the `__COOKIE` superglobal variable.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `cookieName` in the `__COOKIE` superglobal variable.");
     }
 
     public function testCookieVariableInEcho()
@@ -142,7 +142,7 @@ class MissingPlusSignOnExpiryTest extends TestCase
     {
         $set = self::$code->find('call[name="setcookie"]');
 
-        $this->assertEquals(1, $set->count(), "Expecting a function call for setcookie() function.");
+        $this->assertEquals(1, $set->count(), "Expecting a function call for `setcookie()` function.");
     }
 
     public function testSetCookieVarArgs()
