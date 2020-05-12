@@ -67,7 +67,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNodes = $obj->getSubnode();
         $display = $subNodes->find('method[name="display", type="public"]');
 
-        $this->assertEquals(1, $display->count(), "Expecting a display() method.");
+        $this->assertEquals(1, $display->count(), "Expecting a `display()` method.");
     }
 
     public function testConstruct()
@@ -76,7 +76,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNodes = $obj->getSubnode();
         $construct = $subNodes->find('method[name="__construct", type="public"]');
 
-        $this->assertEquals(1, $construct->count(), "Expecting a __construct() method.");
+        $this->assertEquals(1, $construct->count(), "Expecting a `__construct()` method.");
     }
     
     public function testIdProperty()
@@ -150,7 +150,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $id = $construct->find('property-call[name="id", variable="this"]');
 
-        $this->assertEquals(1, $id->count(), "Expecting one `id` property call inside the `__construct()` method of the `Worker` class itself.");
+        $this->assertEquals(1, $id->count(), "Expecting one `id` property call in the `__construct()` method of the `Worker` class itself.");
     }
 
     public function testIdPropertyCallDis()
@@ -160,7 +160,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $id = $display->find('property-call[name="id", variable="this"]');
 
-        $this->assertEquals(1, $id->count(), "Expecting one `id` property call inside the `display()` method of the `Worker` class itself.");
+        $this->assertEquals(1, $id->count(), "Expecting one `id` property call in the `display()` method of the `Worker` class itself.");
     }
 
     public function testNamePropertyCallCons()
@@ -170,7 +170,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $name = $construct->find('property-call[name="name", variable="this"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting one `name` property call inside the `__construct()` method of the `Worker` class itself.");
+        $this->assertEquals(1, $name->count(), "Expecting one `name` property call in the `__construct()` method of the `Worker` class itself.");
     }
 
     public function testNamePropertyCallDis()
@@ -180,7 +180,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $name = $display->find('property-call[name="name", variable="this"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting one `name` property call inside the `display()` method of the `Worker` class itself.");
+        $this->assertEquals(1, $name->count(), "Expecting one `name` property call in the `display()` method of the `Worker` class itself.");
     }
 
     public function testDeptPropertyCallCons()
@@ -190,7 +190,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $dept = $construct->find('property-call[name="dept", variable="this"]');
 
-        $this->assertEquals(1, $dept->count(), "Expecting one `dept` property call inside the `__construct()` method of the `Worker` class itself.");
+        $this->assertEquals(1, $dept->count(), "Expecting one `dept` property call in the `__construct()` method of the `Worker` class itself.");
     }
 
     public function testDeptPropertyCallDis()
@@ -200,7 +200,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $dept = $display->find('property-call[name="dept", variable="this"]');
 
-        $this->assertEquals(1, $dept->count(), "Expecting one `dept` property call inside the `display()` method of the `Worker` class itself.");
+        $this->assertEquals(1, $dept->count(), "Expecting one `dept` property call in the `display()` method of the `Worker` class itself.");
     }
 
     public function testSerialize()
@@ -216,7 +216,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $var = $nodes->find('variable[name="serializedWorker"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two variables named `serializedWorker` in assignment statements.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `serializedWorker` in assignment statements.");
     }
 
     public function testSerializeArgs()
@@ -226,7 +226,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $worker = $subNode->find('variable[name="worker"]');
 
-        $this->assertEquals(1, $worker->count(), "Expecting a variable named `worker` as argument in the `serialize()` function call.");
+        $this->assertEquals(1, $worker->count(), "Expecting one variable named `worker` as an argument in the `serialize()` function call.");
     }
 
     public function testUnserialize()
@@ -244,7 +244,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $serializedWorker = $subNode->find('variable[name="serializedWorker"]');
 
-        $this->assertEquals(1, $serializedWorker->count(), "Expecting a variable named `serializedWorker` as argument in the `unserialize()` function call.");
+        $this->assertEquals(1, $serializedWorker->count(), "Expecting one variable named `serializedWorker` as an argument in the `unserialize()` function call.");
     }
 
     public function testUnserializedWorker()
@@ -268,7 +268,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNode = $obj->getSubNode()->getSubNode('args');
         $args = $subNode->find('variable[name="serializedWorker"]');
 
-        $this->assertEquals(1, $args->count(), "Expecting a variable named `serializedWorker` as argument in the `print_r()` function call.");
+        $this->assertEquals(1, $args->count(), "Expecting one variable named `serializedWorker` as an argument in the `print_r()` function call.");
     }
 
     public function testPrintArgs2()
@@ -277,6 +277,6 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNode = $obj->getSubNode()->getSubNode('args');
         $args = $subNode->find('variable[name="unserializedWorker"]');
 
-        $this->assertEquals(1, $args->count(), "Expecting a variable named `unserializedWorker` as argument in the `print_r()` function call.");
+        $this->assertEquals(1, $args->count(), "Expecting one variable named `unserializedWorker` as an argument in the `print_r()` function call.");
     }
 }

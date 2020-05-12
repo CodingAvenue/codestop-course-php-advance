@@ -34,7 +34,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $nodes = $display->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an echo statement in the `display()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `echo` statement in the `display()` method.");
     }
 
     public function testAssignmentCons()
@@ -243,7 +243,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $getType = $subNodes->find('method[name="getType", type="public"]');
         $type = $getType->find('property-call[name="type", variable="this"]');
 
-        $this->assertEquals(1, $type->count(), "Expecting one `type` property call inside the `getType()` method of the `Animal` class itself.");
+        $this->assertEquals(1, $type->count(), "Expecting one `type` property call in the `getType()` method of the `Animal` class itself.");
     }
 
     public function testAgePropertyCallCons()
@@ -253,7 +253,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $age = $construct->find('property-call[name="age", variable="this"]');
 
-        $this->assertEquals(1, $age->count(), "Expecting one `age` property call inside the `__construct()` method of the `Animal` class itself.");
+        $this->assertEquals(1, $age->count(), "Expecting one `age` property call in the `__construct()` method of the `Animal` class itself.");
     }
 
     public function testAgePropertyCallGet()
@@ -263,7 +263,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $getAge = $subNodes->find('method[name="getAge", type="public"]');
         $age = $getAge->find('property-call[name="age", variable="this"]');
 
-        $this->assertEquals(1, $age->count(), "Expecting one `age` property call inside the `getAge()` method of the `Animal` class itself.");
+        $this->assertEquals(1, $age->count(), "Expecting one `age` property call in the `getAge()` method of the `Animal` class itself.");
     }
 
     public function testIsValidCallCons()
@@ -273,7 +273,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $isValid = $construct->find('method-call[name="isValid", variable="this"]');
         
-        $this->assertEquals(1, $isValid->count(), "Expecting one 'isValid()' method call inside the `__construct()` method the `Animal` class itself.");
+        $this->assertEquals(1, $isValid->count(), "Expecting one 'isValid()' method call in the `__construct()` method the `Animal` class itself.");
     }
 
     public function testGetTypeCall()
@@ -283,7 +283,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $getType = $display->find('method-call[name="getType", variable="this"]');
 
-        $this->assertEquals(1, $getType->count(), "Expecting a 'getType()' method call inside the `display()` method of the `Animal` class itself.");
+        $this->assertEquals(1, $getType->count(), "Expecting one 'getType()' method call in the `display()` method of the `Animal` class itself.");
     }
 
     public function testGetAgeCall()
@@ -293,7 +293,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $getAge = $display->find('method-call[name="getAge", variable="this"]');
 
-        $this->assertEquals(1, $getAge->count(), "Expecting a 'getAge()' method call inside the `display()` method of the `Animal` class itself.");
+        $this->assertEquals(1, $getAge->count(), "Expecting one 'getAge()' method call in the `display()` method of the `Animal` class itself.");
     }
 
     public function testSerialize()
@@ -309,7 +309,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $var = $nodes->find('variable[name="converted"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two variables named `converted` in assignment statements.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `converted` in assignment statements.");
     }
 
     public function testSerializeArgs()
@@ -319,7 +319,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $pet = $subNode->find('variable[name="pet"]');
 
-        $this->assertEquals(1, $pet->count(), "Expecting a variable named `pet` as argument in the `serialize()` function call.");
+        $this->assertEquals(1, $pet->count(), "Expecting one variable named `pet` as an argument in the `serialize()` function call.");
     }
 
     public function testUnserialize()
@@ -337,7 +337,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $converted = $subNode->find('variable[name="converted"]');
 
-        $this->assertEquals(1, $converted->count(), "Expecting a variable named `converted` as argument in the `unserialize()` function call.");
+        $this->assertEquals(1, $converted->count(), "Expecting one variable named `converted` as an argument in the `unserialize()` function call.");
     }
 
     public function testPetObject()
@@ -361,6 +361,6 @@ class ApplySerializationToObjectsTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $var = $obj->find('variable[name="converted"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting a variable named `converted` in an `echo` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one variable named `converted` in an `echo` statement.");
     }
 }

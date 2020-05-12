@@ -40,7 +40,7 @@ class MissingArgumentTypeForUnserializeFunctionTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $var = $nodes->find('variable[name="converted"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two variables named `converted` in assignment statements.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `converted` in assignment statements.");
     }
 
     public function testSerializeArgs()
@@ -50,7 +50,7 @@ class MissingArgumentTypeForUnserializeFunctionTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $myArray = $subNode->find('variable[name="myArray"]');
 
-        $this->assertEquals(1, $myArray->count(), "Expecting a variable named `myArray` as argument in the `serialize()` function call.");
+        $this->assertEquals(1, $myArray->count(), "Expecting one variable named `myArray` as argument in the `serialize()` function call.");
     }
 
     public function testUnserialize()
@@ -68,7 +68,7 @@ class MissingArgumentTypeForUnserializeFunctionTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $converted = $subNode->find('variable[name="converted"]');
 
-        $this->assertEquals(1, $converted->count(), "Expecting a variable named `converted` as argument in the `unserialize()` function call.");
+        $this->assertEquals(1, $converted->count(), "Expecting one variable named `converted` as an argument in the `unserialize()` function call.");
     }
 
     public function testUnserialized()
@@ -92,7 +92,7 @@ class MissingArgumentTypeForUnserializeFunctionTest extends TestCase
         $subNode = $obj->getSubNode()->getSubNode('args');
         $args = $subNode->find('variable[name="unserialized"]');
 
-        $this->assertEquals(1, $args->count(), "Expecting a variable named `unserialized` as argument in the `print_r()` function call.");
+        $this->assertEquals(1, $args->count(), "Expecting one variable named `unserialized` as an argument in the `print_r()` function call.");
     }
 
     public function testFor()
@@ -109,7 +109,7 @@ class MissingArgumentTypeForUnserializeFunctionTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $var = $arrayFetch->find('variable[name="myArray"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting an array variable name `myArray` in the `for` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one array variable named `myArray` in the `for` statement.");
     }
 
     public function testCounterVarInFor()
@@ -119,7 +119,7 @@ class MissingArgumentTypeForUnserializeFunctionTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $var = $arrayFetch->find('variable[name="counter"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting a variable named `counter` in the `myArray` array fetch.");
+        $this->assertEquals(1, $var->count(), "Expecting one variable named `counter` in the `myArray` array fetch.");
     }
 
     public function testNumberVariable()

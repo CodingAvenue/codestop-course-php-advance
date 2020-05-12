@@ -50,7 +50,7 @@ class MissingAssignmentOperatorTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $myArray = $subNode->find('variable[name="myArray"]');
 
-        $this->assertEquals(1, $myArray->count(), "Expecting a variable named `myArray` as argument in the `serialize()` function call.");
+        $this->assertEquals(1, $myArray->count(), "Expecting one variable named `myArray` as an argument in the `serialize()` function call.");
     }
 
     public function testFor()
@@ -67,7 +67,7 @@ class MissingAssignmentOperatorTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $var = $arrayFetch->find('variable[name="myArray"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting an array variable name `myArray` in the `for` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one array variable named `myArray` in the `for` statement.");
     }
 
     public function testCounterVarInFor()
@@ -77,7 +77,7 @@ class MissingAssignmentOperatorTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $var = $arrayFetch->find('variable[name="counter"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting a variable named `counter` in the `myArray` array fetch.");
+        $this->assertEquals(1, $var->count(), "Expecting one variable named `counter` in the `myArray` array fetch.");
     }
 
     public function testNumberVariable()
@@ -132,6 +132,6 @@ class MissingAssignmentOperatorTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $var = $obj->find('variable[name="converted"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting a variable named `converted` in an `echo` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one variable named `converted` in an `echo` statement.");
     }
 }
