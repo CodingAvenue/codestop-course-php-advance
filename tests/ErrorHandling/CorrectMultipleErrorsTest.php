@@ -31,7 +31,7 @@ class CorrectMultipleErrorsTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(2, $obj->count(), "Expecting two echo statements.");
+        $this->assertEquals(2, $obj->count(), "Expecting two `echo` statements.");
     }
 
     public function testDivideInEcho()
@@ -39,7 +39,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('call[name="divide"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `divide()` functon call in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `divide()` functon call in the `echo` statement.");
     }
 
     public function testSetErrorHandlerCall()
@@ -126,7 +126,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $args = $call->getSubnode('args');
         $string = $args->find('string[value="divide(): The value \'0\' as a divisor is not allowed"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `divide(): The value '0' as a divisor is not allowed` as first argument of the `trigger_error()` function call.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `divide(): The value '0' as a divisor is not allowed` as the first argument of the `trigger_error()` function call.");
     }
 
     public function testMyErrorHandlerFunction()

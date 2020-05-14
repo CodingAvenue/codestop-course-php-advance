@@ -109,7 +109,7 @@ class CreateCustomErrorhandlerTest extends TestCase
     //     $args = $call->getSubnode('args');
     //     $string = $args->find('string[value="Sorry, the file does not exist"]'); /// NOTE: string does not accept value with a comma in it.
 
-    //     $this->assertEquals(1, $string->count(), "Expecting a string `Sorry, the file does not exist` as first argument of the `trigger_error()` function call.");
+    //     $this->assertEquals(1, $string->count(), "Expecting a string `Sorry, the file does not exist` as the first argument of the `trigger_error()` function call.");
     // }
 
     public function testMyTestErrorHandlerFunction()

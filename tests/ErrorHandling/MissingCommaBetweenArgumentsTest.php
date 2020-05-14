@@ -110,6 +110,6 @@ class MissingCommaBetweenArgumentsTest extends TestCase
         $args = $call->getSubnode('args');
         $string = $args->find('string[value="divide(): The value \'0\' as a divisor is not allowed"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `divide(): The value '0' as a divisor is not allowed` as first argument of the `trigger_error()` function call.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `divide(): The value '0' as a divisor is not allowed` as the first argument of the `trigger_error()` function call.");
     }
 }

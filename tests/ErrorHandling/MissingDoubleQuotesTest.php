@@ -38,7 +38,7 @@ class MissingDoubleQuotesTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('call[name="divide"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `divide()` functon call in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `divide()` functon call in the `echo` statement.");
     }
 
     public function testDivideFunction()
