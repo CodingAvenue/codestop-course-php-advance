@@ -31,14 +31,14 @@ class MissingExtendsKeywordMainTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(2, $obj->count(), "Expecting two echo statements.");
+        $this->assertEquals(2, $obj->count(), "Expecting two `echo` statements.");
     }
 
     public function testDivideFunction()
     {
         $nodes = self::$code->find('function[name="divide"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a divide() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `divide()` function declaration.");
     }
 
     public function testDividendParam()
@@ -73,7 +73,7 @@ class MissingExtendsKeywordMainTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $var = $subNode->find('variable[name="divisor"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two variables named `divisor` in the `if` statement of the `divide()` function declaration.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `divisor` in the `if` statement of the `divide()` function declaration.");
     }
 
     public function testElseInDivide()
@@ -134,7 +134,7 @@ class MissingExtendsKeywordMainTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="errorMessage", variable="div"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `errorMessage()` method call of `div` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `errorMessage()` method call of `div` in the echo statement.");
     }
 
     public function testStringInEcho()
@@ -157,7 +157,7 @@ class MissingExtendsKeywordMainTest extends TestCase
     {
         $obj = self::$code->find('call[name="divide"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting an `divide()` function call.");
+        $this->assertEquals(1, $obj->count(), "Expecting a `divide()` function call.");
     }
 
     public function testDivideCallArgs()

@@ -24,7 +24,7 @@ class CorrectMultipleErrorsDivideByZeroExceptionTest extends TestCase
         $subNodes = $obj->getSubnode();
         $error = $subNodes->find('method[name="errorMessage", type="public"]');
 
-        $this->assertEquals(1, $error->count(), "Expecting an errorMessage() method.");
+        $this->assertEquals(1, $error->count(), "Expecting an `errorMessage()` method.");
     }
 
     public function testClass()

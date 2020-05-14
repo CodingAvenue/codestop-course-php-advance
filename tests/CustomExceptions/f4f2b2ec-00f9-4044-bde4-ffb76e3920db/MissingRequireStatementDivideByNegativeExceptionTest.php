@@ -24,7 +24,7 @@ class MissingRequireStatementDivideByNegativeExceptionTest extends TestCase
         $subNodes = $obj->getSubnode();
         $error = $subNodes->find('method[name="myErrorMessage", type="public"]');
 
-        $this->assertEquals(1, $error->count(), "Expecting an myErrorMessage() method.");
+        $this->assertEquals(1, $error->count(), "Expecting a `myErrorMessage()` method.");
     }
 
     public function testMyErrorFile()
@@ -33,7 +33,7 @@ class MissingRequireStatementDivideByNegativeExceptionTest extends TestCase
         $subNodes = $obj->getSubnode();
         $error = $subNodes->find('method[name="myErrorFile", type="public"]');
 
-        $this->assertEquals(1, $error->count(), "Expecting an myErrorFile() method.");
+        $this->assertEquals(1, $error->count(), "Expecting a `myErrorFile()` method.");
     }
 
     public function testClass()
