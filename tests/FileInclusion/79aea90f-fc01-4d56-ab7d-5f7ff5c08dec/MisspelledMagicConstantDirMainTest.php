@@ -31,14 +31,14 @@ class MisspelledMagicConstantDirMainTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(3, $obj->count(), "Expecting two echo statements.");
+        $this->assertEquals(3, $obj->count(), "Expecting two `echo` statements.");
     }
 
     public function testDivideFunction()
     {
         $nodes = self::$code->find('function[name="divide"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a divide() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `divide()` function declaration.");
     }
 
     public function testDividendParam()
@@ -73,7 +73,7 @@ class MisspelledMagicConstantDirMainTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $var = $subNode->find('variable[name="divisor"]');
 
-        $this->assertEquals(3, $var->count(), "Expecting three variables named `divisor` in the `if` statement of the `divide()` function declaration.");
+        $this->assertEquals(3, $var->count(), "Expecting three occurrences of the variable named `divisor` in the `if` statement of the `divide()` function declaration.");
     }
 
     public function testDividendInIfOfDivide()
@@ -171,7 +171,7 @@ class MisspelledMagicConstantDirMainTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="errorMessage", variable="div"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting an `errorMessage()` method call of `div` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `errorMessage()` method call of `div` in the `echo` statement.");
     }
 
     public function testMyErrorFileInEcho()
@@ -179,7 +179,7 @@ class MisspelledMagicConstantDirMainTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="myErrorFile", variable="neg"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `myErrorFile()` method call of `neg` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `myErrorFile()` method call of `neg` in the `echo` statement.");
     }
 
     public function testMyErrorMessageInEcho()
@@ -187,7 +187,7 @@ class MisspelledMagicConstantDirMainTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="myErrorMessage", variable="neg"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `myErrorMessage()` method call of `neg` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `myErrorMessage()` method call of `neg` in the `echo` statement.");
     }
 
     public function testStringInEcho()
@@ -195,7 +195,7 @@ class MisspelledMagicConstantDirMainTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value="Exception caught: "]');
 
-        $this->assertEquals(2, $call->count(), "Expecting two strings `Exception caught: ` in the echo statements.");
+        $this->assertEquals(2, $call->count(), "Expecting two strings `Exception caught: ` in the `echo` statements.");
     }
 
     public function testNewInDivide()
@@ -210,7 +210,7 @@ class MisspelledMagicConstantDirMainTest extends TestCase
     {
         $obj = self::$code->find('call[name="divide"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting an `divide()` function call.");
+        $this->assertEquals(1, $obj->count(), "Expecting a `divide()` function call.");
     }
 
     public function testDivideCallArgs()

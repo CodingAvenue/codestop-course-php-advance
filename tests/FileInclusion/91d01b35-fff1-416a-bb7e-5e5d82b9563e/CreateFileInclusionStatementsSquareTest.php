@@ -34,7 +34,7 @@ class CreateFileInclusionStatementsSquareTest extends TestCase
         $subNodes = $obj->getSubnode();
         $construct = $subNodes->find('method[name="__construct", type="public"]');
 
-        $this->assertEquals(1, $construct->count(), "Expecting a __construct() method.");
+        $this->assertEquals(1, $construct->count(), "Expecting a `__construct()` method.");
     }
 
     public function testCalculateArea()
@@ -43,7 +43,7 @@ class CreateFileInclusionStatementsSquareTest extends TestCase
         $subNodes = $obj->getSubnode();
         $area = $subNodes->find('method[name="calculateArea", type="public"]');
 
-        $this->assertEquals(1, $area->count(), "Expecting an calculateArea() method.");
+        $this->assertEquals(1, $area->count(), "Expecting a `calculateArea()` method.");
     }
 
     public function testClass()
@@ -60,7 +60,7 @@ class CreateFileInclusionStatementsSquareTest extends TestCase
         $calculateArea = $subNodes->find('method[name="calculateArea", type="public"]');
         $nodes = $calculateArea->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `calculateArea()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `calculateArea()` method.");
     }
 
     public function testSideParam()
@@ -89,7 +89,7 @@ class CreateFileInclusionStatementsSquareTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $side = $construct->find('property-call[name="side", variable="this"]');
 
-        $this->assertEquals(1, $side->count(), "Expecting one `side` property call inside the `__construct()` method of the `Square` class itself.");
+        $this->assertEquals(1, $side->count(), "Expecting one `side` property call in the `__construct()` method of the `Square` class itself.");
     }
 
     public function testReturnSide()
@@ -100,7 +100,7 @@ class CreateFileInclusionStatementsSquareTest extends TestCase
         $nodes = $calculateArea->find('construct[name="return"]');
         $call = $nodes->find('property-call[name="side", variable="this"]');
 
-        $this->assertEquals(2, $call->count(), "Expecting two `side` property calls in the return statement of the `calculateArea()` method.");
+        $this->assertEquals(2, $call->count(), "Expecting two `side` property calls in the `return` statement of the `calculateArea()` method.");
     }
 
     public function testRequireCall()

@@ -80,7 +80,7 @@ class DuplicateFileInclusionStatementStudentTest extends TestCase
         $getCourse = $subNodes->find('method[name="getCourse", type="public"]');
         $nodes = $getCourse->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `getCourse()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `getCourse()` method.");
     }
 
     public function testRequireCall()

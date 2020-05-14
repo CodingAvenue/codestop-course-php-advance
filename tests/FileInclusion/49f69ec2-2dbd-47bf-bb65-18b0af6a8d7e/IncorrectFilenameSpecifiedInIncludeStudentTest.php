@@ -70,7 +70,7 @@ class IncorrectFilenameSpecifiedInIncludeStudentTest extends TestCase
     {
         $display = self::$code->find('method-call[name="display", variable="student"]');
         
-        $this->assertEquals(1, $display->count(), "Expecting a 'display()' method call of 'student'.");
+        $this->assertEquals(1, $display->count(), "Expecting one 'display()' method call of 'student'.");
     }   
       
     public function testReturn()
@@ -80,7 +80,7 @@ class IncorrectFilenameSpecifiedInIncludeStudentTest extends TestCase
         $getCourse = $subNodes->find('method[name="getCourse", type="public"]');
         $nodes = $getCourse->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `getCourse()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `getCourse()` method.");
     }
 
     public function testIncludeCall()

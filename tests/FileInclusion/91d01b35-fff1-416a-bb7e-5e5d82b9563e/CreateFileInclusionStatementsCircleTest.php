@@ -34,7 +34,7 @@ class CreateFileInclusionStatementsCircleTest extends TestCase
         $subNodes = $obj->getSubnode();
         $construct = $subNodes->find('method[name="__construct", type="public"]');
 
-        $this->assertEquals(1, $construct->count(), "Expecting a __construct() method.");
+        $this->assertEquals(1, $construct->count(), "Expecting a `__construct()` method.");
     }
 
     public function testCalculateArea()
@@ -43,7 +43,7 @@ class CreateFileInclusionStatementsCircleTest extends TestCase
         $subNodes = $obj->getSubnode();
         $area = $subNodes->find('method[name="calculateArea", type="public"]');
 
-        $this->assertEquals(1, $area->count(), "Expecting an calculateArea() method.");
+        $this->assertEquals(1, $area->count(), "Expecting a `calculateArea()` method.");
     }
 
     public function testClass()
@@ -60,7 +60,7 @@ class CreateFileInclusionStatementsCircleTest extends TestCase
         $calculateArea = $subNodes->find('method[name="calculateArea", type="public"]');
         $nodes = $calculateArea->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `calculateArea()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `calculateArea()` method.");
     }
 
     public function testRadiusParam()
@@ -109,7 +109,7 @@ class CreateFileInclusionStatementsCircleTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $radius = $construct->find('property-call[name="radius", variable="this"]');
 
-        $this->assertEquals(1, $radius->count(), "Expecting one `radius` property call inside the `__construct()` method of the `Circle` class itself.");
+        $this->assertEquals(1, $radius->count(), "Expecting one `radius` property call in the `__construct()` method of the `Circle` class itself.");
     }
 
     public function testReturnRadius()
@@ -120,7 +120,7 @@ class CreateFileInclusionStatementsCircleTest extends TestCase
         $nodes = $calculateArea->find('construct[name="return"]');
         $call = $nodes->find('property-call[name="radius", variable="this"]');
 
-        $this->assertEquals(2, $call->count(), "Expecting two `radius` property calls in the return statement of the `calculateArea()` method.");
+        $this->assertEquals(2, $call->count(), "Expecting two `radius` property calls in the `return` statement of the `calculateArea()` method.");
     }
 
     public function testReturnPiCall()
@@ -131,7 +131,7 @@ class CreateFileInclusionStatementsCircleTest extends TestCase
         $nodes = $calculateArea->find('construct[name="return"]');
         $call = $nodes->find('const-fetch[name="PI", class="self"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `PI` constant call in the return statement of the `calculateArea()` method.");
+        $this->assertEquals(1, $call->count(), "Expecting one `PI` constant call in the `return` statement of the `calculateArea()` method.");
     }
 
     public function testIncludeCall()

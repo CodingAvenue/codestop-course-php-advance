@@ -24,7 +24,7 @@ class CreateFileInclusionStatementsMyShapeTest extends TestCase
         $subNodes = $obj->getSubnode();
         $stage = $subNodes->find('method[name="calculateArea", type="public"]');
 
-        $this->assertEquals(1, $stage->count(), "Expecting a calculateArea() method.");
+        $this->assertEquals(1, $stage->count(), "Expecting a `calculateArea()` method.");
     }
 
     public function testLifeCycleInterface()
