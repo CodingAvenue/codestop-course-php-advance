@@ -31,14 +31,14 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting one echo statement.");
+        $this->assertEquals(1, $obj->count(), "Expecting one `echo` statement.");
     }
 
     public function testOpenFileFunction()
     {
         $nodes = self::$code->find('function[name="openFile"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a openFile() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an `openFile()` function declaration.");
     }
 
     public function testFileParam()
@@ -105,7 +105,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getMessage", variable="e"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getMessage()` method call of `e` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getMessage()` method call of `e` in the `echo` statement.");
     }
 
     public function testGetFileInEcho()
@@ -113,7 +113,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getFile", variable="e"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getFile()` method call of `e` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getFile()` method call of `e` in the `echo` statement.");
     }
 
     public function testGetLineInEcho()
@@ -121,7 +121,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getLine", variable="e"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getLine()` method call of `e` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getLine()` method call of `e` in the `echo` statement.");
     }
 
     public function testStringInEcho()
@@ -129,7 +129,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value="Exception caught: "]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the `echo` statement.");
     }
 
     public function testInnerStringInEcho()
@@ -137,7 +137,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value=" on line number "]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the `echo` statement.");
     }
 
     public function testNewInOpenFile()
@@ -161,7 +161,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
         $subNode = $obj->getSubNode()->getSubNode('args');
         $args = $subNode->find('string[value="myTest.txt"]');
 
-        $this->assertEquals(1, $args->count(), "Expecting a string `myTest.txt` as argument in the `openFile()` function call.");
+        $this->assertEquals(1, $args->count(), "Expecting a string `myTest.txt` as an argument in the `openFile()` function call.");
     }
 
     //still need to test THROW, TRY, and CATCH keywords

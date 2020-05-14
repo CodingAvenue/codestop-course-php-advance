@@ -31,14 +31,14 @@ class MissingExceptionInstanceVariableInCatchTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(2, $obj->count(), "Expecting two echo statements.");
+        $this->assertEquals(2, $obj->count(), "Expecting two `echo` statements.");
     }
 
     public function testDivideFunction()
     {
         $nodes = self::$code->find('function[name="divide"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a divide() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `divide()` function declaration.");
     }
 
     public function testDividendParam()
@@ -73,7 +73,7 @@ class MissingExceptionInstanceVariableInCatchTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $var = $subNode->find('variable[name="divisor"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two variables named `divisor` in the `if` statement of the `divide()` function declaration.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `divisor` in the `if` statement of the `divide()` function declaration.");
     }
 
     public function testElseInDivide()
@@ -134,7 +134,7 @@ class MissingExceptionInstanceVariableInCatchTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getMessage", variable="e"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getMessage()` method call of `e` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getMessage()` method call of `e` in the `echo` statement.");
     }
 
     public function testStringInEcho()
@@ -142,7 +142,7 @@ class MissingExceptionInstanceVariableInCatchTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value="Exception caught: "]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the `echo` statement.");
     }
 
     public function testNewInDivide()
@@ -157,7 +157,7 @@ class MissingExceptionInstanceVariableInCatchTest extends TestCase
     {
         $obj = self::$code->find('call[name="divide"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting an `divide()` function call.");
+        $this->assertEquals(1, $obj->count(), "Expecting a `divide()` function call.");
     }
 
     public function testDivideCallArgs()

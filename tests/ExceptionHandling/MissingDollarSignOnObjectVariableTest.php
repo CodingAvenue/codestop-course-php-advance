@@ -31,14 +31,14 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
     {
         $obj = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(3, $obj->count(), "Expecting two echo statements.");
+        $this->assertEquals(3, $obj->count(), "Expecting two `echo` statements.");
     }
 
     public function testDivideFunction()
     {
         $nodes = self::$code->find('function[name="divide"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a divide() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `divide()` function declaration.");
     }
 
     public function testDividendParam()
@@ -82,7 +82,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $var = $subNode->find('variable[name="divisor"]');
 
-        $this->assertEquals(3, $var->count(), "Expecting three variables named `divisor` in the `if` statement of the `divide()` function declaration.");
+        $this->assertEquals(3, $var->count(), "Expecting three occurrences of the variable named `divisor` in the `if` statement of the `divide()` function declaration.");
     }
 
     public function testDividendInIfOfDivide()
@@ -91,7 +91,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $var = $subNode->find('variable[name="dividend"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two variables named `dividend` in the `if` statement of the `divide()` function declaration.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `dividend` in the `if` statement of the `divide()` function declaration.");
     }
 
     public function testElseInDivide()
@@ -211,7 +211,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getMessage", variable="e"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getMessage()` method call of `e` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getMessage()` method call of `e` in the `echo` statement.");
     }
 
     public function testGetCodeInEcho()
@@ -219,7 +219,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getCode", variable="e"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getCode()` method call of `e` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getCode()` method call of `e` in the `echo` statement.");
     }
 
     public function testIEGetMessageInEcho()
@@ -227,7 +227,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getMessage", variable="ie"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getMessage()` method call of `ie` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getMessage()` method call of `ie` in the `echo` statement.");
     }
 
     public function testIEGetFileInEcho()
@@ -235,7 +235,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getFile", variable="ie"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getFile()` method call of `ie` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getFile()` method call of `ie` in the `echo` statement.");
     }
 
     public function testIEGetLineInEcho()
@@ -243,7 +243,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="getLine", variable="ie"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a `getLine()` method call of `ie` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getLine()` method call of `ie` in the `echo` statement.");
     }
 
     public function testStringInEcho()
@@ -251,7 +251,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value="Exception caught: "]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the `echo` statement.");
     }
 
     public function testStringInEcho2()
@@ -259,7 +259,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value="Exception caught: ["]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: [` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: [` in the `echo` statement.");
     }
 
     public function testStringInEcho3()
@@ -267,7 +267,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value=" on line number "]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a string ` on line number ` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting a string ` on line number ` in the `echo` statement.");
     }
 
     public function testNewInDivide()
