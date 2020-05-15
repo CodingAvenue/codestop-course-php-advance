@@ -33,14 +33,14 @@ class IncorrectFileNameSpecifiedTest extends TestCase
         $subNode = $nodes->find('construct[name="while"]');
         $obj = $subNode->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting one echo statement in the `while` statement of the `readFileContent()` function.");
+        $this->assertEquals(1, $obj->count(), "Expecting one `echo` statement in the `while` statement of the `readFileContent()` function.");
     }
 
     public function testReadFileContentFunction()
     {
         $nodes = self::$code->find('function[name="readFileContent"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a readFileContent() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `readFileContent()` function declaration.");
     }
 
     public function testFileToReadParam()

@@ -33,21 +33,21 @@ class MisspelledFgetsFunctionTest extends TestCase
         $subNode = $nodes->find('construct[name="while"]');
         $obj = $subNode->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting one echo statement in the `while` statement of the `readFileContent()` function.");
+        $this->assertEquals(1, $obj->count(), "Expecting one `echo` statement in the `while` statement of the `readFileContent()` function.");
     }
 
     public function testReadFileContentFunction()
     {
         $nodes = self::$code->find('function[name="readFileContent"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a readFileContent() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `readFileContent()` function declaration.");
     }
 
     public function testCopyFileFunction()
     {
         $nodes = self::$code->find('function[name="copyFile"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an copyFile() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `copyFile()` function declaration.");
     }
 
     public function testFileToReadParam()
@@ -148,7 +148,7 @@ class MisspelledFgetsFunctionTest extends TestCase
         $obj = $subNode->find('construct[name="echo"]');
         $call = $obj->find('call[name="fgets"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `fgets()` function call in the `echo` statement of `while`.");
+        $this->assertEquals(1, $call->count(), "Expecting one `fgets()` function call in the `echo` statement of the `while` statement.");
     }
 
     public function testFgetsArgs()
