@@ -32,7 +32,7 @@ class MissingCommaBetweenArgumentsTest extends TestCase
     {
         $nodes = self::$code->find('function[name="renameFile"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an renameFile() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `renameFile()` function declaration.");
     }
 
     public function testFileToRenameParam()
@@ -111,7 +111,7 @@ class MissingCommaBetweenArgumentsTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $call = $nodes->find('call[name="readlink"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `readlink` function call in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `readlink()` function call in the `echo` statement.");
     }
 
     public function testReadlinkCallArgs()

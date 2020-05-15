@@ -32,7 +32,7 @@ class MissingDoubleQuotesOnArgumentTest extends TestCase
     {
         $nodes = self::$code->find('function[name="readFileContent"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a readFileContent() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `readFileContent()` function declaration.");
     }
 
     public function testFileParam()
@@ -66,14 +66,14 @@ class MissingDoubleQuotesOnArgumentTest extends TestCase
     {
         $nodes = self::$code->find('function[name="changeFileName"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an changeFileName() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `changeFileName()` function declaration.");
     }
 
     public function testDeleteFileFunction()
     {
         $nodes = self::$code->find('function[name="deleteFile"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an deleteFile() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `deleteFile()` function declaration.");
     }
 
     public function testoldFileParam()
@@ -136,7 +136,7 @@ class MissingDoubleQuotesOnArgumentTest extends TestCase
         $nodes = self::$code->find('function[name="deleteFile"]');
         $cons = $nodes->find('construct[name="if"]');
 
-        $this->assertEquals(1, $cons->count(), "Expecting one `if` statement in the deleteFile() function declaration.");
+        $this->assertEquals(1, $cons->count(), "Expecting one `if` statement in the `deleteFile()` function declaration.");
     }
 
     public function testEchoInDeleteFileFunction()
@@ -144,7 +144,7 @@ class MissingDoubleQuotesOnArgumentTest extends TestCase
         $nodes = self::$code->find('function[name="deleteFile"]');
         $cons = $nodes->find('construct[name="echo"]');
 
-        $this->assertEquals(2, $cons->count(), "Expecting two `echo` statements in the deleteFile() function declaration.");
+        $this->assertEquals(2, $cons->count(), "Expecting two `echo` statements in the `deleteFile()` function declaration.");
     }
 
     public function testElseInDeleteFileFunction()
@@ -152,7 +152,7 @@ class MissingDoubleQuotesOnArgumentTest extends TestCase
         $nodes = self::$code->find('function[name="deleteFile"]');
         $cons = $nodes->find('construct[name="else"]');
 
-        $this->assertEquals(1, $cons->count(), "Expecting one `else` statement in the deleteFile() function declaration.");
+        $this->assertEquals(1, $cons->count(), "Expecting one `else` statement in the `deleteFile()` function declaration.");
     }
 
     public function testUnlinkInIfOfDeleteFileFunction()
@@ -161,7 +161,7 @@ class MissingDoubleQuotesOnArgumentTest extends TestCase
         $cons = $nodes->find('construct[name="if"]');
         $call = $cons->find('call[name="unlink"]');
 
-        $this->assertEquals(1, $cons->count(), "Expecting one `unlink()` function call in the `if` statement of the deleteFile() function declaration.");
+        $this->assertEquals(1, $call->count(), "Expecting one `unlink()` function call in the `if` statement of the `deleteFile()` function declaration.");
     }
 
     public function testUnlinkArgs()
@@ -172,7 +172,7 @@ class MissingDoubleQuotesOnArgumentTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $args = $subNode->find('variable[name="fileToDelete"]');
 
-        $this->assertEquals(1, $cons->count(), "Expecting a variable named `fileToDelete` as an argument in the `unlink()` function call.");
+        $this->assertEquals(1, $args->count(), "Expecting a variable named `fileToDelete` as an argument in the `unlink()` function call.");
     }
 
     public function testStringInEcho1()

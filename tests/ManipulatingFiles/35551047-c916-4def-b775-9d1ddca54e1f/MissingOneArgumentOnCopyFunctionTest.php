@@ -31,14 +31,14 @@ class MissingOneArgumentOnCopyFunctionTest extends TestCase
     {
         $nodes = self::$code->find('function[name="readFileContent"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a readFileContent() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `readFileContent()` function declaration.");
     }
 
     public function testCopyFileFunction()
     {
         $nodes = self::$code->find('function[name="copyFile"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an copyFile() function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a `copyFile()` function declaration.");
     }
 
     public function testFileToReadParam()
@@ -167,7 +167,7 @@ class MissingOneArgumentOnCopyFunctionTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $var = $nodes->find('variable[name="myFile"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named `myFile` in the assignment statements.");
+        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named `myFile` in the assignment statement.");
     }
 
     public function testMyCopiedFileInAssignment()
