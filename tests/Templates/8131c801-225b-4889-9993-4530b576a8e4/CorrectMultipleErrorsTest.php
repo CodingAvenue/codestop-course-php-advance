@@ -118,7 +118,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $args = $subNode->find('variable[name="file"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one variable named `file` as an argument in the `file_get_contents()` function call of the `readTemplate()` function declaration.");
+        $this->assertEquals(1, $args->count(), "Expecting one variable named `file` as an argument in the `file_get_contents()` function call of the `readTemplate()` function declaration.");
     }
 
     public function testForeachInIf()
@@ -279,7 +279,7 @@ class CorrectMultipleErrorsTest extends TestCase
     {
         $nodes = self::$code->find('call[name="readTemplate"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one `readTemplate` function call.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `readTemplate()` function call.");
     }
 
     public function testReadTemplateCallArgs()
