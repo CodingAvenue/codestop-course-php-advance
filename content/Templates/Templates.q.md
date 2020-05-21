@@ -900,7 +900,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=5eb6fd05-6806-443a-aa80-ed57cd02d514, answer=[tests/Templates/IncorrectArgumentVariableOnFileGetContentTest.php], filename=[main.php,template.tpl]
+/// type=CR, id=5eb6fd05-6806-443a-aa80-ed57cd02d514, answer=[tests/Templates/5eb6fd05-6806-443a-aa80-ed57cd02d514], filename=[main.php,template.tpl]
 
 Correct the code so that it properly renders the content of `template.tpl` in the web browser window.
 
@@ -1016,7 +1016,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=f3c5f0b1-c909-4f13-af26-954d9b93ca1e, answer=[tests/Templates/MissingCommaBetweenArgumentsTest.php], filename=[main.php,template.tpl]
+/// type=CR, id=f3c5f0b1-c909-4f13-af26-954d9b93ca1e, answer=[tests/Templates/f3c5f0b1-c909-4f13-af26-954d9b93ca1e], filename=[main.php,template.tpl]
 
 Correct the code so that it properly renders the content of `template.tpl` in the web browser window.
 
@@ -1132,7 +1132,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=f0c49ebc-76cf-4ec6-bbb7-f245c2a2b932, answer=[tests/Templates/MissingFirstArgumentOnReadTemplateTest.php], filename=[main.php,template.tpl]
+/// type=CR, id=f0c49ebc-76cf-4ec6-bbb7-f245c2a2b932, answer=[tests/Templates/f0c49ebc-76cf-4ec6-bbb7-f245c2a2b932], filename=[main.php,template.tpl]
 
 Correct the code so that it properly renders the content of `template.tpl` in the web browser window.
 
@@ -1248,7 +1248,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=5a3b951e-d541-4af0-aae9-d8fd98674353, answer=[tests/Templates/IncorrectOperatorForAssociativeArrayTest.php], filename=[main.php,template.tpl]
+/// type=CR, id=5a3b951e-d541-4af0-aae9-d8fd98674353, answer=[tests/Templates/5a3b951e-d541-4af0-aae9-d8fd98674353], filename=[main.php,template.tpl]
 
 Correct the code so that it properly renders the content of `template.tpl` in the web browser window.
 
@@ -1540,7 +1540,7 @@ In the `foreach ($array as $key => $val)` construct on line 6 of `main.php`, rem
 :::
 
 
-/// type=CR, id=8131c801-225b-4889-9993-4530b576a8e4, answer=[tests/Templates/CorrectMultipleErrorsTest.php], filename=[main.php,resultTemplate.tpl]
+/// type=CR, id=8131c801-225b-4889-9993-4530b576a8e4, answer=[tests/Templates/8131c801-225b-4889-9993-4530b576a8e4], filename=[main.php,resultTemplate.tpl]
 
 Correct the code so that it properly renders the content of `resultTemplate.tpl` in the web browser window.
 
@@ -1609,7 +1609,7 @@ echo $testTemplate;
 
 ### Part 4: Practice
 
-/// type=CR, id=e425c8c3-31b6-45d6-8d12-5f2ad56b85a7, answer=[tests/Templates/ReadAndAccessTemplateTest.php], filename=[main.php,practiceTemplate.tpl]
+/// type=CR, id=e425c8c3-31b6-45d6-8d12-5f2ad56b85a7, answer=[tests/Templates/e425c8c3-31b6-45d6-8d12-5f2ad56b85a7], filename=[main.php,practiceTemplate.tpl]
 
 Given the `practiceTemplate.tpl` template and the initial `main.php` implementations, write a program statement that parses and returns the content of the `practiceTemplate.tpl` template. In the `main.php` tab, add a statement that assigns `__DIR__ . '/practiceTemplate.tpl'` to a variable named `$practice`. Add another statement that assigns the associative array `array ('title' => "Practice Template", 'name' => "CodeStop", 'courseOffered' => "Courses Offered", 'motto' => "Learning by Coding", 'footer' => "All Rights Reserved CodeStop © 2017");` to a variable named `$contentArray`. Then, add a statement that calls the `readTemplate()` function passing two arguments `$practice` and `$contentArray` respectively and assigns it to a variable named `$practiceContent`. Next, create an `echo` statement to display the value of `$contentArray`. Run the program to view the output. 
 
