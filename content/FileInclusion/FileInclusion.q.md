@@ -813,7 +813,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=49f69ec2-2dbd-47bf-bb65-18b0af6a8d7e, answer=[tests/FileInclusion/IncorrectFilenameSpecifiedInIncludeTest.php], filename=[Student.php,Person.php]
+/// type=CR, id=49f69ec2-2dbd-47bf-bb65-18b0af6a8d7e, answer=[tests/FileInclusion/49f69ec2-2dbd-47bf-bb65-18b0af6a8d7e], filename=[Student.php,Person.php]
 
 Correct the code so that it outputs the string `John is 15 years old.`.
 
@@ -963,7 +963,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=1583d9fd-173d-41a9-ab3c-84515331e5f1, answer=[tests/FileInclusion/IncorrectFilePathSpecifiedInIncludeTest.php], filename=[Student.php,Person.php]
+/// type=CR, id=1583d9fd-173d-41a9-ab3c-84515331e5f1, answer=[tests/FileInclusion/1583d9fd-173d-41a9-ab3c-84515331e5f1], filename=[Student.php,Person.php]
 
 Correct the code so that it outputs the string `John is 15 years old.`.
 
@@ -1114,7 +1114,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=7f859102-74fb-49bb-9b04-46bd3b3f76ab, answer=[tests/FileInclusion/DuplicateFileInclusionStatementTest.php], filename=[Student.php,Person.php]
+/// type=CR, id=7f859102-74fb-49bb-9b04-46bd3b3f76ab, answer=[tests/FileInclusion/7f859102-74fb-49bb-9b04-46bd3b3f76ab], filename=[Student.php,Person.php]
 
 Correct the code so that it outputs the string `John is 15 years old.`.
 
@@ -1265,7 +1265,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=431a74cd-fc48-4740-a203-6471cbb77638, answer=[tests/FileInclusion/MissingOpenDoubleQuoteTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=431a74cd-fc48-4740-a203-6471cbb77638, answer=[tests/FileInclusion/431a74cd-fc48-4740-a203-6471cbb77638], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs `2`.
 
@@ -1415,7 +1415,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=79aea90f-fc01-4d56-ab7d-5f7ff5c08dec, answer=[tests/FileInclusion/MisspelledMagicConstantDirTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=79aea90f-fc01-4d56-ab7d-5f7ff5c08dec, answer=[tests/FileInclusion/79aea90f-fc01-4d56-ab7d-5f7ff5c08dec], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs `2`.
 
@@ -1482,7 +1482,7 @@ class DivideByNegativeException extends Exception
 
 ### Part 4: Practice
 
-/// type=CR, id=91d01b35-fff1-416a-bb7e-5e5d82b9563e, answer=[tests/FileInclusion/CreateFileInclusionStatementsTest.php], filename=[MyShape.php,Circle.php,Square.php,main.php]
+/// type=CR, id=91d01b35-fff1-416a-bb7e-5e5d82b9563e, answer=[tests/FileInclusion/91d01b35-fff1-416a-bb7e-5e5d82b9563e], filename=[MyShape.php,Circle.php,Square.php,main.php]
 
 Given the implementations of the interface and classes below, create statements that use `require`, `require_once`, `include`, and `include_once` constructs to include and evaluate the content of a certain file into another PHP file. In the `Circle.php` tab, add an `include_once` statement that includes the content of the `MyShape` interface into the `Circle.php` file. In the `Square.php` tab, add a `require_once` statement that includes the content of the `MyShape` interface into the `Square.php` file. In the `main.php` tab, add two file inclusion statements that use `include` and `require` constructs to include the content of the files `Circle.php` and `Square.php` into the file `main.php`. Then, run the program to view the result.
 
