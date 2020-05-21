@@ -634,7 +634,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=66a98760-cdcb-460b-86b9-13b53f9cdfaa, answer=[tests/CustomExceptions/MissingExtendsKeywordTest.php], filename=[main.php,DivideByZeroException.php]
+/// type=CR, id=66a98760-cdcb-460b-86b9-13b53f9cdfaa, answer=[tests/CustomExceptions/66a98760-cdcb-460b-86b9-13b53f9cdfaa], filename=[main.php,DivideByZeroException.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -740,7 +740,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=e1828711-fb4e-4469-92f6-a75712617a9c, answer=[tests/CustomExceptions/MissingClassKeywordTest.php], filename=[main.php,DivideByZeroException.php]
+/// type=CR, id=e1828711-fb4e-4469-92f6-a75712617a9c, answer=[tests/CustomExceptions/e1828711-fb4e-4469-92f6-a75712617a9c], filename=[main.php,DivideByZeroException.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -846,7 +846,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=af590d6b-0381-40da-9dc3-11cf9fb28891, answer=[tests/CustomExceptions/MisspelledThrowKeywordTest.php], filename=[main.php,DivideByZeroException.php]
+/// type=CR, id=af590d6b-0381-40da-9dc3-11cf9fb28891, answer=[tests/CustomExceptions/af590d6b-0381-40da-9dc3-11cf9fb28891], filename=[main.php,DivideByZeroException.php]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -973,7 +973,7 @@ Which statement best describes the error?
 :::
 
 
-/// type=CR, id=f4f2b2ec-00f9-4044-bde4-ffb76e3920db, answer=[tests/CustomExceptions/MissingRequireStatementTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=f4f2b2ec-00f9-4044-bde4-ffb76e3920db, answer=[tests/CustomExceptions/f4f2b2ec-00f9-4044-bde4-ffb76e3920db], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs the string `Exception caught: A negative number as a divisor is encountered in /main.php`.
 
@@ -1122,7 +1122,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=98b81697-b874-4021-81c7-ca82020dcbb5, answer=[tests/CustomExceptions/MissingNewKeywordClassInstanceTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=98b81697-b874-4021-81c7-ca82020dcbb5, answer=[tests/CustomExceptions/98b81697-b874-4021-81c7-ca82020dcbb5], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs the string `Exception caught: A negative number as a divisor is encountered in /main.php`.
 
@@ -1407,7 +1407,7 @@ On line 18 of `main.php`, remove `$div` from `catch (DivideByZeroException $div)
 :::
 
 
-/// type=CR, id=e1359fb8-0dfd-48e3-b96d-3fba4545b61f, answer=[tests/CustomExceptions/CorrectMultipleErrorsTest.php], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
+/// type=CR, id=e1359fb8-0dfd-48e3-b96d-3fba4545b61f, answer=[tests/CustomExceptions/e1359fb8-0dfd-48e3-b96d-3fba4545b61f], filename=[main.php,DivideByZeroException.php,DivideByNegativeException.php]
 
 Correct the code so that it outputs the string `Exception caught: A negative number as a divisor is encountered in /main.php`.
 
@@ -1473,7 +1473,7 @@ class DivideByNegativeException extends Exception
 
 ### Part 4: Practice
 
-/// type=CR, id=9d777c4d-89ed-4b03-8e32-24c162af398e, answer=[tests/CustomExceptions/CreateNewCustomExceptionClassTest.php], filename=[practiceMain.php,FileNotFoundException.php]
+/// type=CR, id=9d777c4d-89ed-4b03-8e32-24c162af398e, answer=[tests/CustomExceptions/9d777c4d-89ed-4b03-8e32-24c162af398e], filename=[practiceMain.php,FileNotFoundException.php]
 
 Write a program that creates a custom exception class to handle exceptions gracefully. In the `FileNotFoundException.php` tab, use a `class` keyword to declare a custom exception class named `FileNotFoundException` that extends the `Exception` class. Within the curly braces `{}`, add a `public` method named `getErrorMessage()`. Inside the `getErrorMessage()` method body, add the statement `return $this->getMessage()`.
 
