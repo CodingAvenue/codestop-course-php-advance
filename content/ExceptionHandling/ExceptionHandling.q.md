@@ -778,7 +778,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=8cf386cf-04e1-4e3d-be8c-ee49330b3b00, answer=[tests/ExceptionHandling/MissingNewInTheThrowStatementTest.php]
+/// type=CR, id=8cf386cf-04e1-4e3d-be8c-ee49330b3b00, answer=[tests/ExceptionHandling/8cf386cf-04e1-4e3d-be8c-ee49330b3b00]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -856,7 +856,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=717bca2b-70ed-4275-913d-aa78ff010226, answer=[tests/ExceptionHandling/MissingExceptionInstanceVariableInCatchTest.php]
+/// type=CR, id=717bca2b-70ed-4275-913d-aa78ff010226, answer=[tests/ExceptionHandling/717bca2b-70ed-4275-913d-aa78ff010226]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -934,7 +934,7 @@ Which statement best describes the error?
 :::
 
 
-/// type=CR, id=81bfec02-52b5-4039-a7c2-14e44c6f3d5f, answer=[tests/ExceptionHandling/MissingOpenCurlyBraceAfterTryTest.php]
+/// type=CR, id=81bfec02-52b5-4039-a7c2-14e44c6f3d5f, answer=[tests/ExceptionHandling/81bfec02-52b5-4039-a7c2-14e44c6f3d5f]
 
 Correct the code so that it outputs the string `Exception caught: The value '0' as a divisor is not allowed.`.
 
@@ -1016,7 +1016,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=67013dfd-ae88-4ba4-8ef4-357b4e415596, answer=[tests/ExceptionHandling/MissingDollarSignOnObjectVariableTest.php]
+/// type=CR, id=67013dfd-ae88-4ba4-8ef4-357b4e415596, answer=[tests/ExceptionHandling/67013dfd-ae88-4ba4-8ef4-357b4e415596]
 
 Correct the code so that it outputs the string `Exception caught: Invalid argument value provided in /index.php on line number 5`.
 
@@ -1102,7 +1102,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=5114fcb0-bfd6-4626-b851-3adeeb23904f, answer=[tests/ExceptionHandling/MissingObjectOperatorOnMethodCallTest.php]
+/// type=CR, id=5114fcb0-bfd6-4626-b851-3adeeb23904f, answer=[tests/ExceptionHandling/5114fcb0-bfd6-4626-b851-3adeeb23904f]
 
 Correct the code so that it outputs the string `Exception caught: Invalid argument value provided in /index.php on line number 5`.
 
@@ -1345,7 +1345,7 @@ Remove the comma `,` between the arguments `10` and `0` from the `divide()` func
 :::
 
 
-/// type=CR, id=a60cae27-85b5-454e-a428-fa0fc1154082, answer=[tests/ExceptionHandling/CorrectMultipleErrorsTest.php]
+/// type=CR, id=a60cae27-85b5-454e-a428-fa0fc1154082, answer=[tests/ExceptionHandling/a60cae27-85b5-454e-a428-fa0fc1154082]
 
 Correct the code so that it outputs the string `Exception caught: [0] The value '0' as a divisor is not allowed.`.
 
@@ -1380,7 +1380,7 @@ function divide($dividend, $divisor)
 
 ### Part 4: Practice
 
-/// type=CR, id=de4d4385-fe7b-4417-bd1d-077381d10c9b, answer=[tests/ExceptionHandling/CreateFunctionThatThrowsExceptionTest.php]
+/// type=CR, id=de4d4385-fe7b-4417-bd1d-077381d10c9b, answer=[tests/ExceptionHandling/de4d4385-fe7b-4417-bd1d-077381d10c9b]
 
 Write a program that uses `throw`, `try`, and `catch` keywords to handle exceptions gracefully. First, create a funtion named `openFile()` with the parameter `$file`. Inside the function body, create an `if-else` statement to test if `$file` exists or not. In the `if` construct, add the condition `!file_exists($file)`. Inside the `if` block, add the statement `throw new Exception("Sorry, the file does not exist");`. Inside the `else` block, add the statement `fopen($file, "w");`. Next, Add a `try` and `catch` block. Inside the `try` block, add the statement `openFile("myTest.txt");` Then, add the `catch` block `catch (Exception $e) { echo "Exception caught: " . $e->getMessage() . " in " . $e->getFile() . " on line number " . $e->getLine(); }`. Run the program to view the output.
 
