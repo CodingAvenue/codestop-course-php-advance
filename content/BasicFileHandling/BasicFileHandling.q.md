@@ -1122,7 +1122,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=32a3eb81-31d9-4ce6-8c8f-317c9fa3fb7a, answer=[tests/BasicFileHandling/IncorrectFopenArgumentTest.php]
+/// type=CR, id=32a3eb81-31d9-4ce6-8c8f-317c9fa3fb7a, answer=[tests/BasicFileHandling/32a3eb81-31d9-4ce6-8c8f-317c9fa3fb7a]
 
 Correct the code so that it opens and reads the content of the `testDocument.txt` file.
 
@@ -1197,7 +1197,7 @@ Which statement best describes the error?
 :::
 
 
-/// type=CR, id=3dacd708-7675-4913-a2f9-edccb3b8fb0d, answer=[tests/BasicFileHandling/IncorrectFileNameSpecifiedTest.php]
+/// type=CR, id=3dacd708-7675-4913-a2f9-edccb3b8fb0d, answer=[tests/BasicFileHandling/3dacd708-7675-4913-a2f9-edccb3b8fb0d]
 
 Correct the code so that it opens and reads the content of the `testDocument.txt` file.
 
@@ -1282,7 +1282,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=b300c3ee-2c91-45da-8ed8-d8101b536fcf, answer=[tests/BasicFileHandling/MissingCommaBetweenFwriteArgumentsTest.php]
+/// type=CR, id=b300c3ee-2c91-45da-8ed8-d8101b536fcf, answer=[tests/BasicFileHandling/b300c3ee-2c91-45da-8ed8-d8101b536fcf]
 
 Correct the code so that it opens, appends the string `This is the newly added content.`, and reads the content of the `testDocument.txt` file.
 
@@ -1376,7 +1376,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=f6f370ed-b794-4690-a248-c42b5f48dd0d, answer=[tests/BasicFileHandling/IncorrectFcloseArgumentTypeTest.php]
+/// type=CR, id=f6f370ed-b794-4690-a248-c42b5f48dd0d, answer=[tests/BasicFileHandling/f6f370ed-b794-4690-a248-c42b5f48dd0d]
 
 Correct the code so that it opens, appends, and reads the content of the `testDocument.txt` file without having an error warning.
 
@@ -1470,7 +1470,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=228304f2-4edb-4ea3-a5a1-0429bdb1e66b, answer=[tests/BasicFileHandling/MissingDoubleQuotesInModesTest.php]
+/// type=CR, id=228304f2-4edb-4ea3-a5a1-0429bdb1e66b, answer=[tests/BasicFileHandling/228304f2-4edb-4ea3-a5a1-0429bdb1e66b]
 
 Correct the code so that it opens, appends, and reads the content of the `testDocument.txt` file without having an error notice.
 
@@ -1562,7 +1562,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=59f19ffa-2f20-4b6b-8f93-ec8ab67610bc, answer=[tests/BasicFileHandling/MissingDoubleQuotesInDieArgumentTest.php]
+/// type=CR, id=59f19ffa-2f20-4b6b-8f93-ec8ab67610bc, answer=[tests/BasicFileHandling/59f19ffa-2f20-4b6b-8f93-ec8ab67610bc]
 
 Correct the code so that it copies the content of the `testDocument.txt` file to the `myCopiedFile.txt` file.
 
@@ -1652,7 +1652,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=f3dfe52a-3bf0-4d13-b98f-2464e890ed96, answer=[tests/BasicFileHandling/MisspelledFgetsFunctionTest.php]
+/// type=CR, id=f3dfe52a-3bf0-4d13-b98f-2464e890ed96, answer=[tests/BasicFileHandling/f3dfe52a-3bf0-4d13-b98f-2464e890ed96]
 
 Correct the code so that it copies the content of the `testDocument.txt` file to the `myCopiedFile.txt` file.
 
@@ -1688,7 +1688,7 @@ readFileContent($copyHere);
 
 ### Part 4: Practice
 
-/// type=CR, id=65803c9e-288a-457d-befc-65025cf8e9ca, answer=[tests/BasicFileHandling/CreateFileManipulationTest.php]
+/// type=CR, id=65803c9e-288a-457d-befc-65025cf8e9ca, answer=[tests/BasicFileHandling/65803c9e-288a-457d-befc-65025cf8e9ca]
 
 Write a program that uses the different file handling functions and modes to manipulate files. First, create a function named `replaceContent()` with two parameters `$file` and `$newContent`. Inside the function body, create a statement that assigns `fopen($file, "w") or die("Unable to open the file.");` to `$fileToUpdate`. Then, add the `fwrite($fileToUpdate, $newContent);` function call. Next, create another function named `readContent()` with a parameter named `$file`. Inside the function body, create a statement that assigns `fopen($file, "r") or die("Unable to open the file.");` to `$fileToRead`. Then, add a `while` loop that evaluates the condition `!feof($fileToRead)`. Inside the loop body, add the statement `echo fgets($fileToRead) . "<br>";`. Outside the `while` statement, add the `fclose($fileToRead);` function call to close the opened file. After the function definition, add two assignment statements `$myFile = __DIR__ . "/testDocument.txt";` and `$myNewContent = "This is a new file content.\n";` respectively. Then, add two function calls `replaceContent($myFile, $myNewContent);` and `readContent($myFile);` respectively. Run the program to view the result.
 
