@@ -700,7 +700,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=dbce005f-398b-43d1-aa9d-8a372818abc5, answer=[tests/ManipulatingFiles/MissingCommaBetweenArgumentsTest.php]
+/// type=CR, id=dbce005f-398b-43d1-aa9d-8a372818abc5, answer=[tests/ManipulatingFiles/dbce005f-398b-43d1-aa9d-8a372818abc5]
 
 Correct the code so that it successfully copies and reads the content of the specified file.
 
@@ -778,7 +778,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=3a342a9c-cbb2-42f9-b90f-da281ff998e6, answer=[tests/ManipulatingFiles/MissingArgumentOnReadfileTest.php]
+/// type=CR, id=3a342a9c-cbb2-42f9-b90f-da281ff998e6, answer=[tests/ManipulatingFiles/3a342a9c-cbb2-42f9-b90f-da281ff998e6]
 
 Correct the code so that it successfully copies and reads the content of the specified file.
 
@@ -856,7 +856,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=35551047-c916-4def-b775-9d1ddca54e1f, answer=[tests/ManipulatingFiles/MissingOneArgumentOnCopyFunctionTest.php]
+/// type=CR, id=35551047-c916-4def-b775-9d1ddca54e1f, answer=[tests/ManipulatingFiles/35551047-c916-4def-b775-9d1ddca54e1f]
 
 Correct the code so that it successfully copies and reads the content of the specified file.
 
@@ -928,7 +928,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=093174e3-0ef1-449f-a2e4-06549b2d4935, answer=[tests/ManipulatingFiles/MissingCommaBetweenArgumentsOnRenameTest.php]
+/// type=CR, id=093174e3-0ef1-449f-a2e4-06549b2d4935, answer=[tests/ManipulatingFiles/093174e3-0ef1-449f-a2e4-06549b2d4935]
 
 Correct the code so that it successfully renames the specified file.
 
@@ -1004,7 +1004,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=e8831cb5-3308-4b9e-ac4f-2cf8ba537893, answer=[tests/ManipulatingFiles/MissingOpenParenthesisAfterUnlinkTest.php]
+/// type=CR, id=e8831cb5-3308-4b9e-ac4f-2cf8ba537893, answer=[tests/ManipulatingFiles/e8831cb5-3308-4b9e-ac4f-2cf8ba537893]
 
 Correct the code so that it successfully renames and deletes the specified file.
 
@@ -1090,7 +1090,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=62601e38-1b70-47d8-86dd-25f8503110e6, answer=[tests/ManipulatingFiles/MissingDoubleQuotesOnArgumentTest.php]
+/// type=CR, id=62601e38-1b70-47d8-86dd-25f8503110e6, answer=[tests/ManipulatingFiles/62601e38-1b70-47d8-86dd-25f8503110e6]
 
 Correct the code so that it successfully renames and deletes the specified file.
 
@@ -1124,7 +1124,7 @@ deleteFile($newFile);
 
 ### Part 4: Practice
 
-/// type=CR, id=a693f337-682b-455a-8a91-0321f33438e9, answer=[tests/ManipulatingFiles/CreateFileManipulationFunctionsTest.php]
+/// type=CR, id=a693f337-682b-455a-8a91-0321f33438e9, answer=[tests/ManipulatingFiles/a693f337-682b-455a-8a91-0321f33438e9]
 
 Write a program that uses the different file handling functions like `unlink()`, `rename()`, and `readfile()` to manipulate files. First, create a function named `changeFileName()` with two parameters `$oldFile` and `$newName`. Inside the function body, add the statement `rename($oldFile, $newName) or die("Unable to rename the file.");`. Then, create another function named `readFileContent()` with a parameter named `$file`. Inside the function body, add the statement `readfile($file) or die("Unable to read the file.");`. Next, create another function named `deleteFile()` with a parameter named `$fileToDelete`. Inside the function body, add an `if-else` statement to check if the specified `$fileToDelete` is deleted successfully or not. In the `if` construct, add the condition `!unlink($fileToDelete)`. Inside the `if` block, create an `echo` statement to display the string `Unable to delete the file.`. In the `else` block, create an `echo` statement to display the string `The file is deleted successfully.`. After the function definition, add the assignment statement `$myFile = __DIR__ . "/myTestDocument.txt";`. Then, add the function call `changeFileName($myFile, "myPracticeDocument.txt");`. Next, add another assignment statement `$myNewFile = __DIR__ . "/myPracticeDocument.txt";`. Lastly, add two function calls `readFileContent($myNewFile)` and `deleteFile($myNewFile)` respectively. Run the program to view the result.
 
