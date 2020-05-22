@@ -636,7 +636,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=1cf4b927-6d18-44f2-81a3-aa9b4ed4be69, answer=[tests/Sessions/MisplacedSessionStartFunctionTest.php]
+/// type=CR, id=1cf4b927-6d18-44f2-81a3-aa9b4ed4be69, answer=[tests/Sessions/1cf4b927-6d18-44f2-81a3-aa9b4ed4be69]
 
 Correct the code so that it outputs the string `Welcome, Diana!`.
 
@@ -696,7 +696,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=64871d7a-dbc4-4f38-a39b-701dfbce83e6, answer=[tests/Sessions/MissingKeyOnSessionVariableTest.php]
+/// type=CR, id=64871d7a-dbc4-4f38-a39b-701dfbce83e6, answer=[tests/Sessions/64871d7a-dbc4-4f38-a39b-701dfbce83e6]
 
 Correct the code so that it outputs the string `Welcome, Diana!`.
 
@@ -758,7 +758,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=7d433c76-4581-4820-a844-9e7ba279ff11, answer=[tests/Sessions/MisquotedSessionIdArgumentTest.php]
+/// type=CR, id=7d433c76-4581-4820-a844-9e7ba279ff11, answer=[tests/Sessions/7d433c76-4581-4820-a844-9e7ba279ff11]
 
 Correct the code so that it outputs the string `test-session-123 John Miller`.
 
@@ -822,7 +822,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=20af4580-301f-4b39-ae3e-08149ff5475c, answer=[tests/Sessions/IncorrectSessionStartFunctionTest.php]
+/// type=CR, id=20af4580-301f-4b39-ae3e-08149ff5475c, answer=[tests/Sessions/20af4580-301f-4b39-ae3e-08149ff5475c]
 
 Correct the code so that it outputs the string `test-session-123 John Miller`.
 
@@ -886,7 +886,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=4d94c074-db22-4114-ad53-cab3c7bdf168, answer=[tests/Sessions/UndefinedFirstnameSessionVariableTest.php]
+/// type=CR, id=4d94c074-db22-4114-ad53-cab3c7bdf168, answer=[tests/Sessions/4d94c074-db22-4114-ad53-cab3c7bdf168]
 
 Correct the code so that it outputs the string `test-session-123 John Miller`.
 
@@ -909,7 +909,7 @@ echo session_id() . ' ' . $_SESSION["firstName"] . ' ' . $_SESSION["lastName"];
 
 ### Part 4: Practice
 
-/// type=CR, id=a818f5f0-0636-4d20-9dd3-a713bd48e412, answer=[tests/Sessions/CreateAndAccessSessionVariablesTest.php]
+/// type=CR, id=a818f5f0-0636-4d20-9dd3-a713bd48e412, answer=[tests/Sessions/a818f5f0-0636-4d20-9dd3-a713bd48e412]
 
 Write a program that uses `session_start()` and `$_SESSION` to create and access session data. First, add the `session_start();` function call to start a new session. Then, add a statement that calls the `session_id()` function with the argument `practice-session-101`. Next, create the session variables `$_SESSION["name"]` and `$_SESSION["password"]`, and assign the values `James` and `123-pass` respectively. Add another statement `echo session_id() . ' ' . $_SESSION["name"];`. Then, run the program to view the output.
 
