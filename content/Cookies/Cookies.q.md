@@ -588,7 +588,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=b7d8ddaf-8eab-4e75-a2d5-089a23ec1622, answer=[tests/Cookies/MissingCommaBetweenArgumentTest.php]
+/// type=CR, id=b7d8ddaf-8eab-4e75-a2d5-089a23ec1622, answer=[tests/Cookies/b7d8ddaf-8eab-4e75-a2d5-089a23ec1622]
 
 Correct the code so that it creates a cookie named `user` and outputs the string `The cookie value is: My Cookie` when reloading the program.
 
@@ -648,7 +648,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=ddeb523f-526c-4cdb-9445-a8a419474bf8, answer=[tests/Cookies/MissingSquareBracketTest.php]
+/// type=CR, id=ddeb523f-526c-4cdb-9445-a8a419474bf8, answer=[tests/Cookies/ddeb523f-526c-4cdb-9445-a8a419474bf8]
 
 Correct the code so that it creates a cookie named `user` and outputs the string `The cookie value is: My Cookie` when reloading the program.
 
@@ -723,7 +723,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=0263d7e9-a562-439f-9d87-f60d4842e6d2, answer=[tests/Cookies/MissingPlusSignOnExpiryTest.php]
+/// type=CR, id=0263d7e9-a562-439f-9d87-f60d4842e6d2, answer=[tests/Cookies/0263d7e9-a562-439f-9d87-f60d4842e6d2]
 
 Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
@@ -813,7 +813,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=749e1ec5-b953-4375-8b13-bb276f945b64, answer=[tests/Cookies/MissingArgumentOnSuperglobalCookieTest.php]
+/// type=CR, id=749e1ec5-b953-4375-8b13-bb276f945b64, answer=[tests/Cookies/749e1ec5-b953-4375-8b13-bb276f945b64]
 
 Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
@@ -903,7 +903,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=1295b326-01f4-4ccd-99b5-e16d6dcf87bd, answer=[tests/Cookies/MissingCookieNameArgumentOnSetCookieTest.php]
+/// type=CR, id=1295b326-01f4-4ccd-99b5-e16d6dcf87bd, answer=[tests/Cookies/1295b326-01f4-4ccd-99b5-e16d6dcf87bd]
 
 Correct the code so that it creates a cookie named `my_cookie` and outputs the string `Cookie Value: This is my cookie.` when reloading the program.
 
@@ -940,7 +940,7 @@ setcookie("", $cookieValue, $expiry);
 
 ### Part 4: Practice
 
-/// type=CR, id=98363053-945e-43a2-8602-3c1ca6e96957, answer=[tests/Cookies/CreateCookieWithSetCookieTest.php]
+/// type=CR, id=98363053-945e-43a2-8602-3c1ca6e96957, answer=[tests/Cookies/98363053-945e-43a2-8602-3c1ca6e96957]
 
 Write a program that uses `setcookie()` and `$_COOKIE` to create and access cookies. First, use the `setcookie()` function that passes the arguments `test_cookie`, `This is a test cookie.`, and `time() + 360` respectively. Next, add an `if` statement that uses `isset()` and `$_COOKIE` to evaluate whether the `test_cookie` cookie is set or not. Inside the `if` block, add the statement `echo "Cookie Value: " . $_COOKIE['test_cookie'];`. Then, run the program to view the output.
 
