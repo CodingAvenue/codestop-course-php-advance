@@ -574,7 +574,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=c5f08030-9701-4819-93d5-6f36dffc7c34, answer=[tests/TernaryOperator/MissingQuestionMarkTest.php]
+/// type=CR, id=c5f08030-9701-4819-93d5-6f36dffc7c34, answer=[tests/TernaryOperator/c5f08030-9701-4819-93d5-6f36dffc7c34]
 
 Correct the code so that it outputs the string `Very Good`.
 
@@ -631,7 +631,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=d05d6687-d018-4875-aaec-c6e3548596ae, answer=[tests/TernaryOperator/MissingColonOnTernaryTest.php]
+/// type=CR, id=d05d6687-d018-4875-aaec-c6e3548596ae, answer=[tests/TernaryOperator/d05d6687-d018-4875-aaec-c6e3548596ae]
 
 Correct the code so that it outputs the string `Very Good`.
 
@@ -687,7 +687,7 @@ Which statement best describes the error?
 :::
 
 
-/// type=CR, id=ae131dc3-3e10-46cb-846f-25c229265406, answer=[tests/TernaryOperator/MissingSemiColonTest.php]
+/// type=CR, id=ae131dc3-3e10-46cb-846f-25c229265406, answer=[tests/TernaryOperator/ae131dc3-3e10-46cb-846f-25c229265406]
 
 Correct the code so that it outputs the string `Needs Improvement`.
 
@@ -743,7 +743,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=9f9b488b-64c5-432a-86fd-52881c9bf057, answer=[tests/TernaryOperator/MissingDoubleQuotesOnOperandTest.php]
+/// type=CR, id=9f9b488b-64c5-432a-86fd-52881c9bf057, answer=[tests/TernaryOperator/9f9b488b-64c5-432a-86fd-52881c9bf057]
 
 Correct the code so that it outputs the string `Needs Improvement`.
 
@@ -799,7 +799,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=9e6d76e1-42ec-4ee0-b604-8ce715565679, answer=[tests/TernaryOperator/MissingTernaryOperatorTest.php]
+/// type=CR, id=9e6d76e1-42ec-4ee0-b604-8ce715565679, answer=[tests/TernaryOperator/9e6d76e1-42ec-4ee0-b604-8ce715565679]
 
 Correct the code so that it outputs the string `The student grade is: 75`.
 
@@ -868,7 +868,7 @@ Remove the semicolon `;` from the statement `$score = 75;` on line 2. Execute th
 :::
 
 
-/// type=CR, id=676c25ea-d99b-47d7-ac9e-de238d19be6d, answer=[tests/TernaryOperator/CorrectMultipleErrorsTest.php]
+/// type=CR, id=676c25ea-d99b-47d7-ac9e-de238d19be6d, answer=[tests/TernaryOperator/676c25ea-d99b-47d7-ac9e-de238d19be6d]
 
 Correct the code so that it outputs the string `The student grade is: 75`.
 
@@ -888,7 +888,7 @@ echo "The student grade is: " . $studentGrade;
 
 ### Part 4: Practice
 
-/// type=CR, id=a0c2f854-51d1-4e09-8276-b1ec224c9a27, answer=[tests/TernaryOperator/UseTernaryOperatorTest.php]
+/// type=CR, id=a0c2f854-51d1-4e09-8276-b1ec224c9a27, answer=[tests/TernaryOperator/a0c2f854-51d1-4e09-8276-b1ec224c9a27]
 
 Write a program that uses a ternary operator `?:` to determine if a certain number is positive or negative. First, create a variable named `$number` and assign it the value `50`. Then, create a ternary expression that identifies if the value of `$number` is `positive` or `negative`. Assign the result to a variable named `$result`. Lastly, use `echo` to display the value of `$result`.
 
