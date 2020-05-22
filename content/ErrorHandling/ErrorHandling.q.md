@@ -704,7 +704,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=1c8c1286-f13d-464f-8b53-a1c13f88207f, answer=[tests/ErrorHandling/MissingDoubleQuotesTest.php]
+/// type=CR, id=1c8c1286-f13d-464f-8b53-a1c13f88207f, answer=[tests/ErrorHandling/1c8c1286-f13d-464f-8b53-a1c13f88207f]
 
 Correct the code so that it outputs the string `divide(): The value '0' as a divisor is not allowed.`.
 
@@ -774,7 +774,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=e4f5aa7a-515a-4121-9966-12fa61310f39, answer=[tests/ErrorHandling/MissingOpenParenthesisOnDieTest.php]
+/// type=CR, id=e4f5aa7a-515a-4121-9966-12fa61310f39, answer=[tests/ErrorHandling/e4f5aa7a-515a-4121-9966-12fa61310f39]
 
 Correct the code so that it outputs the string `divide(): The value '0' as a divisor is not allowed.`.
 
@@ -845,7 +845,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=bc534c87-e583-4c62-97bf-484a9f828259, answer=[tests/ErrorHandling/MissingCommaBetweenArgumentsTest.php]
+/// type=CR, id=bc534c87-e583-4c62-97bf-484a9f828259, answer=[tests/ErrorHandling/bc534c87-e583-4c62-97bf-484a9f828259]
 
 Correct the code so that it outputs the string `Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
 
@@ -917,7 +917,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=7729b268-1345-4b87-8637-16760e18074c, answer=[tests/ErrorHandling/MissingFirstArgumentOnTriggerErrorTest.php]
+/// type=CR, id=7729b268-1345-4b87-8637-16760e18074c, answer=[tests/ErrorHandling/7729b268-1345-4b87-8637-16760e18074c]
 
 Correct the code so that it outputs the string `Warning: divide(): The value '0' as a divisor is not allowed in /index.php on line 5`.
 
@@ -992,7 +992,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=6e0e6252-f86b-4ccc-96dd-fee81e80b833, answer=[tests/ErrorHandling/UnquotedArgumentOnSetErrorHandlerFunctionTest.php]
+/// type=CR, id=6e0e6252-f86b-4ccc-96dd-fee81e80b833, answer=[tests/ErrorHandling/6e0e6252-f86b-4ccc-96dd-fee81e80b833]
 
 Correct the code so that it outputs the strings `Error: [2] Division by zero` and `Please try again.` in separate lines.
 
@@ -1070,7 +1070,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=e2bd6e54-6632-4802-94cd-a78551e51762, answer=[tests/ErrorHandling/MissingArgumentOnSetErrorHandlerFunctionTest.php]
+/// type=CR, id=e2bd6e54-6632-4802-94cd-a78551e51762, answer=[tests/ErrorHandling/e2bd6e54-6632-4802-94cd-a78551e51762]
 
 Correct the code so that it outputs the strings `Error: [2] Division by zero` and `Please try again.` in separate lines.
 
@@ -1241,7 +1241,7 @@ In the function declaration `function divide($dividend, $divisor)` on line 2, re
 :::
 
 
-/// type=CR, id=441461e9-bd39-4693-ba05-d38415594ec8, answer=[tests/ErrorHandling/CorrectMultipleErrorsTest.php]
+/// type=CR, id=441461e9-bd39-4693-ba05-d38415594ec8, answer=[tests/ErrorHandling/441461e9-bd39-4693-ba05-d38415594ec8]
 
 Correct the code so that it outputs the strings `Error: [512] divide(): The value '0' as a divisor is not allowed in /index.php on line 5` and `Please try again.` in separate lines.
 
@@ -1277,7 +1277,7 @@ echo divide(10, 0);
 
 ### Part 4: Practice
 
-/// type=CR, id=c65b645f-b5c9-4423-b8b3-d8bed9d3e619, answer=[tests/ErrorHandling/CreateCustomErrorhandlerTest.php]
+/// type=CR, id=c65b645f-b5c9-4423-b8b3-d8bed9d3e619, answer=[tests/ErrorHandling/c65b645f-b5c9-4423-b8b3-d8bed9d3e619]
 
 Write a program that creates a custom error handling function using PHP's built-in error handling function to detect and deal with errors properly. First, create a funtion named `openFile()` with the parameter `$file`. Inside the function body, create an `if-else` statement to test if `$file` exists or not. In the `if` construct, add the condition `!file_exists($file)`. Inside the `if` block, add the statement `trigger_error("Sorry, the file does not exist", E_USER_ERROR);`. Inside the `else` block, add the statement `fopen($file, "w");`. Next, create another function named `myTestErrorHandler()` with the parameters `$error_no`, `$error_msg`, `$error_file`, and `$error_line`. Inside the function body, add the statements `echo "Error: [$error_no] " . $error_msg . " in " . $error_file . " on line " . $error_line;` and `die("\nPlease try again.");` respectively. Then, create a statement that registers the `myTestErrorHandler()` function as a custom error handling function using the `set_error_handler()` function. Add another statement `echo openFile("myTest.txt");`. Run the program to view the output.
 
