@@ -735,7 +735,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=aa969a70-d99e-42ff-b2b9-44b1d8a2336e, answer=[tests/Serialization/MissingAssignmentOperatorTest.php]
+/// type=CR, id=aa969a70-d99e-42ff-b2b9-44b1d8a2336e, answer=[tests/Serialization/aa969a70-d99e-42ff-b2b9-44b1d8a2336e]
 
 Correct the code so that it outputs the string `serialized numbers:a:5:{i:1;i:1;i:2;i:2;i:3;i:3;i:4;i:4;i:5;i:5;}`.
 
@@ -797,7 +797,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=a802fc30-7815-483d-b64b-17ce28f96a3d, answer=[tests/Serialization/MissingSerializeFunctionArgumentTest.php]
+/// type=CR, id=a802fc30-7815-483d-b64b-17ce28f96a3d, answer=[tests/Serialization/a802fc30-7815-483d-b64b-17ce28f96a3d]
 
 Correct the code so that it outputs the string `serialized numbers:a:5:{i:1;i:1;i:2;i:2;i:3;i:3;i:4;i:4;i:5;i:5;}`.
 
@@ -860,7 +860,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=201c591e-7857-4dd2-b7db-ff3ccf007fa2, answer=[tests/Serialization/IncorrectArgumentTypeForUnserializeFunctionTest.php]
+/// type=CR, id=201c591e-7857-4dd2-b7db-ff3ccf007fa2, answer=[tests/Serialization/201c591e-7857-4dd2-b7db-ff3ccf007fa2]
 
 Correct the code so that it outputs `Array ( [1] => 1 [2] => 2 [3] => 3 [4] => 4 [5] => 5 )` in separate lines.
 
@@ -924,7 +924,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=14aadddb-c614-4bec-8dbf-e6fd52a5901e, answer=[tests/Serialization/MissingArgumentTypeForUnserializeFunctionTest.php]
+/// type=CR, id=14aadddb-c614-4bec-8dbf-e6fd52a5901e, answer=[tests/Serialization/14aadddb-c614-4bec-8dbf-e6fd52a5901e]
 
 Correct the code so that it outputs `Array ( [1] => 1 [2] => 2 [3] => 3 [4] => 4 [5] => 5 )` in separate lines.
 
@@ -1006,7 +1006,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=fdd343c5-3e3a-4f21-a341-45717ce13e79, answer=[tests/Serialization/UnquotedArgumentOnClassInstantiationTest.php]
+/// type=CR, id=fdd343c5-3e3a-4f21-a341-45717ce13e79, answer=[tests/Serialization/fdd343c5-3e3a-4f21-a341-45717ce13e79]
 
 Correct the code so that it outputs the strings `O:6:"Worker":3:{s:10:"Workerid";s:6:"W-1002";s:7:"*name";s:11:"Charles Han";s:7:"*dept";s:10:"Accounting";}` and `Worker Object ( [id:Worker:private] => W-1002 [name:protected] => Charles Han [dept:protected] => Accounting )` in separate lines.
 
@@ -1191,7 +1191,7 @@ In the statement `$worker = new Worker('W-1002', 'Charles Han', 'Accounting');` 
 :::
 
 
-/// type=CR, id=b35d22d0-aee0-46df-86d6-a5d3661e86e0, answer=[tests/Serialization/CorrectMultipleErrorsTest.php]
+/// type=CR, id=b35d22d0-aee0-46df-86d6-a5d3661e86e0, answer=[tests/Serialization/b35d22d0-aee0-46df-86d6-a5d3661e86e0]
 
 Correct the code so that it outputs the strings `O:6:"Worker":3:{s:10:"Workerid";s:6:"W-1002";s:7:"*name";s:11:"Charles Han";s:7:"*dept";s:10:"Accounting";}` and `Worker Object ( [id:Worker:private] => W-1002 [name:protected] => Charles Han [dept:protected] => Accounting )` in separate lines.
 
@@ -1233,7 +1233,7 @@ print_r($unserializedWorker);
 
 ### Part 4: Practice
 
-/// type=CR, id=cbf1402e-70ec-4a50-a8bf-c701b2d64130, answer=[tests/Serialization/ApplySerializationToObjectsTest.php]
+/// type=CR, id=cbf1402e-70ec-4a50-a8bf-c701b2d64130, answer=[tests/Serialization/cbf1402e-70ec-4a50-a8bf-c701b2d64130]
 
 Write a program that uses `serialize()` and `unserialize()` functions to convert an object into a byte-stream representation and vice versa. Given the `Animal` class implementation, add a statement that creates the `$pet` object an instance of the `Animal` class passing the arguments `Cat` and `3`. Add another statement that calls the `display()` method of the `$pet` object. Next, add a statement that uses the `serialize()` function to convert the `$pet` object into a string and assigns it to a variable named `$converted`. Then, add the statement `echo "The serialized object is: " . $converted . "\n";`. Add another statement that uses the `unserialize()` function to convert the value of `$converted` back into an object and assigns it to a variable named `$petObject`. Lastly, add a statement that calls the `display()` method of the `$petObject` object. Run the program to view the output.
 
