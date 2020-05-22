@@ -811,7 +811,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=b656c24c-e186-4617-a7b9-c4bfe11b12f5, answer=[tests/TypeHinting/IncorrectArgumentTypePassTest.php]
+/// type=CR, id=b656c24c-e186-4617-a7b9-c4bfe11b12f5, answer=[tests/TypeHinting/b656c24c-e186-4617-a7b9-c4bfe11b12f5]
 
 Correct the code so that it outputs the string `Person name: Anna`.
 
@@ -901,7 +901,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=661b296f-e22f-4ff3-82d3-c26182e75f51, answer=[tests/TypeHinting/NoArgumentSpecifiedOnMethodTest.php]
+/// type=CR, id=661b296f-e22f-4ff3-82d3-c26182e75f51, answer=[tests/TypeHinting/661b296f-e22f-4ff3-82d3-c26182e75f51]
 
 Correct the code so that it outputs the string `Person name: Anna`.
 
@@ -1021,7 +1021,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=fb3985c4-84b5-400a-a81a-1a0c18f0ba91, answer=[tests/TypeHinting/NoArgumentSpecifiedOnPersonTest.php]
+/// type=CR, id=fb3985c4-84b5-400a-a81a-1a0c18f0ba91, answer=[tests/TypeHinting/fb3985c4-84b5-400a-a81a-1a0c18f0ba91]
 
 Correct the code so that it outputs the string `Car Object ( [driver:protected] => Person Object ( [name:protected] => John ) )`.
 
@@ -1142,7 +1142,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=7274abcb-3f4a-4923-ae26-3eb80549c328, answer=[tests/TypeHinting/MissingNewKeywordTest.php]
+/// type=CR, id=7274abcb-3f4a-4923-ae26-3eb80549c328, answer=[tests/TypeHinting/7274abcb-3f4a-4923-ae26-3eb80549c328]
 
 Correct the code so that it outputs the string `Car Object ( [driver:protected] => Person Object ( [name:protected] => John ) )`.
 
@@ -1262,7 +1262,7 @@ Which statements correctly describe the error?
 :::
 
 
-/// type=CR, id=9f3f7717-408f-424c-9a55-cd19f336de8c, answer=[tests/TypeHinting/RemoveUnwantedDoubleQuotesTest.php]
+/// type=CR, id=9f3f7717-408f-424c-9a55-cd19f336de8c, answer=[tests/TypeHinting/9f3f7717-408f-424c-9a55-cd19f336de8c]
 
 Correct the code so that it outputs the string `Car Object ( [driver:protected] => Person Object ( [name:protected] => John ) )`.
 
@@ -1314,7 +1314,7 @@ print_r($myCar);
 
 ### Part 4: Practice
 
-/// type=CR, id=328d8314-835a-4a17-b78a-8daf068fffbf, answer=[tests/TypeHinting/CreateMethodsWithTypeDeclarationsTest.php]
+/// type=CR, id=328d8314-835a-4a17-b78a-8daf068fffbf, answer=[tests/TypeHinting/328d8314-835a-4a17-b78a-8daf068fffbf]
 
 Write a program that adds type declarations to methods of a certain class. First, add a statement `declare(strict_types = 1);` after the `<?php` tag. Then, use a `class` keyword to declare a class named `Animal`. Within the curly braces `{}`, add the following statements:
 
