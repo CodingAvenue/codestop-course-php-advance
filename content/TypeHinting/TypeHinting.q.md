@@ -10,6 +10,145 @@
 
 ```php
 <?php
+function minimumSwaps(Array $arr) 
+{ 
+    $n = count($arr);
+    $count = 0; 
+    $i = 0; 
+      
+    while ($i < $n) { 
+        if ($arr[$i] != $i + 1) { 
+            while ($arr[$i] != $i + 1) { 
+                $temp = $arr[$arr[$i] - 1]; 
+                $arr[$arr[$i] - 1] = $arr[$i]; 
+                $arr[$i] = $temp; 
+                $count++; 
+            } 
+        } 
+        $i++; 
+    } 
+    return $count; 
+} 
+
+$arr = [2, 3, 4, 1, 5]; 
+echo "Total swaps: " . minimumSwaps($arr); 
+?>
+```
+/// type=SS, answer=[5]
+
+Execute the program. What is its output?
+
+ - It produces an error.
+
+ - No output is displayed.
+
+ - It prints `1, 2, 3, 4, 5`.
+
+ - It prints `2, 3, 4, 1, 5`.
+
+ - It prints `Total swaps: 3`.
+
+
+/// type=SS, answer=[2]
+
+In the function declaration `function minimumSwaps(Array $arr){}` on line 2, what is `$arr`?
+
+ - It is a keyword.
+
+ - It is a parameter.
+
+ - It is a data type.
+
+ - It is a construct.
+
+ - It is an operator.
+
+
+/// type=MS, answer=[1,5]
+
+In the function declaration `function minimumSwaps(Array $arr){}` on line 2, what does `Array $arr` do?
+
+ - It sets the data type of the `$arr` parameter to `Array`.
+
+ - It calls the `$arr` parameter of the `minimumSwaps()` function.
+
+ - It defines the `$arr` parameter of the `minimumSwaps()` function.
+
+ - It creates the `$arr` parameter of the `minimumSwaps()` function.
+
+ - It enables the `minimumSwaps()` function to only accept values of type `Array` as an argument.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```php
+<?php
+function minimumSwaps(Array $arr) 
+{ 
+    $n = count($arr);
+    $count = 0; 
+    $i = 0; 
+      
+    while ($i < $n) { 
+        if ($arr[$i] != $i + 1) { 
+            while ($arr[$i] != $i + 1) { 
+                $temp = $arr[$arr[$i] - 1]; 
+                $arr[$arr[$i] - 1] = $arr[$i]; 
+                $arr[$i] = $temp; 
+                $count++; 
+            } 
+        } 
+        $i++; 
+    } 
+    return $count; 
+} 
+
+$arr = "2, 3, 4, 1, 5"; 
+echo "Total swaps: " . minimumSwaps($arr); 
+?>
+```
+/// type=SS, answer=[1]
+
+Execute the program. What is its output?
+
+ - It produces an error.
+
+ - No output is displayed.
+
+ - It prints `1, 2, 3, 4, 5`.
+
+ - It prints `2, 3, 4, 1, 5`.
+
+ - It prints `Total swaps: 3`.
+
+
+/// type=MS, answer=[1,2,3]
+
+Why does the program produce an error?
+
+ - The value `"2, 3, 4, 1, 5"` assigned to the `$arr` variable is of type `string`.
+
+ - The `minimumSwaps()` function only accept values of type `Array` as an argument.
+
+ - On line 22, the `minimumSwaps()` function call passed the `$arr` argument of type `string`.
+
+ - There is no concatenation operator `.` before the `minimumSwaps()` function call on line 22.
+
+ - On line 22, the argument `$arr` in the `minimumSwaps()` function call is not enclosed in double quotes `""`.
+
+:::
+
+
+:::
+
+/// type=REPL, readonly=true
+
+```php
+<?php
 declare(strict_types = 1);
 
 class Person 
