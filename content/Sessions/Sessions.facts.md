@@ -12,8 +12,6 @@ The `$_SESSION` superglobal variable is used to store and access session data.
 
 The `session_id()` function sets and accesses a session ID. By default, PHP sessions generate a session ID randomly.
 
-The `$_POST` superglobal variable is used to collect form data submitted through the HTTP POST method.
-
 Code:
 
 ```php

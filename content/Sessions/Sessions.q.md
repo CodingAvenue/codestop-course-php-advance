@@ -342,108 +342,169 @@ What does `unset($_SESSION["firstName"]);` do?
 
 :::
 
-/// type=REPL, readonly=true
+/// type=REPL, readonly=true, filename=[main.php,testSession.php]
+
+```php
+<?php
+require_once(__DIR__ . '/testSession.php');
+?>
+<html>
+    <head>
+        <title>PHP Session Example</title>
+    </head>
+    <body>
+        <form method="POST">
+            Enter Name : <input type="text" name="name" value="change me..."> <br/><br/>
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
+        </form>
+    </body>
+</html>
+```
 
 ```php
 <?php
 session_start();
 
-if (!empty($_POST)) {
-    if (isset($_POST['username']) && isset($_POST['password'])) {
-        echo "Hello, " . $_POST['username'] . '.';
+if(isset($_POST['create'])) { 
+    $_SESSION["sname"] = $_POST["name"];
+}
+
+if(isset($_POST['view'])) { 
+    if(isset($_SESSION["sname"])) {
+        echo "The Session Value is: " . $_SESSION["sname"];
+    } else {
+        echo "All Sessions Destoyed!";
     }
 }
-?>
 
-<html>
-    <body>
-        <form action="" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Submit">
-        </form>
-    </body>
-</html>
+if(isset($_POST['delete'])) { 
+    session_destroy();
+}
+?>
 ```
-/// type=SS, choiceType=HTML, id=7e7fe807-d8f0-4f2f-8ad8-39065d192b42, answer=[5]
+/// type=SS, id=7e7fe807-d8f0-4f2f-8ad8-39065d192b42, answer=[5]
 
 Execute the program. What is its output?
 
- - <form action="" method="post">
-            <input type="submit" value="Submit">
-            <input type="password" name="password" placeholder="Password" required> 
+ - <form method="POST">
+            Enter Name : <input type="text" name="name" value="change me..."> <br/><br/>
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
     </form>
 
- - <form action="" method="post">
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Submit">
+ - <form method="POST">
+            Enter Name : <input type="text" name="name" value="change me..."> <br/><br/>
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
     </form>
 
- - <form action="" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="submit" value="Submit">
+ - <form method="POST">
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
     </form>
 
- - <form action="" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
+ - <form method="POST">
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
+            Enter Name : <input type="text" name="name" value="change me..."> <br/><br/>
     </form>
 
- - <form action="" method="post">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="submit" value="Submit">
+ - <form method="POST">
+            Enter Name : <input type="text" name="name" value="change me..."> <br/><br/>
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
     </form>
-
-
-/// type=SS, id=a4c40767-ce72-4280-b16b-f0c330e36065, answer=[5]
-
-In the browser window, click the `Submit` button. What is its result?
-
- - It prints `Hello`.
-
- - It produces an error.
-
- - No output is displayed.
-
- - It prints `Hello, user.`.
-
- - It displays a message `This is a required field`.
-
 
 /// type=SS, id=c7243cc9-f551-4df8-916b-8579d1cf3ded, answer=[5]
 
-In the browser window, replace `Username` with `Charles` and `Password` with `12345`. Click the `Submit` button. What is its output?
+In the browser window, replace `change me...` with `Charles`. Click the `Create Session` button. What is its output?
 
- - It prints `Hello`.
+ - <form method="POST">
+            Enter Name : <input type="text" name="name" value="change me..."> <br/><br/>
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
+    </form>
 
- - It produces an error.
+ - <form method="POST">
+            Enter Name : <input type="text" name="name" value="Charles"> <br/><br/>
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
+    </form>
 
- - No output is displayed.
+ - <form method="POST">
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
+    </form>
 
- - It prints `Hello, user.`.
+ - <form method="POST">
+            Enter Name : <input type="text" name="name" value="Charles"> <br/><br/>
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
+    </form>
 
- - It prints `Hello, Charles.`.
+ - <form method="POST">
+            Enter Name : <input type="text" name="name" value="change me..."> <br/><br/>
+            <input type="submit" name="Create" value="Create Session">
+            <input type="submit" name="View" value="View Session">
+            <input type="submit" name="Delete" value="Delete Session">
+    </form>
 
 
-/// type=MS, id=39e726f3-7284-439a-a4f4-3dae230ef5fd, answer=[2,3,4]
+/// type=SS, id=8d133c7f-da9a-4d98-b712-9cc8df29c69d, answer=[3]
+
+In the browser window, click the `View Session` button. What is printed first?
+
+ - `All Sessions Destoyed!`
+
+ - A `Delete Session` button.
+
+ - `The Session Value is: Charles`
+
+ - `The Session Value is: change me...`
+
+ - A label `Enter Name:` and a textfield.
+
+
+/// type=SS, id=9dc8bdf1-5258-40da-8c43-f3c5e36c0617, answer=[1]
+
+In the browser window, click the `Delete Session` button then click the `View Session` button. What is printed first?
+
+ - `All Sessions Destoyed!`
+
+ - A `Delete Session` button.
+
+ - `The Session Value is: Charles`
+
+ - `The Session Value is: change me...`
+
+ - A label `Enter Name:` and a textfield.
+
+
+/// type=MS, id=39e726f3-7284-439a-a4f4-3dae230ef5fd, answer=[1,3,4]
 
 Which of the following are functions?
 
- - `$_POST`
-
- - `empty()`
-
  - `isset()`
+
+ - `$_POST['view']`
 
  - `session_start()`
 
- - `$_POST['password']`
+ - `session_destroy()`
+
+ - `$_SESSION["sname"]`
 
 
 /// type=SS, id=0d670141-9c6d-4ad6-8291-cbc947c5e725, answer=[5]
 
-In the `if` statement on line 5, what is `$_POST`?
+In the `if` statement on line 4 of `testSession.php`, what is `$_POST`?
 
  - It is a keyword.
 
@@ -458,17 +519,32 @@ In the `if` statement on line 5, what is `$_POST`?
 
 /// type=SS, id=0d9e5b04-43b9-4aae-895c-d890e16bb86c, answer=[5]
 
-In the `if` statement on line 5, what does `$_POST['username']` do?
+In the `if` statement on line 5 of `testSession.php`, what does `$_POST['name']` do?
 
- - It sets the value of `username` in the form submitted through the HTTP POST method.
+ - It sets the value of `name` in the form submitted through the HTTP POST method.
 
- - It creates the value of `username` in the form submitted through the HTTP POST method.
+ - It creates the value of `name` in the form submitted through the HTTP POST method.
 
- - It defines the value of `username` in the form submitted through the HTTP POST method.
+ - It defines the value of `name` in the form submitted through the HTTP POST method.
 
- - It removes the value of `username` from the form submitted through the HTTP POST method.
+ - It removes the value of `name` from the form submitted through the HTTP POST method.
 
- - It accesses the value of `username` from the form submitted through the HTTP POST method.
+ - It accesses the value of `name` from the form submitted through the HTTP POST method.
+
+
+/// type=SS, id=11060dda-918d-46a4-ae3e-2617cca8ea5f, answer=[3]
+
+In the `if` statement on line 17 of `testSession.php`, what does `session_destroy();` do?
+
+ - It stores session data.
+
+ - It accesses session data.
+
+ - It destroys all session variables.
+
+ - It creates new or resumes a certain session.
+
+ - It collects form data submitted through the HTTP POST method.
 
 :::
 
@@ -543,21 +619,6 @@ Which statement best describes the `session_id()` function?
 /// type=SS, id=e6d23293-341a-475b-ae6c-66c15dd2e133, answer=[1]
 
 Which statement is true about the `$_SESSION` superglobal variable?
-
- - It is used to store and access session data.
-
- - It creates new or resumes a certain session.
-
- - It is used to destroy a specific session variable.
-
- - It is used to collect form data submitted through the HTTP POST method.
-
- - It is a way to store information state and history of user activities in a certain application using a unique session ID.
-
-
-/// type=SS, id=d0bedce5-e344-43e8-a18f-22900fbc7611, answer=[4]
-
-Which statement is true about the `$_POST` superglobal variable?
 
  - It is used to store and access session data.
 
