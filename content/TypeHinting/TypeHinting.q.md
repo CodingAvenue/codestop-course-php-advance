@@ -34,7 +34,7 @@ $arr = [2, 3, 4, 1, 5];
 echo "Total swaps: " . minimumSwaps($arr); 
 ?>
 ```
-/// type=SS, answer=[5]
+/// type=SS, id=46926fde-8cd7-4081-a165-cb93839551eb, answer=[5]
 
 Execute the program. What is its output?
 
@@ -49,7 +49,7 @@ Execute the program. What is its output?
  - It prints `Total swaps: 3`.
 
 
-/// type=SS, answer=[2]
+/// type=SS, id=f1565a0a-b737-4e95-bb85-9d0eafd7a0bb, answer=[2]
 
 In the function declaration `function minimumSwaps(Array $arr){}` on line 2, what is `$arr`?
 
@@ -64,7 +64,7 @@ In the function declaration `function minimumSwaps(Array $arr){}` on line 2, wha
  - It is an operator.
 
 
-/// type=MS, answer=[1,5]
+/// type=MS, id=2ba7ae28-4aa6-49a6-a1a7-ef17f8281ce3, answer=[1,5]
 
 In the function declaration `function minimumSwaps(Array $arr){}` on line 2, what does `Array $arr` do?
 
@@ -111,7 +111,7 @@ $arr = "2, 3, 4, 1, 5";
 echo "Total swaps: " . minimumSwaps($arr); 
 ?>
 ```
-/// type=SS, answer=[1]
+/// type=SS, id=0087cdc8-2d49-46d5-9ffa-b1439e7c06f7, answer=[1]
 
 Execute the program. What is its output?
 
@@ -126,7 +126,7 @@ Execute the program. What is its output?
  - It prints `Total swaps: 3`.
 
 
-/// type=MS, answer=[1,2,3]
+/// type=MS, id=8d6d7316-f0c1-47b4-8ec1-921dfea3d21c, answer=[1,2,3]
 
 Why does the program produce an error?
 
