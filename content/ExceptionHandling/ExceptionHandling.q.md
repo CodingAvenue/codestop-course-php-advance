@@ -75,9 +75,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -309,11 +309,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -387,7 +389,7 @@ Which of the following are keywords?
 
 /// type=SS, id=47533045-9af8-462c-b5af-6d88766515f8, answer=[3]
 
-What value is returned by `$ie->getMessage()` on line 16?
+What value is returned by `$ie->getMessage()` on line 18?
 
  - `5`
 
@@ -402,7 +404,7 @@ What value is returned by `$ie->getMessage()` on line 16?
 
 /// type=SS, id=d60f951a-5a50-434a-9eed-6a304244f4df, answer=[2]
 
-What value is returned by `$ie->getFile()` on line 16?
+What value is returned by `$ie->getFile()` on line 18?
 
  - `5`
 
@@ -417,7 +419,7 @@ What value is returned by `$ie->getFile()` on line 16?
 
 /// type=SS, id=117ab073-8ae1-4769-b734-ff88146bff0b, answer=[1]
 
-What value ir returned by `$ie->getLine()` on line 16?
+What value ir returned by `$ie->getLine()` on line 18?
 
  - `5`
 
@@ -447,7 +449,7 @@ Which statements correctly describe the `if` block on lines 4, 5, and 6?
 
 /// type=MS, id=be788413-a4e8-49ea-9b58-2446197e0111, answer=[1,3]
 
-Which statements correctly describe the `elseif` block on lines 6, 7, and 8?
+Which statements correctly describe the `if` block on lines 8, 9, and 10?
 
  - It evaluates the conditional expression `$divisor == 0`.
 
@@ -462,7 +464,7 @@ Which statements correctly describe the `elseif` block on lines 6, 7, and 8?
 
 /// type=MS, id=a3331b4b-c141-4311-ae27-663ebd4c839a, answer=[4,5]
 
-Which statements correctly describe the `catch` block on lines 15 and 16?
+Which statements correctly describe the `catch` block on lines 17 and 18?
 
  - It enables the `divide()` function to throw an exception if an error occurs.
 
@@ -477,7 +479,7 @@ Which statements correctly describe the `catch` block on lines 15 and 16?
 
 /// type=MS, id=dae0d2ce-56f8-472c-a504-fca718ee561e, answer=[3,5]
 
-Which statements correctly describe the `catch` block on lines 17 and 18?
+Which statements correctly describe the `catch` block on lines 19 and 20?
 
  - It throws an exception when an error occurs in `Exception $e`.
 
@@ -502,11 +504,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+    
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -520,7 +524,7 @@ try {
 ```
 /// type=SS, id=d9f3eef9-489a-4bf2-a28a-56785cd4fee3, answer=[1]
 
-In the function call `divide(10, "hello")` on line 14, replace `"hello"` with `5`. Execute the program. What is its output?
+In the function call `divide(10, "hello")` on line 16, replace `"hello"` with `5`. Execute the program. What is its output?
 
  - It prints `2`.
 
@@ -545,11 +549,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+    
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -563,7 +569,7 @@ try {
 ```
 /// type=SS, id=34cf43aa-02f2-4a01-a3ec-f66f92d1f668, answer=[4]
 
-In the function call `divide(10, 5)` on line 14, replace `5` with `0`. Execute the program. What is its output?
+In the function call `divide(10, 5)` on line 16, replace `5` with `0`. Execute the program. What is its output?
 
  - It prints `10`.
 
@@ -588,11 +594,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+    
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -606,7 +614,7 @@ try {
 ```
 /// type=SS, id=af0f81f8-dd10-43ea-a997-c22b44849a89, answer=[5]
 
-In the function call `divide(10, 0)` on line 14, replace `10` with `"test"`. Execute the program. What is its output?
+In the function call `divide(10, 0)` on line 16, replace `10` with `"test"`. Execute the program. What is its output?
 
  - It prints `0`.
 
@@ -719,9 +727,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw  Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -788,9 +796,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw  Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -812,9 +820,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -866,9 +874,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -890,9 +898,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try 
@@ -944,9 +952,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try 
@@ -968,11 +976,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -992,26 +1002,26 @@ Execute the program. What is the error message?
 
  - syntax error, unexpected `'echo'` (T_ECHO), expecting `'{'` on line number 11
 
- - syntax error, unexpected `')'`, expecting `'|'` or variable (T_VARIABLE) on line number 12
+ - syntax error, unexpected `')'`, expecting `'|'` or variable (T_VARIABLE) on line number 14
 
- - syntax error, unexpected `'getFile'` (T_STRING), expecting `','` or `';'` on line number 16
+ - syntax error, unexpected `'getFile'` (T_STRING), expecting `','` or `';'` on line number 18
 
- - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 15
+ - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 17
 
 
 /// type=MS, id=e7be3a5a-7ddd-428c-9418-e94954beb9b4, answer=[1,5]
 
 Which statements correctly describe the error?
 
- - On line 15, the variable `ie` does not start with a dollar sign `$`.
+ - On line 17, the variable `ie` does not start with a dollar sign `$`.
 
- - There is no semicolon `;` at the end of the statement on line 16.
+ - There is no semicolon `;` at the end of the statement on line 18.
 
- - There is no open curly brace `{` after the `try` keyword on line 13.
+ - There is no open curly brace `{` after the `try` keyword on line 15.
 
- - There are no parentheses `()` after the `catch` keyword on line 15.
+ - There are no parentheses `()` after the `catch` keyword on line 17.
 
- - On line 15, `catch (InvalidArgumentException ie)` is invalid.
+ - On line 17, `catch (InvalidArgumentException ie)` is invalid.
 
 :::
 
@@ -1026,11 +1036,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+    
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1054,11 +1066,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+    
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1080,24 +1094,24 @@ Execute the program. What is the error message?
 
  - syntax error, unexpected `')'`, expecting `'|'` or variable (T_VARIABLE) on line number 12
 
- - syntax error, unexpected `'getFile'` (T_STRING), expecting `','` or `';'` on line number 16
+ - syntax error, unexpected `'getFile'` (T_STRING), expecting `','` or `';'` on line number 18
 
- - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 15
+ - syntax error, unexpected `'ie'` (T_STRING), expecting `'|'` or variable (T_VARIABLE) on line number 17
 
 
 /// type=MS, id=4b34e967-5250-469b-8d76-ccff1187b5f8, answer=[3,5]
 
 Which statements correctly describe the error?
 
- - On line 16, the variable `ie` does not start with a dollar sign `$`.
+ - On line 18, the variable `ie` does not start with a dollar sign `$`.
 
- - There is no semicolon `;` at the end of the statement on line 16.
+ - There is no semicolon `;` at the end of the statement on line 18.
 
- - On line 16, the method call `$ie getFile()` in the `echo` statement is invalid.
+ - On line 18, the method call `$ie getFile()` in the `echo` statement is invalid.
 
- - There is no concatenation operator `.` between `$ie` and `getFile()` on line 16.
+ - There is no concatenation operator `.` between `$ie` and `getFile()` on line 18.
 
- - There is no object operator `->` specified between `$ie` and `getFile()` on line 16.
+ - There is no object operator `->` specified between `$ie` and `getFile()` on line 18.
 
 :::
 
@@ -1112,11 +1126,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1140,11 +1156,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1158,17 +1176,17 @@ try {
 ```
 /// type=SS, id=810c4a46-5df2-4e62-8909-4eb21784e388, answer=[3]
 
-Remove the parentheses `()` from `$e->getCode()` in the `echo` statement on line 18. Execute the program. What is the error message?
+Remove the parentheses `()` from `$e->getCode()` in the `echo` statement on line 20. Execute the program. What is the error message?
 
- - syntax error, unexpected `'catch'` (T_CATCH) on line number 17
+ - syntax error, unexpected `'catch'` (T_CATCH) on line number 19
 
- - syntax error, unexpected `'{'`, expecting `')'` on line number 15
+ - syntax error, unexpected `'{'`, expecting `')'` on line number 17
 
- - Notice: Undefined property: `Exception::$getCode` on line number 18
+ - Notice: Undefined property: `Exception::$getCode` on line number 20
 
- - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 15
+ - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 17
 
- - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 14
+ - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 16
 
 :::
 
@@ -1183,11 +1201,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1201,17 +1221,17 @@ try {
 ```
 /// type=SS, id=145aa515-3185-4958-8365-4b29f0f7fe9d, answer=[1]
 
-Remove the close curly brace `}` before `catch` on line 17. Execute the program. What is the error message?
+Remove the close curly brace `}` before `catch` on line 19. Execute the program. What is the error message?
 
- - syntax error, unexpected `'catch'` (T_CATCH) on line number 17
+ - syntax error, unexpected `'catch'` (T_CATCH) on line number 19
 
- - syntax error, unexpected `'{'`, expecting `')'` on line number 15
+ - syntax error, unexpected `'{'`, expecting `')'` on line number 17
 
- - Notice: Undefined property: `Exception::$getCode` on line number 18
+ - Notice: Undefined property: `Exception::$getCode` on line number 20
 
- - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 15
+ - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 17
 
- - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 14
+ - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 16
 
 :::
 
@@ -1226,11 +1246,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1244,17 +1266,17 @@ try {
 ```
 /// type=SS, id=08cdc8ab-30be-4103-925b-015eacac94db, answer=[2]
 
-Remove the close parenthesis `)` after `$ie` on line 15. Execute the program. What is the error message?
+Remove the close parenthesis `)` after `$ie` on line 17. Execute the program. What is the error message?
 
- - syntax error, unexpected `'catch'` (T_CATCH) on line number 17
+ - syntax error, unexpected `'catch'` (T_CATCH) on line number 19
 
- - syntax error, unexpected `'{'`, expecting `')'` on line number 15
+ - syntax error, unexpected `'{'`, expecting `')'` on line number 17
 
- - Notice: Undefined property: `Exception::$getCode` on line number 18
+ - Notice: Undefined property: `Exception::$getCode` on line number 20
 
- - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 15
+ - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 17
 
- - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 14
+ - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 16
 
 :::
 
@@ -1269,11 +1291,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1287,17 +1311,17 @@ try {
 ```
 /// type=SS, id=13c1a4f1-9dd4-4599-92b2-f05746e0f9a6, answer=[4]
 
-Remove the `try` keyword before the open curly brace `{` on line 13. Execute the program. What is the error message?
+Remove the `try` keyword before the open curly brace `{` on line 15. Execute the program. What is the error message?
 
- - syntax error, unexpected `'catch'` (T_CATCH) on line number 17
+ - syntax error, unexpected `'catch'` (T_CATCH) on line number 19
 
- - syntax error, unexpected `'{'`, expecting `')'` on line number 15
+ - syntax error, unexpected `'{'`, expecting `')'` on line number 17
 
- - Notice: Undefined property: `Exception::$getCode` on line number 18
+ - Notice: Undefined property: `Exception::$getCode` on line number 20
 
- - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 15
+ - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 17
 
- - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 14
+ - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 16
 
 :::
 
@@ -1312,11 +1336,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
  {
@@ -1330,17 +1356,17 @@ function divide($dividend, $divisor)
 ```
 /// type=SS, id=a42c2399-6eb1-4530-8956-38054ac2de1b, answer=[5]
 
-Remove the comma `,` between the arguments `10` and `0` from the `divide()` function call on line 14. Execute the program. What is the error message?
+Remove the comma `,` between the arguments `10` and `0` from the `divide()` function call on line 16. Execute the program. What is the error message?
 
- - syntax error, unexpected `'catch'` (T_CATCH) on line number 17
+ - syntax error, unexpected `'catch'` (T_CATCH) on line number 19
 
- - syntax error, unexpected `'{'`, expecting `')'` on line number 15
+ - syntax error, unexpected `'{'`, expecting `')'` on line number 17
 
- - Notice: Undefined property: `Exception::$getCode` on line number 18
+ - Notice: Undefined property: `Exception::$getCode` on line number 20
 
- - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 15
+ - syntax error, unexpected `'catch'` (T_CATCH), expecting end of file on line number 17
 
- - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 14
+ - syntax error, unexpected `'0'` (T_LNUMBER), expecting `','` or `')'` on line number 16
 
 :::
 
@@ -1355,11 +1381,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
  {
