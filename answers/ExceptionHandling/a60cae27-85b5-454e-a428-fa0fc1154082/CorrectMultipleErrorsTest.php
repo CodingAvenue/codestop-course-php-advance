@@ -3,11 +3,13 @@ function divide($dividend, $divisor)
 {
     if (!is_numeric($divisor) || !is_numeric($dividend)) {
         throw new InvalidArgumentException("Invalid argument value provided");
-    } elseif ($divisor == 0) {
-        throw new Exception("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor == 0) {
+        throw new Exception("The value '0' as a divisor is not allowed.");
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {

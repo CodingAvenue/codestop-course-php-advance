@@ -22,7 +22,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
     {
         $evaluator = self::$code->evaluator();
         $evaled    = $evaluator->evaluate();
-        $expected  = "Exception caught: Invalid argument value provided in C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ExceptionHandling\\MissingDollarSignOnObjectVariableTest.php on line number 5";
+        $expected  = "Exception caught: Invalid argument value provided in C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ExceptionHandling\\67013dfd-ae88-4ba4-8ef4-357b4e415596\\MissingDollarSignOnObjectVariableTest.php on line number 5";
 
         $this->assertEquals($expected, $evaled['output'], "Expected output is \"$expected\".");
     }
@@ -64,7 +64,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $nodes = self::$code->find('function[name="divide"]');
         $subNode = $nodes->find('construct[name="if"]');
 
-        $this->assertEquals(1, $subNode->count(), "Expecting one `if` statement in the `divide()` function declaration.");
+        $this->assertEquals(2, $subNode->count(), "Expecting one `if` statements in the `divide()` function declaration.");
     }
 
     public function testIsNumericInIfOfDivide()
@@ -82,7 +82,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $var = $subNode->find('variable[name="divisor"]');
 
-        $this->assertEquals(3, $var->count(), "Expecting three occurrences of the variable named `divisor` in the `if` statement of the `divide()` function declaration.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `divisor` in the `if` statement of the `divide()` function declaration.");
     }
 
     public function testDividendInIfOfDivide()
@@ -91,7 +91,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $var = $subNode->find('variable[name="dividend"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `dividend` in the `if` statement of the `divide()` function declaration.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `dividend` in the `if` statement of the `divide()` function declaration.");
     }
 
     public function testElseInDivide()
@@ -99,7 +99,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $nodes = self::$code->find('function[name="divide"]');
         $subNode = $nodes->find('construct[name="else"]');
 
-        $this->assertEquals(1, $subNode->count(), "Expecting one `else` statement in the `divide()` function declaration.");
+        $this->assertEquals(0, $subNode->count(), "Unexpected `else` statement in the `divide()` function declaration.");
     }
 
     public function testElseIfInDivide()
@@ -107,54 +107,51 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $nodes = self::$code->find('function[name="divide"]');
         $subNode = $nodes->find('construct[name="elseif"]');
 
-        $this->assertEquals(1, $subNode->count(), "Expecting one `elseif` statement in the `divide()` function declaration.");
+        $this->assertEquals(0, $subNode->count(), "Unexpected `elseif` statement in the `divide()` function declaration.");
     }
 
-    public function testNewInElseIfOfDivide()
+    public function testNewInIfOfDivide()
     {
         $nodes = self::$code->find('function[name="divide"]');
-        $subNode = $nodes->find('construct[name="elseif"]');
+        $subNode = $nodes->find('construct[name="if"]');
         $call = $subNode->find('construct[name="new"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `new` keyword in the `elseif` statement of the `divide()` function declaration.");
+        $this->assertEquals(2, $call->count(), "Expecting two `new` keyword in the `if` statement of the `divide()` function declaration.");
     }
 
-    public function testReturnInElseOfDivide()
+    public function testReturnInDivide()
     {
         $nodes = self::$code->find('function[name="divide"]');
-        $subNode = $nodes->find('construct[name="else"]');
-        $call = $subNode->find('construct[name="return"]');
+        $subNode = $nodes->find('construct[name="return"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `return` statement in the `else` statement of the `divide()` function declaration.");
+        $this->assertEquals(1, $subNode->count(), "Expecting one `return` statement in the `divide()` function declaration.");
     }
 
-    public function testDivisorInReturnOfElse()
+    public function testDivisorInReturn()
     {
         $nodes = self::$code->find('function[name="divide"]');
-        $subNode = $nodes->find('construct[name="else"]');
-        $call = $subNode->find('construct[name="return"]');
-        $var = $call->find('variable[name="divisor"]');
+        $subNode = $nodes->find('construct[name="return"]');
+        $var = $subNode->find('variable[name="divisor"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one variable named `divisor` in the `return` statement of the `else` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one variable named `divisor` in the `return` statement of the `divide()` function.");
     }
 
-    public function testDividendInReturnOfElse()
+    public function testDividendInRetur()
     {
         $nodes = self::$code->find('function[name="divide"]');
-        $subNode = $nodes->find('construct[name="else"]');
-        $call = $subNode->find('construct[name="return"]');
-        $var = $call->find('variable[name="dividend"]');
+        $subNode = $nodes->find('construct[name="return"]');
+        $var = $subNode->find('variable[name="dividend"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one variable named `dividend` in the `return` statement of the `else` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one variable named `dividend` in the `return` statement of the `divide()` function.");
     }
 
     public function testInstantiation()
     {
         $nodes = self::$code->find('function[name="divide"]');
-        $subNode = $nodes->find('construct[name="elseif"]');
+        $subNode = $nodes->find('construct[name="if"]');
         $class = $subNode->find('instantiate[class="Exception"]');
 
-        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the 'Exception' class in the `elseif` statement.");
+        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the 'Exception' class in the `if` statement.");
     }
 
     public function testInstantiationInvalid()
