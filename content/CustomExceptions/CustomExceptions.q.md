@@ -16,9 +16,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -237,7 +237,7 @@ On line 7 of `main.php`, what does the statement `throw new DivideByZeroExceptio
 
 /// type=SS, id=56086bff-cef5-4a36-8d78-67177ad6ef77, answer=[5]
 
-On lines 13, 14, and 14 of `main.php`, what does the `try { echo divide(10, 0); }` block do?
+On lines 13, 14, and 15 of `main.php`, what does the `try { echo divide(10, 0); }` block do?
 
  - It evaluates the `divide(10, 0)` function call in the `echo` statement.
 
@@ -295,11 +295,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw new DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw new DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -462,7 +464,7 @@ Which statements correctly describe the `myErrorFile()` method of the `DivideByN
 
 /// type=MS, id=1b451bdc-2891-46b9-aff5-a5a6ec1d315f, answer=[4,5]
 
-Which statements correctly describe the `catch` block on lines 18 and 19 of `main.php`?
+Which statements correctly describe the `catch` block on lines 20 and 21 of `main.php`?
 
  - It enables the `divide()` function to throw an exception if an error occurs.
 
@@ -477,7 +479,7 @@ Which statements correctly describe the `catch` block on lines 18 and 19 of `mai
 
 /// type=MS, id=276afd10-9d42-4aa2-bc68-b5ac1a211e20, answer=[4,5]
 
-Which statements correctly describe the `catch` block on lines 20 and 21 of `main.php`?
+Which statements correctly describe the `catch` block on lines 22 and 23 of `main.php`?
 
  - It enables the `divide()` function to throw an exception if an error occurs.
 
@@ -563,9 +565,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -646,9 +648,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -684,9 +686,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -752,9 +754,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -790,9 +792,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throws new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -858,9 +860,9 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throws new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } else {
-        return ($dividend / $divisor);
     }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -896,11 +898,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw new DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw new DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -947,13 +951,13 @@ Execute the program. What are the error messages?
 
  - Undefined variable: `new` in /main.php on line number 7
 
- - Error: Class `'DivideByNegativeException'` not found in /main.php on line number 9
+ - Error: Class `'DivideByNegativeException'` not found in /main.php on line number 11
 
- - Uncaught Error: Class `'DivideByNegativeException'` not found in /main.php on line number 9
+ - Uncaught Error: Class `'DivideByNegativeException'` not found in /main.php on line number 11
 
- - Error: Call to undefined function `DivideByNegativeException()` in /main.php on line number 10
+ - Error: Call to undefined function `DivideByNegativeException()` in /main.php on line number 12
 
- - Uncaught Error: Call to undefined function `DivideByNegativeException()` in /main.php on line number 10
+ - Uncaught Error: Call to undefined function `DivideByNegativeException()` in /main.php on line number 12
 
 
 /// type=SS, id=98d70caa-9ab8-4c49-bb4a-fdeaf73540bc, answer=[5]
@@ -985,11 +989,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw new DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw new DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1045,11 +1051,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw  DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw  DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1096,13 +1104,13 @@ Execute the program. What are the error messages?
 
  - Undefined variable: `new` in /main.php on line number 7
 
- - Error: Class `'DivideByNegativeException'` not found in /main.php on line number 9
+ - Error: Class `'DivideByNegativeException'` not found in /main.php on line number 11
 
- - Uncaught Error: Class `'DivideByNegativeException'` not found in /main.php on line number 9
+ - Uncaught Error: Class `'DivideByNegativeException'` not found in /main.php on line number 11
 
- - Error: Call to undefined function `DivideByNegativeException()` in /main.php on line number 10
+ - Error: Call to undefined function `DivideByNegativeException()` in /main.php on line number 12
 
- - Uncaught Error: Call to undefined function `DivideByNegativeException()` in /main.php on line number 10
+ - Uncaught Error: Call to undefined function `DivideByNegativeException()` in /main.php on line number 12
 
 
 /// type=MS, id=f7c9f882-7b94-41c2-9b48-b307da988e9e, answer=[3,5]
@@ -1113,11 +1121,11 @@ Which statements correctly describe the error?
 
  - There is no open curly brace `{` after the `if` construct on line 6 of `main.php`.
 
- - On line 10 of `main.php`, the statement `throw  DivideByNegativeException();` is invalid.
+ - On line 12 of `main.php`, the statement `throw  DivideByNegativeException();` is invalid.
 
  - In the `throw` statement on line 10 of `main.php`, the `throw` keyword is misspelled as `throws`.
 
- - There is no `new` keyword specified between `throw` and `DivideByNegativeException()` on line 10 of `main.php`.
+ - There is no `new` keyword specified between `throw` and `DivideByNegativeException()` on line 12 of `main.php`.
 
 :::
 
@@ -1135,11 +1143,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw  DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw  DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1195,11 +1205,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw new DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw new DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1270,11 +1282,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw new DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw new DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1345,11 +1359,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw new DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw new DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
@@ -1392,7 +1408,7 @@ class DivideByNegativeException extends Exception
 ```
 /// type=SS, id=a8e3b0bd-3153-41b7-b9c1-d32fc717c26e, answer=[4]
 
-On line 18 of `main.php`, remove `$div` from `catch (DivideByZeroException $div)`. Execute the program. What is the error message?
+On line 20 of `main.php`, remove `$div` from `catch (DivideByZeroException $div)`. Execute the program. What is the error message?
 
  - Undefined variable: `thisgetFile` in /DivideByNegativeException.php on line number 11
 
@@ -1400,7 +1416,7 @@ On line 18 of `main.php`, remove `$div` from `catch (DivideByZeroException $div)
 
  - syntax error, unexpected `'{'`, expecting `'('` in /DivideByZeroException.php on line number 5
 
- - syntax error, unexpected `')'`, expecting variable (T_VARIABLE) in /main.php on line number 18
+ - syntax error, unexpected `')'`, expecting variable (T_VARIABLE) in /main.php on line number 20
 
  - Uncaught Error: Function name must be a string in /DivideByNegativeException.php on line number 11
 
@@ -1420,11 +1436,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw new DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw new DivideByNegativeException();
+    }
+
+    return ($dividend / $divisor);
 }
 
 try {
