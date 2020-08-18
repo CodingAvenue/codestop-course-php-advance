@@ -6,11 +6,13 @@ function divide($dividend, $divisor)
 {
     if ($divisor == 0) {
         throw new DivideByZeroException("The value '0' as a divisor is not allowed.");
-    } elseif ($divisor < 0) {
-        throw new DivideByNegativeException();
-    } else {
-        return ($dividend / $divisor);
     }
+
+    if ($divisor < 0) {
+        throw new DivideByNegativeException();
+    }
+
+        return ($dividend / $divisor);
 }
 
 try {

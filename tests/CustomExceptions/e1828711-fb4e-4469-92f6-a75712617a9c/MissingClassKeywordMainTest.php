@@ -73,7 +73,7 @@ class MissingClassKeywordMainTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $var = $subNode->find('variable[name="divisor"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `divisor` in the `if` statement of the `divide()` function declaration.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `divisor` in the `if` statement of the `divide()` function declaration.");
     }
 
     public function testElseInDivide()
@@ -81,36 +81,33 @@ class MissingClassKeywordMainTest extends TestCase
         $nodes = self::$code->find('function[name="divide"]');
         $subNode = $nodes->find('construct[name="else"]');
 
-        $this->assertEquals(1, $subNode->count(), "Expecting one `else` statement in the `divide()` function declaration.");
+        $this->assertEquals(0, $subNode->count(), "Unexpected `else` statement in the `divide()` function declaration.");
     }
 
     public function testReturnInElseOfDivide()
     {
         $nodes = self::$code->find('function[name="divide"]');
-        $subNode = $nodes->find('construct[name="else"]');
-        $call = $subNode->find('construct[name="return"]');
+        $subNode = $nodes->find('construct[name="return"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `return` statement in the `else` statement of the `divide()` function declaration.");
+        $this->assertEquals(1, $subNode->count(), "Expecting one `return` statement in the `divide()` function declaration.");
     }
 
-    public function testDivisorInReturnOfElse()
+    public function testDivisorInReturn()
     {
         $nodes = self::$code->find('function[name="divide"]');
-        $subNode = $nodes->find('construct[name="else"]');
-        $call = $subNode->find('construct[name="return"]');
-        $var = $call->find('variable[name="divisor"]');
+        $subNode = $nodes->find('construct[name="return"]');
+        $var = $subNode->find('variable[name="divisor"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one variable named `divisor` in the `return` statement of the `else` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `divisor` in the `return` statement of the `divide()` function.");
     }
 
     public function testDividendInReturnOfElse()
     {
         $nodes = self::$code->find('function[name="divide"]');
-        $subNode = $nodes->find('construct[name="else"]');
-        $call = $subNode->find('construct[name="return"]');
-        $var = $call->find('variable[name="dividend"]');
+        $subNode = $nodes->find('construct[name="return"]');
+        $var = $subNode->find('variable[name="dividend"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one variable named `dividend` in the `return` statement of the `else` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `dividend` in the `return` statement of the `divide()` function.");
     }
 
     public function testInstantiation()
