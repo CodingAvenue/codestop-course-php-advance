@@ -111,7 +111,7 @@ class MissingNewKeywordTest extends TestCase
         $getName = $subNodes->find('method[name="getName", type="public"]');
         $nodes = $getName->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `getName()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `getName()` method.");
     }
 
     public function testNamePropertyCall()

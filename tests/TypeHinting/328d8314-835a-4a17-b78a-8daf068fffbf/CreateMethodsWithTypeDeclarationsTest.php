@@ -34,7 +34,7 @@ class CreateMethodsWithTypeDeclarationsTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $nodes = $display->find('construct[name="echo"]');
 		
-        $this->assertEquals(1, $nodes->count(), "Expecting an echo statement in the `display()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an `echo` statement in the `display()` method.");
     }
     
     public function testAssignmentCons()
@@ -175,7 +175,7 @@ class CreateMethodsWithTypeDeclarationsTest extends TestCase
         $isValid = $subNodes->find('method[name="isValid", type="private"]');
         $nodes = $isValid->find('construct[name="return"]');
 
-        $this->assertEquals(2, $nodes->count(), "Expecting two return statements in the `isValid()` method.");
+        $this->assertEquals(2, $nodes->count(), "Expecting two `return` statements in the `isValid()` method.");
     }
 
     public function testReturnType()
@@ -185,7 +185,7 @@ class CreateMethodsWithTypeDeclarationsTest extends TestCase
         $getType = $subNodes->find('method[name="getType", type="public"]');
         $nodes = $getType->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `getType()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `getType()` method.");
     }
 
     public function testReturnAge()

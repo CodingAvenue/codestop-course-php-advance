@@ -33,7 +33,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $subNode = $nodes->getSubnode()->getSubnode();
         $value = $subNode->find('string[value="Person name: "]');
 
-        $this->assertEquals(1, $value->count(), "Expecting a string `Person name: ` in an echo statement.");
+        $this->assertEquals(1, $value->count(), "Expecting a string `Person name: ` in the `echo` statement.");
     }
 
     public function testGetNameCallInEcho()
@@ -42,7 +42,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $subNode = $nodes->getSubnode()->getSubnode();
         $getName = $subNode->find('method-call[name="getName", variable="person"]');
 
-        $this->assertEquals(1, $getName->count(), "Expecting a 'getName()' method call of 'person' in an echo statement.");
+        $this->assertEquals(1, $getName->count(), "Expecting a 'getName()' method call of 'person' in the `echo` statement.");
     }
 
     public function testAssignment()
@@ -110,7 +110,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $getName = $subNodes->find('method[name="getName", type="public"]');
         $nodes = $getName->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `getName()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `getName()` method.");
     }
 
     public function testNamePropertyCall()
@@ -163,7 +163,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $args = $setName->getSubNode()->getSubnode();
         $value = $args->find('string[value="Anna"]');
 
-        $this->assertEquals(1, $value->count(), "Expecting the argument `Anna` in the 'setName()' method call of 'person'.");
+        $this->assertEquals(1, $value->count(), "Expecting an argument `Anna` in the 'setName()' method call of 'person'.");
     }
 
 // NOTE: still need implementation of `declare(strict_types = 1);`
