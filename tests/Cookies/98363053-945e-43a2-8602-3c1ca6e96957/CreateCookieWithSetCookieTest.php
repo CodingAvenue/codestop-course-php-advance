@@ -139,6 +139,6 @@ class CreateCookieWithSetCookieTest extends TestCase
         $left = $opr->getSubnode('left');
         $int = $left->find('integer'); // nice to have ---if we can identify the value like 360
 
-        $this->assertEquals(1, $int->count(), "Expecting an integer argument of the `setcookie()` function call.");
+        $this->assertEquals(1, $int->count(), "Expecting an integer as an argument of the `setcookie()` function call.");
     }
 }

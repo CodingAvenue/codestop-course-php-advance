@@ -142,7 +142,7 @@ class MissingArgumentOnSuperglobalCookieTest extends TestCase
     {
         $set = self::$code->find('call[name="setcookie"]');
 
-        $this->assertEquals(1, $set->count(), "Expecting a function call for setcookie() function.");
+        $this->assertEquals(1, $set->count(), "Expecting a function call for the `setcookie()` function.");
     }
 
     public function testSetCookieVarArgs()
@@ -151,7 +151,7 @@ class MissingArgumentOnSuperglobalCookieTest extends TestCase
         $args = $set->getSubnode("args");
         $var = $args->find('variable[name="cookieName"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting a variable argument `cookieName` in the `setcookie()` function call.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `cookieName` as an argument in the `setcookie()` function call.");
     }
 
     public function testSetCookieVarArgs2()
@@ -160,7 +160,7 @@ class MissingArgumentOnSuperglobalCookieTest extends TestCase
         $args = $set->getSubnode("args");
         $var = $args->find('variable[name="cookieValue"]');;
 
-        $this->assertEquals(1, $var->count(), "Expecting a variable argument `cookieValue` in the `setcookie()` function call.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `cookieValue` as an argument in the `setcookie()` function call.");
     }
 
     public function testSetCookieCallVarArgs3()
@@ -169,6 +169,6 @@ class MissingArgumentOnSuperglobalCookieTest extends TestCase
         $args = $set->getSubnode("args");
         $var = $args->find('variable[name="expiry"]');;
 
-        $this->assertEquals(1, $var->count(), "Expecting a variable argument `expiry` in the `setcookie()` function call.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `expiry` as an argument in the `setcookie()` function call.");
     }
 }
