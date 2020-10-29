@@ -31,7 +31,7 @@ class UseTernaryOperatorTest extends TestCase
     {
         $nodes = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one echo statement.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `echo` statement.");
     }
 
     public function testAssignment()
@@ -74,7 +74,7 @@ class UseTernaryOperatorTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $result = $nodes->find('variable[name="result"]');
 
-        $this->assertEquals(1, $result->count(), "Expecting one occurrence of the variable named 'result' in the echo statement.");
+        $this->assertEquals(1, $result->count(), "Expecting one occurrence of the variable named 'result' in the `echo` statement.");
     }
 
     public function testGreateThanEqualOperator()

@@ -31,7 +31,7 @@ class MissingDoubleQuotesOnOperandTest extends TestCase
     {
         $nodes = self::$code->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one echo statement.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `echo` statement.");
     }
 
     public function testAssignment()
@@ -74,7 +74,7 @@ class MissingDoubleQuotesOnOperandTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $remarks = $nodes->find('variable[name="remarks"]');
 
-        $this->assertEquals(1, $remarks->count(), "Expecting one occurrence of the variable named 'remarks' in the echo statement.");
+        $this->assertEquals(1, $remarks->count(), "Expecting one occurrence of the variable named 'remarks' in the `echo` statement.");
     }
 
     public function testGreateThanOperator()
