@@ -62,7 +62,7 @@ class CreateCustomErrorhandlerTest extends TestCase
     {
         $nodes = self::$code->find('function[name="openFile"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a `openFile()` function declaration.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an `openFile()` function declaration.");
     }
 
     public function testFileParam()
