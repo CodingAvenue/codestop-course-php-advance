@@ -94,7 +94,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $subNodes = $obj->getSubnode();
         $display = $subNodes->find('method[name="display", type="public"]');
         
-        $this->assertEquals(1, $display->count(), "Expecting a display() method.");
+        $this->assertEquals(1, $display->count(), "Expecting a `display()` method.");
     }
 
     public function testConstruct()
@@ -103,7 +103,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $subNodes = $obj->getSubnode();
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         
-        $this->assertEquals(1, $construct->count(), "Expecting a __construct() method.");
+        $this->assertEquals(1, $construct->count(), "Expecting a `__construct()` method.");
     }
     
     public function testTypeProperty()
@@ -163,7 +163,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $isValid = $subNodes->find('method[name="isValid", type="private"]');
         $nodes = $isValid->find('construct[name="return"]');
 
-        $this->assertEquals(2, $nodes->count(), "Expecting two return statements in the `isValid()` method.");
+        $this->assertEquals(2, $nodes->count(), "Expecting two `return` statements in the `isValid()` method.");
     }
 
     public function testReturnType()
@@ -173,7 +173,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $getType = $subNodes->find('method[name="getType", type="public"]');
         $nodes = $getType->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `getType()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `getType()` method.");
     }
 
     public function testReturnAge()
@@ -183,7 +183,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $getAge = $subNodes->find('method[name="getAge", type="public"]');
         $nodes = $getAge->find('construct[name="return"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one return statement in the `getAge()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `return` statement in the `getAge()` method.");
     }
 
     public function testIfValid()
@@ -193,7 +193,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $isValid = $subNodes->find('method[name="isValid", type="private"]');
         $nodes = $isValid->find('construct[name="if"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting one if statement in the `isValid()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting one `if` statement in the `isValid()` method.");
     }
 
     public function testAgeParam()
@@ -353,7 +353,7 @@ class ApplySerializationToObjectsTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $string = $obj->find('string[value="The serialized object is: "]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `The serialized object is: ` in an `echo` statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `The serialized object is: ` in the `echo` statement.");
     }
 
     public function testVarInEcho()
@@ -361,6 +361,6 @@ class ApplySerializationToObjectsTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $var = $obj->find('variable[name="converted"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one variable named `converted` in an `echo` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one variable named `converted` in the `echo` statement.");
     }
 }

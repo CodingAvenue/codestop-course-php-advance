@@ -34,7 +34,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $nodes = $display->find('construct[name="echo"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an echo statement in the `display()` method.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an `echo` statement in the `display()` method.");
     }
 
     public function testAssignmentCons()

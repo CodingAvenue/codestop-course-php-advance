@@ -50,7 +50,7 @@ class MissingArgumentTypeForUnserializeFunctionTest extends TestCase
         $subNode = $call->getSubNode()->getSubNode('args');
         $myArray = $subNode->find('variable[name="myArray"]');
 
-        $this->assertEquals(1, $myArray->count(), "Expecting one variable named `myArray` as argument in the `serialize()` function call.");
+        $this->assertEquals(1, $myArray->count(), "Expecting one variable named `myArray` as an argument in the `serialize()` function call.");
     }
 
     public function testUnserialize()

@@ -124,7 +124,7 @@ class MissingAssignmentOperatorTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $string = $obj->find('string[value="serialized numbers:"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `serialized numbers:` in an `echo` statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `serialized numbers:` in the `echo` statement.");
     }
 
     public function testVariableInEcho()
@@ -132,6 +132,6 @@ class MissingAssignmentOperatorTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $var = $obj->find('variable[name="converted"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one variable named `converted` in an `echo` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one variable named `converted` in the `echo` statement.");
     }
 }
