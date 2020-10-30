@@ -81,13 +81,13 @@ class MisplacedSessionStartFunctionTest extends TestCase
         $arrayFetch = $obj->find('datatype[name="arrayfetch"]');
         $var = $arrayFetch->find('variable[name="_SESSION"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one `_SESSION` superglobal variable in an `echo` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one `_SESSION` superglobal variable in the `echo` statement.");
     }
 
     public function testSessionStartCall()
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for `session_start()` function.");
+        $this->assertEquals(1, $start->count(), "Expecting a function call for the `session_start()` function.");
     }
 }

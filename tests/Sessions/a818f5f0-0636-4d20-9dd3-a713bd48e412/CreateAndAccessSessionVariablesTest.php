@@ -97,21 +97,21 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $arrayFetch = $obj->find('datatype[name="arrayfetch"]');
         $var = $arrayFetch->find('variable[name="_SESSION"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting a `_SESSION` superglobal variable in an `echo` statement.");
+        $this->assertEquals(1, $var->count(), "Expecting a `_SESSION` superglobal variable in the `echo` statement.");
     }
 
     public function testSessionStartCall()
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for `session_start()` function.");
+        $this->assertEquals(1, $start->count(), "Expecting a function call for the `session_start()` function.");
     }
 
     public function testSessionIdCall()
     {
         $sid = self::$code->find('call[name="session_id"]');
 
-        $this->assertEquals(2, $sid->count(), "Expecting two function calls for `session_id()` function.");
+        $this->assertEquals(2, $sid->count(), "Expecting two function calls for the `session_id()` function.");
     }
 
     public function testSessionIdCallArgs()
@@ -120,7 +120,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $args = $sid->getSubnode("args");
         $string = $args->find('string[value="practice-session-101"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string argument `practice-session-101` in the `session_id()` function call.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `practice-session-101` as an argument in the `session_id()` function call.");
     }
 
     public function testSidCallInEcho()
