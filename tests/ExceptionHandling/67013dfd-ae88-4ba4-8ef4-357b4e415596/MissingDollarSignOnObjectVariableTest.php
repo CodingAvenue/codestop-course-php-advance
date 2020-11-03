@@ -169,7 +169,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $subNode = $nodes->getSubnode('args');
         $string = $subNode->find('string[value="Invalid argument value provided"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting an argument string `Invalid argument value provided` in an instantiation statement of the 'InvalidArgumentException' class.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `Invalid argument value provided` as an argument in the instantiation statement of the 'InvalidArgumentException' class.");
     }
 
     public function testIsNumericDivisorArgs()
@@ -200,7 +200,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
         $subNode = $nodes->getSubnode('args');
         $string = $subNode->find('string[value="The value \'0\' as a divisor is not allowed."]');
 
-        $this->assertEquals(1, $string->count(), "Expecting an argument string `The value '0' as a divisor is not allowed.` in an instantiation statement of the 'Exception' class.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `The value '0' as a divisor is not allowed.` as an argument in the instantiation statement of the 'Exception' class.");
     }
 
     public function testGetMessageInEcho()
@@ -279,7 +279,7 @@ class MissingDollarSignOnObjectVariableTest extends TestCase
     {
         $obj = self::$code->find('call[name="divide"]');
 
-        $this->assertEquals(1, $obj->count(), "Expecting an `divide()` function call.");
+        $this->assertEquals(1, $obj->count(), "Expecting a `divide()` function call.");
     }
 
     public function testDivideCallArgs()

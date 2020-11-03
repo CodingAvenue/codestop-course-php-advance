@@ -97,7 +97,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
         $subNode = $nodes->getSubnode('args');
         $string = $subNode->find('string[value="Sorry, the file does not exist"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting an argument string `Sorry, the file does not exist` in an instantiation statement of the 'Exception' class.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `Sorry, the file does not exist` as an argument in the instantiation statement of the 'Exception' class.");
     }
 
     public function testGetMessageInEcho()
