@@ -163,7 +163,7 @@ class MissingOpenDoubleQuoteMainTest extends TestCase
         $subNode = $nodes->getSubnode('args');
         $string = $subNode->find('string[value="The value \'0\' as a divisor is not allowed."]');
 
-        $this->assertEquals(1, $string->count(), "Expecting an argument string `The value '0' as a divisor is not allowed.` in an instantiation statement of the 'DivideByZeroException' class.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `The value '0' as a divisor is not allowed.` as an argument in the instantiation statement of the 'DivideByZeroException' class.");
     }
 
     public function testErrorMessageInEcho()
@@ -195,7 +195,7 @@ class MissingOpenDoubleQuoteMainTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value="Exception caught: "]');
 
-        $this->assertEquals(2, $call->count(), "Expecting two strings `Exception caught: ` in the `echo` statements.");
+        $this->assertEquals(2, $call->count(), "Expecting two occurrences of the string `Exception caught: ` in the `echo` statements.");
     }
 
     public function testNewInDivide()

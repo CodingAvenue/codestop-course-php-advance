@@ -228,7 +228,7 @@ class IncorrectFilenameSpecifiedInIncludePersonTest extends TestCase
         $args = $checkAge->getSubNode()->getSubnode();
         $value = $args->find('variable[name="age"]');
     
-        $this->assertEquals(1, $value->count(), "Expecting the argument `age` in the 'checkAge()' method call in the `__construct()` method of the `Person` class itself.");
+        $this->assertEquals(1, $value->count(), "Expecting an argument `age` in the 'checkAge()' method call in the `__construct()` method of the `Person` class itself.");
     }
 
     public function testGetAgeCall()
