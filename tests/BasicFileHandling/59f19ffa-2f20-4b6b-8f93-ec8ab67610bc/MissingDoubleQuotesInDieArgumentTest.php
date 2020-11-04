@@ -262,7 +262,7 @@ class MissingDoubleQuotesInDieArgumentTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $var = $nodes->find('variable[name="copyHere"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named `copyHere` in the assignment statement.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `copyHere` in the assignment statement.");
     }
 
     public function testStringInAssignment()
