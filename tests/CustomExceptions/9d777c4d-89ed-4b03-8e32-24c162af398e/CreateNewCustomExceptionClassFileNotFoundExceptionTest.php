@@ -24,7 +24,7 @@ class CreateNewCustomExceptionClassFileNotFoundExceptionTest extends TestCase
         $subNodes = $obj->getSubnode();
         $error = $subNodes->find('method[name="getErrorMessage", type="public"]');
 
-        $this->assertEquals(1, $error->count(), "Expecting a getErrorMessage() method.");
+        $this->assertEquals(1, $error->count(), "Expecting a `getErrorMessage()` method.");
     }
 
     public function testClass()
