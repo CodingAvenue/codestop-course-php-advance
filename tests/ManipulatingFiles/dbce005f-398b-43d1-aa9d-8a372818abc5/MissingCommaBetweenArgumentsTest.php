@@ -167,7 +167,7 @@ class MissingCommaBetweenArgumentsTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $var = $nodes->find('variable[name="myFile"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named `myFile` in the assignment statement.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `myFile` in the assignment statement.");
     }
 
     public function testMyCopiedFileInAssignment()
@@ -175,7 +175,7 @@ class MissingCommaBetweenArgumentsTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $var = $nodes->find('variable[name="myCopiedFile"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named `myCopiedFile` in the assignment statement.");
+        $this->assertEquals(1, $var->count(), "Expecting a variable named `myCopiedFile` in the assignment statement.");
     }
 
     public function testStringInAssignment()
