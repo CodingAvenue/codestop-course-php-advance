@@ -99,7 +99,7 @@ class CreateCookieWithSetCookieTest extends TestCase
     {
         $set = self::$code->find('call[name="setcookie"]');
 
-        $this->assertEquals(1, $set->count(), "Expecting a function call for `setcookie()` function.");
+        $this->assertEquals(1, $set->count(), "Expecting a `setcookie()` function call.");
     }
 
     public function testSetCookieStringArgs()

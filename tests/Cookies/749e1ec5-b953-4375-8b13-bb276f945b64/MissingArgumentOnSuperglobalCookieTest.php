@@ -39,7 +39,7 @@ class MissingArgumentOnSuperglobalCookieTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $cookieName = $nodes->find('variable[name="cookieName"]');
 
-        $this->assertEquals(1, $cookieName->count(), "Expecting a variable named 'cookieName' in an assignment statement.");
+        $this->assertEquals(1, $cookieName->count(), "Expecting a variable named `cookieName` in the assignment statement.");
     }
 
     public function testCookieValueVariable()
@@ -47,7 +47,7 @@ class MissingArgumentOnSuperglobalCookieTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $cookieValue = $nodes->find('variable[name="cookieValue"]');
 
-        $this->assertEquals(1, $cookieValue->count(), "Expecting a variable named 'cookieValue' in an assignment statement.");
+        $this->assertEquals(1, $cookieValue->count(), "Expecting a variable named `cookieValue` in the assignment statement.");
     }
 
     public function testExpiryVariable()
@@ -55,7 +55,7 @@ class MissingArgumentOnSuperglobalCookieTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $expiry = $nodes->find('variable[name="expiry"]');
 
-        $this->assertEquals(1, $expiry->count(), "Expecting a variable named 'expiry' in an assignment statement.");
+        $this->assertEquals(1, $expiry->count(), "Expecting a variable named `expiry` in the assignment statement.");
     }
 
     public function testIf()
@@ -142,7 +142,7 @@ class MissingArgumentOnSuperglobalCookieTest extends TestCase
     {
         $set = self::$code->find('call[name="setcookie"]');
 
-        $this->assertEquals(1, $set->count(), "Expecting a function call for the `setcookie()` function.");
+        $this->assertEquals(1, $set->count(), "Expecting a `setcookie()` function call.");
     }
 
     public function testSetCookieVarArgs()
