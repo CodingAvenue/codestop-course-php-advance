@@ -48,7 +48,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="name"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'name' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `name` in the assignment statement.");
     }
 
     public function testPasswordString()
@@ -56,7 +56,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="password"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'password' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `password` in the assignment statement.");
     }
 
     public function testJamesString()
@@ -64,7 +64,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="James"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'James' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `James` in the assignment statement.");
     }
 
     public function test123PassString()
@@ -72,7 +72,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="123-pass"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string '123-pass' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `123-pass` in the assignment statement.");
     }
 
     public function testEcho()
@@ -88,7 +88,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $arrayFetch = $obj->find('datatype[name="arrayfetch"]');
         $string = $arrayFetch->find('string[value="name"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `name` in a `_SESSION` superglobal variable.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `name` in the `_SESSION` superglobal variable.");
     }
 
     public function testArrayFetchInEcho()
@@ -104,14 +104,14 @@ class CreateAndAccessSessionVariablesTest extends TestCase
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for the `session_start()` function.");
+        $this->assertEquals(1, $start->count(), "Expecting a `session_start()` function call.");
     }
 
     public function testSessionIdCall()
     {
         $sid = self::$code->find('call[name="session_id"]');
 
-        $this->assertEquals(2, $sid->count(), "Expecting two function calls for the `session_id()` function.");
+        $this->assertEquals(2, $sid->count(), "Expecting two `session_id()` function calls.");
     }
 
     public function testSessionIdCallArgs()

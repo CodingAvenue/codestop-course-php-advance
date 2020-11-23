@@ -48,7 +48,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="firstName"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'firstName' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `firstName` in the assignment statement.");
     }
 
     public function testLastNameString()
@@ -56,7 +56,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="lastName"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'lastName' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `lastName` in the assignment statement.");
     }
 
     public function testJohnString()
@@ -64,7 +64,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="John"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'John' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `John` in the assignment statement.");
     }
 
     public function testMillerString()
@@ -72,7 +72,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="Miller"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'Miller' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `Miller` in the assignment statement.");
     }
 
     public function testEcho()
@@ -113,14 +113,14 @@ class MisquotedSessionIdArgumentTest extends TestCase
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for the `session_start()` function.");
+        $this->assertEquals(1, $start->count(), "Expecting a `session_start()` function call.");
     }
 
     public function testSessionIdCall()
     {
         $sid = self::$code->find('call[name="session_id"]');
 
-        $this->assertEquals(2, $sid->count(), "Expecting two function calls for the `session_id()` function.");
+        $this->assertEquals(2, $sid->count(), "Expecting two `session_id()` function calls.");
     }
 
     public function testSessionIdCallArgs()

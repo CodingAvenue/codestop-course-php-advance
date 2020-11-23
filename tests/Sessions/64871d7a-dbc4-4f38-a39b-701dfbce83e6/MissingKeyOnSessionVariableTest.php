@@ -48,7 +48,7 @@ class MisplacedSessionStartFunctionTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="name"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'name' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `name` in the assignment statement.");
     }
 
     public function testDianaString()
@@ -56,7 +56,7 @@ class MisplacedSessionStartFunctionTest extends TestCase
         $nodes = self::$code->find('operator[name="assignment"]');
         $string = $nodes->find('string[value="Diana"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string 'Diana' in an assignment statement.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `Diana` in the assignment statement.");
     }
 
     public function testEcho()
@@ -88,6 +88,6 @@ class MisplacedSessionStartFunctionTest extends TestCase
     {
         $start = self::$code->find('call[name="session_start"]');
 
-        $this->assertEquals(1, $start->count(), "Expecting a function call for the `session_start()` function.");
+        $this->assertEquals(1, $start->count(), "Expecting a `session_start()` function call.");
     }
 }
