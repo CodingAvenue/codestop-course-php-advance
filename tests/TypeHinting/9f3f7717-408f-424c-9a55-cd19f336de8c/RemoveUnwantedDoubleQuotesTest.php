@@ -58,14 +58,14 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
     {
         $nodes = self::$code->find('instantiate[class="Person"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'Person' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `Person` class.");
     }
 
     public function testPersonVariable()
     {
         $person = self::$code->find('variable[name="person"]');
 
-        $this->assertEquals(2, $person->count(), "Expecting two occurrences of the variable named 'person'.");
+        $this->assertEquals(2, $person->count(), "Expecting two occurrences of the variable named `person`.");
     }
 
     public function testNameProperty()
@@ -74,7 +74,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $subNodes = $obj->getSubnode();
         $name = $subNodes->find('property[name="name", type="protected"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting a protected class property named 'name'.");
+        $this->assertEquals(1, $name->count(), "Expecting a protected class property named `name`.");
     }
 
     public function testContruct()
@@ -83,7 +83,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $subNodes = $obj->getSubnode();
         $construct = $subNodes->find('method[name="__construct", type="public"]');
 
-        $this->assertEquals(1, $construct->count(), "Expecting a '__construct()' method in the `Person` class.");
+        $this->assertEquals(1, $construct->count(), "Expecting a `__construct()` method in the `Person` class.");
     }
 
     public function testGetName()
@@ -92,7 +92,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $subNodes = $obj->getSubnode();
         $getName = $subNodes->find('method[name="getName", type="public"]');
 
-        $this->assertEquals(1, $getName->count(), "Expecting a 'getName()' method.");
+        $this->assertEquals(1, $getName->count(), "Expecting a `getName()` method.");
     }
 
     public function testSetName()
@@ -101,7 +101,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $subNodes = $obj->getSubnode();
         $setName = $subNodes->find('method[name="setName", type="public"]');
 
-        $this->assertEquals(1, $setName->count(), "Expecting a 'setName()' method.");
+        $this->assertEquals(1, $setName->count(), "Expecting a `setName()` method.");
     }
 
     public function testReturnGet()
@@ -151,7 +151,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $setName = $subNodes->find('method[name="setName", type="public"]');
         $nameParam = $setName->find('param[name="name", type="string"]');
 
-        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named 'name' of type `string` in the `setName()` method.");
+        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named `name` of type `string` in the `setName()` method.");
     }
 
     public function testNameParamCons()
@@ -161,7 +161,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $nameParam = $construct->find('param[name="name", type="string"]');
 
-        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named 'name' of type `string` in the `__construct()` method.");
+        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named `name` of type `string` in the `__construct()` method.");
     }
 
     public function testCarClass()
@@ -175,14 +175,14 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
     {
         $nodes = self::$code->find('instantiate[class="Car"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'Car' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `Car` class.");
     }
 
     public function testMyCarVariable()
     {
         $myCar = self::$code->find('variable[name="myCar"]');
 
-        $this->assertEquals(2, $myCar->count(), "Expecting two occurrences of the variable named 'myCar'.");
+        $this->assertEquals(2, $myCar->count(), "Expecting two occurrences of the variable named `myCar`.");
     }
 
     public function testDriverProperty()
@@ -191,7 +191,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $subNode = $obj->getSubnode();
         $driver = $subNode->find('property[name="driver", type="protected"]');
 
-        $this->assertEquals(1, $driver->count(), "Expecting a protected class property named 'driver'.");
+        $this->assertEquals(1, $driver->count(), "Expecting a protected class property named `driver`.");
     }
 
     public function testContructCar()
@@ -200,7 +200,7 @@ class RemoveUnwantedDoubleQuotesTest extends TestCase
         $subNode = $obj->getSubnode();
         $construct = $subNode->find('method[name="__construct", type="public"]');
 
-        $this->assertEquals(1, $construct->count(), "Expecting a '__construct()' method in the `Car` class.");
+        $this->assertEquals(1, $construct->count(), "Expecting a `__construct()` method in the `Car` class.");
     }
 
     public function testDriverPropertyCallCons()

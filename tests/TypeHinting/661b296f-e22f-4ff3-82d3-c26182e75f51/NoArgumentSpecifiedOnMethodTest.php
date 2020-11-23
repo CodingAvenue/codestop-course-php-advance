@@ -42,7 +42,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $subNode = $nodes->getSubnode()->getSubnode();
         $getName = $subNode->find('method-call[name="getName", variable="person"]');
 
-        $this->assertEquals(1, $getName->count(), "Expecting a 'getName()' method call of 'person' in the `echo` statement.");
+        $this->assertEquals(1, $getName->count(), "Expecting a `getName()` method call of 'person' in the `echo` statement.");
     }
 
     public function testAssignment()
@@ -66,14 +66,14 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
     {
         $nodes = self::$code->find('instantiate[class="Person"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'Person' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `Person` class.");
     }
 
     public function testPersonVariable()
     {
         $person = self::$code->find('variable[name="person"]');
 
-        $this->assertEquals(3, $person->count(), "Expecting three occurrences of the variable named 'person'.");
+        $this->assertEquals(3, $person->count(), "Expecting three occurrences of the variable named `person`.");
     }
 
     public function testNameProperty()
@@ -82,7 +82,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $subNodes = $obj->getSubnode();
         $name = $subNodes->find('property[name="name", type="protected"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting a protected class property named 'name'.");
+        $this->assertEquals(1, $name->count(), "Expecting a protected class property named `name`.");
     }
 
     public function testGetName()
@@ -91,7 +91,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $subNodes = $obj->getSubnode();
         $getName = $subNodes->find('method[name="getName", type="public"]');
 
-        $this->assertEquals(1, $getName->count(), "Expecting a 'getName()' method.");
+        $this->assertEquals(1, $getName->count(), "Expecting a `getName()` method.");
     }
 
     public function testSetName()
@@ -100,7 +100,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $subNodes = $obj->getSubnode();
         $setName = $subNodes->find('method[name="setName", type="public"]');
 
-        $this->assertEquals(1, $setName->count(), "Expecting a 'setName()' method.");
+        $this->assertEquals(1, $setName->count(), "Expecting a `setName()` method.");
     }
 
     public function testReturnGet()
@@ -140,21 +140,21 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $setName = $subNodes->find('method[name="setName", type="public"]');
         $nameParam = $setName->find('param[name="name", type="string"]');
 
-        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named 'name' of type `string` in the `setName()` method.");
+        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named `name` of type `string` in the `setName()` method.");
     }
 
     public function testGetNameCall()
     {
         $getName = self::$code->find('method-call[name="getName", variable="person"]');
 
-        $this->assertEquals(1, $getName->count(), "Expecting a 'getName()' method call of 'person'.");
+        $this->assertEquals(1, $getName->count(), "Expecting a `getName()` method call of `person`.");
     }
 
     public function testSetNameCall()
     {
         $setName = self::$code->find('method-call[name="setName", variable="person"]');
 
-        $this->assertEquals(1, $setName->count(), "Expecting a 'setName()' method call of 'person'.");
+        $this->assertEquals(1, $setName->count(), "Expecting a `setName()` method call of `person`.");
     }
 
     public function testSetNameCallArgs()
@@ -163,7 +163,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $args = $setName->getSubNode()->getSubnode();
         $value = $args->find('string[value="Anna"]');
 
-        $this->assertEquals(1, $value->count(), "Expecting an argument `Anna` in the 'setName()' method call of 'person'.");
+        $this->assertEquals(1, $value->count(), "Expecting an argument `Anna` in the `setName()` method call of `person`.");
     }
 
 // NOTE: still need implementation of `declare(strict_types = 1);`
