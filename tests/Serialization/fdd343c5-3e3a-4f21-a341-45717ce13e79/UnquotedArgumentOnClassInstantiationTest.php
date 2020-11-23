@@ -51,14 +51,14 @@ class UnquotedArgumentOnClassInstantiationTest extends TestCase
     {
         $worker = self::$code->find('variable[name="worker"]');
 
-        $this->assertEquals(2, $worker->count(), "Expecting two occurrences of the variable named 'worker'.");
+        $this->assertEquals(2, $worker->count(), "Expecting two occurrences of the variable named `worker`.");
     }
 
     public function testInstantiation()
     {
         $nodes = self::$code->find('instantiate[class="Worker"]');
         
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'Worker' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `Worker` class.");
     } 
 
     public function testDisplay()
@@ -85,7 +85,7 @@ class UnquotedArgumentOnClassInstantiationTest extends TestCase
         $subNodes = $obj->getSubnode();
         $id = $subNodes->find('property[name="id", type="private"]');
 
-        $this->assertEquals(1, $id->count(), "Expecting a private class property named 'id'.");
+        $this->assertEquals(1, $id->count(), "Expecting a private class property named `id`.");
     }
 
     public function testNameProperty()
@@ -94,7 +94,7 @@ class UnquotedArgumentOnClassInstantiationTest extends TestCase
         $subNodes = $obj->getSubnode();
         $name = $subNodes->find('property[name="name", type="protected"]');
 
-        $this->assertEquals(1, $name->count(), "Expecting a protected class property named 'name'.");
+        $this->assertEquals(1, $name->count(), "Expecting a protected class property named `name`.");
     }
 
     public function testDeptProperty()
@@ -103,7 +103,7 @@ class UnquotedArgumentOnClassInstantiationTest extends TestCase
         $subNodes = $obj->getSubnode();
         $dept = $subNodes->find('property[name="dept", type="protected"]');
 
-        $this->assertEquals(1, $dept->count(), "Expecting a protected class property named 'dept'.");
+        $this->assertEquals(1, $dept->count(), "Expecting a protected class property named `dept`.");
     }
 
     public function testClass()
@@ -120,7 +120,7 @@ class UnquotedArgumentOnClassInstantiationTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $idParam = $construct->find('param[name="id"]');
 
-        $this->assertEquals(1, $idParam->count(), "Expecting a parameter named 'id' in the `__construct()` method.");
+        $this->assertEquals(1, $idParam->count(), "Expecting a parameter named `id` in the `__construct()` method.");
     }
 
     public function testNameParam()
@@ -130,7 +130,7 @@ class UnquotedArgumentOnClassInstantiationTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $nameParam = $construct->find('param[name="name"]');
 
-        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named 'name' in the `__construct()` method.");
+        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named `name` in the `__construct()` method.");
     }
 
     public function testDeptParam()
@@ -140,7 +140,7 @@ class UnquotedArgumentOnClassInstantiationTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $deptParam = $construct->find('param[name="dept"]');
 
-        $this->assertEquals(1, $deptParam->count(), "Expecting a parameter named 'dept' in the `__construct()` method.");
+        $this->assertEquals(1, $deptParam->count(), "Expecting a parameter named `dept` in the `__construct()` method.");
     }
 
     public function testIdPropertyCallCons()
