@@ -25,7 +25,7 @@ class MissingCommaBetweenArgumentsTest extends TestCase
     //     $expected  = "PHP Warning:  divide(): The value '0' as a divisor is not allowed in C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ErrorHandling\\MissingCommaBetweenArgumentsTest.php on line 5\nPHP Stack trace:\nPHP   1. {main}() C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ErrorHandling\\MissingCommaBetweenArgumentsTest.php:0\nPHP   2. divide() C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ErrorHandling\\MissingCommaBetweenArgumentsTest.php:12\nPHP   3. trigger_error() C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ErrorHandling\\MissingCommaBetweenArgumentsTest.php:5\n\nWarning: divide(): The value '0' as a divisor is not allowed in C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ErrorHandling\\MissingCommaBetweenArgumentsTest.php on line 5\n\nCall Stack:\n    0.2204     351392   1. {main}() C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ErrorHandling\\MissingCommaBetweenArgumentsTest.php:0\n    0.2205     351392   2. divide() C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ErrorHandling\\MissingCommaBetweenArgumentsTest.php:12\n    0.2205     351472   3. trigger_error() C:\\Users\\ccanda\\codestop-course-php-advanced\\answers\\ErrorHandling\\MissingCommaBetweenArgumentsTest.php:5\n";
 
     //     $this->assertEquals($expected, $evaled['output'], "Expected output is \"$expected\".");
-    // } NOTE: Need to verify this in the reader
+    // } NOTE: the values generated change everytime it executes
 
     public function testEcho()
     {
