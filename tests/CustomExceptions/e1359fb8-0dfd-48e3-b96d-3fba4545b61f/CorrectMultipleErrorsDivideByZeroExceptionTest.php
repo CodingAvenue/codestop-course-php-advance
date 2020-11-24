@@ -41,7 +41,7 @@ class CorrectMultipleErrorsDivideByZeroExceptionTest extends TestCase
         $error = $subNodes->find('method[name="errorMessage", type="public"]');
         $call = $error->find('method-call[name="getMessage", variable="this"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one 'getMessage()' method call in the `errorMessage()` method of the 'DivideByZeroException' class.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getMessage()` method call in the `errorMessage()` method of the `DivideByZeroException` class.");
     }
 
     public function testReturnInErrorMessage()
@@ -51,6 +51,6 @@ class CorrectMultipleErrorsDivideByZeroExceptionTest extends TestCase
         $error = $subNodes->find('method[name="errorMessage", type="public"]');
         $call = $error->find('construct[name="return"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one 'return' statement in the `errorMessage()` method of the 'DivideByZeroException' class.");
+        $this->assertEquals(1, $call->count(), "Expecting one `return` statement in the `errorMessage()` method of the `DivideByZeroException` class.");
     }
 }

@@ -41,7 +41,7 @@ class CreateNewCustomExceptionClassFileNotFoundExceptionTest extends TestCase
         $error = $subNodes->find('method[name="getErrorMessage", type="public"]');
         $call = $error->find('method-call[name="getMessage", variable="this"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one 'getMessage()' method call in the `getErrorMessage()` method of the 'FileNotFoundException' class.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getMessage()` method call in the `getErrorMessage()` method of the `FileNotFoundException` class.");
     }
 
     public function testReturnInGetErrorMessage()
@@ -51,6 +51,6 @@ class CreateNewCustomExceptionClassFileNotFoundExceptionTest extends TestCase
         $error = $subNodes->find('method[name="getErrorMessage", type="public"]');
         $call = $error->find('construct[name="return"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one 'return' statement in the `getErrorMessage()` method of the 'FileNotFoundException' class.");
+        $this->assertEquals(1, $call->count(), "Expecting one `return` statement in the `getErrorMessage()` method of the `FileNotFoundException` class.");
     }
 }

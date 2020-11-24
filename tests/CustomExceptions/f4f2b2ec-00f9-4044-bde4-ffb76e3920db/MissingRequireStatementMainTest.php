@@ -133,7 +133,7 @@ class MissingRequireStatementMainTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $class = $subNode->find('instantiate[class="DivideByNegativeException"]');
 
-        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the 'DivideByNegativeException' class in the `if` statement.");
+        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the `DivideByNegativeException` class in the `if` statement.");
     }
 
     public function testInstantiationInvalid()
@@ -142,7 +142,7 @@ class MissingRequireStatementMainTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $class = $subNode->find('instantiate[class="DivideByZeroException"]');
 
-        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the 'DivideByZeroException' class in the `if` statement.");
+        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the `DivideByZeroException` class in the `if` statement.");
     }
 
     public function testInstantiationInvalidArgs()
@@ -151,7 +151,7 @@ class MissingRequireStatementMainTest extends TestCase
         $subNode = $nodes->getSubnode('args');
         $string = $subNode->find('string[value="The value \'0\' as a divisor is not allowed."]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `The value '0' as a divisor is not allowed.` as an argument in the instantiation statement of the 'DivideByZeroException' class.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `The value '0' as a divisor is not allowed.` as an argument in the instantiation statement of the `DivideByZeroException` class.");
     }
 
     public function testErrorMessageInEcho()

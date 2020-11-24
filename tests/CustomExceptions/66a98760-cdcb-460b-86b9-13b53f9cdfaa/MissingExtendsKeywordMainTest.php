@@ -114,7 +114,7 @@ class MissingExtendsKeywordMainTest extends TestCase
     {
         $nodes = self::$code->find('instantiate[class="DivideByZeroException"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'DivideByZeroException' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `DivideByZeroException` class.");
     }
 
     public function testInstantiationArgs()
@@ -123,7 +123,7 @@ class MissingExtendsKeywordMainTest extends TestCase
         $subNode = $nodes->getSubnode('args');
         $string = $subNode->find('string[value="The value \'0\' as a divisor is not allowed."]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `The value '0' as a divisor is not allowed.` as an argument in the instantiation statement of the 'DivideByZeroException' class.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `The value '0' as a divisor is not allowed.` as an argument in the instantiation statement of the `DivideByZeroException` class.");
     }
 
     public function testErrorMessageInEcho()
@@ -131,7 +131,7 @@ class MissingExtendsKeywordMainTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('method-call[name="errorMessage", variable="div"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `errorMessage()` method call of `div` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting one `errorMessage()` method call of `div` in the `echo` statement.");
     }
 
     public function testStringInEcho()
@@ -139,7 +139,7 @@ class MissingExtendsKeywordMainTest extends TestCase
         $obj = self::$code->find('construct[name="echo"]');
         $call = $obj->find('string[value="Exception caught: "]');
 
-        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the echo statement.");
+        $this->assertEquals(1, $call->count(), "Expecting a string `Exception caught: ` in the `echo` statement.");
     }
 
     public function testNewInDivide()
