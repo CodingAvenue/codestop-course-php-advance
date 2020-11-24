@@ -151,7 +151,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $class = $subNode->find('instantiate[class="Exception"]');
 
-        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the 'Exception' class in the `if` statement.");
+        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the `Exception` class in the `if` statement.");
     }
 
     public function testInstantiationInvalid()
@@ -160,7 +160,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNode = $nodes->find('construct[name="if"]');
         $class = $subNode->find('instantiate[class="InvalidArgumentException"]');
 
-        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the 'InvalidArgumentException' class in the `if` statement.");
+        $this->assertEquals(1, $class->count(), "Expecting an instantiation statement of the `InvalidArgumentException` class in the `if` statement.");
     }
 
     public function testInstantiationInvalidArgs()
@@ -169,7 +169,7 @@ class CorrectMultipleErrorsTest extends TestCase
         $subNode = $nodes->getSubnode('args');
         $string = $subNode->find('string[value="Invalid argument value provided"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `Invalid argument value provided` as an argument in the instantiation statement of the 'InvalidArgumentException' class.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `Invalid argument value provided` as an argument in the instantiation statement of the `InvalidArgumentException` class.");
     }
 
     public function testIsNumericDivisorArgs()

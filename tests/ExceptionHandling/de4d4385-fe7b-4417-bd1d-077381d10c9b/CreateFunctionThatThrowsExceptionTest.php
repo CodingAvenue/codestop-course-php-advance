@@ -88,7 +88,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
     {
         $nodes = self::$code->find('instantiate[class="Exception"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'Exception' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `Exception` class.");
     }
 
     public function testInstantiationArgs() //Need to resolve the issue that proof does not accept a comma in a string value
@@ -97,7 +97,7 @@ class CreateFunctionThatThrowsExceptionTest extends TestCase
         $subNode = $nodes->getSubnode('args');
         $string = $subNode->find('string[value="Sorry, the file does not exist"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `Sorry, the file does not exist` as an argument in the instantiation statement of the 'Exception' class.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `Sorry, the file does not exist` as an argument in the instantiation statement of the `Exception` class.");
     }
 
     public function testGetMessageInEcho()
