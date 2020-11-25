@@ -70,7 +70,7 @@ class CreateFileInclusionStatementsSquareTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $radParam = $construct->find('param[name="side"]');
 
-        $this->assertEquals(1, $radParam->count(), "Expecting a parameter named 'side' in the `__construct()` method.");
+        $this->assertEquals(1, $radParam->count(), "Expecting a parameter named `side` in the `__construct()` method.");
     }
 
     public function testSideProperty()
@@ -79,7 +79,7 @@ class CreateFileInclusionStatementsSquareTest extends TestCase
         $subNodes = $obj->getSubnode();
         $side = $subNodes->find('property[name="side", type="private"]');
 
-        $this->assertEquals(1, $side->count(), "Expecting a private class property named 'side'.");
+        $this->assertEquals(1, $side->count(), "Expecting a private class property named `side`.");
     }
 
     public function testSidePropertyCallCons()

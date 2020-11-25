@@ -70,7 +70,7 @@ class CreateFileInclusionStatementsCircleTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $radParam = $construct->find('param[name="radius"]');
 
-        $this->assertEquals(1, $radParam->count(), "Expecting a parameter named 'radius' in the `__construct()` method.");
+        $this->assertEquals(1, $radParam->count(), "Expecting a parameter named `radius` in the `__construct()` method.");
     }
 
     public function testRadiusProperty()
@@ -79,7 +79,7 @@ class CreateFileInclusionStatementsCircleTest extends TestCase
         $subNodes = $obj->getSubnode();
         $radius = $subNodes->find('property[name="radius", type="private"]');
 
-        $this->assertEquals(1, $radius->count(), "Expecting a private class property named 'radius'.");
+        $this->assertEquals(1, $radius->count(), "Expecting a private class property named `radius`.");
     }
 
     public function testConstPi()

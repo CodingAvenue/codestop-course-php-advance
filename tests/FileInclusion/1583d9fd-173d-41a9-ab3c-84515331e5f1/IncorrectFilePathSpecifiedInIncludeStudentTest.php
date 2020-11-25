@@ -31,14 +31,14 @@ class IncorrectFilePathSpecifiedInIncludeStudentTest extends TestCase
     {
         $student = self::$code->find('variable[name="student"]');
         
-        $this->assertEquals(2, $student->count(), "Expecting two occurrences of the variable named 'student'.");
+        $this->assertEquals(2, $student->count(), "Expecting two occurrences of the variable named `student`.");
     }
     
     public function testInstantiation()
     {
         $nodes = self::$code->find('instantiate[class="Student"]');
 		
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'Student' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `Student` class.");
     } 
     
     public function testGetCourse()
@@ -47,7 +47,7 @@ class IncorrectFilePathSpecifiedInIncludeStudentTest extends TestCase
         $subNodes = $obj->getSubnode();
         $getCourse = $subNodes->find('method[name="getCourse", type="public"]');
         
-        $this->assertEquals(1, $getCourse->count(), "Expecting a public method named 'getCourse()'.");
+        $this->assertEquals(1, $getCourse->count(), "Expecting a public method named `getCourse()`.");
     }
  
     public function testCourseProperty()
@@ -56,7 +56,7 @@ class IncorrectFilePathSpecifiedInIncludeStudentTest extends TestCase
         $subNodes = $obj->getSubnode();
         $course = $subNodes->find('property[name="course", type="private"]');
         
-        $this->assertEquals(1, $course->count(), "Expecting a private class property named 'course'.");
+        $this->assertEquals(1, $course->count(), "Expecting a private class property named `course`.");
     }
     
     public function testClassStudent()
@@ -70,7 +70,7 @@ class IncorrectFilePathSpecifiedInIncludeStudentTest extends TestCase
     {
         $display = self::$code->find('method-call[name="display", variable="student"]');
         
-        $this->assertEquals(1, $display->count(), "Expecting a 'display()' method call of 'student'.");
+        $this->assertEquals(1, $display->count(), "Expecting a `display()` method call of `student`.");
     }   
       
     public function testReturn()

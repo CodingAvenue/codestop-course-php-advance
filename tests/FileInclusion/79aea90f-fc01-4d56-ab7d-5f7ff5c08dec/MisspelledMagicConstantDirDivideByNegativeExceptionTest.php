@@ -50,7 +50,7 @@ class MisspelledMagicConstantDirDivideByNegativeExceptionTest extends TestCase
         $error = $subNodes->find('method[name="myErrorFile", type="public"]');
         $call = $error->find('method-call[name="getFile", variable="this"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one 'getFile()' method call in the `myErrorFile()` method of the 'DivideByNegativeException' class.");
+        $this->assertEquals(1, $call->count(), "Expecting one `getFile()` method call in the `myErrorFile()` method of the `DivideByNegativeException` class.");
     }
 
     public function testReturnInMyErrorMessage()
@@ -60,7 +60,7 @@ class MisspelledMagicConstantDirDivideByNegativeExceptionTest extends TestCase
         $error = $subNodes->find('method[name="myErrorMessage", type="public"]');
         $call = $error->find('construct[name="return"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one 'return' statement in the `myErrorMessage()` method of the 'DivideByNegativeException' class.");
+        $this->assertEquals(1, $call->count(), "Expecting one `return` statement in the `myErrorMessage()` method of the `DivideByNegativeException` class.");
     }
 
     public function testReturnInMyErrorFile()
@@ -70,7 +70,7 @@ class MisspelledMagicConstantDirDivideByNegativeExceptionTest extends TestCase
         $error = $subNodes->find('method[name="myErrorFile", type="public"]');
         $call = $error->find('construct[name="return"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one 'return' statement in the `myErrorFile()` method of the 'DivideByNegativeException' class.");
+        $this->assertEquals(1, $call->count(), "Expecting one `return` statement in the `myErrorFile()` method of the `DivideByNegativeException` class.");
     }
 
     public function testStringInReturnofMyErrorMessage()
@@ -81,6 +81,6 @@ class MisspelledMagicConstantDirDivideByNegativeExceptionTest extends TestCase
         $call = $error->find('construct[name="return"]');
         $string = $call->find('string[value="A negative number as a divisor is encountered"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `A negative number as a divisor is encountered` in the 'return' statement of the `myErrorMessage()` method.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `A negative number as a divisor is encountered` in the `return` statement of the `myErrorMessage()` method.");
     }
 }

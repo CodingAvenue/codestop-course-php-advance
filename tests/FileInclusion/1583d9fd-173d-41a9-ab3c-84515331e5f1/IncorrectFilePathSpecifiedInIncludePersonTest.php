@@ -53,7 +53,7 @@ class IncorrectFilePathSpecifiedInIncludePersonTest extends TestCase
         $subNodes = $obj->getSubnode();
         $age = $subNodes->find('property[name="age", type="private"]');
 
-        $this->assertEquals(1, $age->count(), "Expecting a private class property named 'age'.");
+        $this->assertEquals(1, $age->count(), "Expecting a private class property named `age`.");
     }
 
     public function testDisplay()
@@ -146,7 +146,7 @@ class IncorrectFilePathSpecifiedInIncludePersonTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $nameParam = $construct->find('param[name="name"]');
     
-        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named 'name' in the `__construct()` method.");
+        $this->assertEquals(1, $nameParam->count(), "Expecting a parameter named `name` in the `__construct()` method.");
     }
 
     public function testAgeParamCons()
@@ -156,7 +156,7 @@ class IncorrectFilePathSpecifiedInIncludePersonTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $ageParam = $construct->find('param[name="age"]');
 
-        $this->assertEquals(1, $ageParam->count(), "Expecting a parameter named 'age' in the `__construct()` method.");
+        $this->assertEquals(1, $ageParam->count(), "Expecting a parameter named `age` in the `__construct()` method.");
     }
 
     public function testAgeParam()
@@ -166,7 +166,7 @@ class IncorrectFilePathSpecifiedInIncludePersonTest extends TestCase
         $checkAge = $subNodes->find('method[name="checkAge", type="private"]');
         $ageParam = $checkAge->find('param[name="age"]');
 
-        $this->assertEquals(1, $ageParam->count(), "Expecting a parameter named 'age' in the `checkAge()` method.");
+        $this->assertEquals(1, $ageParam->count(), "Expecting a parameter named `age` in the `checkAge()` method.");
     }
 
     public function testNamePropertyCallCons()
@@ -216,7 +216,7 @@ class IncorrectFilePathSpecifiedInIncludePersonTest extends TestCase
         $construct = $subNodes->find('method[name="__construct", type="public"]');
         $checkAge = $construct->find('method-call[name="checkAge", variable="this"]');
 
-        $this->assertEquals(1, $checkAge->count(), "Expecting one 'checkAge()' method call in the `__construct()` method of the `Person` class itself.");
+        $this->assertEquals(1, $checkAge->count(), "Expecting one `checkAge()` method call in the `__construct()` method of the `Person` class itself.");
     }
 
     public function testCheckAgeCallArgs()
@@ -228,7 +228,7 @@ class IncorrectFilePathSpecifiedInIncludePersonTest extends TestCase
         $args = $checkAge->getSubNode()->getSubnode();
         $value = $args->find('variable[name="age"]');
     
-        $this->assertEquals(1, $value->count(), "Expecting an argument `age` in the 'checkAge()' method call inside the `__construct()` method of the `Person` class itself.");
+        $this->assertEquals(1, $value->count(), "Expecting an argument `age` in the `checkAge()` method call inside the `__construct()` method of the `Person` class itself.");
     }
 
     public function testGetAgeCall()
@@ -238,6 +238,6 @@ class IncorrectFilePathSpecifiedInIncludePersonTest extends TestCase
         $display = $subNodes->find('method[name="display", type="public"]');
         $getAge = $display->find('method-call[name="getAge", variable="this"]');
 
-        $this->assertEquals(1, $getAge->count(), "Expecting one 'getAge()' method call in the `display()` method of the `Person` class itself.");
+        $this->assertEquals(1, $getAge->count(), "Expecting one `getAge()` method call in the `display()` method of the `Person` class itself.");
     }
 }

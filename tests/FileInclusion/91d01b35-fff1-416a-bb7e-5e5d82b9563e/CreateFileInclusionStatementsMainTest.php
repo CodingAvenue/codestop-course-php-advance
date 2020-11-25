@@ -46,28 +46,28 @@ class CreateFileInclusionStatementsMainTest extends TestCase
     {
         $circle = self::$code->find('variable[name="circle"]');
 
-        $this->assertEquals(2, $circle->count(), "Expecting two occurrences of the variable named 'circle'.");
+        $this->assertEquals(2, $circle->count(), "Expecting two occurrences of the variable named `circle`.");
     }
 
     public function testSquareVariable()
     {
         $square = self::$code->find('variable[name="square"]');
 
-        $this->assertEquals(2, $square->count(), "Expecting two occurrences of the variable named 'square'.");
+        $this->assertEquals(2, $square->count(), "Expecting two occurrences of the variable named `square`.");
     }
 
     public function testInstantiationSquare()
     {
         $nodes = self::$code->find('instantiate[class="Square"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'Square' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `Square` class.");
     } 
 
     public function testInstantiationCircle()
     {
         $nodes = self::$code->find('instantiate[class="Circle"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the 'Circle' class.");
+        $this->assertEquals(1, $nodes->count(), "Expecting an instantiation statement of the `Circle` class.");
     } 
 
     public function testCalculateAreaCall()
@@ -75,7 +75,7 @@ class CreateFileInclusionStatementsMainTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $area = $nodes->find('method-call[name="calculateArea", variable="circle"]');
 
-        $this->assertEquals(1, $area->count(), "Expecting one 'calculateArea()' method call of 'circle' in the `echo` statement.");
+        $this->assertEquals(1, $area->count(), "Expecting one `calculateArea()` method call of `circle` in the `echo` statement.");
     }   
 
     public function testCalculateAreaCallSquare()
@@ -83,7 +83,7 @@ class CreateFileInclusionStatementsMainTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $area = $nodes->find('method-call[name="calculateArea", variable="square"]');
 
-        $this->assertEquals(1, $area->count(), "Expecting one 'calculateArea()' method call of 'square' in the `echo` statement.");
+        $this->assertEquals(1, $area->count(), "Expecting one `calculateArea()` method call of `square` in the `echo` statement.");
     }   
 
     public function testIncludeCall()
