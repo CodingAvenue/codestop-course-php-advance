@@ -127,7 +127,7 @@ class MissingOpenParenthesisAfterUnlinkTest extends TestCase
         $cons = $nodes->find('construct[name="if"]');
         $call = $cons->find('call[name="unlink"]');
 
-        $this->assertEquals(1, $call->count(), "Expecting one `unlink()` function call in the `if` statement of the deleteFile() function declaration.");
+        $this->assertEquals(1, $call->count(), "Expecting one `unlink()` function call in the `if` statement of the `deleteFile()` function declaration.");
     }
 
     public function testUnlinkArgs()
