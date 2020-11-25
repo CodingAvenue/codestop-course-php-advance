@@ -1,0 +1,31 @@
+{
+  "title": "PHP Advanced",
+  "engine": "codingavenue/ca-school-php-engine:latest",
+  "description": "Take your PHP skills to the highest level by learning advanced topics like serialization, sessions, file manipulation, and exception handling.",
+  "authors": [
+
+  {
+    "name": "Taylor",
+    "description": "Taylor has been programming since he was 12. He reviews the content to fix issues for the overall improvement of the course.",
+    "imagePath": "Taylor.jpg"
+  },
+
+  {
+    "name": "Ella",
+    "description": "Ella has taught programming courses for 12 years. She brings her teaching expertise in designing the course.",
+    "imagePath": "Ella.jpg"
+  },
+
+  {
+    "name": "Jerome",
+    "description": "Jerome is a web developer with a background in DevOps. He develops the proof libraries and maintains the sandbox of CodeStop.",
+    "imagePath": "Jerome.jpg"
+  },
+
+  {
+    "name": "Arnold",
+    "description": "Arnold is a web developer and college instructor who specializes in functional design. He designs and develops the features and functionalities of CodeStop.",
+    "imagePath": "Arnold.jpg"
+  }
+]
+}
