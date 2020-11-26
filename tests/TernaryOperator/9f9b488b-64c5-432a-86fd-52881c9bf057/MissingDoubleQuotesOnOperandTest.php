@@ -45,28 +45,28 @@ class MissingDoubleQuotesOnOperandTest extends TestCase
     {
         $nodes = self::$code->find('variable[name="studentGrade"]');
 
-        $this->assertEquals(2, $nodes->count(), "Expecting two occurrences of the variable named 'studentGrade'.");
+        $this->assertEquals(2, $nodes->count(), "Expecting two occurrences of the variable named `studentGrade`.");
     }
 
     public function testRemarksVariable()
     {
         $nodes = self::$code->find('variable[name="remarks"]');
 
-        $this->assertEquals(2, $nodes->count(), "Expecting two occurrences of the variable named 'remarks'.");
+        $this->assertEquals(2, $nodes->count(), "Expecting two occurrences of the variable named `remarks`.");
     }
 
     public function testVeryGoodValue()
     {
         $nodes = self::$code->find('string[value="Very Good"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a string 'Very Good'.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a string `Very Good`.");
     }
 
     public function testNeedsImprovementValue()
     {
         $nodes = self::$code->find('string[value="Needs Improvement"]');
 
-        $this->assertEquals(1, $nodes->count(), "Expecting a string 'Needs Improvement'.");
+        $this->assertEquals(1, $nodes->count(), "Expecting a string `Needs Improvement`.");
     }
 
     public function testRemarksOnEcho()
@@ -74,7 +74,7 @@ class MissingDoubleQuotesOnOperandTest extends TestCase
         $nodes = self::$code->find('construct[name="echo"]');
         $remarks = $nodes->find('variable[name="remarks"]');
 
-        $this->assertEquals(1, $remarks->count(), "Expecting one occurrence of the variable named 'remarks' in the `echo` statement.");
+        $this->assertEquals(1, $remarks->count(), "Expecting one occurrence of the variable named `remarks` in the `echo` statement.");
     }
 
     public function testGreateThanOperator()
@@ -90,7 +90,7 @@ class MissingDoubleQuotesOnOperandTest extends TestCase
         $left = $nodes->getSubNode('left'); 
         $var = $left->find('variable[name="studentGrade"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named 'studentGrade' in the conditional expression.");
+        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named `studentGrade` in the conditional expression.");
     }
 
     public function testValueOnCondition()
@@ -99,7 +99,7 @@ class MissingDoubleQuotesOnOperandTest extends TestCase
         $left = $nodes->getSubNode('left'); 
         $num = $left->find('integer'); // nice to have 'integer[value=75]' 
 
-        $this->assertEquals(1, $num->count(), "Expecting one integer value in the conditional expression.");
+        $this->assertEquals(1, $num->count(), "Expecting an integer in the conditional expression.");
     }
 
     public function testStudentGradeOnAssignment()
@@ -108,7 +108,7 @@ class MissingDoubleQuotesOnOperandTest extends TestCase
         $subNode = $nodes->getSubNode();
         $var = $subNode->find('variable[name="studentGrade"]');
 
-        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named 'studentGrade' in an assignment statement.");
+        $this->assertEquals(2, $var->count(), "Expecting two occurrences of the variable named `studentGrade` in an assignment statement.");
     }
 
     public function testRemarksOnAssignment()
@@ -117,7 +117,7 @@ class MissingDoubleQuotesOnOperandTest extends TestCase
         $subNode = $nodes->getSubNode();
         $var = $subNode->find('variable[name="remarks"]');
 
-        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named 'remarks' in an assignment statement.");
+        $this->assertEquals(1, $var->count(), "Expecting one occurrence of the variable named `remarks` in an assignment statement.");
     }
 
     // still needs ternary operator validation here...
