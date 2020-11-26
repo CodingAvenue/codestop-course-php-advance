@@ -42,7 +42,7 @@ class NoArgumentSpecifiedOnMethodTest extends TestCase
         $subNode = $nodes->getSubnode()->getSubnode();
         $getName = $subNode->find('method-call[name="getName", variable="person"]');
 
-        $this->assertEquals(1, $getName->count(), "Expecting a `getName()` method call of 'person' in the `echo` statement.");
+        $this->assertEquals(1, $getName->count(), "Expecting a `getName()` method call of `person` in the `echo` statement.");
     }
 
     public function testAssignment()
