@@ -40,7 +40,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $session = $arrayFetch->find('variable[name="_SESSION"]');
 
-        $this->assertEquals(2, $session->count(), "Expecting two occurrences of the superglobal variable named `__SESSION` in the assignment statements.");
+        $this->assertEquals(2, $session->count(), "Expecting two occurrences of the superglobal variable named `__SESSION` in assignment statements.");
     }
 
     public function testFirstNameString()
@@ -88,7 +88,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $arrayFetch = $obj->find('datatype[name="arrayfetch"]');
         $string = $arrayFetch->find('string[value="firstName"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `firstName` in a `_SESSION` superglobal variable.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `firstName` in the `_SESSION` superglobal variable.");
     }
 
     public function testStringLastInEcho()
@@ -97,7 +97,7 @@ class MisquotedSessionIdArgumentTest extends TestCase
         $arrayFetch = $obj->find('datatype[name="arrayfetch"]');
         $string = $arrayFetch->find('string[value="lastName"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `lastName` in a `_SESSION` superglobal variable.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `lastName` in the `_SESSION` superglobal variable.");
     }
 
     public function testArrayFetchInEcho()

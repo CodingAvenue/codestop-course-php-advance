@@ -40,7 +40,7 @@ class CreateAndAccessSessionVariablesTest extends TestCase
         $arrayFetch = $nodes->find('datatype[name="arrayfetch"]');
         $session = $arrayFetch->find('variable[name="_SESSION"]');
 
-        $this->assertEquals(2, $session->count(), "Expecting two occurrences of the superglobal variable named `__SESSION` in the assignment statements.");
+        $this->assertEquals(2, $session->count(), "Expecting two occurrences of the superglobal variable named `__SESSION` in assignment statements.");
     }
 
     public function testNameString()

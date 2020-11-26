@@ -72,7 +72,7 @@ class MisplacedSessionStartFunctionTest extends TestCase
         $arrayFetch = $obj->find('datatype[name="arrayfetch"]');
         $string = $arrayFetch->find('string[value="name"]');
 
-        $this->assertEquals(1, $string->count(), "Expecting a string `name` in a `_SESSION` superglobal variable.");
+        $this->assertEquals(1, $string->count(), "Expecting a string `name` in the `_SESSION` superglobal variable.");
     }
 
     public function testArrayFetchInEcho()
