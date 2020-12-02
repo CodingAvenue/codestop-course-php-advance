@@ -28,7 +28,7 @@
     > Discover how you can create your own exception classes to manage possible errors in the program.
 
 * [File Inclusion](content/FileInclusion/FileInclusion.q.md) ** - minutes**
-    > Learn how you can add the content of one PHP file to another PHP file using the `include()` and `require()` functions.
+    > Learn how you can add the content of one PHP file to another PHP file using `include` and `require` language constructs.
 
 * [Basic File Handling](content/BasicFileHandling/BasicFileHandling.q.md) ** - minutes**
     > In this lesson, you will learn how to open, close, read, and write files in PHP using basic file handling functions and modes.
