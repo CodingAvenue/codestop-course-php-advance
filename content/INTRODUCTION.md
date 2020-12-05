@@ -1,6 +1,6 @@
 **Requirements**: Knowledge in Basic PHP Programming, Intermediate PHP Programming, and Object-Oriented Programming in PHP.
 
-**Duration**:
+**Duration**: 12 hours and 39 minutes
 
 **Standards**: K-12 Computer Science Framework Core Concepts and Practices
 * Algorithms and Programming
